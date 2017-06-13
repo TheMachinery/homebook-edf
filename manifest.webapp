@@ -1,7 +1,7 @@
 {
   "name": "Homebook",
   "slug": "homebook",
-  "icon": "logo.svg",
+  "icon": "icon.svg",
   "description": "Description homebook",
   "version": "3.0.0",
   "licence": "AGPL-3.0",
