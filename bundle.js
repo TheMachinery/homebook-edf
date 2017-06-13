@@ -37501,7 +37501,7 @@ var File = function (_Component) {
             var app = document.querySelector('[role="application"]');
             var domain = app.dataset.cozyStack;
 
-            var url = "http://" + domain + this.state.link;
+            var url = "//" + domain + this.state.link;
             // console.log("URL :",url);
 
             if (this.state.file.attributes.class === 'image') {
