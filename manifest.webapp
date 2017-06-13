@@ -24,6 +24,11 @@
       "index": "index.html",
       "public": false
     },
+    "/file": {
+      "folder": "/",
+      "index": "index.html",
+      "public": false
+    },
     "/rappels": {
       "folder": "/",
       "index": "index.html",
@@ -77,6 +82,10 @@
     "analytics": {
         "description" : "App required analytics access",
         "type": "com.homebook.analytics"
+    },
+    "recalls": {
+        "description" : "App required recalls access",
+        "type": "com.homebook.recalls"
     },
     "metas": {
         "description" : "App required metas access",
