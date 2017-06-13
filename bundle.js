@@ -38581,7 +38581,6 @@ var Onboarding = function (_Component) {
                         "name": "onboarding"
                     }
                 }).then(function (result) {
-                    console.log('Result : ', result);
                     if (Array.isArray(result) && result.length > 0) {
                         return result[0];
                     }
