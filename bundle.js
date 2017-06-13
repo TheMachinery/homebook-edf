@@ -37216,7 +37216,7 @@ var Documents = function (_Component) {
                                 _react2.default.createElement(
                                     _LabeLicon2.default,
                                     { icon: 'ion-ios-plus-empty' },
-                                    'IMPOTER'
+                                    'IMPORTER'
                                 ),
                                 _react2.default.createElement('input', { ref: 'file', type: 'file', multiple: 'true', onChange: function onChange(e) {
                                         return _this7.onFileChange(e);
@@ -37586,7 +37586,7 @@ var File = function (_Component) {
                             },
                             className: 'button button-stable' },
                         _react2.default.createElement('i', { className: 'ion-ios-compose-outline' }),
-                        ' REMONER'
+                        ' RENOMMER'
                     ), _react2.default.createElement(
                         'button',
                         { type: 'button', onClick: function onClick() {
