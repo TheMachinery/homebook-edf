@@ -22869,6 +22869,10 @@ var ToolBoxOptions = function (_React$Component) {
         value: function open() {
             if (this.state.open) return;
 
+            if (this.props.other) this.props.other.forEach(function (e) {
+                return e.close();
+            });
+
             this.setState({
                 open: true
             });
@@ -24539,7 +24543,10 @@ var ToolBoxOptions = function (_React$Component) {
 
         if (!_this.props.root) return _possibleConstructorReturn(_this);
 
-        _this.default = _this.props.default, _this.state = {
+        _this.default = _this.props.default;
+        _this.rootDirectoryName = _this.props.rootDirectoryName;
+
+        _this.state = {
             current: _this.props.default || _this.props.root
         };
 
@@ -24612,7 +24619,6 @@ var ToolBoxOptions = function (_React$Component) {
             var dirs = { name: this.props.root, childs: [] };
 
             this.findChildren(dirs.name, dirs.childs).then(function () {
-                // console.log("la");
                 _this3.setState({
                     dirs: dirs
                 });
@@ -24642,7 +24648,7 @@ var ToolBoxOptions = function (_React$Component) {
 
             if (this.state.dirs) {
                 var list = this.createDirList(this.state.dirs.childs);
-                var displayName = this.state.dirs.name.substring(this.state.dirs.name.lastIndexOf('/') + 1);
+                var displayName = this.rootDirectoryName;
                 return _react2.default.createElement(
                     'div',
                     { className: 'directory-picker-content' },
@@ -28330,7 +28336,6 @@ var Document = function (_Component) {
     _createClass(Document, [{
         key: 'componentWillReceiveProps',
         value: function componentWillReceiveProps(props, context) {
-            console.log("porps");
             this.icon = this._getItemIcon(this.props.item);
         }
     }, {
@@ -36826,7 +36831,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MAIN_DIR_NAME = 'Documents';
+var MAIN_DIR_NAME = 'Homebook';
+var MAIN_DIR_PATH = '/' + MAIN_DIR_NAME;
 
 var Documents = function (_Component) {
     _inherits(Documents, _Component);
@@ -36836,18 +36842,21 @@ var Documents = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Documents.__proto__ || Object.getPrototypeOf(Documents)).call(this, props, context));
 
+        var path = _this.getPath(props);
+
         _this.state = {
-            isRoot: true,
+            isRoot: MAIN_DIR_PATH === path,
             documents: [],
-            path: '',
+            path: path,
             viewMode: localStorage.documentsViewMode || false,
-            importPath: ''
+            importPath: '',
+            currentDirId: null
         };
 
-        cozy.client.files.statByPath('/Documents').catch(function () {
+        cozy.client.files.statByPath(MAIN_DIR_PATH).catch(function () {
             console.log('Creating Documents');
             return cozy.client.files.createDirectory({
-                name: 'Documents',
+                name: MAIN_DIR_NAME,
                 lastModified: new Date()
             }).then(function (result) {
                 return Promise.all([cozy.client.files.createDirectory({
@@ -36866,10 +36875,13 @@ var Documents = function (_Component) {
                     name: 'Travaux et entretien',
                     tags: ['folder-travaux-et-entretien'],
                     dirID: result._id
-                })]);
+                })]).then(function () {
+                    return console.log("Default documents created");
+                });
             });
         }).then(function () {
-            console.log("Load Documents");
+            console.log("Load Documents constructor");
+            _this.loadDocuments(path);
         });
 
         Object.defineProperty(_this, 'allSelected', {
@@ -36891,12 +36903,17 @@ var Documents = function (_Component) {
     }
 
     _createClass(Documents, [{
+        key: 'getPath',
+        value: function getPath(props) {
+            var ret = MAIN_DIR_PATH;
+            if (props.match.params.path) ret += '/' + props.match.params.path;
+
+            return ret;
+        }
+    }, {
         key: 'componentWillReceiveProps',
         value: function componentWillReceiveProps(props, context) {
-            console.log("DOC props", props);
-
-            var path = '/Documents';
-            if (props.match.params.path) path += '/' + props.match.params.path;
+            var path = this.getPath(props);
 
             this.loadDocuments(path);
         }
@@ -36914,6 +36931,7 @@ var Documents = function (_Component) {
         value: function loadDocuments(path) {
             var _this2 = this;
 
+            // console.log("DOC load ",path);
             this.setState({ loading: true });
             cozy.client.files.statByPath(path).then(function (result) {
                 var documents = [];
@@ -36924,9 +36942,10 @@ var Documents = function (_Component) {
 
                 _this2.setState({
                     path: path,
+                    currentDirId: result._id,
                     importPath: path,
                     documents: documents,
-                    isRoot: path == '/Documents'
+                    isRoot: path == MAIN_DIR_PATH
                 });
             }).then(function () {
                 _this2.setState({ loading: false });
@@ -36957,7 +36976,8 @@ var Documents = function (_Component) {
             e.stopPropagation();
 
             if (item.attributes.type != 'file') {
-                return this.context.router.history.push(item.attributes.path);
+                var path = this.findWebPath(item.attributes.path);
+                return this.context.router.history.push(path);
             } else {
                 return this.context.router.history.push("/file/" + item._id);
             }
@@ -36965,12 +36985,24 @@ var Documents = function (_Component) {
     }, {
         key: 'onBackPress',
         value: function onBackPress() {
-            var folders = this.state.path.split('/');
-            if (folders.length > 1) {
-                folders = folders.slice(0, folders.length - 1);
-            }
+            var path = this.findWebPath(this.state.path, 1);
 
-            this.context.router.history.push(folders.join('/'));
+            this.context.router.history.push(path);
+        }
+    }, {
+        key: 'findWebPath',
+        value: function findWebPath(path) {
+            var back = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
+            if (back && back < 0) throw Error("back must be positive");
+
+            var folders = path.split('/');
+            folders = folders.slice(2, folders.length - back);
+
+            if (folders.length > 0) {
+                return '/Documents/' + folders.join('/');
+            }
+            return '/Documents';
         }
     }, {
         key: 'importFilePath',
@@ -37052,29 +37084,27 @@ var Documents = function (_Component) {
 
             var name = window.prompt('Nom du dossier à créer');
             if (name && name.trim().length > 0) {
-                this.getCurrentDir().then(function (currentDirState) {
 
-                    var document = {
-                        attributes: {
-                            name: name,
-                            type: 'directory'
-                        }
-                    };
-
-                    _this5.state.documents.push(document);
-
-                    _this5.setState({
-                        documents: _this5.state.documents
-                    });
-
-                    window.cozy.client.files.createDirectory({
+                var document = {
+                    attributes: {
                         name: name,
-                        dirID: currentDirState._id,
-                        lastModifiedDate: new Date()
-                    }).then(function (result) {
-                        _this5.state.documents.forEach(function (item) {
-                            if (item.attributes.name == document.attributes.name) Object.assign(item, result);
-                        });
+                        type: 'directory'
+                    }
+                };
+
+                this.state.documents.push(document);
+
+                this.setState({
+                    documents: this.state.documents
+                });
+
+                window.cozy.client.files.createDirectory({
+                    name: name,
+                    dirID: this.state.currentDirId,
+                    lastModifiedDate: new Date()
+                }).then(function (result) {
+                    _this5.state.documents.forEach(function (item) {
+                        if (item.attributes.name == document.attributes.name) Object.assign(item, result);
                     });
                 });
             }
@@ -37171,6 +37201,7 @@ var Documents = function (_Component) {
             var _this7 = this;
 
             var nbSelected = this.getNbSelected();
+            var displayPath = this.findWebPath(this.state.path).substring(1);
 
             return _react2.default.createElement(
                 _Page2.default,
@@ -37200,14 +37231,9 @@ var Documents = function (_Component) {
                         _react2.default.createElement(
                             'div',
                             { className: 'importer' },
-                            _react2.default.createElement(_DirectoryPicker2.default, { root: '/Documents', 'default': this.state.path, onPathChange: function onPathChange(path) {
+                            _react2.default.createElement(_DirectoryPicker2.default, { root: MAIN_DIR_PATH, 'default': this.state.path, rootDirectoryName: 'Documents', onPathChange: function onPathChange(path) {
                                     return _this7.setState({ importPath: path });
                                 } }),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                this.state.importPath
-                            ),
                             _react2.default.createElement(
                                 'button',
                                 { type: 'button', className: 'button button-stable', onClick: function onClick() {
@@ -37225,7 +37251,7 @@ var Documents = function (_Component) {
                         )
                     ), _react2.default.createElement(
                         _ToolBoxOptions2.default,
-                        { ref: 'moreOptions' },
+                        { ref: 'moreOptions', other: [this.refs.importer] },
                         _react2.default.createElement(
                             'ul',
                             null,
@@ -37273,7 +37299,7 @@ var Documents = function (_Component) {
                     } },
                 _react2.default.createElement(
                     _Section2.default,
-                    { title: nbSelected > 0 ? this.state.path.substring(1) + " | " + nbSelected + " élément" + (nbSelected == 1 ? "" : "s") : this.state.path.substring(1) },
+                    { title: nbSelected > 0 ? displayPath + " | " + nbSelected + " élément" + (nbSelected == 1 ? "" : "s") : displayPath },
                     this._renderDocuments(),
                     this._renderEmptyFolder(),
                     this._renderLoading()
@@ -38913,11 +38939,10 @@ var Recall = function (_Component) {
                         onClick: function onClick(event) {
                             return _this2.onItemSelectionChange(event);
                         },
-                        className: (0, _classnames2.default)({ "contact-checkbox": true, "checked": item.selected }) },
+                        className: (0, _classnames2.default)({ "recall-checkbox": true, "checked": item.selected }) },
                     _react2.default.createElement('i', { className: 'ion-android-checkbox-outline-blank' }),
                     _react2.default.createElement('i', { className: 'ion-android-checkbox-outline' })
                 ),
-                _react2.default.createElement('i', { className: 'recall-icon ion-ios-person-outline' }),
                 _react2.default.createElement(
                     'span',
                     {
@@ -38926,14 +38951,9 @@ var Recall = function (_Component) {
                 ),
                 _react2.default.createElement(
                     'span',
-                    {
-                        className: 'recall-deadline' },
+                    { className: 'recall-deadline' },
+                    'Ech\xE9ance : ',
                     item.deadline || '-'
-                ),
-                _react2.default.createElement(
-                    'span',
-                    { className: 'recall-alert' },
-                    item.alert || '-'
                 )
             );
         }
@@ -39127,7 +39147,7 @@ var RecallForm = function (_Component) {
                                 value: this.state.item.frequency,
                                 defaultValue: this.state.item.frequency,
                                 onChange: function onChange(e) {
-                                    _this2.state.item.company = e.target.value;
+                                    _this2.state.item.freqency = e.target.value;
                                     _this2.setState({
                                         item: _this2.state.item
                                     });
@@ -39401,6 +39421,22 @@ var RecallView = function (_Component) {
             });
         }
     }, {
+        key: 'displayFreqency',
+        value: function displayFreqency(item) {
+            if (!item || !item.freqency) return;
+
+            var ret = "Tous les ans";
+            switch (item.freqency) {
+                case "month":
+                    ret = "Tous les mois";
+                    break;
+                case "day":
+                    ret = "Tous les jours";
+                    break;
+            }
+            return ret;
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this2 = this;
@@ -39434,7 +39470,7 @@ var RecallView = function (_Component) {
                         { onClick: function onClick() {
                                 return _this2.props.modal.hide();
                             },
-                            className: 'button button-stable button-clear  button-icon' },
+                            className: 'button button-stable button-clear button-icon' },
                         _react2.default.createElement('i', { className: 'ion-ios-close-empty' })
                     )
                 ),
@@ -39466,7 +39502,7 @@ var RecallView = function (_Component) {
                         _react2.default.createElement(
                             'p',
                             null,
-                            this.state.selectedItem && this.state.selectedItem.frequency
+                            this.displayFreqency(this.state.selectedItem)
                         )
                     ),
                     _react2.default.createElement(
@@ -39480,7 +39516,7 @@ var RecallView = function (_Component) {
                         _react2.default.createElement(
                             'p',
                             null,
-                            this.state.selectedItem && this.state.selectedItem.note.replace('\n', '<br>')
+                            this.state.selectedItem && this.state.selectedItem.note && this.state.selectedItem.note.replace('\n', '<br>')
                         )
                     )
                 )
@@ -39614,7 +39650,6 @@ var Recalls = function (_Component) {
                         }
                     }
                 }).then(function (result) {
-                    console.log('Recalls : ', result);
                     return result;
                 }).catch(console.error);
             }).then(function (result) {
@@ -39708,7 +39743,6 @@ var Recalls = function (_Component) {
         value: function onItemPress(item) {
             var _this5 = this;
 
-            console.log('item : ', item);
             this.setState({
                 selectedItem: item,
                 edition: false

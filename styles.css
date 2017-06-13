@@ -284,6 +284,8 @@
       padding-left: 0px; }
       .footer .footer-container {
         text-align: center; } }
+
+/*# sourceMappingURL=Footer.css.map */
 .tabBar {
   height: 48px;
   position: fixed;
@@ -379,6 +381,8 @@
         color: #c8c951; }
         .tabBar ul li.active a i, .tabBar ul li:hover a i {
           color: #c8c951; }
+
+/*# sourceMappingURL=TabBar.css.map */
 .navigation {
   width: 220px;
   background-color: #485d76;
@@ -800,6 +804,8 @@
   color: #32363f;
   line-height: 20px;
   font-weight: 300; }
+
+/*# sourceMappingURL=Page.css.map */
 .section .section-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -836,6 +842,8 @@
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1; }
+
+/*# sourceMappingURL=Section.css.map */
 .toolBox {
   position: relative;
   z-index: 1; }
@@ -922,6 +930,8 @@
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1; }
+
+/*# sourceMappingURL=LabelIcon.css.map */
 .directory-picker .directory-picker-content {
   padding: 10px;
   border: 1px solid black;
@@ -935,11 +945,11 @@
     padding-left: 8px;
     border-left: 1px dotted black; }
   .directory-picker .directory-picker-content .content li {
-    cursor: pointer;
     padding: 0; }
     .directory-picker .directory-picker-content .content li:hover {
       background-color: inherit; }
   .directory-picker .directory-picker-content .name {
+    cursor: pointer;
     font-size: 14px;
     color: #4A4A4A;
     font-family: HelveticaNeue;
@@ -1166,6 +1176,8 @@
         .dataList .data-list .data .data-icon-container {
           max-width: 40vw;
           max-height: 40vw; } }
+
+/*# sourceMappingURL=Data.css.map */
 .data-detail {
   margin: 16px 0px;
   -webkit-appearance: none;
@@ -1230,6 +1242,8 @@
         .data-detail table .data-detail-item td input[type="text"], .data-detail table .data-detail-item td input[type="number"], .data-detail table .data-detail-item td select[type="text"], .data-detail table .data-detail-item td select[type="number"] {
           display: block;
           width: calc(100% - 32px); }
+
+/*# sourceMappingURL=DataDetails.css.map */
 .notes .note {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1286,6 +1300,8 @@
   .notes .note:hover, .notes .note.active {
     border: solid 1px #4a4a4a;
     background-color: white; }
+
+/*# sourceMappingURL=Notes.css.map */
 @charset "UTF-8";
 .contacts .contact {
   display: -webkit-box;
@@ -1550,6 +1566,8 @@
       min-height: 100vh;
       margin: 0px;
       box-shadow: none; } }
+
+/*# sourceMappingURL=Modal.css.map */
 @charset "UTF-8";
 .recalls .recall {
   display: -webkit-box;
@@ -1602,7 +1620,8 @@
     -ms-flex: 1;
     flex: 1;
     text-align: left;
-    font-weight: normal; }
+    font-weight: normal;
+    padding-left: 25px; }
   .recalls .recall .recall-deadline {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -1610,7 +1629,7 @@
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    text-align: center; }
+    text-align: right; }
   .recalls .recall .recall-alert {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -1714,9 +1733,6 @@
     margin-bottom: 16px;
     display: block; }
   .recalls .edit-modal.edit-modal-form .form-group > input, .recalls .edit-modal.edit-modal-form .form-group select, .recalls .edit-modal.edit-modal-form .form-group-inline > input, .recalls .edit-modal.edit-modal-form .form-group-inline select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     background: #FFFFFF;
     border: 1px solid #9B9B9B;
     border-radius: 2px;
@@ -1729,7 +1745,9 @@
     max-width: 400px;
     width: 100%;
     padding: 10px 16px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    height: 46px; }
   .recalls .edit-modal.edit-modal-form .form-group select:after, .recalls .edit-modal.edit-modal-form .form-group-inline select:after {
     content: "\F3D0";
     font-family: "Ionicons";
@@ -1829,6 +1847,8 @@
       letter-spacing: 1.1px;
       color: #95999d;
       margin: 0px; }
+
+/*# sourceMappingURL=Notifications.css.map */
 .preferences article .preferences-article-content {
   background-color: #f6f6f6;
   border: solid 1px #cccccc;
@@ -1836,6 +1856,10 @@
   .preferences article .preferences-article-content p {
     margin-top: 0px; }
 
+/*# sourceMappingURL=Preferences.css.map */
+
+
+/*# sourceMappingURL=Help.css.map */
 .collapsable {
   background-color: #f6f6f6;
   border: solid 2px #4a4a4a;
@@ -1906,6 +1930,10 @@
       transition: all 0.4s linear;
       max-height: 0px; }
 
+/*# sourceMappingURL=Collapsable.css.map */
+
+
+/*# sourceMappingURL=About.css.map */
 .onboardingContainer {
     min-height: 100vh;
     position: fixed;
@@ -2021,56 +2049,56 @@ ol {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 100;
-    src: url(89e2666c24d37055bcb60e9d2d9f7e35.ttf) format("truetype");
+    src: url(font/Roboto-Thin-89e266.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 100;
-    src: url(0fc25386220a58203994ce45fb4ae570.ttf) format("truetype");
+    src: url(font/Roboto-ThinItalic-0fc253.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: url(fc84e998bc29b297ea20321e4c90b6ed.ttf) format("truetype");
+    src: url(font/Roboto-Light-fc84e9.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 300;
-    src: url(d1efcd4d126837fe0dcf9b6cf3a00d64.ttf) format("truetype");
+    src: url(font/Roboto-LightItalic-d1efcd.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url(3e1af3ef546b9e6ecef9f3ba197bf7d2.ttf) format("truetype");
+    src: url(font/Roboto-Regular-3e1af3.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url(42bbe4eefcde1297b11dc4b6491e9746.ttf) format("truetype");
+    src: url(font/Roboto-Italic-42bbe4.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url(ee7b96fa85d8fdb8c126409326ac2d2b.ttf) format("truetype");
+    src: url(font/Roboto-Bold-ee7b96.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 700;
-    src: url(1eb7a893589ddce89d81cdb22a356660.ttf) format("truetype");
+    src: url(font/Roboto-BoldItalic-1eb7a8.ttf) format("truetype");
 }
 
 
