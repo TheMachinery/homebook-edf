@@ -18664,7 +18664,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(548);
+__webpack_require__(562);
 
 var _reactRouterDom = __webpack_require__(20);
 
@@ -18766,7 +18766,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(550);
+__webpack_require__(549);
 
 var _reactRouterDom = __webpack_require__(20);
 
@@ -24747,7 +24747,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(553);
+__webpack_require__(552);
 
 var _classnames = __webpack_require__(10);
 
@@ -28317,6 +28317,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var MAX_IMG_RELOAD = 2;
+
 var Document = function (_Component) {
     _inherits(Document, _Component);
 
@@ -28328,7 +28330,7 @@ var Document = function (_Component) {
         var app = document.querySelector('[role="application"]');
         _this.domain = app.dataset.cozyStack;
 
-        _this.icon = "";
+        _this.icon = _this._getItemIcon(_this.props.item);
         _this.iconReload = 0;
         return _this;
     }
@@ -28343,7 +28345,7 @@ var Document = function (_Component) {
         value: function loopLoadImage(img) {
             var _this2 = this;
 
-            if (this.iconReload < 4) {
+            if (this.iconReload < MAX_IMG_RELOAD) {
                 console.log("Reload thumbnail");
                 setTimeout(function () {
                     img.src = _this2.icon;
@@ -28357,8 +28359,7 @@ var Document = function (_Component) {
         key: '_getItemIcon',
         value: function _getItemIcon(item) {
             var type = item.attributes.type || 'file';
-            var icon = '';
-            var tags = item.attributes.tags || [];
+            var icon = '/images/file.png';
 
             if (type === 'file') {
                 if (item.attributes.class === 'image' && item.links.small) {
@@ -28396,6 +28397,7 @@ var Document = function (_Component) {
                 //     }
                 // });
 
+                var tags = item.attributes.tags || [];
                 if (item.selected) icon += '.selected';
 
                 icon += '.png';
@@ -28500,7 +28502,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(554);
+__webpack_require__(553);
 
 var _lodash = __webpack_require__(17);
 
@@ -33360,7 +33362,7 @@ var _App = __webpack_require__(273);
 
 var _App2 = _interopRequireDefault(_App);
 
-__webpack_require__(555);
+__webpack_require__(554);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34110,7 +34112,7 @@ var _logo = __webpack_require__(697);
 
 var _logo2 = _interopRequireDefault(_logo);
 
-__webpack_require__(556);
+__webpack_require__(555);
 
 var _reactRouterDom = __webpack_require__(20);
 
@@ -35138,7 +35140,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(557);
+__webpack_require__(556);
 
 var _Page = __webpack_require__(31);
 
@@ -35649,7 +35651,11 @@ var Documents = function (_Component) {
                     )] },
                 _react2.default.createElement(
                     _Section2.default,
-                    { title: this.state.contactCount && this.state.contactCount + " contacts" || null },
+                    { title: this.state.contactCount && this.state.contactCount + " contacts" || _react2.default.createElement(
+                            "span",
+                            null,
+                            "\xA0"
+                        ) },
                     this._renderLoading(),
                     this._renderEmpty(),
                     this._renderContacts(),
@@ -35681,7 +35687,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(558);
+__webpack_require__(557);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36783,7 +36789,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(559);
+__webpack_require__(558);
 
 var _propTypes = __webpack_require__(15);
 
@@ -37094,17 +37100,42 @@ var Documents = function (_Component) {
 
                 this.state.documents.push(document);
 
-                this.setState({
-                    documents: this.state.documents
-                });
-
                 window.cozy.client.files.createDirectory({
                     name: name,
                     dirID: this.state.currentDirId,
                     lastModifiedDate: new Date()
                 }).then(function (result) {
-                    _this5.state.documents.forEach(function (item) {
-                        if (item.attributes.name == document.attributes.name) Object.assign(item, result);
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = _this5.state.documents[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var item = _step2.value;
+
+                            if (item.attributes.name == document.attributes.name) {
+                                Object.assign(item, result);
+                            }
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    ;
+
+                    _this5.setState({
+                        documents: _this5.state.documents
                     });
                 });
             }
@@ -37141,6 +37172,20 @@ var Documents = function (_Component) {
                         }, 100);
                     });
                 }
+            });
+        }
+    }, {
+        key: 'downloadAll',
+        value: function downloadAll() {
+            this.state.documents.forEach(function (item) {
+                var app = document.querySelector('[role="application"]');
+                var domain = app.dataset.cozyStack;
+
+                var link = cozy.client.files.getDownloadLinkById(item._id).then(function (url) {
+                    setTimeout(function () {
+                        window.open('//' + domain + url);
+                    }, 100);
+                });
             });
         }
     }, {
@@ -37225,7 +37270,7 @@ var Documents = function (_Component) {
                         { ref: 'importer', className: 'button button-default button-import', text: _react2.default.createElement(
                                 'span',
                                 null,
-                                _react2.default.createElement('i', { className: 'ion-ios-upload-outline' }),
+                                _react2.default.createElement('i', { className: 'ion-ios-cloud-upload-outline' }),
                                 ' IMPORTER UN DOCUMENT'
                             ) },
                         _react2.default.createElement(
@@ -37286,7 +37331,9 @@ var Documents = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'li',
-                                null,
+                                { onClick: function onClick() {
+                                        return _this7.downloadAll();
+                                    } },
                                 _react2.default.createElement(
                                     _LabeLicon2.default,
                                     { icon: 'ion-ios-cloud-download-outline' },
@@ -37341,7 +37388,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(560);
+__webpack_require__(559);
 
 var _propTypes = __webpack_require__(15);
 
@@ -37433,7 +37480,7 @@ var File = function (_Component) {
         value: function onBackPress() {
             var dir = this.state.dirPath || '/Documents';
 
-            this.context.router.history.push(dir);
+            this.context.router.history.goBack();
         }
     }, {
         key: 'removeFile',
@@ -37731,7 +37778,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(561);
+__webpack_require__(560);
 
 var _SearchInput = __webpack_require__(286);
 
@@ -38103,7 +38150,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(562);
+__webpack_require__(561);
 
 var _reactRouterDom = __webpack_require__(20);
 
@@ -38754,7 +38801,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(549);
+__webpack_require__(548);
 
 var _Page = __webpack_require__(31);
 
@@ -39793,17 +39840,6 @@ var Recalls = function (_Component) {
             }
         }
     }, {
-        key: '_renderEmpty',
-        value: function _renderEmpty() {
-            if (this.state.loading) return null;
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'text-center padding' },
-                'Aucun rappels'
-            );
-        }
-    }, {
         key: '_renderLoading',
         value: function _renderLoading() {
             if (!this.state.loading) return null;
@@ -39956,7 +39992,6 @@ var Recalls = function (_Component) {
                     _Section2.default,
                     { title: "Rappel" },
                     this._renderRecalls(),
-                    this._renderEmpty(),
                     this._renderLoading(),
                     this._renderModal()
                 )
@@ -40007,7 +40042,7 @@ var _propTypes = __webpack_require__(15);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-__webpack_require__(551);
+__webpack_require__(550);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40384,7 +40419,7 @@ var _lodash = __webpack_require__(17);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-__webpack_require__(552);
+__webpack_require__(551);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

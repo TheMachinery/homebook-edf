@@ -775,7 +775,9 @@
         letter-spacing: 1px;
         padding: 10px 16px;
         text-decoration: none;
-        font-weight: 300; }
+        font-weight: 300;
+        height: 45px;
+        box-sizing: border-box; }
         .page .page-header .page-options ul.page-actions > li .button i {
           margin-right: 12px;
           font-size: 20px; }
@@ -791,12 +793,14 @@
           color: #dddddd; }
           .page .page-header .page-options ul.page-actions > li .button.button-default:hover {
             background-color: #526986; }
+
 .page .page-content h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
   font-size: 30px;
   letter-spacing: 1.3px;
   color: #32363f;
   font-weight: normal; }
+
 .page .page-content p {
   font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
   font-size: 14px;
@@ -804,8 +808,6 @@
   color: #32363f;
   line-height: 20px;
   font-weight: 300; }
-
-/*# sourceMappingURL=Page.css.map */
 .section .section-header {
   display: -webkit-box;
   display: -webkit-flex;
