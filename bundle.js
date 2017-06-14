@@ -771,207 +771,6 @@ if (process.env.NODE_ENV !== 'production') {
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-
-
-var _prodInvariant = __webpack_require__(8);
-
-var DOMProperty = __webpack_require__(59);
-var ReactDOMComponentFlags = __webpack_require__(245);
-
-var invariant = __webpack_require__(3);
-
-var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
-var Flags = ReactDOMComponentFlags;
-
-var internalInstanceKey = '__reactInternalInstance$' + Math.random().toString(36).slice(2);
-
-/**
- * Check if a given node should be cached.
- */
-function shouldPrecacheNode(node, nodeID) {
-  return node.nodeType === 1 && node.getAttribute(ATTR_NAME) === String(nodeID) || node.nodeType === 8 && node.nodeValue === ' react-text: ' + nodeID + ' ' || node.nodeType === 8 && node.nodeValue === ' react-empty: ' + nodeID + ' ';
-}
-
-/**
- * Drill down (through composites and empty components) until we get a host or
- * host text component.
- *
- * This is pretty polymorphic but unavoidable with the current structure we have
- * for `_renderedChildren`.
- */
-function getRenderedHostOrTextFromComponent(component) {
-  var rendered;
-  while (rendered = component._renderedComponent) {
-    component = rendered;
-  }
-  return component;
-}
-
-/**
- * Populate `_hostNode` on the rendered host/text component with the given
- * DOM node. The passed `inst` can be a composite.
- */
-function precacheNode(inst, node) {
-  var hostInst = getRenderedHostOrTextFromComponent(inst);
-  hostInst._hostNode = node;
-  node[internalInstanceKey] = hostInst;
-}
-
-function uncacheNode(inst) {
-  var node = inst._hostNode;
-  if (node) {
-    delete node[internalInstanceKey];
-    inst._hostNode = null;
-  }
-}
-
-/**
- * Populate `_hostNode` on each child of `inst`, assuming that the children
- * match up with the DOM (element) children of `node`.
- *
- * We cache entire levels at once to avoid an n^2 problem where we access the
- * children of a node sequentially and have to walk from the start to our target
- * node every time.
- *
- * Since we update `_renderedChildren` and the actual DOM at (slightly)
- * different times, we could race here and see a newer `_renderedChildren` than
- * the DOM nodes we see. To avoid this, ReactMultiChild calls
- * `prepareToManageChildren` before we change `_renderedChildren`, at which
- * time the container's child nodes are always cached (until it unmounts).
- */
-function precacheChildNodes(inst, node) {
-  if (inst._flags & Flags.hasCachedChildNodes) {
-    return;
-  }
-  var children = inst._renderedChildren;
-  var childNode = node.firstChild;
-  outer: for (var name in children) {
-    if (!children.hasOwnProperty(name)) {
-      continue;
-    }
-    var childInst = children[name];
-    var childID = getRenderedHostOrTextFromComponent(childInst)._domID;
-    if (childID === 0) {
-      // We're currently unmounting this child in ReactMultiChild; skip it.
-      continue;
-    }
-    // We assume the child nodes are in the same order as the child instances.
-    for (; childNode !== null; childNode = childNode.nextSibling) {
-      if (shouldPrecacheNode(childNode, childID)) {
-        precacheNode(childInst, childNode);
-        continue outer;
-      }
-    }
-    // We reached the end of the DOM children without finding an ID match.
-     true ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Unable to find element with ID %s.', childID) : _prodInvariant('32', childID) : void 0;
-  }
-  inst._flags |= Flags.hasCachedChildNodes;
-}
-
-/**
- * Given a DOM node, return the closest ReactDOMComponent or
- * ReactDOMTextComponent instance ancestor.
- */
-function getClosestInstanceFromNode(node) {
-  if (node[internalInstanceKey]) {
-    return node[internalInstanceKey];
-  }
-
-  // Walk up the tree until we find an ancestor whose instance we have cached.
-  var parents = [];
-  while (!node[internalInstanceKey]) {
-    parents.push(node);
-    if (node.parentNode) {
-      node = node.parentNode;
-    } else {
-      // Top of the tree. This node must not be part of a React tree (or is
-      // unmounted, potentially).
-      return null;
-    }
-  }
-
-  var closest;
-  var inst;
-  for (; node && (inst = node[internalInstanceKey]); node = parents.pop()) {
-    closest = inst;
-    if (parents.length) {
-      precacheChildNodes(inst, node);
-    }
-  }
-
-  return closest;
-}
-
-/**
- * Given a DOM node, return the ReactDOMComponent or ReactDOMTextComponent
- * instance, or null if the node was not rendered by this React.
- */
-function getInstanceFromNode(node) {
-  var inst = getClosestInstanceFromNode(node);
-  if (inst != null && inst._hostNode === node) {
-    return inst;
-  } else {
-    return null;
-  }
-}
-
-/**
- * Given a ReactDOMComponent or ReactDOMTextComponent, return the corresponding
- * DOM node.
- */
-function getNodeFromInstance(inst) {
-  // Without this first invariant, passing a non-DOM-component triggers the next
-  // invariant for a missing parent, which is super confusing.
-  !(inst._hostNode !== undefined) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'getNodeFromInstance: Invalid argument.') : _prodInvariant('33') : void 0;
-
-  if (inst._hostNode) {
-    return inst._hostNode;
-  }
-
-  // Walk up the tree until we find an ancestor whose DOM node we have cached.
-  var parents = [];
-  while (!inst._hostNode) {
-    parents.push(inst);
-    !inst._hostParent ? process.env.NODE_ENV !== 'production' ? invariant(false, 'React DOM tree root should always have a node reference.') : _prodInvariant('34') : void 0;
-    inst = inst._hostParent;
-  }
-
-  // Now parents contains each ancestor that does *not* have a cached native
-  // node, and `inst` is the deepest ancestor that does.
-  for (; parents.length; inst = parents.pop()) {
-    precacheChildNodes(inst, inst._hostNode);
-  }
-
-  return inst._hostNode;
-}
-
-var ReactDOMComponentTree = {
-  getClosestInstanceFromNode: getClosestInstanceFromNode,
-  getInstanceFromNode: getInstanceFromNode,
-  getNodeFromInstance: getNodeFromInstance,
-  precacheChildNodes: precacheChildNodes,
-  precacheNode: precacheNode,
-  uncacheNode: uncacheNode
-};
-
-module.exports = ReactDOMComponentTree;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
  * @license
  * Lodash <https://lodash.com/>
@@ -18061,6 +17860,207 @@ module.exports = ReactDOMComponentTree;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(189), __webpack_require__(699)(module)))
 
 /***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ */
+
+
+
+var _prodInvariant = __webpack_require__(8);
+
+var DOMProperty = __webpack_require__(59);
+var ReactDOMComponentFlags = __webpack_require__(245);
+
+var invariant = __webpack_require__(3);
+
+var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
+var Flags = ReactDOMComponentFlags;
+
+var internalInstanceKey = '__reactInternalInstance$' + Math.random().toString(36).slice(2);
+
+/**
+ * Check if a given node should be cached.
+ */
+function shouldPrecacheNode(node, nodeID) {
+  return node.nodeType === 1 && node.getAttribute(ATTR_NAME) === String(nodeID) || node.nodeType === 8 && node.nodeValue === ' react-text: ' + nodeID + ' ' || node.nodeType === 8 && node.nodeValue === ' react-empty: ' + nodeID + ' ';
+}
+
+/**
+ * Drill down (through composites and empty components) until we get a host or
+ * host text component.
+ *
+ * This is pretty polymorphic but unavoidable with the current structure we have
+ * for `_renderedChildren`.
+ */
+function getRenderedHostOrTextFromComponent(component) {
+  var rendered;
+  while (rendered = component._renderedComponent) {
+    component = rendered;
+  }
+  return component;
+}
+
+/**
+ * Populate `_hostNode` on the rendered host/text component with the given
+ * DOM node. The passed `inst` can be a composite.
+ */
+function precacheNode(inst, node) {
+  var hostInst = getRenderedHostOrTextFromComponent(inst);
+  hostInst._hostNode = node;
+  node[internalInstanceKey] = hostInst;
+}
+
+function uncacheNode(inst) {
+  var node = inst._hostNode;
+  if (node) {
+    delete node[internalInstanceKey];
+    inst._hostNode = null;
+  }
+}
+
+/**
+ * Populate `_hostNode` on each child of `inst`, assuming that the children
+ * match up with the DOM (element) children of `node`.
+ *
+ * We cache entire levels at once to avoid an n^2 problem where we access the
+ * children of a node sequentially and have to walk from the start to our target
+ * node every time.
+ *
+ * Since we update `_renderedChildren` and the actual DOM at (slightly)
+ * different times, we could race here and see a newer `_renderedChildren` than
+ * the DOM nodes we see. To avoid this, ReactMultiChild calls
+ * `prepareToManageChildren` before we change `_renderedChildren`, at which
+ * time the container's child nodes are always cached (until it unmounts).
+ */
+function precacheChildNodes(inst, node) {
+  if (inst._flags & Flags.hasCachedChildNodes) {
+    return;
+  }
+  var children = inst._renderedChildren;
+  var childNode = node.firstChild;
+  outer: for (var name in children) {
+    if (!children.hasOwnProperty(name)) {
+      continue;
+    }
+    var childInst = children[name];
+    var childID = getRenderedHostOrTextFromComponent(childInst)._domID;
+    if (childID === 0) {
+      // We're currently unmounting this child in ReactMultiChild; skip it.
+      continue;
+    }
+    // We assume the child nodes are in the same order as the child instances.
+    for (; childNode !== null; childNode = childNode.nextSibling) {
+      if (shouldPrecacheNode(childNode, childID)) {
+        precacheNode(childInst, childNode);
+        continue outer;
+      }
+    }
+    // We reached the end of the DOM children without finding an ID match.
+     true ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Unable to find element with ID %s.', childID) : _prodInvariant('32', childID) : void 0;
+  }
+  inst._flags |= Flags.hasCachedChildNodes;
+}
+
+/**
+ * Given a DOM node, return the closest ReactDOMComponent or
+ * ReactDOMTextComponent instance ancestor.
+ */
+function getClosestInstanceFromNode(node) {
+  if (node[internalInstanceKey]) {
+    return node[internalInstanceKey];
+  }
+
+  // Walk up the tree until we find an ancestor whose instance we have cached.
+  var parents = [];
+  while (!node[internalInstanceKey]) {
+    parents.push(node);
+    if (node.parentNode) {
+      node = node.parentNode;
+    } else {
+      // Top of the tree. This node must not be part of a React tree (or is
+      // unmounted, potentially).
+      return null;
+    }
+  }
+
+  var closest;
+  var inst;
+  for (; node && (inst = node[internalInstanceKey]); node = parents.pop()) {
+    closest = inst;
+    if (parents.length) {
+      precacheChildNodes(inst, node);
+    }
+  }
+
+  return closest;
+}
+
+/**
+ * Given a DOM node, return the ReactDOMComponent or ReactDOMTextComponent
+ * instance, or null if the node was not rendered by this React.
+ */
+function getInstanceFromNode(node) {
+  var inst = getClosestInstanceFromNode(node);
+  if (inst != null && inst._hostNode === node) {
+    return inst;
+  } else {
+    return null;
+  }
+}
+
+/**
+ * Given a ReactDOMComponent or ReactDOMTextComponent, return the corresponding
+ * DOM node.
+ */
+function getNodeFromInstance(inst) {
+  // Without this first invariant, passing a non-DOM-component triggers the next
+  // invariant for a missing parent, which is super confusing.
+  !(inst._hostNode !== undefined) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'getNodeFromInstance: Invalid argument.') : _prodInvariant('33') : void 0;
+
+  if (inst._hostNode) {
+    return inst._hostNode;
+  }
+
+  // Walk up the tree until we find an ancestor whose DOM node we have cached.
+  var parents = [];
+  while (!inst._hostNode) {
+    parents.push(inst);
+    !inst._hostParent ? process.env.NODE_ENV !== 'production' ? invariant(false, 'React DOM tree root should always have a node reference.') : _prodInvariant('34') : void 0;
+    inst = inst._hostParent;
+  }
+
+  // Now parents contains each ancestor that does *not* have a cached native
+  // node, and `inst` is the deepest ancestor that does.
+  for (; parents.length; inst = parents.pop()) {
+    precacheChildNodes(inst, inst._hostNode);
+  }
+
+  return inst._hostNode;
+}
+
+var ReactDOMComponentTree = {
+  getClosestInstanceFromNode: getClosestInstanceFromNode,
+  getInstanceFromNode: getInstanceFromNode,
+  getNodeFromInstance: getNodeFromInstance,
+  precacheChildNodes: precacheChildNodes,
+  precacheNode: precacheNode,
+  uncacheNode: uncacheNode
+};
+
+module.exports = ReactDOMComponentTree;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18668,7 +18668,7 @@ __webpack_require__(562);
 
 var _reactRouterDom = __webpack_require__(20);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -18766,7 +18766,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(549);
+__webpack_require__(548);
 
 var _reactRouterDom = __webpack_require__(20);
 
@@ -19042,7 +19042,7 @@ var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -19069,7 +19069,7 @@ var Analytics = function (_Component) {
         Analytics._instance = _this;
         _this.router = context.router;
 
-        window.addEventListener('beforeunload', _this.onUnload.bind(_this));
+        // window.addEventListener('beforeunload', this.onUnload.bind(this));
         _this.router.history.listen(_this.onRouteChange.bind(_this));
         return _this;
     }
@@ -19085,14 +19085,13 @@ var Analytics = function (_Component) {
             var _this2 = this;
 
             var route = Object.assign({}, e);
+            // console.log("Route change");
+
             this.leaveCurrentRoute().then(function () {
                 return _this2.addRoute(route);
+            }).then(function (route) {
+                // console.log("New route", route);
             });
-        }
-    }, {
-        key: 'getCurrentRoute',
-        value: function getCurrentRoute() {
-            return this.lastRoute;
         }
     }, {
         key: 'addAction',
@@ -19102,30 +19101,40 @@ var Analytics = function (_Component) {
             var route = Object.assign({}, this.lastRoute);
             route.action = action;
             route.data = data;
+
+            //remove cozy meta
+            route._id = undefined;
+            route._rev = undefined;
+            route._type = undefined;
+
+            // console.log("Action",action);
+
             return this.leaveCurrentRoute().then(function () {
                 return _this3.addRoute(route);
+            }).then(function (route) {
+                // console.log("New route action", route);
             });
         }
     }, {
         key: 'leaveCurrentRoute',
         value: function leaveCurrentRoute() {
-            var _this4 = this;
-
             var route = this.lastRoute;
-            if (!route) return Promise.resolve();
+            if (!route || !route._id) return Promise.resolve();
 
             route.leaveAt = new Date();
 
+            // console.log("Leave", this.lastRoute);
+
             return cozy.client.data.updateAttributes(this.doctype, this.lastRoute._id, route).then(function (result) {
                 // console.log('leaveCurrentRoute : ', result);
-                Object.assign(_this4.lastRoute, result);
-                return _this4.lastRoute;
+            }).catch(function (err) {
+                return console.error("Analytics leave", err);
             });
         }
     }, {
         key: 'addRoute',
         value: function addRoute(route) {
-            var _this5 = this;
+            var _this4 = this;
 
             if (route == this.lastRoute || !route) return Promise.reject();
 
@@ -19133,9 +19142,13 @@ var Analytics = function (_Component) {
 
             this.lastRoute = route;
 
+            // console.log("Add",route);
+
             return cozy.client.data.create(this.doctype, route).then(function (result) {
-                Object.assign(_this5.lastRoute, result);
-                return _this5.lastRoute;
+                Object.assign(_this4.lastRoute, result);
+                return _this4.lastRoute;
+            }).catch(function (err) {
+                return console.error("Analytics add", err);
             });
         }
     }, {
@@ -22824,7 +22837,7 @@ var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -24521,7 +24534,7 @@ var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -24747,13 +24760,13 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(552);
+__webpack_require__(551);
 
 var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -26113,7 +26126,7 @@ module.exports = ReactPropTypesSecret;
 
 var DOMLazyTree = __webpack_require__(83);
 var Danger = __webpack_require__(597);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactInstrumentation = __webpack_require__(37);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(178);
@@ -28330,7 +28343,10 @@ var Document = function (_Component) {
         var app = document.querySelector('[role="application"]');
         _this.domain = app.dataset.cozyStack;
 
-        _this.icon = _this._getItemIcon(_this.props.item);
+        _this.state = {
+            icon: _this._getItemIcon(_this.props.item)
+        };
+
         _this.iconReload = 0;
         return _this;
     }
@@ -28338,7 +28354,9 @@ var Document = function (_Component) {
     _createClass(Document, [{
         key: 'componentWillReceiveProps',
         value: function componentWillReceiveProps(props, context) {
-            this.icon = this._getItemIcon(this.props.item);
+            this.setState({
+                icon: this._getItemIcon(props.item)
+            });
         }
     }, {
         key: 'loopLoadImage',
@@ -28348,9 +28366,23 @@ var Document = function (_Component) {
             if (this.iconReload < MAX_IMG_RELOAD) {
                 console.log("Reload thumbnail");
                 setTimeout(function () {
-                    img.src = _this2.icon;
+                    img.src = _this2.state.icon;
                     _this2.iconReload++;
                 }, 2000);
+            } else {
+                img.src = "/images/file.png";
+            }
+        }
+    }, {
+        key: 'useImageIcon',
+        value: function useImageIcon(img) {
+            var _this3 = this;
+
+            if (this.props.item && this.props.item.attributes.class === "image") {
+
+                cozy.client.files.getDownloadLinkById(this.props.item._id).then(function (link) {
+                    img.src = "//" + _this3.domain + link;
+                });
             } else {
                 img.src = "/images/file.png";
             }
@@ -28391,13 +28423,13 @@ var Document = function (_Component) {
                         icon += "folder";
                 }
 
+                // var tags = item.attributes.tags || [];
                 // tags.forEach((item) => {
                 //     if ((/^folder-/).test(item)) {
                 //         icon = item;
                 //     }
                 // });
 
-                var tags = item.attributes.tags || [];
                 if (item.selected) icon += '.selected';
 
                 icon += '.png';
@@ -28428,14 +28460,14 @@ var Document = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
             var item = this.props.item;
             return _react2.default.createElement(
                 'div',
                 {
                     onClick: function onClick(e) {
-                        return _this3._onOpenItem(e, item);
+                        return _this4._onOpenItem(e, item);
                     },
                     className: (0, _classnames2.default)({ "document": true, 'selected': item.selected })
                 },
@@ -28444,7 +28476,7 @@ var Document = function (_Component) {
                     checked: item.selected,
                     type: 'checkbox',
                     onClick: function onClick(e) {
-                        return _this3._onItemSelected(e, item);
+                        return _this4._onItemSelected(e, item);
                     }
                 }),
                 _react2.default.createElement(
@@ -28454,10 +28486,10 @@ var Document = function (_Component) {
                         'div',
                         { className: 'document-icon-content' },
                         _react2.default.createElement('img', {
-                            src: this.icon,
+                            src: this.state.icon,
                             className: 'document-icon',
                             onError: function onError(e) {
-                                return _this3.loopLoadImage(e.target);
+                                return _this4.useImageIcon(e.target);
                             }
                         })
                     )
@@ -28466,7 +28498,7 @@ var Document = function (_Component) {
                     'div',
                     {
                         className: 'document-name',
-                        title: '{item.attributes.name}'
+                        title: item.attributes.name
                     },
                     item.attributes.name
                 ),
@@ -28502,9 +28534,9 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(553);
+__webpack_require__(552);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -30769,7 +30801,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 
 var DOMProperty = __webpack_require__(59);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactInstrumentation = __webpack_require__(37);
 
 var quoteAttributeValueForBrowser = __webpack_require__(660);
@@ -31037,7 +31069,7 @@ module.exports = ReactDOMComponentFlags;
 var _assign = __webpack_require__(12);
 
 var LinkedValueUtils = __webpack_require__(174);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactUpdates = __webpack_require__(46);
 
 var warning = __webpack_require__(4);
@@ -31512,7 +31544,7 @@ var DOMProperty = __webpack_require__(59);
 var React = __webpack_require__(85);
 var ReactBrowserEventEmitter = __webpack_require__(118);
 var ReactCurrentOwner = __webpack_require__(47);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactDOMContainerInfo = __webpack_require__(607);
 var ReactDOMFeatureFlags = __webpack_require__(609);
 var ReactFeatureFlags = __webpack_require__(248);
@@ -33362,7 +33394,7 @@ var _App = __webpack_require__(273);
 
 var _App2 = _interopRequireDefault(_App);
 
-__webpack_require__(554);
+__webpack_require__(553);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34112,7 +34144,7 @@ var _logo = __webpack_require__(697);
 
 var _logo2 = _interopRequireDefault(_logo);
 
-__webpack_require__(555);
+__webpack_require__(554);
 
 var _reactRouterDom = __webpack_require__(20);
 
@@ -34307,7 +34339,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -34429,7 +34461,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -34473,7 +34505,7 @@ var ContactForm = function (_Component) {
     }, {
         key: 'componentWillUnmount',
         value: function componentWillUnmount() {
-            _Analytics2.default.getDefault().leaveCurrentRoute();
+            // Analytics.getDefault().leaveCurrentRoute();
         }
     }, {
         key: 'componentWillReceiveProps',
@@ -34782,7 +34814,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -34934,7 +34966,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -34976,7 +35008,7 @@ var ContactView = function (_Component) {
     }, {
         key: 'componentWillUnmount',
         value: function componentWillUnmount() {
-            _Analytics2.default.getDefault().leaveCurrentRoute();
+            // Analytics.getDefault().leaveCurrentRoute();
         }
     }, {
         key: 'componentWillReceiveProps',
@@ -35140,7 +35172,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(556);
+__webpack_require__(555);
 
 var _Page = __webpack_require__(31);
 
@@ -35156,7 +35188,7 @@ var _Modal2 = _interopRequireDefault(_Modal);
 
 var _reactRouterDom = __webpack_require__(20);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -35687,7 +35719,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(557);
+__webpack_require__(556);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35743,7 +35775,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(541);
+__webpack_require__(557);
 
 var _Page = __webpack_require__(31);
 
@@ -36535,9 +36567,9 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(542);
+__webpack_require__(541);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -36829,6 +36861,10 @@ var _Document = __webpack_require__(190);
 
 var _Document2 = _interopRequireDefault(_Document);
 
+var _lodash = __webpack_require__(16);
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36839,6 +36875,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var MAIN_DIR_NAME = 'Homebook';
 var MAIN_DIR_PATH = '/' + MAIN_DIR_NAME;
+
+var SORT_DATE = "2";
+var SORT_NAME = "1";
 
 var Documents = function (_Component) {
     _inherits(Documents, _Component);
@@ -36856,8 +36895,20 @@ var Documents = function (_Component) {
             path: path,
             viewMode: localStorage.documentsViewMode || false,
             importPath: '',
-            currentDirId: null
+            currentDirId: null,
+            fileType: null,
+            filter: 1
         };
+
+        _this.filesTypes = [{ key: 'property_deed',
+            name: 'Acte de propriété'
+        }, { key: 'plans',
+            name: 'Plans'
+        }, { key: 'condominium_regulation',
+            name: 'Réglement de copropriété'
+        }, { key: 'electricity_subscription',
+            name: 'Abonnement électricité'
+        }];
 
         cozy.client.files.statByPath(MAIN_DIR_PATH).catch(function () {
             console.log('Creating Documents');
@@ -36886,7 +36937,7 @@ var Documents = function (_Component) {
                 });
             });
         }).then(function () {
-            console.log("Load Documents constructor");
+            // console.log("Load Documents constructor");
             _this.loadDocuments(path);
         });
 
@@ -36915,6 +36966,11 @@ var Documents = function (_Component) {
             if (props.match.params.path) ret += '/' + props.match.params.path;
 
             return ret;
+        }
+    }, {
+        key: 'setFileType',
+        value: function setFileType(val) {
+            this.setState({ fileType: val.target.value });
         }
     }, {
         key: 'componentWillReceiveProps',
@@ -37056,7 +37112,10 @@ var Documents = function (_Component) {
 
                         var p = window.cozy.client.files.create(file, {
                             dirID: dir._id
-                        }).then(function (result) {
+                        }).then(function (item) {
+                            return cozy.client.files.updateAttributesById(item._id, { tags: [_this4.state.fileType] });
+                        }).then(function (item) {
+                            console.log(item);
                             _Analytics2.default.getDefault().addAction('Upload', document);
                         });
 
@@ -37189,6 +37248,23 @@ var Documents = function (_Component) {
             });
         }
     }, {
+        key: 'sortDocumentsFunction',
+        value: function sortDocumentsFunction(collection) {
+            if (!this.state.filter) return; //No sort
+
+            var ret = ["attributes.name"];
+
+            if (this.state.filter === SORT_DATE) {
+                ret = function ret(e) {
+                    return new Date(e.attributes.updated_at);
+                };
+            }
+
+            console.log("SORT", ret);
+
+            return _lodash2.default.sortBy(collection, ret);
+        }
+    }, {
         key: '_renderDocuments',
         value: function _renderDocuments() {
             var _this6 = this;
@@ -37202,7 +37278,7 @@ var Documents = function (_Component) {
                         "view-mode-grid": this.state.viewMode,
                         "view-mode-line": !this.state.viewMode
                     }) },
-                this.state.documents.map(function (item, key) {
+                this.sortDocumentsFunction(this.state.documents).map(function (item, key) {
                     return _react2.default.createElement(_Document2.default, {
                         key: key,
                         item: item,
@@ -37241,9 +37317,33 @@ var Documents = function (_Component) {
             );
         }
     }, {
+        key: '_renderFilesTypesList',
+        value: function _renderFilesTypesList() {
+            var _this7 = this;
+
+            return _react2.default.createElement(
+                'select',
+                { onChange: function onChange(e) {
+                        return _this7.setFileType(e);
+                    } },
+                _react2.default.createElement(
+                    'option',
+                    { value: '' },
+                    'Type de fichier'
+                ),
+                this.filesTypes.map(function (fileType) {
+                    return _react2.default.createElement(
+                        'option',
+                        { value: fileType.key },
+                        fileType.name
+                    );
+                })
+            );
+        }
+    }, {
         key: 'render',
         value: function render() {
-            var _this7 = this;
+            var _this8 = this;
 
             var nbSelected = this.getNbSelected();
             var displayPath = this.findWebPath(this.state.path).substring(1);
@@ -37253,14 +37353,14 @@ var Documents = function (_Component) {
                 { title: 'Documents', className: 'documents', actions: [nbSelected > 0 ? _react2.default.createElement(
                         'button',
                         { type: 'button', onClick: function onClick() {
-                                return _this7.downloadSelected();
+                                return _this8.downloadSelected();
                             }, className: 'button button-stable' },
                         _react2.default.createElement('i', { className: 'ion-ios-cloud-download-outline' }),
                         ' TELECHARGER'
                     ) : null, nbSelected > 0 ? _react2.default.createElement(
                         'button',
                         { type: 'button', onClick: function onClick() {
-                                return _this7.removeSelectedFiles();
+                                return _this8.removeSelectedFiles();
                             },
                             className: 'button button-assertive' },
                         _react2.default.createElement('i', { className: 'ion-ios-trash-outline' }),
@@ -37277,12 +37377,13 @@ var Documents = function (_Component) {
                             'div',
                             { className: 'importer' },
                             _react2.default.createElement(_DirectoryPicker2.default, { root: MAIN_DIR_PATH, 'default': this.state.path, rootDirectoryName: 'Documents', onPathChange: function onPathChange(path) {
-                                    return _this7.setState({ importPath: path });
+                                    return _this8.setState({ importPath: path });
                                 } }),
+                            this._renderFilesTypesList(),
                             _react2.default.createElement(
                                 'button',
                                 { type: 'button', className: 'button button-stable', onClick: function onClick() {
-                                        return _this7.importFilePath();
+                                        return _this8.importFilePath();
                                     } },
                                 _react2.default.createElement(
                                     _LabeLicon2.default,
@@ -37290,7 +37391,7 @@ var Documents = function (_Component) {
                                     'IMPORTER'
                                 ),
                                 _react2.default.createElement('input', { ref: 'file', type: 'file', multiple: 'true', onChange: function onChange(e) {
-                                        return _this7.onFileChange(e);
+                                        return _this8.onFileChange(e);
                                     } })
                             )
                         )
@@ -37303,10 +37404,10 @@ var Documents = function (_Component) {
                             _react2.default.createElement(
                                 'li',
                                 { onClick: function onClick() {
-                                        var viewMode = !_this7.state.viewMode;
+                                        var viewMode = !_this8.state.viewMode;
                                         localStorage.documentsViewMode = viewMode;
-                                        _this7.setState({ viewMode: viewMode });
-                                        _this7.refs.moreOptions.close();
+                                        _this8.setState({ viewMode: viewMode });
+                                        _this8.refs.moreOptions.close();
                                     } },
                                 this.state.viewMode ? _react2.default.createElement(
                                     _LabeLicon2.default,
@@ -37321,7 +37422,7 @@ var Documents = function (_Component) {
                             _react2.default.createElement(
                                 'li',
                                 { onClick: function onClick() {
-                                        _this7.createDirectory();_this7.refs.moreOptions.close();
+                                        _this8.createDirectory();_this8.refs.moreOptions.close();
                                     } },
                                 _react2.default.createElement(
                                     _LabeLicon2.default,
@@ -37332,7 +37433,7 @@ var Documents = function (_Component) {
                             _react2.default.createElement(
                                 'li',
                                 { onClick: function onClick() {
-                                        return _this7.downloadAll();
+                                        return _this8.downloadAll();
                                     } },
                                 _react2.default.createElement(
                                     _LabeLicon2.default,
@@ -37342,11 +37443,30 @@ var Documents = function (_Component) {
                             )
                         )
                     )], backEnabled: !this.state.isRoot, onBackPress: function onBackPress() {
-                        return _this7.onBackPress();
+                        return _this8.onBackPress();
                     } },
                 _react2.default.createElement(
                     _Section2.default,
-                    { title: nbSelected > 0 ? displayPath + " | " + nbSelected + " élément" + (nbSelected == 1 ? "" : "s") : displayPath },
+                    { title: nbSelected > 0 ? displayPath + " | " + nbSelected + " élément" + (nbSelected == 1 ? "" : "s") : displayPath, options: _react2.default.createElement(
+                            'span',
+                            null,
+                            _react2.default.createElement(
+                                'select',
+                                { value: this.state.filter, onChange: function onChange(e) {
+                                        return _this8.setState({ filter: e.target.value });
+                                    } },
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: SORT_NAME },
+                                    'TRIER PAR NOM'
+                                ),
+                                _react2.default.createElement(
+                                    'option',
+                                    { value: SORT_DATE },
+                                    'TRIER PAR DATE'
+                                )
+                            )
+                        ) },
                     this._renderDocuments(),
                     this._renderEmptyFolder(),
                     this._renderLoading()
@@ -37722,7 +37842,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(543);
+__webpack_require__(542);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -37885,7 +38005,7 @@ var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -37999,7 +38119,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(544);
+__webpack_require__(543);
 
 var _Page = __webpack_require__(31);
 
@@ -38170,6 +38290,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var MAIN_DIR_NAME = 'Homebook';
+var MAIN_DIR_PATH = '/' + MAIN_DIR_NAME;
+
 var Navigation = function (_Component) {
     _inherits(Navigation, _Component);
 
@@ -38181,25 +38304,133 @@ var Navigation = function (_Component) {
         console.log(context);
 
         _this.state = {
-            route: _this.context.router.route.location
+            route: _this.context.router.route.location,
+            typeUploaded: [],
+            progressWidth: '0%',
+            list: []
         };
+
+        _this.filesTypes = [{ key: 'property_deed',
+            name: 'Acte de propriété'
+        }, { key: 'plans',
+            name: 'Plans'
+        }, { key: 'condominium_regulation',
+            name: 'Réglement de copropriété'
+        }, { key: 'electricity_subscription',
+            name: 'Abonnement électricité'
+        }];
+
+        _this.loadDocuments('/Homebook');
+
         return _this;
     }
 
     _createClass(Navigation, [{
-        key: 'componentWillMount',
-        value: function componentWillMount() {
+        key: 'loadDocuments',
+        value: function loadDocuments(path) {
             var _this2 = this;
 
+            console.log("DOC load ", path);
+
+            return cozy.client.files.statByPath(path).then(function (result) {
+
+                result.relations('contents').forEach(function (item) {
+                    //console.log(item);
+                    if (item.attributes.type == 'directory') {
+                        console.log(item.attributes.path);
+                        return _this2.loadDocuments(item.attributes.path);
+                    } else {
+                        if (item.attributes.tags.length > 0) {
+                            _this2.filesTypes.map(function (type, key) {
+                                if (item.attributes.tags.indexOf(type.key) >= 0) {
+                                    var typeUploaded = _this2.state.typeUploaded;
+                                    if (typeUploaded.indexOf(type.key) === -1) {
+                                        typeUploaded.push(type.key);
+                                        _this2.setState({ typeUploaded: typeUploaded });
+                                        if (_this2.state.typeUploaded.length == 0) {
+                                            console.log('progressWidth 0%');
+                                            _this2.setState({ progressWidth: '0%' });
+                                        } else {
+                                            if (_this2.state.typeUploaded.length == _this2.filesTypes.length) {
+                                                console.log('progressWidth 100%');
+                                                _this2.setState({ progressWidth: '100%' });
+                                            } else {
+                                                var progress = _this2.state.typeUploaded.length * 100 / _this2.filesTypes.length + '%';
+                                                console.log('progressWidth ' + progress);
+                                                _this2.setState({ progressWidth: progress });
+                                            }
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+                //resolve();
+            }).then(function () {
+                _this2.createList();
+            }).catch(function () {
+                return console.log('lets make come catch');
+            });
+        }
+    }, {
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var _this3 = this;
+
             this.context.router.history.listen(function (e) {
-                _this2.setState({
+                _this3.setState({
                     route: e
                 });
             });
         }
     }, {
+        key: 'createList',
+        value: function createList() {
+            var _this4 = this;
+
+            var count = 0;
+            var list = [];
+            this.filesTypes.map(function (type) {
+                if (count < 3) {
+                    if (_this4.state.typeUploaded.indexOf(type.key) >= 0) {
+                        count++;
+
+                        list.push(type.name);
+                        _this4.setState({ list: list });
+                    }
+                }
+            });
+        }
+    }, {
+        key: 'openUploadBox',
+        value: function openUploadBox() {}
+    }, {
+        key: '_renderFileNeededList',
+        value: function _renderFileNeededList() {
+
+            return _react2.default.createElement(
+                'ul',
+                null,
+                this.state.list.map(function (item) {
+                    return _react2.default.createElement(
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'call-toolbox' },
+                            _react2.default.createElement('i', { className: 'fa fa-plus' }),
+                            ' ',
+                            item
+                        )
+                    );
+                })
+            );
+        }
+    }, {
         key: 'render',
         value: function render() {
+
             return _react2.default.createElement(
                 'aside',
                 { className: 'navigation' },
@@ -38259,6 +38490,25 @@ var Navigation = function (_Component) {
                                 'Corbeille'
                             )
                         )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: (0, _classnames2.default)({ "hide": /^\/Documents/.test(this.state.route.pathname), "gauge-container": true }) },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'title' },
+                        'Remplissez votre HOMEBOOK :'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'gauge' },
+                        _react2.default.createElement('div', { className: 'progress', style: { width: this.state.progressWidth } })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        this._renderFileNeededList()
                     )
                 ),
                 _react2.default.createElement(
@@ -38342,7 +38592,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(545);
+__webpack_require__(544);
 
 var _Page = __webpack_require__(31);
 
@@ -38452,7 +38702,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(546);
+__webpack_require__(545);
 
 var _Page = __webpack_require__(31);
 
@@ -38571,7 +38821,7 @@ var _propTypes = __webpack_require__(15);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-__webpack_require__(547);
+__webpack_require__(546);
 
 var _reactRouterDom = __webpack_require__(20);
 
@@ -38801,7 +39051,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(548);
+__webpack_require__(547);
 
 var _Page = __webpack_require__(31);
 
@@ -38914,7 +39164,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -39028,7 +39278,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -39264,7 +39514,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -39416,7 +39666,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -39458,7 +39708,7 @@ var RecallView = function (_Component) {
     }, {
         key: 'componentWillUnmount',
         value: function componentWillUnmount() {
-            _Analytics2.default.getDefault().leaveCurrentRoute();
+            // Analytics.getDefault().leaveCurrentRoute();
         }
     }, {
         key: 'componentWillReceiveProps',
@@ -39633,7 +39883,7 @@ var _Modal = __webpack_require__(191);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -39686,8 +39936,6 @@ var Recalls = function (_Component) {
         key: 'getRecalls',
         value: function getRecalls() {
             var _this2 = this;
-
-            console.log("getRecalls");
 
             return cozy.client.data.defineIndex(this.doctype, ['_id']).then(function (indexRef) {
                 return cozy.client.data.query(indexRef, {
@@ -40042,7 +40290,7 @@ var _propTypes = __webpack_require__(15);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-__webpack_require__(550);
+__webpack_require__(549);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40415,11 +40663,11 @@ var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _lodash = __webpack_require__(17);
+var _lodash = __webpack_require__(16);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-__webpack_require__(551);
+__webpack_require__(550);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -94948,7 +95196,7 @@ module.exports = ARIADOMPropertyConfig;
 
 
 
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 
 var focusNode = __webpack_require__(237);
 
@@ -95585,7 +95833,7 @@ module.exports = CSSPropertyOperations;
 var EventPluginHub = __webpack_require__(96);
 var EventPropagators = __webpack_require__(97);
 var ExecutionEnvironment = __webpack_require__(19);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactUpdates = __webpack_require__(46);
 var SyntheticEvent = __webpack_require__(52);
 
@@ -96019,7 +96267,7 @@ module.exports = DefaultEventPluginOrder;
 
 
 var EventPropagators = __webpack_require__(97);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var SyntheticMouseEvent = __webpack_require__(119);
 
 var eventTypes = {
@@ -97569,7 +97817,7 @@ module.exports = ReactCompositeComponent;
 
 
 
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactDefaultInjection = __webpack_require__(622);
 var ReactMount = __webpack_require__(251);
 var ReactReconciler = __webpack_require__(84);
@@ -97699,7 +97947,7 @@ var EventPluginHub = __webpack_require__(96);
 var EventPluginRegistry = __webpack_require__(117);
 var ReactBrowserEventEmitter = __webpack_require__(118);
 var ReactDOMComponentFlags = __webpack_require__(245);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactDOMInput = __webpack_require__(611);
 var ReactDOMOption = __webpack_require__(614);
 var ReactDOMSelect = __webpack_require__(246);
@@ -98733,7 +98981,7 @@ module.exports = ReactDOMContainerInfo;
 var _assign = __webpack_require__(12);
 
 var DOMLazyTree = __webpack_require__(83);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 
 var ReactDOMEmptyComponent = function (instantiate) {
   // ReactCompositeComponent uses this:
@@ -98820,7 +99068,7 @@ module.exports = ReactDOMFeatureFlags;
 
 
 var DOMChildrenOperations = __webpack_require__(170);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 
 /**
  * Operations used to process updates to DOM nodes.
@@ -98863,7 +99111,7 @@ var _prodInvariant = __webpack_require__(8),
 
 var DOMPropertyOperations = __webpack_require__(244);
 var LinkedValueUtils = __webpack_require__(174);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactUpdates = __webpack_require__(46);
 
 var invariant = __webpack_require__(3);
@@ -99300,7 +99548,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 var _assign = __webpack_require__(12);
 
 var React = __webpack_require__(85);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactDOMSelect = __webpack_require__(246);
 
 var warning = __webpack_require__(4);
@@ -99648,7 +99896,7 @@ var _prodInvariant = __webpack_require__(8),
 
 var DOMChildrenOperations = __webpack_require__(170);
 var DOMLazyTree = __webpack_require__(83);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 
 var escapeTextContentForBrowser = __webpack_require__(121);
 var invariant = __webpack_require__(3);
@@ -99817,7 +100065,7 @@ var _prodInvariant = __webpack_require__(8),
     _assign = __webpack_require__(12);
 
 var LinkedValueUtils = __webpack_require__(174);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactUpdates = __webpack_require__(46);
 
 var invariant = __webpack_require__(3);
@@ -100685,7 +100933,7 @@ var EnterLeaveEventPlugin = __webpack_require__(599);
 var HTMLDOMPropertyConfig = __webpack_require__(601);
 var ReactComponentBrowserEnvironment = __webpack_require__(603);
 var ReactDOMComponent = __webpack_require__(606);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactDOMEmptyComponent = __webpack_require__(608);
 var ReactDOMTreeTraversal = __webpack_require__(618);
 var ReactDOMTextComponent = __webpack_require__(616);
@@ -100836,7 +101084,7 @@ var _assign = __webpack_require__(12);
 var EventListener = __webpack_require__(236);
 var ExecutionEnvironment = __webpack_require__(19);
 var PooledClass = __webpack_require__(73);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactUpdates = __webpack_require__(46);
 
 var getEventTarget = __webpack_require__(181);
@@ -102601,7 +102849,7 @@ module.exports = SVGDOMPropertyConfig;
 
 var EventPropagators = __webpack_require__(97);
 var ExecutionEnvironment = __webpack_require__(19);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactInputSelection = __webpack_require__(250);
 var SyntheticEvent = __webpack_require__(52);
 
@@ -102800,7 +103048,7 @@ var _prodInvariant = __webpack_require__(8);
 
 var EventListener = __webpack_require__(236);
 var EventPropagators = __webpack_require__(97);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var SyntheticAnimationEvent = __webpack_require__(641);
 var SyntheticClipboardEvent = __webpack_require__(642);
 var SyntheticEvent = __webpack_require__(52);
@@ -103753,7 +104001,7 @@ module.exports = dangerousStyleValue;
 var _prodInvariant = __webpack_require__(8);
 
 var ReactCurrentOwner = __webpack_require__(47);
-var ReactDOMComponentTree = __webpack_require__(16);
+var ReactDOMComponentTree = __webpack_require__(17);
 var ReactInstanceMap = __webpack_require__(98);
 
 var getHostComponentFromComposite = __webpack_require__(257);
