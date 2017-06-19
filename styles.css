@@ -450,7 +450,7 @@ template {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   color: #dddddd;
@@ -466,20 +466,22 @@ template {
   .button.button-assertive {
     background-color: #ff3f3a;
     color: #FFF;
-    border: 1px solid #ff2621; }
+    border: 1px solid #ff2621 !important; }
     .button.button-assertive:hover {
-      background-color: #ff5854; }
+      background-color: #ff5854 !important; }
   .button.button-stable {
     background-color: #f6f6f6;
     color: #444; }
   .button.button-default {
     background-color: #485d76;
-    color: #dddddd; }
+    color: #dddddd;
+    border: 1px solid #485d76; }
   .button.button-clear {
     background-color: transparent;
     border: none; }
   .button > i:first-child {
-    margin-right: 8px; }
+    margin-right: 8px;
+    vertical-align: middle; }
   .button.button-icon {
     display: -webkit-box;
     display: -webkit-flex;
@@ -593,7 +595,7 @@ template {
       width: 220px;
       text-align: center;
       vertical-align: bottom;
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 20px;
       font-weight: 100;
       letter-spacing: 2.6px;
@@ -634,7 +636,7 @@ template {
         height: 40px;
         border-radius: 2px;
         background-color: #485d76;
-        font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 16px;
         letter-spacing: 1px;
         color: #dddddd; }
@@ -691,7 +693,7 @@ template {
         .header .header-container .header-options ul > li {
           list-style: none; }
           .header .header-container .header-options ul > li a {
-            font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+            font-family: "Roboto", sans-serif;
             font-size: 14px;
             font-weight: normal;
             color: #dddddd;
@@ -720,7 +722,7 @@ template {
   line-height: 56px; }
   .footer .footer-container {
     padding: 0px 16px;
-    font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+    
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.9px;
@@ -864,7 +866,7 @@ template {
     list-style: none;
     padding: 15px; }
     .navigation > nav ul li a {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 16px;
       font-weight: 300;
       letter-spacing: 1px;
@@ -881,7 +883,6 @@ template {
       .navigation > nav ul li.active a i, .navigation > nav ul li:hover a i {
         color: #c8c951; }
   .navigation .gauge-container {
-    width: 160px;
     min-height: 160px;
     border: solid 1px #dddddd;
     margin: 0 auto;
@@ -900,7 +901,7 @@ template {
       height: 14px;
       background-color: #334254;
       box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);
-      margin: 0 auto; }
+      margin: 0 auto 15px; }
     .navigation .gauge-container .progress {
       height: 14px;
       background-color: #c8c951;
@@ -915,6 +916,9 @@ template {
         letter-spacing: 0.9px;
         color: #dddddd;
         margin-bottom: 18px; }
+        .navigation .gauge-container ul li a {
+          color: #fff;
+          cursor: pointer; }
 .main-content {
   padding-top: 53px;
   padding-left: 220px;
@@ -1081,7 +1085,7 @@ template {
             width: 100%;
             margin: 0px auto; }
       .documents .document-list.view-mode-grid .document .document-name {
-        font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 1.2px;
@@ -1162,7 +1166,6 @@ template {
         -ms-flex: 1;
         flex: 1; }
       .documents .document-list.view-mode-line .document .document-date {
-        font-family: "Helvetica Neue";
         font-size: 14px;
         color: #32363F;
         letter-spacing: 1.17px;
@@ -1252,7 +1255,7 @@ template {
         color: #4a4a4a;
         font-size: 30px; }
     .page .page-header h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 24px;
       letter-spacing: 1px;
       color: #32363f;
@@ -1316,7 +1319,7 @@ template {
           appearance: none;
           text-align: center;
           border: solid 1px #9b9b9b;
-          font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 14px;
           letter-spacing: 1px;
           padding: 10px 16px;
@@ -1353,13 +1356,13 @@ template {
     -ms-flex: 1;
     flex: 1; }
     .page .page-content h2 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 30px;
       letter-spacing: 1.3px;
       color: #32363f;
       font-weight: normal; }
     .page .page-content p {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 14px;
       letter-spacing: 1px;
       color: #32363f;
@@ -1407,7 +1410,7 @@ template {
     border-bottom: 1px solid #DDD;
     padding: 10px 15px; }
     .section .section-header h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 12px;
       letter-spacing: 1px;
       color: #32363f;
@@ -1487,7 +1490,6 @@ template {
       .toolBox .toolBox-content ul li {
         padding: 16px;
         cursor: pointer;
-        font-family: HelveticaNeue;
         font-size: 14px;
         color: #4A4A4A;
         letter-spacing: 1px; }
@@ -1612,7 +1614,8 @@ template {
     width: 32vw;
     max-width: 150px;
     max-height: 150px;
-    margin: 10px; }
+    margin: 10px;
+    padding: 5px 0; }
     .importer .importer-content .import-doc .image-box {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1636,7 +1639,6 @@ template {
       -moz-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      margin-top: 5px;
       width: 100%; }
       .importer .importer-content .import-doc .image-box img {
         border-radius: 5px;
@@ -1644,6 +1646,8 @@ template {
         max-height: 100%; }
     .importer .importer-content .import-doc span {
       margin: 5px 0; }
+    .importer .importer-content .import-doc select {
+      width: 90%; }
 
 .importer .importer-footer {
   display: -webkit-box;
@@ -1959,7 +1963,7 @@ template {
           display: block;
           max-width: 90%; }
     .dataList .data-list .data .data-name {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 1.2px;
@@ -1997,7 +2001,7 @@ template {
     .data-detail table .data-detail-group {
       display: table-row-group; }
       .data-detail table .data-detail-group .data-detail-group-title {
-        font-family: HelveticaNeue;
+        
         font-size: 30px;
         color: #32363F;
         letter-spacing: 1.25px;
@@ -2009,7 +2013,7 @@ template {
         .data-detail table .data-detail-group td h2, .data-detail table .data-detail-group th h2 {
           margin: 0px;
           padding: 0px;
-          font-family: HelveticaNeue;
+          
           font-size: 30px;
           color: #32363F;
           letter-spacing: 1.25px;
@@ -2019,7 +2023,6 @@ template {
       padding: 16px;
       text-align: left; }
     .data-detail table .data-detail-item th {
-      font-family: HelveticaNeue-Light;
       font-size: 14px;
       color: #32363F;
       letter-spacing: 1.17px;
@@ -2028,7 +2031,6 @@ template {
       width: 320px; }
     .data-detail table .data-detail-item td {
       /* 24/06/2017: */
-      font-family: HelveticaNeue-Medium;
       font-size: 14px;
       color: #32363F;
       letter-spacing: 1.17px;
@@ -2226,7 +2228,6 @@ template {
       -moz-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      font-family: HelveticaNeue;
       font-size: 24px;
       color: #32363F;
       letter-spacing: 1px;
@@ -2237,7 +2238,6 @@ template {
   .contacts .edit-modal .edit-modal-content {
     padding: 16px; }
     .contacts .edit-modal .edit-modal-content h3 {
-      font-family: HelveticaNeue;
       font-size: 16px;
       color: #95999D;
       letter-spacing: 1.14px;
@@ -2246,7 +2246,6 @@ template {
       margin-bottom: 10px;
       font-weight: lighter; }
     .contacts .edit-modal .edit-modal-content p {
-      font-family: HelveticaNeue;
       font-size: 16px;
       color: #4A4A4A;
       letter-spacing: 1.14px;
@@ -2260,7 +2259,6 @@ template {
       color: #4A4A4A; }
   .contacts .edit-modal.edit-modal-form .form-group > label, .contacts .edit-modal.edit-modal-form .form-group-inline > label {
     /* Prénom: */
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #95999D;
     letter-spacing: 1.14px;
@@ -2274,7 +2272,6 @@ template {
     background: #FFFFFF;
     border: 1px solid #9B9B9B;
     border-radius: 2px;
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 1.14px;
@@ -2446,7 +2443,6 @@ template {
       -moz-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      font-family: HelveticaNeue;
       font-size: 24px;
       color: #32363F;
       letter-spacing: 1px;
@@ -2457,7 +2453,6 @@ template {
   .recalls .edit-modal .edit-modal-content {
     padding: 16px; }
     .recalls .edit-modal .edit-modal-content h3 {
-      font-family: HelveticaNeue;
       font-size: 16px;
       color: #95999D;
       letter-spacing: 1.14px;
@@ -2466,7 +2461,6 @@ template {
       margin-bottom: 10px;
       font-weight: lighter; }
     .recalls .edit-modal .edit-modal-content p {
-      font-family: HelveticaNeue;
       font-size: 16px;
       color: #4A4A4A;
       letter-spacing: 1.14px;
@@ -2480,7 +2474,6 @@ template {
       color: #4A4A4A; }
   .recalls .edit-modal.edit-modal-form .form-group > label, .recalls .edit-modal.edit-modal-form .form-group-inline > label {
     /* Prénom: */
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #95999D;
     letter-spacing: 1.14px;
@@ -2491,7 +2484,6 @@ template {
     background: #FFFFFF;
     border: 1px solid #9B9B9B;
     border-radius: 2px;
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 1.14px;
@@ -2581,7 +2573,7 @@ template {
     flex: 1;
     margin-left: 20px; }
     .notifications .notification .notification-content h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       font-size: 16px;
       letter-spacing: 1.1px;
       color: #4a4a4a;
@@ -2589,7 +2581,7 @@ template {
       margin-bottom: 5px;
       font-weight: normal; }
     .notifications .notification .notification-content h2 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       font-size: 16px;
       letter-spacing: 1.1px;
       color: #95999d;
@@ -2598,7 +2590,7 @@ template {
       font-weight: 300; }
     .notifications .notification .notification-content p {
       font-size: 14px;
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       letter-spacing: 1.1px;
       color: #95999d;
       margin: 0px; }
@@ -2655,7 +2647,7 @@ template {
       color: #9b9b9b;
       margin-right: 30px; }
     .collapsable .collapsable-header h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       font-size: 24px;
       letter-spacing: 1px;
       color: #32363f;
@@ -2668,7 +2660,7 @@ template {
     overflow: hidden;
     padding-left: 50px; }
     .collapsable .collapsable-content .Pensez-collecter-t {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       font-size: 14px;
       letter-spacing: 1px;
       color: #32363f;

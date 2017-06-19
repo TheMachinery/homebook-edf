@@ -12,6 +12,7 @@
     "name": "The Machinery",
     "url": "https://themachinery.fr"
   },
+  "tracking": true,
   "default_locale": "fr",
   "locales": {},
   "routes": {
