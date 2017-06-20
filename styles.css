@@ -450,7 +450,7 @@ template {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   color: #dddddd;
@@ -466,20 +466,22 @@ template {
   .button.button-assertive {
     background-color: #ff3f3a;
     color: #FFF;
-    border: 1px solid #ff2621; }
+    border: 1px solid #ff2621 !important; }
     .button.button-assertive:hover {
-      background-color: #ff5854; }
+      background-color: #ff5854 !important; }
   .button.button-stable {
     background-color: #f6f6f6;
     color: #444; }
   .button.button-default {
     background-color: #485d76;
-    color: #dddddd; }
+    color: #dddddd;
+    border: 1px solid #485d76; }
   .button.button-clear {
     background-color: transparent;
     border: none; }
   .button > i:first-child {
-    margin-right: 8px; }
+    margin-right: 8px;
+    vertical-align: middle; }
   .button.button-icon {
     display: -webkit-box;
     display: -webkit-flex;
@@ -593,7 +595,7 @@ template {
       width: 220px;
       text-align: center;
       vertical-align: bottom;
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 20px;
       font-weight: 100;
       letter-spacing: 2.6px;
@@ -634,7 +636,7 @@ template {
         height: 40px;
         border-radius: 2px;
         background-color: #485d76;
-        font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 16px;
         letter-spacing: 1px;
         color: #dddddd; }
@@ -691,7 +693,7 @@ template {
         .header .header-container .header-options ul > li {
           list-style: none; }
           .header .header-container .header-options ul > li a {
-            font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+            font-family: "Roboto", sans-serif;
             font-size: 14px;
             font-weight: normal;
             color: #dddddd;
@@ -720,7 +722,7 @@ template {
   line-height: 56px; }
   .footer .footer-container {
     padding: 0px 16px;
-    font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+    
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.9px;
@@ -864,7 +866,7 @@ template {
     list-style: none;
     padding: 15px; }
     .navigation > nav ul li a {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 16px;
       font-weight: 300;
       letter-spacing: 1px;
@@ -881,7 +883,6 @@ template {
       .navigation > nav ul li.active a i, .navigation > nav ul li:hover a i {
         color: #c8c951; }
   .navigation .gauge-container {
-    width: 160px;
     min-height: 160px;
     border: solid 1px #dddddd;
     margin: 0 auto;
@@ -900,7 +901,7 @@ template {
       height: 14px;
       background-color: #334254;
       box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);
-      margin: 0 auto; }
+      margin: 0 auto 15px; }
     .navigation .gauge-container .progress {
       height: 14px;
       background-color: #c8c951;
@@ -915,6 +916,9 @@ template {
         letter-spacing: 0.9px;
         color: #dddddd;
         margin-bottom: 18px; }
+        .navigation .gauge-container ul li a {
+          color: #fff;
+          cursor: pointer; }
 .main-content {
   padding-top: 53px;
   padding-left: 220px;
@@ -1081,7 +1085,7 @@ template {
             width: 100%;
             margin: 0px auto; }
       .documents .document-list.view-mode-grid .document .document-name {
-        font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 1.2px;
@@ -1162,7 +1166,6 @@ template {
         -ms-flex: 1;
         flex: 1; }
       .documents .document-list.view-mode-line .document .document-date {
-        font-family: "Helvetica Neue";
         font-size: 14px;
         color: #32363F;
         letter-spacing: 1.17px;
@@ -1252,7 +1255,7 @@ template {
         color: #4a4a4a;
         font-size: 30px; }
     .page .page-header h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 24px;
       letter-spacing: 1px;
       color: #32363f;
@@ -1316,7 +1319,7 @@ template {
           appearance: none;
           text-align: center;
           border: solid 1px #9b9b9b;
-          font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 14px;
           letter-spacing: 1px;
           padding: 10px 16px;
@@ -1353,13 +1356,13 @@ template {
     -ms-flex: 1;
     flex: 1; }
     .page .page-content h2 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 30px;
       letter-spacing: 1.3px;
       color: #32363f;
       font-weight: normal; }
     .page .page-content p {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 14px;
       letter-spacing: 1px;
       color: #32363f;
@@ -1407,7 +1410,7 @@ template {
     border-bottom: 1px solid #DDD;
     padding: 10px 15px; }
     .section .section-header h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 12px;
       letter-spacing: 1px;
       color: #32363f;
@@ -1487,7 +1490,6 @@ template {
       .toolBox .toolBox-content ul li {
         padding: 16px;
         cursor: pointer;
-        font-family: HelveticaNeue;
         font-size: 14px;
         color: #4A4A4A;
         letter-spacing: 1px; }
@@ -1612,7 +1614,8 @@ template {
     width: 32vw;
     max-width: 150px;
     max-height: 150px;
-    margin: 10px; }
+    margin: 10px;
+    padding: 5px 0; }
     .importer .importer-content .import-doc .image-box {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1636,7 +1639,6 @@ template {
       -moz-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      margin-top: 5px;
       width: 100%; }
       .importer .importer-content .import-doc .image-box img {
         border-radius: 5px;
@@ -1644,6 +1646,8 @@ template {
         max-height: 100%; }
     .importer .importer-content .import-doc span {
       margin: 5px 0; }
+    .importer .importer-content .import-doc select {
+      width: 90%; }
 
 .importer .importer-footer {
   display: -webkit-box;
@@ -1959,7 +1963,7 @@ template {
           display: block;
           max-width: 90%; }
     .dataList .data-list .data .data-name {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 1.2px;
@@ -1997,7 +2001,7 @@ template {
     .data-detail table .data-detail-group {
       display: table-row-group; }
       .data-detail table .data-detail-group .data-detail-group-title {
-        font-family: HelveticaNeue;
+        
         font-size: 30px;
         color: #32363F;
         letter-spacing: 1.25px;
@@ -2009,7 +2013,7 @@ template {
         .data-detail table .data-detail-group td h2, .data-detail table .data-detail-group th h2 {
           margin: 0px;
           padding: 0px;
-          font-family: HelveticaNeue;
+          
           font-size: 30px;
           color: #32363F;
           letter-spacing: 1.25px;
@@ -2019,7 +2023,6 @@ template {
       padding: 16px;
       text-align: left; }
     .data-detail table .data-detail-item th {
-      font-family: HelveticaNeue-Light;
       font-size: 14px;
       color: #32363F;
       letter-spacing: 1.17px;
@@ -2028,7 +2031,6 @@ template {
       width: 320px; }
     .data-detail table .data-detail-item td {
       /* 24/06/2017: */
-      font-family: HelveticaNeue-Medium;
       font-size: 14px;
       color: #32363F;
       letter-spacing: 1.17px;
@@ -2226,7 +2228,6 @@ template {
       -moz-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      font-family: HelveticaNeue;
       font-size: 24px;
       color: #32363F;
       letter-spacing: 1px;
@@ -2237,7 +2238,6 @@ template {
   .contacts .edit-modal .edit-modal-content {
     padding: 16px; }
     .contacts .edit-modal .edit-modal-content h3 {
-      font-family: HelveticaNeue;
       font-size: 16px;
       color: #95999D;
       letter-spacing: 1.14px;
@@ -2246,7 +2246,6 @@ template {
       margin-bottom: 10px;
       font-weight: lighter; }
     .contacts .edit-modal .edit-modal-content p {
-      font-family: HelveticaNeue;
       font-size: 16px;
       color: #4A4A4A;
       letter-spacing: 1.14px;
@@ -2260,7 +2259,6 @@ template {
       color: #4A4A4A; }
   .contacts .edit-modal.edit-modal-form .form-group > label, .contacts .edit-modal.edit-modal-form .form-group-inline > label {
     /* Prénom: */
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #95999D;
     letter-spacing: 1.14px;
@@ -2274,7 +2272,6 @@ template {
     background: #FFFFFF;
     border: 1px solid #9B9B9B;
     border-radius: 2px;
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 1.14px;
@@ -2324,6 +2321,9 @@ template {
     .contacts .edit-modal .edit-modal-header .save-button {
       display: none; } }
 @charset "UTF-8";
+.recalls .section-content {
+  padding: 15px 0; }
+
 .recalls .recall {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2347,7 +2347,7 @@ template {
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   justify-content: space-between;
-  margin: 16px 0px;
+  margin: 16px 0;
   background-color: #f6f6f6;
   border: solid 1px #cccccc;
   padding: 20px;
@@ -2366,7 +2366,7 @@ template {
   .recalls .recall .recall-icon {
     width: 30px;
     font-size: 40px;
-    margin: 0px 35px; }
+    margin: 0 35px; }
   .recalls .recall .recall-name {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -2394,14 +2394,14 @@ template {
     flex: 1;
     text-align: right;
     margin-right: 30px; }
-  .recalls .recall:hover, .recalls .recall.active {
+  .recalls .recall.active, .recalls .recall:hover {
     border: solid 1px #4a4a4a; }
-    .recalls .recall:hover .recall-checkbox, .recalls .recall.active .recall-checkbox {
+    .recalls .recall.active .recall-checkbox, .recalls .recall:hover .recall-checkbox {
       opacity: 1; }
 
 @media screen and (max-width: 767px) {
   .recalls .recall {
-    margin: 0px -16px;
+    margin: 0 -16px;
     border-left: none;
     border-right: none; }
     .recalls .recall:not(:nth-child(2)) {
@@ -2416,7 +2416,7 @@ template {
       display: none; } }
 
 .recalls .edit-modal {
-  margin: -16px -16px;
+  margin: -16px;
   border: 1px solid #DDD; }
   .recalls .edit-modal .edit-modal-header {
     background-color: #F6F6F6;
@@ -2446,52 +2446,50 @@ template {
       -moz-flex: 1;
       -ms-flex: 1;
       flex: 1;
-      font-family: HelveticaNeue;
       font-size: 24px;
       color: #32363F;
       letter-spacing: 1px;
       line-height: 40px;
       font-weight: 500; }
     .recalls .edit-modal .edit-modal-header .button {
-      margin: 0px 16px; }
+      margin: 0 16px; }
   .recalls .edit-modal .edit-modal-content {
     padding: 16px; }
     .recalls .edit-modal .edit-modal-content h3 {
-      font-family: HelveticaNeue;
       font-size: 16px;
       color: #95999D;
       letter-spacing: 1.14px;
       line-height: 24px;
-      margin: 0px;
-      margin-bottom: 10px;
+      margin: 0 0 10px;
       font-weight: lighter; }
     .recalls .edit-modal .edit-modal-content p {
-      font-family: HelveticaNeue;
       font-size: 16px;
       color: #4A4A4A;
       letter-spacing: 1.14px;
       line-height: 24px;
-      margin: 0px;
-      margin-bottom: 32px;
+      margin: 0 0 32px;
       font-weight: lighter; }
     .recalls .edit-modal .edit-modal-content p + p {
       margin-top: -32px; }
-    .recalls .edit-modal .edit-modal-content a, .recalls .edit-modal .edit-modal-content a:visited {
+    .recalls .edit-modal .edit-modal-content a,
+    .recalls .edit-modal .edit-modal-content a:visited {
       color: #4A4A4A; }
-  .recalls .edit-modal.edit-modal-form .form-group > label, .recalls .edit-modal.edit-modal-form .form-group-inline > label {
+  .recalls .edit-modal.edit-modal-form .form-group > label,
+  .recalls .edit-modal.edit-modal-form .form-group-inline > label {
     /* Prénom: */
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #95999D;
     letter-spacing: 1.14px;
     line-height: 24px;
     margin-bottom: 16px;
     display: block; }
-  .recalls .edit-modal.edit-modal-form .form-group > input, .recalls .edit-modal.edit-modal-form .form-group select, .recalls .edit-modal.edit-modal-form .form-group-inline > input, .recalls .edit-modal.edit-modal-form .form-group-inline select {
+  .recalls .edit-modal.edit-modal-form .form-group > input,
+  .recalls .edit-modal.edit-modal-form .form-group select,
+  .recalls .edit-modal.edit-modal-form .form-group-inline > input,
+  .recalls .edit-modal.edit-modal-form .form-group-inline select {
     background: #FFFFFF;
     border: 1px solid #9B9B9B;
     border-radius: 2px;
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 1.14px;
@@ -2503,14 +2501,16 @@ template {
     margin-bottom: 16px;
     box-sizing: border-box;
     height: 46px; }
-  .recalls .edit-modal.edit-modal-form .form-group select:after, .recalls .edit-modal.edit-modal-form .form-group-inline select:after {
+  .recalls .edit-modal.edit-modal-form .form-group select:after,
+  .recalls .edit-modal.edit-modal-form .form-group-inline select:after {
     content: "\F3D0";
     font-family: "Ionicons";
     display: block;
     position: absolute;
     font-size: 25px;
     right: 16px; }
-  .recalls .edit-modal.edit-modal-form .form-group .form-group-inline, .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline {
+  .recalls .edit-modal.edit-modal-form .form-group .form-group-inline,
+  .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -2533,15 +2533,533 @@ template {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between; }
-    .recalls .edit-modal.edit-modal-form .form-group .form-group-inline > input, .recalls .edit-modal.edit-modal-form .form-group .form-group-inline select, .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline > input, .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline select {
+    .recalls .edit-modal.edit-modal-form .form-group .form-group-inline > input,
+    .recalls .edit-modal.edit-modal-form .form-group .form-group-inline select,
+    .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline > input,
+    .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline select {
       margin-right: 16px; }
-      .recalls .edit-modal.edit-modal-form .form-group .form-group-inline > input:last-child, .recalls .edit-modal.edit-modal-form .form-group .form-group-inline select:last-child, .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline > input:last-child, .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline select:last-child {
-        margin-right: 0px; }
+      .recalls .edit-modal.edit-modal-form .form-group .form-group-inline > input:last-child,
+      .recalls .edit-modal.edit-modal-form .form-group .form-group-inline select:last-child,
+      .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline > input:last-child,
+      .recalls .edit-modal.edit-modal-form .form-group-inline .form-group-inline select:last-child {
+        margin-right: 0; }
   @media screen and (max-width: 767px) {
     .recalls .edit-modal .edit-modal-header .more-button,
-    .recalls .edit-modal .edit-modal-header .update-button,
-    .recalls .edit-modal .edit-modal-header .save-button {
+    .recalls .edit-modal .edit-modal-header .save-button,
+    .recalls .edit-modal .edit-modal-header .update-button {
       display: none; } }
+.rbc-btn {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button.rbc-btn {
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled].rbc-btn {
+  cursor: not-allowed;
+}
+button.rbc-input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.rbc-calendar {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.rbc-calendar *,
+.rbc-calendar *:before,
+.rbc-calendar *:after {
+  box-sizing: inherit;
+}
+.rbc-abs-full,
+.rbc-row-bg {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.rbc-ellipsis,
+.rbc-event-label,
+.rbc-row-segment .rbc-event-content,
+.rbc-show-more {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rbc-rtl {
+  direction: rtl;
+}
+.rbc-off-range {
+  color: #b3b3b3;
+}
+.rbc-header {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 3px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 90%;
+  min-height: 0;
+}
+.rbc-header > a,
+.rbc-header > a:active,
+.rbc-header > a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.rbc-row-content {
+  position: relative;
+  user-select: none;
+  z-index: 4;
+}
+.rbc-today {
+  background-color: #eaf6ff;
+}
+.rbc-toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.rbc-toolbar .rbc-toolbar-label {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+}
+.rbc-toolbar button {
+  color: #373a3c;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  background: none;
+  background-image: none;
+  border: 1px solid #ccc;
+  padding: .375rem 1rem;
+  border-radius: 4px;
+  line-height: normal;
+  white-space: nowrap;
+}
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background-image: none;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.rbc-toolbar button:active:hover,
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button:active:focus,
+.rbc-toolbar button.rbc-active:focus {
+  color: #373a3c;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.rbc-toolbar button:focus {
+  color: #373a3c;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.rbc-toolbar button:hover {
+  color: #373a3c;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.rbc-btn-group {
+  display: inline-block;
+  white-space: nowrap;
+}
+.rbc-btn-group > button:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rbc-btn-group > button:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.rbc-rtl .rbc-btn-group > button:first-child:not(:last-child) {
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.rbc-rtl .rbc-btn-group > button:last-child:not(:first-child) {
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rbc-btn-group > button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.rbc-btn-group button + button {
+  margin-left: -1px;
+}
+.rbc-rtl .rbc-btn-group button + button {
+  margin-left: 0;
+  margin-right: -1px;
+}
+.rbc-btn-group + .rbc-btn-group,
+.rbc-btn-group + button {
+  margin-left: 10px;
+}
+.rbc-event {
+  cursor: pointer;
+  padding: 2px 5px;
+  background-color: #3174ad;
+  border-radius: 5px;
+  color: #fff;
+}
+.rbc-event.rbc-selected {
+  background-color: #265985;
+}
+.rbc-event-label {
+  font-size: 80%;
+}
+.rbc-event-overlaps {
+  box-shadow: -1px 1px 5px 0px rgba(51, 51, 51, 0.5);
+}
+.rbc-event-continues-prior {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.rbc-event-continues-after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rbc-event-continues-earlier {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.rbc-event-continues-later {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rbc-row {
+  display: flex;
+  flex-direction: row;
+}
+.rbc-row-segment {
+  padding: 0 1px 1px 1px;
+}
+.rbc-selected-cell {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.rbc-show-more {
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 4;
+  font-weight: bold;
+  font-size: 85%;
+  height: auto;
+  line-height: normal;
+  white-space: nowrap;
+}
+.rbc-month-view {
+  position: relative;
+  border: 1px solid #DDD;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  width: 100%;
+  user-select: none;
+  height: 100%;
+}
+.rbc-month-view .rbc-header {
+  border-bottom: 1px solid #DDD;
+}
+.rbc-month-view .rbc-header + .rbc-header {
+  border-left: 1px solid #DDD;
+}
+.rbc-rtl .rbc-month-view .rbc-header + .rbc-header {
+  border-left-width: 0;
+  border-right: 1px solid #DDD;
+}
+.rbc-month-header {
+  display: flex;
+  flex-direction: row;
+}
+.rbc-month-row {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1 0 0;
+  overflow: hidden;
+  height: 100%;
+}
+.rbc-month-row + .rbc-month-row {
+  border-top: 1px solid #DDD;
+}
+.rbc-date-cell {
+  padding-right: 5px;
+  text-align: right;
+}
+.rbc-date-cell.rbc-now {
+  font-weight: bold;
+}
+.rbc-date-cell > a,
+.rbc-date-cell > a:active,
+.rbc-date-cell > a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.rbc-row-bg {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 0;
+  overflow: hidden;
+}
+.rbc-day-bg + .rbc-day-bg {
+  border-left: 1px solid #DDD;
+}
+.rbc-rtl .rbc-day-bg + .rbc-day-bg {
+  border-left-width: 0;
+  border-right: 1px solid #DDD;
+}
+.rbc-overlay {
+  position: absolute;
+  z-index: 5;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+}
+.rbc-overlay > * + * {
+  margin-top: 1px;
+}
+.rbc-overlay-header {
+  border-bottom: 1px solid #e5e5e5;
+  margin: -10px -10px 5px -10px;
+  padding: 2px 10px;
+}
+.rbc-agenda-view {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  overflow: auto;
+}
+.rbc-agenda-view table {
+  width: 100%;
+  border: 1px solid #DDD;
+}
+.rbc-agenda-view table tbody > tr > td {
+  padding: 5px 10px;
+  vertical-align: top;
+}
+.rbc-agenda-view table .rbc-agenda-time-cell {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: lowercase;
+}
+.rbc-agenda-view table tbody > tr > td + td {
+  border-left: 1px solid #DDD;
+}
+.rbc-rtl .rbc-agenda-view table tbody > tr > td + td {
+  border-left-width: 0;
+  border-right: 1px solid #DDD;
+}
+.rbc-agenda-view table tbody > tr + tr {
+  border-top: 1px solid #DDD;
+}
+.rbc-agenda-view table thead > tr > th {
+  padding: 3px 5px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+.rbc-rtl .rbc-agenda-view table thead > tr > th {
+  text-align: right;
+}
+.rbc-agenda-time-cell {
+  text-transform: lowercase;
+}
+.rbc-agenda-time-cell .rbc-continues-after:after {
+  content: ' \BB';
+}
+.rbc-agenda-time-cell .rbc-continues-prior:before {
+  content: '\AB   ';
+}
+.rbc-agenda-date-cell,
+.rbc-agenda-time-cell {
+  white-space: nowrap;
+}
+.rbc-agenda-event-cell {
+  width: 100%;
+}
+.rbc-time-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.rbc-time-column .rbc-timeslot-group {
+  flex: 1;
+}
+.rbc-timeslot-group {
+  border-bottom: 1px solid #DDD;
+  min-height: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.rbc-time-gutter,
+.rbc-header-gutter {
+  flex: none;
+}
+.rbc-label {
+  padding: 0 5px;
+}
+.rbc-day-slot {
+  position: relative;
+}
+.rbc-day-slot .rbc-event {
+  border: 1px solid #265985;
+  display: flex;
+  max-height: 100%;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.rbc-day-slot .rbc-event-label {
+  flex: none;
+  padding-right: 5px;
+  width: auto;
+}
+.rbc-day-slot .rbc-event-content {
+  width: 100%;
+  flex: 1 1 0;
+  word-wrap: break-word;
+  line-height: 1;
+  height: 100%;
+  min-height: 1em;
+}
+.rbc-day-slot .rbc-time-slot {
+  border-top: 1px solid #f7f7f7;
+}
+.rbc-time-slot {
+  flex: 1 0 0;
+}
+.rbc-time-slot.rbc-now {
+  font-weight: bold;
+}
+.rbc-day-header {
+  text-align: center;
+}
+.rbc-day-slot .rbc-event {
+  position: absolute;
+  z-index: 2;
+}
+.rbc-slot-selection {
+  z-index: 10;
+  position: absolute;
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 75%;
+  padding: 3px;
+}
+.rbc-time-view {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  border: 1px solid #DDD;
+  min-height: 0;
+}
+.rbc-time-view .rbc-time-gutter {
+  white-space: nowrap;
+}
+.rbc-time-view .rbc-allday-cell {
+  width: 100%;
+  position: relative;
+}
+.rbc-time-view .rbc-allday-events {
+  position: relative;
+  z-index: 4;
+}
+.rbc-time-view .rbc-row {
+  min-height: 20px;
+}
+.rbc-time-header {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+}
+.rbc-time-header.rbc-overflowing {
+  border-right: 1px solid #DDD;
+}
+.rbc-rtl .rbc-time-header.rbc-overflowing {
+  border-right-width: 0;
+  border-left: 1px solid #DDD;
+}
+.rbc-time-header > .rbc-row > * + * {
+  border-left: 1px solid #DDD;
+}
+.rbc-rtl .rbc-time-header > .rbc-row > * + * {
+  border-left-width: 0;
+  border-right: 1px solid #DDD;
+}
+.rbc-time-header > .rbc-row:first-child {
+  border-bottom: 1px solid #DDD;
+}
+.rbc-time-header .rbc-gutter-cell {
+  flex: none;
+}
+.rbc-time-header > .rbc-gutter-cell + * {
+  width: 100%;
+}
+.rbc-time-content {
+  display: flex;
+  flex: 1 0 0%;
+  align-items: flex-start;
+  width: 100%;
+  border-top: 2px solid #DDD;
+  overflow-y: auto;
+  position: relative;
+}
+.rbc-time-content > .rbc-time-gutter {
+  flex: none;
+}
+.rbc-time-content > * + * > * {
+  border-left: 1px solid #DDD;
+}
+.rbc-rtl .rbc-time-content > * + * > * {
+  border-left-width: 0;
+  border-right: 1px solid #DDD;
+}
+.rbc-time-content > .rbc-day-slot {
+  width: 100%;
+  user-select: none;
+}
+.rbc-current-time-indicator {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  height: 1px;
+  background-color: #74ad31;
+  pointer-events: none;
+}
+.rbc-current-time-indicator::before {
+  display: block;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  content: ' ';
+  background-color: #74ad31;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+.rbc-rtl .rbc-current-time-indicator::before {
+  left: 0;
+  right: -3px;
+}
 .notifications .notification {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2581,7 +3099,7 @@ template {
     flex: 1;
     margin-left: 20px; }
     .notifications .notification .notification-content h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       font-size: 16px;
       letter-spacing: 1.1px;
       color: #4a4a4a;
@@ -2589,7 +3107,7 @@ template {
       margin-bottom: 5px;
       font-weight: normal; }
     .notifications .notification .notification-content h2 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       font-size: 16px;
       letter-spacing: 1.1px;
       color: #95999d;
@@ -2598,7 +3116,7 @@ template {
       font-weight: 300; }
     .notifications .notification .notification-content p {
       font-size: 14px;
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       letter-spacing: 1.1px;
       color: #95999d;
       margin: 0px; }
@@ -2655,7 +3173,7 @@ template {
       color: #9b9b9b;
       margin-right: 30px; }
     .collapsable .collapsable-header h1 {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       font-size: 24px;
       letter-spacing: 1px;
       color: #32363f;
@@ -2668,7 +3186,7 @@ template {
     overflow: hidden;
     padding-left: 50px; }
     .collapsable .collapsable-content .Pensez-collecter-t {
-      font-family: "Helvetica Neue", Helvetica, Arial, san-serif;
+      
       font-size: 14px;
       letter-spacing: 1px;
       color: #32363f;
@@ -2800,7 +3318,42 @@ ol {
   .onboardingPanel {
     min-height: 100vh;
   }
-}@font-face {
+}.faq .section-header {
+  border-bottom: 0 none; }
+
+.faq .panel {
+  border-radius: 0; }
+
+.faq .panel-title {
+  min-height: 47px;
+  font-size: 24px;
+  margin-top: 17px; }
+
+.faq .panel-title a {
+  cursor: pointer;
+  font-style: normal !important; }
+
+.faq .panel-title a:hover {
+  text-decoration: none !important; }
+
+.faq .panel-title a[aria-expanded="false"]::before {
+  content: "\F123";
+  font-family: ionicons;
+  margin-right: 5px; }
+
+.faq .panel-title a[aria-expanded="true"]::before {
+  content: "\F126";
+  font-family: ionicons;
+  margin-right: 5px; }
+
+.faq li {
+  list-style-type: none; }
+
+.faq li h6::before {
+  content: "\F125";
+  font-family: ionicons;
+  margin-right: 5px; }
+@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 100;

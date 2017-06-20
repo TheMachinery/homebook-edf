@@ -7,11 +7,12 @@
   "licence": "AGPL-3.0",
   "source": "https://github.com/zanmi/test.git@build",
   "editor": "The Machinery",
-  "category": "PTNB",
+  "category": "ptnb",
   "developer": {
     "name": "The Machinery",
     "url": "https://themachinery.fr"
   },
+  "tracking": true,
   "default_locale": "fr",
   "locales": {},
   "routes": {
