@@ -19,21 +19,10 @@
 
 
     <!-- {{.CozyClientJS}} -->
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="http://piwik.cozycloud.cc/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '14']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- End Piwik Code -->
+    {{.CozyBar}}
+
+    <script src="//{{.Domain}}/assets/js/piwik.js" defer></script>
+
 
     <title>Homebook</title>
 </head>
@@ -44,8 +33,8 @@
      data-cozy-domain="{{.Domain}}" data-cozy-locale="{{.Locale}}" data-cozy-app-name="{{.AppName}}" data-cozy-app-editor="{{.AppEditor}}"
      data-cozy-icon-path="{{.IconPath}}" data-cozy-tracking="true"></div>
 
-{{.CozyBar}}
 
 <script src="bundle.js"></script>
+
 </body>
 </html>
