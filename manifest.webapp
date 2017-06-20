@@ -1,103 +1,119 @@
 {
-  "name": "Homebook",
-  "slug": "homebook",
-  "icon": "icon.svg",
-  "description": "Description homebook",
-  "version": "3.0.0",
-  "licence": "AGPL-3.0",
-  "source": "https://github.com/zanmi/test.git@build",
-  "editor": "The Machinery",
-  "category": "ptnb",
-  "developer": {
-    "name": "The Machinery",
-    "url": "https://themachinery.fr"
-  },
-  "tracking": true,
-  "default_locale": "fr",
-  "locales": {},
-  "routes": {
-    "/": {
-      "folder": "/",
-      "index": "index.html",
-      "public": false
+    "name": "Homebook",
+    "slug": "homebook",
+    "icon": "icon.svg",
+    "description": "Description homebook",
+    "version": "3.0.0",
+    "licence": "AGPL-3.0",
+    "source": "https://github.com/zanmi/test.git@build",
+    "editor": "The Machinery",
+    "category": "ptnb",
+    "developer": {
+        "name": "The Machinery",
+        "url": "https://themachinery.fr"
     },
-    "/Documents": {
-      "folder": "/",
-      "index": "index.html",
-      "public": false
+    "tracking": true,
+    "default_locale": "fr",
+    "locales": {},
+    "routes": {
+        "/": {
+            "folder": "/",
+            "index": "index.html",
+            "public": false
+        },
+        "/Documents": {
+            "folder": "/",
+            "index": "index.html",
+            "public": false
+        },
+        "/file": {
+            "folder": "/",
+            "index": "index.html",
+            "public": false
+        },
+        "/rappels": {
+            "folder": "/",
+            "index": "index.html",
+            "public": false
+        },
+        "/donnees": {
+            "folder": "/",
+            "index": "index.html",
+            "public": false
+        },
+        "/contacts": {
+            "folder": "/",
+            "index": "index.html",
+            "public": false
+        }
     },
-    "/file": {
-      "folder": "/",
-      "index": "index.html",
-      "public": false
-    },
-    "/rappels": {
-      "folder": "/",
-      "index": "index.html",
-      "public": false
-    },
-    "/donnees": {
-      "folder": "/",
-      "index": "index.html",
-      "public": false
-    },
-    "/contacts": {
-      "folder": "/",
-      "index": "index.html",
-      "public": false
+    "permissions": {
+        "apps": {
+            "description": "Required by the cozy-bar to display the icons of the apps",
+            "type": "io.cozy.apps",
+            "verbs": ["GET"]
+        },
+        "files": {
+            "description": "App required files access",
+            "type": "io.cozy.files"
+        },
+        "contact": {
+            "description": "App required contact access",
+            "type": "io.cozy.contacts"
+        },
+        "data-equipment": {
+            "description": "App required data equipment access",
+            "type": "com.homebook.equipment"
+        },
+        "data-work": {
+            "description": "App required data work access",
+            "type": "com.homebook.work"
+        },
+        "data-diagnosis": {
+            "description": "App required data diagnosis access",
+            "type": "com.homebook.diagnosis"
+        },
+        "data-homeData": {
+            "description": "App required data homeData access",
+            "type": "com.homebook.homeData"
+        },
+        "contacts": {
+            "description": "App required contacts access",
+            "type": "com.homebook.contacts"
+        },
+        "analytics": {
+            "description": "App required analytics access",
+            "type": "com.homebook.analytics"
+        },
+        "recalls": {
+            "description": "App required recalls access",
+            "type": "com.homebook.recalls"
+        },
+        "metas": {
+            "description": "App required metas access",
+            "type": "com.homebook.meta"
+        },
+        "mail": {
+            "description": "Required to send a congratulations email to your friends",
+            "type": "io.cozy.jobs",
+            "selector": "worker",
+            "values": ["sendmail"],
+            "verbs": ["GET", "POST"]
+        },
+        "mail-enqueue": {
+            "description": "Required to know the number of jobs in the sendmail queues",
+            "type": "io.cozy.queues",
+            "verbs": ["GET"],
+            "selector": "worker",
+            "values": ["sendmail"]
+        },
+        "mail-trigger": {
+            "description": "Required to send regularly mails from the user to his/her friends",
+            "type": "io.cozy.triggers",
+            "verbs": ["POST", "GET"],
+            "selector": "worker",
+            "values": ["sendmail"]
+        }
+
     }
-  },
-  "permissions": {
-    "apps": {
-      "description": "Required by the cozy-bar to display the icons of the apps",
-      "type": "io.cozy.apps",
-      "verbs": ["GET"]
-    },
-    "files": {
-      "description": "App required files access",
-      "type": "io.cozy.files"
-    },
-    "contact": {
-        "description" : "App required contact access",
-        "type": "io.cozy.contacts"
-    },
-    "data-equipment": {
-        "description" : "App required data equipment access",
-        "type": "com.homebook.equipment"
-    },
-    "data-work": {
-        "description" : "App required data work access",
-        "type": "com.homebook.work"
-    },
-    "data-diagnosis": {
-        "description" : "App required data diagnosis access",
-        "type": "com.homebook.diagnosis"
-    },
-    "data-homeData": {
-        "description" : "App required data homeData access",
-        "type": "com.homebook.homeData"
-    },
-    "contacts": {
-        "description" : "App required contacts access",
-        "type": "com.homebook.contacts"
-    },
-    "analytics": {
-        "description" : "App required analytics access",
-        "type": "com.homebook.analytics"
-    },
-    "recalls": {
-        "description" : "App required recalls access",
-        "type": "com.homebook.recalls"
-    },
-    "metas": {
-        "description" : "App required metas access",
-        "type": "com.homebook.meta"
-    },
-     "mail": {
-       "description": "Required to send a congratulations email to your friends",
-       "type": "io.cozy.jobs",
-       "selector": "worker",
-       "values": ["sendmail"]
-     }
-  }
 }
