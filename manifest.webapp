@@ -45,6 +45,11 @@
             "folder": "/",
             "index": "index.html",
             "public": false
+        },
+        "/corbeille": {
+            "folder": "/",
+            "index": "index.html",
+            "public": false
         }
     },
     "permissions": {
