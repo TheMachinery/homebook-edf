@@ -1503,7 +1503,7 @@ template {
       font-weight: bold;
       font-size: 50px;
       position: absolute;
-      top: 35%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 0 50px; }
@@ -1624,6 +1624,12 @@ template {
     opacity: 0; }
   .modal.modal-visible {
     opacity: 1; }
+  .modal .modal-loading {
+    width: 50px;
+    height: 100%;
+    padding: 10px 0; }
+    .modal .modal-loading img {
+      width: 100%; }
   .modal .modal-container {
     margin-top: 100px;
     margin-bottom: 16px;
