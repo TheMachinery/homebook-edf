@@ -564,7 +564,8 @@ template {
   left: 0;
   right: 0;
   height: 53px;
-  background-color: #fff; }
+  background-color: #fff;
+  font-size: 16px; }
 .header {
   position: fixed;
   top: 6px;
@@ -612,7 +613,8 @@ template {
       -moz-box-flex: 1;
       -moz-flex: 1;
       -ms-flex: 1;
-      flex: 1; }
+      flex: 1;
+      display: none; }
       .header .header-container .header-search .input {
         display: -webkit-box;
         display: -webkit-flex;
