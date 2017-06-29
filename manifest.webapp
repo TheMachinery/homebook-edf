@@ -74,6 +74,10 @@
             "description": "App required data work access",
             "type": "com.homebook.work"
         },
+        "data-maintenance": {
+            "description": "App required data maintenance access",
+            "type": "com.homebook.maintenance"
+        },
         "data-diagnosis": {
             "description": "App required data diagnosis access",
             "type": "com.homebook.diagnosis"

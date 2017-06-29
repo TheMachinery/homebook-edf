@@ -2030,7 +2030,6 @@ template {
     .data-detail table .data-detail-group {
       display: table-row-group; }
       .data-detail table .data-detail-group .data-detail-group-title {
-        
         font-size: 30px;
         color: #32363F;
         letter-spacing: 1.25px;
@@ -2042,7 +2041,6 @@ template {
         .data-detail table .data-detail-group td h2, .data-detail table .data-detail-group th h2 {
           margin: 0px;
           padding: 0px;
-          
           font-size: 30px;
           color: #32363F;
           letter-spacing: 1.25px;
@@ -2075,8 +2073,6 @@ template {
         .data-detail table .data-detail-item td input[type="text"], .data-detail table .data-detail-item td input[type="number"], .data-detail table .data-detail-item td select[type="text"], .data-detail table .data-detail-item td select[type="number"] {
           display: block;
           width: calc(100% - 32px); }
-
-/*# sourceMappingURL=DataDetails.css.map */
 .notes .note {
   display: -webkit-box;
   display: -webkit-flex;
