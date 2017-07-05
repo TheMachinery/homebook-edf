@@ -122,7 +122,14 @@
             "verbs": ["POST", "GET", "DELETE"],
             "selector": "worker",
             "values": ["sendmail"]
-        }
+        },
+		"unzip-to-a-directory": {
+			"description": "Required to unzip a file inside the cozy",
+			"type": "io.cozy.jobs",
+			"verbs": ["POST"],
+			"selector": "worker",
+			"values": ["unzip"]
+		}
 
     }
 }
