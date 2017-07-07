@@ -848,7 +848,8 @@ template {
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow: auto; }
   @media screen and (max-width: 767px) {
     .navigation {
       display: none; } }
@@ -880,7 +881,7 @@ template {
       .navigation > nav ul li.active a i, .navigation > nav ul li:hover a i {
         color: #c8c951; }
   .navigation .gauge-container {
-    min-height: 160px;
+    min-height: 200px;
     border: solid 1px #dddddd;
     margin: 0 auto;
     padding: 15px;
@@ -1820,19 +1821,17 @@ template {
 .file .pdf-viewer-box .next:hover {
   transform: translateX(7px) scale(1.05); }
 
-.file .rename-box input {
+.file .rename-box select, .file .change-type-box select {
   height: 40px;
   line-height: 40px;
   vertical-align: bottom;
-  display: inline-block;
-  font-family: monospace;
-  font-size: 24px; }
+  display: inline-block; }
 
-.file .rename-box button.button {
+.file .rename-box button.button, .file .change-type-box button.button {
   margin-left: 10px;
   padding: 0 13px;
   height: 40px; }
-  .file .rename-box button.button i {
+  .file .rename-box button.button i, .file .change-type-box button.button i {
     margin: 0;
     font-size: 33px; }
 
