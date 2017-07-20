@@ -53,11 +53,6 @@
         }
     },
     "permissions": {
-        "settings": {
-            "description": "Required by the cozy-bar display Claudy and to know which applications are coming soon",
-            "type": "io.cozy.settings",
-            "verbs": ["GET"]
-        },
         "apps": {
             "description": "Required by the cozy-bar to display the icons of the apps",
             "type": "io.cozy.apps",
@@ -128,13 +123,13 @@
             "selector": "worker",
             "values": ["sendmail"]
         },
-        "unzip-to-a-directory": {
-            "description": "Required to unzip a file inside the cozy",
-            "type": "io.cozy.jobs",
-            "verbs": ["POST"],
-            "selector": "worker",
-            "values": ["unzip"]
-        }
+		"unzip-to-a-directory": {
+			"description": "Required to unzip a file inside the cozy",
+			"type": "io.cozy.jobs",
+			"verbs": ["POST"],
+			"selector": "worker",
+			"values": ["unzip"]
+		}
 
     }
 }
