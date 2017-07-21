@@ -87,7 +87,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".DocumentList-list__V0eP {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.DocumentList-content__3ZaV img {\n  height: 100%;\n  display: block; }\n\n.DocumentList-checkbox__2fD2 {\n  font-size: 24px;\n  color: #32363F; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-content__3ZaV, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-content__3ZaV {\n  background-color: #334254; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-name__3WJV, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-name__3WJV {\n  background-color: #334254;\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-contact__3nhy, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-contact__3nhy {\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-date__YaSO, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-date__YaSO {\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-checkbox__2fD2, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-checkbox__2fD2 {\n  display: block;\n  color: white; }\n\n.DocumentList-viewList__1XNq {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .DocumentList-viewList__1XNq .DocumentList-document__Ukdd {\n    cursor: pointer;\n    margin: 16px 0 0;\n    padding: 16px;\n    background: #F6F6F6;\n    border: 1px solid #CCCCCC;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB {\n      background-color: #334254; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-content__3ZaV {\n      height: 51px;\n      margin: 0 16px; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-name__3WJV {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-contact__3nhy {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: justify;\n          -ms-flex-pack: justify;\n              justify-content: space-between; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-date__YaSO {\n      font-size: 14px;\n      color: #32363F;\n      letter-spacing: 1.17px;\n      font-weight: 100; }\n\n.DocumentList-viewGrid__3dY6 {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap; }\n  .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd {\n    max-width: 140px;\n    margin: 16px;\n    position: relative; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-checkbox__2fD2 {\n      display: none;\n      position: absolute;\n      top: 2px;\n      left: 7px;\n      z-index: 10; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd:hover .DocumentList-checkbox__2fD2 {\n      display: block; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-content__3ZaV {\n      width: 50vw;\n      height: 50vw;\n      max-width: 140px;\n      max-height: 140px;\n      background-color: #f6f6f6;\n      border: solid 1px #cccccc;\n      overflow: hidden;\n      cursor: pointer;\n      margin-bottom: 16px;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n      .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-content__3ZaV img {\n        width: 70%;\n        height: auto; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-name__3WJV {\n      font-family: \"Roboto\", sans-serif;\n      font-size: 14px;\n      font-weight: 500;\n      letter-spacing: 1.2px;\n      text-align: center;\n      color: #32363f;\n      white-space: nowrap;\n      overflow: hidden;\n      -o-text-overflow: ellipsis;\n         text-overflow: ellipsis; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-date__YaSO {\n      display: none; }\n\n.DocumentList-dateText__S2kl {\n  display: none; }\n  @media (min-width: 770px) {\n    .DocumentList-dateText__S2kl {\n      display: inline; } }\n", ""]);
+exports.push([module.i, ".DocumentList-list__V0eP {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.DocumentList-content__3ZaV img {\n  height: 100%;\n  display: block; }\n\n.DocumentList-checkbox__2fD2 {\n  font-size: 24px;\n  color: #32363F; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-content__3ZaV, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-content__3ZaV {\n  background-color: #334254; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-name__3WJV, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-name__3WJV {\n  background-color: #334254;\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-contact__3nhy, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-contact__3nhy {\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-date__YaSO, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-date__YaSO {\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-checkbox__2fD2, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-checkbox__2fD2 {\n  display: block;\n  color: white; }\n\n.DocumentList-viewList__1XNq {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .DocumentList-viewList__1XNq .DocumentList-document__Ukdd {\n    cursor: pointer;\n    margin: 16px 0 0;\n    padding: 16px;\n    background: #F6F6F6;\n    border: 1px solid #CCCCCC;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB {\n      background-color: #334254; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-content__3ZaV {\n      height: 51px;\n      margin: 0 16px; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-name__3WJV {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-contact__3nhy {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: justify;\n          -ms-flex-pack: justify;\n              justify-content: space-between; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-date__YaSO {\n      font-size: 14px;\n      color: #32363F;\n      letter-spacing: 1.17px;\n      font-weight: 100; }\n\n.DocumentList-viewGrid__3dY6 {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap; }\n  .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd {\n    max-width: 140px;\n    margin: 16px;\n    position: relative; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-checkbox__2fD2 {\n      display: none;\n      position: absolute;\n      top: 2px;\n      left: 7px;\n      z-index: 10; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd:hover .DocumentList-checkbox__2fD2 {\n      display: block; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-content__3ZaV {\n      width: 50vw;\n      height: 50vw;\n      max-width: 140px;\n      max-height: 140px;\n      background-color: #f6f6f6;\n      border: solid 1px #cccccc;\n      overflow: hidden;\n      cursor: pointer;\n      margin-bottom: 16px;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n      .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-content__3ZaV img {\n        width: 70%;\n        height: auto; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-name__3WJV {\n      font-family: \"Roboto\", sans-serif;\n      font-size: 14px;\n      font-weight: 500;\n      letter-spacing: 1.2px;\n      text-align: center;\n      color: #32363f;\n      white-space: nowrap;\n      overflow: hidden;\n      -o-text-overflow: ellipsis;\n         text-overflow: ellipsis; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-contact__3nhy {\n      display: none; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-date__YaSO {\n      display: none; }\n\n.DocumentList-dateText__S2kl {\n  display: none; }\n  @media (min-width: 770px) {\n    .DocumentList-dateText__S2kl {\n      display: inline; } }\n", ""]);
 
 // exports
 exports.locals = {
@@ -1037,7 +1037,7 @@ var dataRemove = exports.dataRemove = function dataRemove(doctype, data) {
     }();
 };
 
-var dataRestore = exports.dataRestore = function dataRestore(doctype, data) {
+var dataRestore = exports.dataRestore = function dataRestore(data) {
     return function () {
         var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(dispatch, getState) {
             var restored, _iteratorNormalCompletion2, _didIteratorError2, _iteratorError2, _iterator2, _step2, d;
@@ -1064,7 +1064,7 @@ var dataRestore = exports.dataRestore = function dataRestore(doctype, data) {
                             d = _step2.value;
                             _context2.t0 = restored;
                             _context2.next = 13;
-                            return cozy.client.data.updateAttributes(doctype, d._id, { trash: false });
+                            return cozy.client.data.updateAttributes(d.doctype, d._id, { trash: false });
 
                         case 13:
                             _context2.t1 = _context2.sent;
@@ -2715,6 +2715,8 @@ var _constants = __webpack_require__("./src/constants/index.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 var LOAD_DOCS = exports.LOAD_DOCS = "LOAD_DOCS";
@@ -3060,50 +3062,134 @@ var createLoader = function createLoader(action, actionSuccess, actionFailure, d
 var loadTrash = exports.loadTrash = function loadTrash() {
     return function () {
         var _ref6 = _asyncToGenerator(regeneratorRuntime.mark(function _callee6(dispatch, getState) {
-            var files, result, contacts;
-            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+            var files, result, contacts, data, _loop, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, infos;
+
+            return regeneratorRuntime.wrap(function _callee6$(_context7) {
                 while (1) {
-                    switch (_context6.prev = _context6.next) {
+                    switch (_context7.prev = _context7.next) {
                         case 0:
                             dispatch({
                                 type: LOAD_TRASH
                             });
-                            _context6.prev = 1;
-                            _context6.next = 4;
+                            _context7.prev = 1;
+                            _context7.next = 4;
                             return cozy.client.files.listTrash();
 
                         case 4:
-                            files = _context6.sent;
-                            _context6.next = 7;
+                            files = _context7.sent;
+                            _context7.next = 7;
                             return getDataElements(_constants.DOCTYPE_CONTACTS);
 
                         case 7:
-                            result = _context6.sent;
+                            result = _context7.sent;
                             contacts = result.filter(function (c) {
                                 return c.trash;
                             });
-                            return _context6.abrupt('return', dispatch({
+                            data = [];
+                            _loop = regeneratorRuntime.mark(function _loop(infos) {
+                                var result, newData;
+                                return regeneratorRuntime.wrap(function _loop$(_context6) {
+                                    while (1) {
+                                        switch (_context6.prev = _context6.next) {
+                                            case 0:
+                                                _context6.next = 2;
+                                                return getDataElements(infos.doctype);
+
+                                            case 2:
+                                                result = _context6.sent;
+                                                newData = result.filter(function (c) {
+                                                    return c.trash;
+                                                }).map(function (d) {
+                                                    d.doctype = infos.doctype;return d;
+                                                });
+
+                                                data.push.apply(data, _toConsumableArray(newData));
+
+                                            case 5:
+                                            case 'end':
+                                                return _context6.stop();
+                                        }
+                                    }
+                                }, _loop, undefined);
+                            });
+                            _iteratorNormalCompletion = true;
+                            _didIteratorError = false;
+                            _iteratorError = undefined;
+                            _context7.prev = 14;
+                            _iterator = _constants.DATA_LIST[Symbol.iterator]();
+
+                        case 16:
+                            if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
+                                _context7.next = 22;
+                                break;
+                            }
+
+                            infos = _step.value;
+                            return _context7.delegateYield(_loop(infos), 't0', 19);
+
+                        case 19:
+                            _iteratorNormalCompletion = true;
+                            _context7.next = 16;
+                            break;
+
+                        case 22:
+                            _context7.next = 28;
+                            break;
+
+                        case 24:
+                            _context7.prev = 24;
+                            _context7.t1 = _context7['catch'](14);
+                            _didIteratorError = true;
+                            _iteratorError = _context7.t1;
+
+                        case 28:
+                            _context7.prev = 28;
+                            _context7.prev = 29;
+
+                            if (!_iteratorNormalCompletion && _iterator.return) {
+                                _iterator.return();
+                            }
+
+                        case 31:
+                            _context7.prev = 31;
+
+                            if (!_didIteratorError) {
+                                _context7.next = 34;
+                                break;
+                            }
+
+                            throw _iteratorError;
+
+                        case 34:
+                            return _context7.finish(31);
+
+                        case 35:
+                            return _context7.finish(28);
+
+                        case 36:
+                            return _context7.abrupt('return', dispatch({
                                 type: LOAD_TRASH_SUCCESS,
                                 files: files.map(function (c) {
                                     return (0, _tools.extractFileAttributes)(c);
                                 }),
-                                contacts: contacts
+                                contacts: contacts,
+                                data: data
                             }));
 
-                        case 12:
-                            _context6.prev = 12;
-                            _context6.t0 = _context6['catch'](1);
-                            return _context6.abrupt('return', dispatch({
+                        case 39:
+                            _context7.prev = 39;
+                            _context7.t2 = _context7['catch'](1);
+                            return _context7.abrupt('return', dispatch({
                                 type: LOAD_TRASH_FAILURE,
-                                error: _context6.t0
+                                error: _context7.t2
                             }));
 
-                        case 15:
+                        case 42:
                         case 'end':
-                            return _context6.stop();
+                            return _context7.stop();
                     }
                 }
-            }, _callee6, undefined, [[1, 12]]);
+            }, _callee6, undefined, [[1, 39], [14, 24, 28, 36], [29,, 31, 35]]);
         }));
 
         return function (_x12, _x13) {
@@ -3354,7 +3440,7 @@ var recallsSave = exports.recallsSave = function recallsSave(id, data) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.trashEmpty = exports.trashSelectAll = exports.trashSelectDocument = exports.trashSelectContact = exports.trashChangeViewMode = exports.TRASH_SELECT_ALL = exports.TRASH_SELECT_CONTACT = exports.TRASH_SELECT_DOCUMENT = exports.TRASH_CHANGE_VIEW_MODE = exports.TRASH_EMPTY_FAILURE = exports.TRASH_EMPTY_SUCCESS = exports.TRASH_EMPTY = undefined;
+exports.trashEmpty = exports.trashSelectAll = exports.trashSelectData = exports.trashSelectDocument = exports.trashSelectContact = exports.trashChangeViewMode = exports.TRASH_SELECT_ALL = exports.TRASH_SELECT_DATA = exports.TRASH_SELECT_CONTACT = exports.TRASH_SELECT_DOCUMENT = exports.TRASH_CHANGE_VIEW_MODE = exports.TRASH_EMPTY_FAILURE = exports.TRASH_EMPTY_SUCCESS = exports.TRASH_EMPTY = undefined;
 
 var _constants = __webpack_require__("./src/constants/index.js");
 
@@ -3366,6 +3452,7 @@ var TRASH_EMPTY_FAILURE = exports.TRASH_EMPTY_FAILURE = "TRASH_EMPTY_FAILURE";
 var TRASH_CHANGE_VIEW_MODE = exports.TRASH_CHANGE_VIEW_MODE = "TRASH_CHANGE_VIEW_MODE";
 var TRASH_SELECT_DOCUMENT = exports.TRASH_SELECT_DOCUMENT = "TRASH_SELECT_DOCUMENT";
 var TRASH_SELECT_CONTACT = exports.TRASH_SELECT_CONTACT = "TRASH_SELECT_CONTACT";
+var TRASH_SELECT_DATA = exports.TRASH_SELECT_DATA = "TRASH_SELECT_DATA";
 var TRASH_SELECT_ALL = exports.TRASH_SELECT_ALL = "TRASH_SELECT_ALL";
 
 var trashChangeViewMode = exports.trashChangeViewMode = function trashChangeViewMode() {
@@ -3386,6 +3473,12 @@ var trashSelectDocument = exports.trashSelectDocument = function trashSelectDocu
     };
 };
 
+var trashSelectData = exports.trashSelectData = function trashSelectData(data) {
+    return {
+        type: TRASH_SELECT_DATA, data: data
+    };
+};
+
 var trashSelectAll = exports.trashSelectAll = function trashSelectAll(count) {
     return {
         type: TRASH_SELECT_ALL, count: count
@@ -3395,7 +3488,7 @@ var trashSelectAll = exports.trashSelectAll = function trashSelectAll(count) {
 var trashEmpty = exports.trashEmpty = function trashEmpty() {
     return function () {
         var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(dispatch, getState) {
-            var contacts, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, contact;
+            var contacts, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, contact, data, _iteratorNormalCompletion2, _didIteratorError2, _iteratorError2, _iterator2, _step2, d;
 
             return regeneratorRuntime.wrap(function _callee$(_context) {
                 while (1) {
@@ -3466,23 +3559,80 @@ var trashEmpty = exports.trashEmpty = function trashEmpty() {
                             return _context.finish(23);
 
                         case 31:
+                            data = getState().trash.data;
+                            _iteratorNormalCompletion2 = true;
+                            _didIteratorError2 = false;
+                            _iteratorError2 = undefined;
+                            _context.prev = 35;
+                            _iterator2 = data[Symbol.iterator]();
+
+                        case 37:
+                            if (_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done) {
+                                _context.next = 44;
+                                break;
+                            }
+
+                            d = _step2.value;
+                            _context.next = 41;
+                            return cozy.client.data.delete(d.doctype, d);
+
+                        case 41:
+                            _iteratorNormalCompletion2 = true;
+                            _context.next = 37;
+                            break;
+
+                        case 44:
+                            _context.next = 50;
+                            break;
+
+                        case 46:
+                            _context.prev = 46;
+                            _context.t1 = _context["catch"](35);
+                            _didIteratorError2 = true;
+                            _iteratorError2 = _context.t1;
+
+                        case 50:
+                            _context.prev = 50;
+                            _context.prev = 51;
+
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+
+                        case 53:
+                            _context.prev = 53;
+
+                            if (!_didIteratorError2) {
+                                _context.next = 56;
+                                break;
+                            }
+
+                            throw _iteratorError2;
+
+                        case 56:
+                            return _context.finish(53);
+
+                        case 57:
+                            return _context.finish(50);
+
+                        case 58:
                             return _context.abrupt("return", dispatch({
                                 type: TRASH_EMPTY_SUCCESS
                             }));
 
-                        case 34:
-                            _context.prev = 34;
-                            _context.t1 = _context["catch"](1);
+                        case 61:
+                            _context.prev = 61;
+                            _context.t2 = _context["catch"](1);
                             return _context.abrupt("return", dispatch({
                                 type: TRASH_EMPTY_FAILURE
                             }));
 
-                        case 37:
+                        case 64:
                         case "end":
                             return _context.stop();
                     }
                 }
-            }, _callee, undefined, [[1, 34], [8, 19, 23, 31], [24,, 26, 30]]);
+            }, _callee, undefined, [[1, 61], [8, 19, 23, 31], [24,, 26, 30], [35, 46, 50, 58], [51,, 53, 57]]);
         }));
 
         return function (_x, _x2) {
@@ -3672,16 +3822,20 @@ var ContactList = exports.ContactList = function ContactList(props) {
                 ),
                 _react2.default.createElement(
                     'div',
-                    {
-                        className: _DocumentList2.default.contact,
-                        title: item.lastName },
+                    { className: _DocumentList2.default.name, title: item.firstName + " " + item.lastName },
                     _react2.default.createElement(
                         'span',
                         null,
                         item.firstName,
                         ' ',
                         item.lastName
-                    ),
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    {
+                        className: _DocumentList2.default.contact,
+                        title: item.email },
                     _react2.default.createElement(
                         'span',
                         null,
@@ -4045,22 +4199,27 @@ var Data = function (_Component) {
             console.log('Not implemented');
         }
     }, {
+        key: 'remove',
+        value: function remove() {
+            console.log('Not implemented');
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this2 = this;
 
             var loading = !this.props.current;
 
-            var download = _react2.default.createElement(
+            var remove = _react2.default.createElement(
                 'button',
                 { onClick: function onClick() {
-                        return _this2.download();
-                    }, className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable), title: 'T\xE9l\xE9charger' },
-                _react2.default.createElement('i', { className: 'ion-ios-cloud-download-outline' }),
+                        return _this2.remove();
+                    }, className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.assertive), title: 'Supprimer' },
+                _react2.default.createElement('i', { className: 'ion-ios-trash-outline' }),
                 _react2.default.createElement(
                     'span',
                     { className: _buttons2.default.text },
-                    'TELECHARGER'
+                    'SUPPRIMER'
                 )
             );
 
@@ -4070,7 +4229,7 @@ var Data = function (_Component) {
             return _react2.default.createElement(
                 _Page2.default,
                 { title: title, subtitle: '',
-                    actions: [download],
+                    actions: [remove],
                     onBackPress: function onBackPress() {
                         return _this2.props.history.goBack();
                     } },
@@ -5346,7 +5505,7 @@ var Footer = exports.Footer = function Footer(props) {
             'div',
             { className: _Footer2.default.content },
             'HOMEBOOK est un service propos\xE9 par edf - V',
-            '2.0.22'
+            '2.0.23'
         )
     );
 };
@@ -8397,6 +8556,10 @@ var _ContactList = __webpack_require__("./src/components/elements/ContactList.js
 
 var _ContactList2 = _interopRequireDefault(_ContactList);
 
+var _DataList = __webpack_require__("./src/components/elements/DataList.jsx");
+
+var _DataList2 = _interopRequireDefault(_DataList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8428,8 +8591,8 @@ var Trash = function (_Component) {
     }, {
         key: 'componentWillReceiveProps',
         value: function componentWillReceiveProps(newProps) {
-            if (newProps.contacts !== undefined && newProps.files !== undefined && newProps.count !== undefined) {
-                if (newProps.contacts.length + newProps.files.length !== newProps.count) newProps.onLoadTrash();
+            if (newProps.contacts !== undefined && newProps.files !== undefined && newProps.data !== undefined && newProps.count !== undefined) {
+                if (newProps.contacts.length + newProps.files.length + newProps.data.length !== newProps.count) newProps.onLoadTrash();
             } else {
                 newProps.onLoadTrash();
             }
@@ -8451,6 +8614,11 @@ var Trash = function (_Component) {
                 return f.selected;
             });
             if (selectedContacts.length > 0) this.props.onRestoreContacts(selectedContacts);
+
+            var selectedData = this.props.data.filter(function (f) {
+                return f.selected;
+            });
+            if (selectedData.length > 0) this.props.onRestoreData(selectedData);
         }
     }, {
         key: 'render',
@@ -8460,6 +8628,7 @@ var Trash = function (_Component) {
             var _props = this.props,
                 files = _props.files,
                 contacts = _props.contacts,
+                data = _props.data,
                 count = _props.count,
                 selectedCount = _props.selectedCount,
                 status = _props.status;
@@ -8551,6 +8720,18 @@ var Trash = function (_Component) {
                         contacts
                     ),
                     !loading && contacts.length === 0 && "Aucun contact"
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'data' },
+                    !loading && data.length > 0 && _react2.default.createElement(
+                        _DataList2.default,
+                        { view: this.props.viewMode, onClickItem: function onClickItem(item) {
+                                _this2.props.onSelectData(item);
+                            } },
+                        data
+                    ),
+                    !loading && data.length === 0 && "Aucune donnée"
                 )
             );
         }
@@ -11982,6 +12163,7 @@ var mapStateToProps = function mapStateToProps(state) {
     return {
         files: state.trash.files,
         contacts: state.trash.contacts,
+        data: state.trash.data,
         count: state.trash.elementCount,
         viewMode: state.viewMode,
         selectedCount: state.trash.selectedCount,
@@ -12002,11 +12184,17 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
         onRestoreContacts: function onRestoreContacts(contacts) {
             dispatch((0, _actions.contactsRestore)(contacts));
         },
+        onRestoreData: function onRestoreData(data) {
+            dispatch((0, _actions.dataRestore)(data));
+        },
         onSelectContact: function onSelectContact(contact) {
             dispatch((0, _actions.trashSelectContact)(contact));
         },
         onSelectFile: function onSelectFile(file) {
             dispatch((0, _actions.trashSelectDocument)(file));
+        },
+        onSelectData: function onSelectData(data) {
+            dispatch((0, _actions.trashSelectData)(data));
         },
         onLoadTrash: function onLoadTrash() {
             dispatch((0, _actions.loadTrash)());
@@ -12126,7 +12314,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[role=application]');
     var data = root.dataset;
 
-    console.log('Current Version:', '2.0.22');
+    console.log('Current Version:', '2.0.23');
 
     window.cozy.client.init({
         cozyURL: '//' + data.cozyDomain,
@@ -12959,12 +13147,14 @@ var elementCount = function elementCount() {
 
     switch (action.type) {
         case _actions.LOAD_TRASH_SUCCESS:
-            return action.files.length + action.contacts.length;
+            return action.files.length + action.contacts.length + action.data.length;
         case _actions.CONTACTS_REMOVE_SUCCESS:
         case _actions.DOCUMENTS_REMOVE_SUCCESS:
+        case _actions.DATA_REMOVE_SUCCESS:
             return state + 1;
         case _actions.DOCUMENTS_RESTORE_SUCCESS:
         case _actions.CONTACTS_RESTORE_SUCCESS:
+        case _actions.DATA_RESTORE_SUCCESS:
             return state - action.ids.length;
         case _actions.TRASH_EMPTY_SUCCESS:
             return 0;
@@ -12981,12 +13171,15 @@ var selectedCount = function selectedCount() {
         case _actions.LOAD_TRASH_SUCCESS:
         case _actions.DOCUMENTS_RESTORE_SUCCESS:
         case _actions.CONTACTS_RESTORE_SUCCESS:
+        case _actions.DATA_RESTORE_SUCCESS:
         case _actions.TRASH_EMPTY_SUCCESS:
             return 0;
         case _actions.TRASH_SELECT_CONTACT:
             if (action.contact.selected) return state - 1;else return state + 1;
         case _actions.TRASH_SELECT_DOCUMENT:
             if (action.document.selected) return state - 1;else return state + 1;
+        case _actions.TRASH_SELECT_DATA:
+            if (action.data.selected) return state - 1;else return state + 1;
         case _actions.TRASH_SELECT_ALL:
             return action.count;
         default:
@@ -13054,6 +13247,36 @@ var contacts = function contacts() {
     }
 };
 
+var data = function data() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var action = arguments[1];
+
+    switch (action.type) {
+        case _actions.LOAD_TRASH_SUCCESS:
+            return action.data;
+        case _actions.DATA_RESTORE_SUCCESS:
+            return state.filter(function (f) {
+                return action.ids.indexOf(f._id) === -1;
+            });
+        case _actions.TRASH_EMPTY_SUCCESS:
+            return [];
+        case _actions.TRASH_SELECT_DATA:
+            var updated = state.map(function (f) {
+                if (f._id === action.data._id) f.selected = !f.selected;
+                return f;
+            });
+            return [].concat(_toConsumableArray(updated));
+        case _actions.TRASH_SELECT_ALL:
+            var selected = state.map(function (f) {
+                f.selected = !f.selected;
+                return f;
+            });
+            return [].concat(_toConsumableArray(selected));
+        default:
+            return state;
+    }
+};
+
 var fetchStatus = function fetchStatus() {
     var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _constants.STATUS_LOAD;
     var action = arguments[1];
@@ -13099,6 +13322,7 @@ exports.default = (0, _redux.combineReducers)({
     selectedCount: selectedCount,
     files: files,
     contacts: contacts,
+    data: data,
     fetchStatus: fetchStatus,
     lastFetch: lastFetch
 });
