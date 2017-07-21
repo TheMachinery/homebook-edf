@@ -7063,7 +7063,7 @@ var CustomLink = exports.CustomLink = function CustomLink(props) {
     return _react2.default.createElement(
         'a',
         { className: active && activeClassName, onClick: function onClick(e) {
-                return open(e);
+                console.log('Click link', e);open(e);
             } },
         children
     );
