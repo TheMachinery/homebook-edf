@@ -8,7 +8,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Roboto-Thin';\n  font-style: normal;\n  font-weight: 100;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Thin.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-ThinItalic';\n  font-style: italic;\n  font-weight: 100;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-ThinItalic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Light';\n  font-style: normal;\n  font-weight: 300;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Light.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-LightItalic';\n  font-style: italic;\n  font-weight: 300;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-LightItalic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Regular.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Italic';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Italic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Bold';\n  font-style: normal;\n  font-weight: 700;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Bold.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-BoldItalic';\n  font-style: italic;\n  font-weight: 700;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-BoldItalic.ttf") + ") format(\"truetype\"); }\n\nhtml {\n  font-size: 16px !important;\n  min-width: 320px; }\n\nhtml, body {\n  height: 100vh; }\n\nbody, [role='application'] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  min-height: 0; }\n\n[role='application'] {\n  height: 100%; }\n\nul {\n  list-style: none; }\n\n.App-app__3svT {\n  font-family: \"Roboto\", sans-serif;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n  width: 100%;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  min-height: 0; }\n\n.App-container__2W5H {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  min-height: 0; }\n\n.App-page__MJPX {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  overflow: auto; }\n  .App-page__MJPX::-webkit-scrollbar {\n    width: 5px; }\n  .App-page__MJPX::-webkit-scrollbar-thumb {\n    border-radius: 2px;\n    padding: 0 1px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n    background-color: rgba(0, 0, 0, 0.3); }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Roboto-Thin';\n  font-style: normal;\n  font-weight: 100;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Thin.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-ThinItalic';\n  font-style: italic;\n  font-weight: 100;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-ThinItalic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Light';\n  font-style: normal;\n  font-weight: 300;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Light.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-LightItalic';\n  font-style: italic;\n  font-weight: 300;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-LightItalic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Regular.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Italic';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Italic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Bold';\n  font-style: normal;\n  font-weight: 700;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Bold.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-BoldItalic';\n  font-style: italic;\n  font-weight: 700;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-BoldItalic.ttf") + ") format(\"truetype\"); }\n\nhtml {\n  font-size: 16px !important;\n  min-width: 320px; }\n\nhtml, body {\n  height: 100vh; }\n\nbody, [role='application'] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  min-height: 0; }\n\n[role='application'] {\n  height: 100%; }\n\nul {\n  list-style: none; }\n\n.App-app__3svT {\n  font-family: \"Roboto\", sans-serif;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n  width: 100%;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  min-height: 0; }\n\n.App-container__2W5H {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  min-height: 0; }\n\n.App-page__MJPX {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  overflow-y: auto; }\n  .App-page__MJPX::-webkit-scrollbar {\n    width: 5px; }\n  .App-page__MJPX::-webkit-scrollbar-thumb {\n    border-radius: 2px;\n    padding: 0 1px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n    background-color: rgba(0, 0, 0, 0.3); }\n", ""]);
 
 // exports
 exports.locals = {
@@ -171,7 +171,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".ImporterModal-main__Uczi {\n  width: 50vw;\n  background: #FFF;\n  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);\n  padding: 16px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  margin-bottom: 40px; }\n\n.ImporterModal-header__1pmB {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.ImporterModal-content__3bw_ {\n  padding: 25px 0; }\n\n.ImporterModal-footer__15IO {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap; }\n\n.ImporterModal-dropzone___4oV {\n  height: 355px;\n  width: 100%;\n  overflow: auto;\n  border-color: grey;\n  border-width: 2px;\n  border-style: dashed;\n  border-radius: 5px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 5px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin-top: 5px;\n  position: relative; }\n  .ImporterModal-dropzone___4oV.ImporterModal-active__1s_c {\n    border-color: steelblue;\n    background-color: rgba(10, 158, 200, 0.1); }\n\n.ImporterModal-message__2mUN {\n  text-align: center;\n  text-transform: uppercase;\n  color: rgba(0, 0, 0, 0.3);\n  font-weight: bold;\n  font-size: 50px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  padding: 0 50px;\n  width: 100%; }\n\n.ImporterModal-doc__2F9X {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border: 1px solid grey;\n  border-radius: 10px;\n  height: 32vw;\n  width: 32vw;\n  max-width: 150px;\n  max-height: 190px;\n  margin: 10px;\n  padding: 5px 0; }\n\n.ImporterModal-image__3Plu {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%; }\n  .ImporterModal-image__3Plu img {\n    border-radius: 5px;\n    max-width: 85%;\n    max-height: 100%;\n    width: 100%; }\n\n.ImporterModal-docName__VdOL {\n  margin: 5px 0;\n  overflow: hidden;\n  max-width: 130px; }\n\n.ImporterModal-select__2_KF {\n  width: 90%; }\n", ""]);
+exports.push([module.i, ".ImporterModal-main__Uczi {\n  width: 100vw;\n  max-width: 600px;\n  background: #FFF;\n  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);\n  padding: 16px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  margin-bottom: 40px; }\n\n.ImporterModal-header__1pmB {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.ImporterModal-content__3bw_ {\n  padding: 25px 0; }\n\n.ImporterModal-footer__15IO {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap; }\n\n.ImporterModal-dropzone___4oV {\n  height: 355px;\n  width: 100%;\n  overflow: auto;\n  border-color: grey;\n  border-width: 2px;\n  border-style: dashed;\n  border-radius: 5px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 5px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin-top: 5px;\n  position: relative; }\n  .ImporterModal-dropzone___4oV.ImporterModal-active__1s_c {\n    border-color: steelblue;\n    background-color: rgba(10, 158, 200, 0.1); }\n\n.ImporterModal-message__2mUN {\n  text-align: center;\n  text-transform: uppercase;\n  color: rgba(0, 0, 0, 0.3);\n  font-weight: bold;\n  font-size: 50px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  width: 100%;\n  max-width: 250px; }\n\n.ImporterModal-doc__2F9X {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border: 1px solid grey;\n  border-radius: 10px;\n  height: 32vw;\n  width: 32vw;\n  max-width: 150px;\n  max-height: 190px;\n  margin: 10px;\n  padding: 5px 0; }\n\n.ImporterModal-image__3Plu {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%; }\n  .ImporterModal-image__3Plu img {\n    border-radius: 5px;\n    max-width: 85%;\n    max-height: 100%;\n    width: 100%; }\n\n.ImporterModal-docName__VdOL {\n  margin: 5px 0;\n  overflow: hidden;\n  max-width: 130px; }\n\n.ImporterModal-select__2_KF {\n  width: 90%; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -493,6 +493,10 @@ var _Trash = __webpack_require__("./src/containers/Trash.js");
 
 var _Trash2 = _interopRequireDefault(_Trash);
 
+var _Data = __webpack_require__("./src/containers/Data.js");
+
+var _Data2 = _interopRequireDefault(_Data);
+
 var _Preferences = __webpack_require__("./src/components/elements/Preferences.jsx");
 
 var _Preferences2 = _interopRequireDefault(_Preferences);
@@ -507,9 +511,7 @@ var _About2 = _interopRequireDefault(_About);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import SearchBar from './components/SearchBar'
-
-// import createHistory from 'history/createBrowserHistory'
+//Piwik tracker
 var App = function App(props) {
 
     var history = (0, _createHashHistory2.default)();
@@ -545,6 +547,7 @@ var App = function App(props) {
                         null,
                         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Onboarding2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/Documents/:path*', component: _Documents2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/data/:slug/:id', component: _Data2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/donnees', component: WIP }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/contacts', component: _Contacts2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/rappels', component: _Recalls2.default }),
@@ -560,12 +563,13 @@ var App = function App(props) {
         )
     );
 };
-// import Data from './components/Data'
 
 // import Notifications from './components/Notifications'
 
 
-//Piwik tracker
+// import SearchBar from './components/SearchBar'
+
+// import createHistory from 'history/createBrowserHistory'
 
 
 var WIP = function WIP(props) {
@@ -925,6 +929,9 @@ var DATA_RESTORE = exports.DATA_RESTORE = "DATA_RESTORE";
 var DATA_RESTORE_SUCCESS = exports.DATA_RESTORE_SUCCESS = "DATA_RESTORE_SUCCESS";
 var DATA_RESTORE_FAILURE = exports.DATA_RESTORE_FAILURE = "DATA_RESTORE_FAILURE";
 var DATA_SELECT = exports.DATA_SELECT = "DATA_SELECT";
+var DATA_LOAD = exports.DATA_LOAD = "DATA_LOAD";
+var DATA_LOAD_SUCCESS = exports.DATA_LOAD_SUCCESS = "DATA_LOAD_SUCCESS";
+var DATA_LOAD_FAILURE = exports.DATA_LOAD_FAILURE = "DATA_LOAD_FAILURE";
 
 var dataSelect = exports.dataSelect = function dataSelect(data) {
     return {
@@ -935,6 +942,8 @@ var dataSelect = exports.dataSelect = function dataSelect(data) {
 var dataRemove = exports.dataRemove = function dataRemove(doctype, data) {
     return function () {
         var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(dispatch, getState) {
+            var removed, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, d;
+
             return regeneratorRuntime.wrap(function _callee$(_context) {
                 while (1) {
                     switch (_context.prev = _context.next) {
@@ -942,23 +951,84 @@ var dataRemove = exports.dataRemove = function dataRemove(doctype, data) {
                             dispatch({ type: DATA_REMOVE, data: data, doctype: doctype });
 
                             _context.prev = 1;
-                            _context.next = 4;
-                            return cozy.client.data.delete(doctype, data);
+                            removed = [];
+                            _iteratorNormalCompletion = true;
+                            _didIteratorError = false;
+                            _iteratorError = undefined;
+                            _context.prev = 6;
+                            _iterator = data[Symbol.iterator]();
 
-                        case 4:
-                            return _context.abrupt("return", dispatch({ type: DATA_REMOVE_SUCCESS, data: data, doctype: doctype }));
+                        case 8:
+                            if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
+                                _context.next = 18;
+                                break;
+                            }
 
-                        case 7:
-                            _context.prev = 7;
-                            _context.t0 = _context["catch"](1);
-                            return _context.abrupt("return", dispatch({ type: DATA_REMOVE_FAILURE, err: _context.t0 }));
+                            d = _step.value;
+                            _context.t0 = removed;
+                            _context.next = 13;
+                            return cozy.client.data.updateAttributes(doctype, d._id, { trash: true });
 
-                        case 10:
+                        case 13:
+                            _context.t1 = _context.sent;
+
+                            _context.t0.push.call(_context.t0, _context.t1);
+
+                        case 15:
+                            _iteratorNormalCompletion = true;
+                            _context.next = 8;
+                            break;
+
+                        case 18:
+                            _context.next = 24;
+                            break;
+
+                        case 20:
+                            _context.prev = 20;
+                            _context.t2 = _context["catch"](6);
+                            _didIteratorError = true;
+                            _iteratorError = _context.t2;
+
+                        case 24:
+                            _context.prev = 24;
+                            _context.prev = 25;
+
+                            if (!_iteratorNormalCompletion && _iterator.return) {
+                                _iterator.return();
+                            }
+
+                        case 27:
+                            _context.prev = 27;
+
+                            if (!_didIteratorError) {
+                                _context.next = 30;
+                                break;
+                            }
+
+                            throw _iteratorError;
+
+                        case 30:
+                            return _context.finish(27);
+
+                        case 31:
+                            return _context.finish(24);
+
+                        case 32:
+                            return _context.abrupt("return", dispatch({ type: DATA_REMOVE_SUCCESS, ids: removed.map(function (f) {
+                                    return f._id;
+                                }), doctype: doctype }));
+
+                        case 35:
+                            _context.prev = 35;
+                            _context.t3 = _context["catch"](1);
+                            return _context.abrupt("return", dispatch({ type: DATA_REMOVE_FAILURE, err: _context.t3 }));
+
+                        case 38:
                         case "end":
                             return _context.stop();
                     }
                 }
-            }, _callee, undefined, [[1, 7]]);
+            }, _callee, undefined, [[1, 35], [6, 20, 24, 32], [25,, 27, 31]]);
         }));
 
         return function (_x, _x2) {
@@ -970,7 +1040,7 @@ var dataRemove = exports.dataRemove = function dataRemove(doctype, data) {
 var dataRestore = exports.dataRestore = function dataRestore(doctype, data) {
     return function () {
         var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(dispatch, getState) {
-            var restored, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, d;
+            var restored, _iteratorNormalCompletion2, _didIteratorError2, _iteratorError2, _iterator2, _step2, d;
 
             return regeneratorRuntime.wrap(function _callee2$(_context2) {
                 while (1) {
@@ -979,19 +1049,19 @@ var dataRestore = exports.dataRestore = function dataRestore(doctype, data) {
                             dispatch({ type: DATA_RESTORE, data: data });
                             _context2.prev = 1;
                             restored = [];
-                            _iteratorNormalCompletion = true;
-                            _didIteratorError = false;
-                            _iteratorError = undefined;
+                            _iteratorNormalCompletion2 = true;
+                            _didIteratorError2 = false;
+                            _iteratorError2 = undefined;
                             _context2.prev = 6;
-                            _iterator = data[Symbol.iterator]();
+                            _iterator2 = data[Symbol.iterator]();
 
                         case 8:
-                            if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
+                            if (_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done) {
                                 _context2.next = 18;
                                 break;
                             }
 
-                            d = _step.value;
+                            d = _step2.value;
                             _context2.t0 = restored;
                             _context2.next = 13;
                             return cozy.client.data.updateAttributes(doctype, d._id, { trash: false });
@@ -1002,7 +1072,7 @@ var dataRestore = exports.dataRestore = function dataRestore(doctype, data) {
                             _context2.t0.push.call(_context2.t0, _context2.t1);
 
                         case 15:
-                            _iteratorNormalCompletion = true;
+                            _iteratorNormalCompletion2 = true;
                             _context2.next = 8;
                             break;
 
@@ -1013,26 +1083,26 @@ var dataRestore = exports.dataRestore = function dataRestore(doctype, data) {
                         case 20:
                             _context2.prev = 20;
                             _context2.t2 = _context2["catch"](6);
-                            _didIteratorError = true;
-                            _iteratorError = _context2.t2;
+                            _didIteratorError2 = true;
+                            _iteratorError2 = _context2.t2;
 
                         case 24:
                             _context2.prev = 24;
                             _context2.prev = 25;
 
-                            if (!_iteratorNormalCompletion && _iterator.return) {
-                                _iterator.return();
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
                             }
 
                         case 27:
                             _context2.prev = 27;
 
-                            if (!_didIteratorError) {
+                            if (!_didIteratorError2) {
                                 _context2.next = 30;
                                 break;
                             }
 
-                            throw _iteratorError;
+                            throw _iteratorError2;
 
                         case 30:
                             return _context2.finish(27);
@@ -1138,6 +1208,43 @@ var dataSave = exports.dataSave = function dataSave(doctype, id, data) {
     }();
 };
 
+var dataLoad = exports.dataLoad = function dataLoad(doctype, id) {
+    return function () {
+        var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee5(dispatch, getState) {
+            var data;
+            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+                while (1) {
+                    switch (_context5.prev = _context5.next) {
+                        case 0:
+                            dispatch({ type: DATA_LOAD, id: id, doctype: doctype });
+
+                            _context5.prev = 1;
+                            _context5.next = 4;
+                            return cozy.client.data.find(doctype, id);
+
+                        case 4:
+                            data = _context5.sent;
+                            return _context5.abrupt("return", dispatch({ type: DATA_LOAD_SUCCESS, data: data, doctype: doctype }));
+
+                        case 8:
+                            _context5.prev = 8;
+                            _context5.t0 = _context5["catch"](1);
+                            return _context5.abrupt("return", dispatch({ type: DATA_LOAD_FAILURE, err: _context5.t0 }));
+
+                        case 11:
+                        case "end":
+                            return _context5.stop();
+                    }
+                }
+            }, _callee5, undefined, [[1, 8]]);
+        }));
+
+        return function (_x9, _x10) {
+            return _ref5.apply(this, arguments);
+        };
+    }();
+};
+
 /***/ }),
 
 /***/ "./src/actions/documents.js":
@@ -1149,7 +1256,7 @@ var dataSave = exports.dataSave = function dataSave(doctype, id, data) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.documentsDownloadAll = exports.documentsRestore = exports.documentsRemove = exports.documentsInitialize = exports.documentsNewFolder = exports.documentsDownload = exports.documentsClick = exports.documentsChangeViewMode = exports.documentsChangeFilter = exports.documentsSelect = exports.HTTP_CODE_CONFLICT = exports.DOCUMENTS_CHANGE_FILTER = exports.DOCUMENTS_CLICK = exports.DOCUMENTS_NEW_FOLDER_FAILURE_DUPLICATE = exports.DOCUMENTS_NEW_FOLDER_FAILURE_GENERIC = exports.DOCUMENTS_NEW_FOLDER_SUCCESS = exports.DOCUMENTS_NEW_FOLDER = exports.DOCUMENTS_CHANGE_VIEW_MODE = exports.DOCUMENTS_DOWNLOAD_ALL = exports.DOCUMENTS_DOWNLOAD = exports.DOCUMENTS_INITIALIZE_FAILURE = exports.DOCUMENTS_INITIALIZE_SUCCESS = exports.DOCUMENTS_INITIALIZE = exports.DOCUMENTS_RESTORE_FAILURE = exports.DOCUMENTS_RESTORE_SUCCESS = exports.DOCUMENTS_RESTORE = exports.DOCUMENTS_REMOVE_FAILURE = exports.DOCUMENTS_REMOVE_SUCCESS = exports.DOCUMENTS_REMOVE = exports.DOCUMENTS_SELECT = undefined;
+exports.documentsMove = exports.documentsRename = exports.documentsRestore = exports.documentsRemove = exports.documentsInitialize = exports.documentsNewFolder = exports.documentsDownload = exports.documentsClick = exports.documentsChangeViewMode = exports.documentsChangeFilter = exports.documentsSelect = exports.HTTP_CODE_CONFLICT = exports.DOCUMENTS_MOVE_FAILURE = exports.DOCUMENTS_MOVE_SUCCESS = exports.DOCUMENTS_MOVE = exports.DOCUMENTS_RENAME_FAILURE = exports.DOCUMENTS_RENAME_SUCCESS = exports.DOCUMENTS_RENAME = exports.DOCUMENTS_CHANGE_FILTER = exports.DOCUMENTS_CLICK = exports.DOCUMENTS_NEW_FOLDER_FAILURE_DUPLICATE = exports.DOCUMENTS_NEW_FOLDER_FAILURE_GENERIC = exports.DOCUMENTS_NEW_FOLDER_SUCCESS = exports.DOCUMENTS_NEW_FOLDER = exports.DOCUMENTS_CHANGE_VIEW_MODE = exports.DOCUMENTS_DOWNLOAD_ALL = exports.DOCUMENTS_DOWNLOAD = exports.DOCUMENTS_INITIALIZE_FAILURE = exports.DOCUMENTS_INITIALIZE_SUCCESS = exports.DOCUMENTS_INITIALIZE = exports.DOCUMENTS_RESTORE_FAILURE = exports.DOCUMENTS_RESTORE_SUCCESS = exports.DOCUMENTS_RESTORE = exports.DOCUMENTS_REMOVE_FAILURE = exports.DOCUMENTS_REMOVE_SUCCESS = exports.DOCUMENTS_REMOVE = exports.DOCUMENTS_SELECT = undefined;
 
 var _tools = __webpack_require__("./src/tools/index.js");
 
@@ -1180,6 +1287,12 @@ var DOCUMENTS_NEW_FOLDER_FAILURE_GENERIC = exports.DOCUMENTS_NEW_FOLDER_FAILURE_
 var DOCUMENTS_NEW_FOLDER_FAILURE_DUPLICATE = exports.DOCUMENTS_NEW_FOLDER_FAILURE_DUPLICATE = "DOCUMENTS_NEW_FOLDER_FAILURE_DUPLICATE";
 var DOCUMENTS_CLICK = exports.DOCUMENTS_CLICK = "DOCUMENTS_CLICK";
 var DOCUMENTS_CHANGE_FILTER = exports.DOCUMENTS_CHANGE_FILTER = "DOCUMENTS_CHANGE_FILTER";
+var DOCUMENTS_RENAME = exports.DOCUMENTS_RENAME = "DOCUMENTS_RENAME";
+var DOCUMENTS_RENAME_SUCCESS = exports.DOCUMENTS_RENAME_SUCCESS = "DOCUMENTS_RENAME_SUCCESS";
+var DOCUMENTS_RENAME_FAILURE = exports.DOCUMENTS_RENAME_FAILURE = "DOCUMENTS_RENAME_FAILURE";
+var DOCUMENTS_MOVE = exports.DOCUMENTS_MOVE = "DOCUMENTS_MOVE";
+var DOCUMENTS_MOVE_SUCCESS = exports.DOCUMENTS_MOVE_SUCCESS = "DOCUMENTS_MOVE_SUCCESS";
+var DOCUMENTS_MOVE_FAILURE = exports.DOCUMENTS_MOVE_FAILURE = "DOCUMENTS_MOVE_FAILURE";
 
 var HTTP_CODE_CONFLICT = exports.HTTP_CODE_CONFLICT = 409;
 
@@ -1639,6 +1752,7 @@ var documentsRemove = exports.documentsRemove = function documentsRemove(files) 
                             _context6.t3 = _context6['catch'](2);
                             return _context6.abrupt('return', dispatch({
                                 type: DOCUMENTS_REMOVE_FAILURE,
+                                err: _context6.t3,
                                 alert: {
                                     message: 'alert.try_again'
                                 }
@@ -1767,13 +1881,162 @@ var documentsRestore = exports.documentsRestore = function documentsRestore(file
     }();
 };
 
-/**
- * In development
- */
-var documentsDownloadAll = exports.documentsDownloadAll = function documentsDownloadAll() {
-    return {
-        type: DOCUMENTS_DOWNLOAD_ALL
-    };
+var documentsRename = exports.documentsRename = function documentsRename(id, name) {
+    return function () {
+        var _ref8 = _asyncToGenerator(regeneratorRuntime.mark(function _callee8(dispatch) {
+            var file;
+            return regeneratorRuntime.wrap(function _callee8$(_context8) {
+                while (1) {
+                    switch (_context8.prev = _context8.next) {
+                        case 0:
+                            dispatch({
+                                type: DOCUMENTS_RENAME,
+                                id: id,
+                                name: name
+                            });
+                            _context8.prev = 1;
+                            _context8.next = 4;
+                            return cozy.client.files.updateAttributesById(id, { name: name });
+
+                        case 4:
+                            file = _context8.sent;
+                            return _context8.abrupt('return', dispatch({
+                                type: DOCUMENTS_RENAME_SUCCESS,
+                                file: (0, _tools.extractFileAttributes)(file)
+                            }));
+
+                        case 8:
+                            _context8.prev = 8;
+                            _context8.t0 = _context8['catch'](1);
+                            return _context8.abrupt('return', dispatch({
+                                type: DOCUMENTS_RENAME_FAILURE,
+                                err: _context8.t0
+                            }));
+
+                        case 11:
+                        case 'end':
+                            return _context8.stop();
+                    }
+                }
+            }, _callee8, undefined, [[1, 8]]);
+        }));
+
+        return function (_x11) {
+            return _ref8.apply(this, arguments);
+        };
+    }();
+};
+
+var documentsMove = exports.documentsMove = function documentsMove(files, path) {
+    return function () {
+        var _ref9 = _asyncToGenerator(regeneratorRuntime.mark(function _callee9(dispatch) {
+            var moved, parent, _iteratorNormalCompletion4, _didIteratorError4, _iteratorError4, _iterator4, _step4, file;
+
+            return regeneratorRuntime.wrap(function _callee9$(_context9) {
+                while (1) {
+                    switch (_context9.prev = _context9.next) {
+                        case 0:
+                            dispatch({
+                                type: DOCUMENTS_MOVE,
+                                files: files,
+                                path: path
+                            });
+                            moved = [];
+                            _context9.prev = 2;
+                            _context9.next = 5;
+                            return cozy.client.files.statByPath(path);
+
+                        case 5:
+                            parent = _context9.sent;
+                            _iteratorNormalCompletion4 = true;
+                            _didIteratorError4 = false;
+                            _iteratorError4 = undefined;
+                            _context9.prev = 9;
+                            _iterator4 = files[Symbol.iterator]();
+
+                        case 11:
+                            if (_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done) {
+                                _context9.next = 21;
+                                break;
+                            }
+
+                            file = _step4.value;
+                            _context9.t0 = moved;
+                            _context9.next = 16;
+                            return cozy.client.files.updateAttributesById(file.id, { dir_id: parent._id });
+
+                        case 16:
+                            _context9.t1 = _context9.sent;
+
+                            _context9.t0.push.call(_context9.t0, _context9.t1);
+
+                        case 18:
+                            _iteratorNormalCompletion4 = true;
+                            _context9.next = 11;
+                            break;
+
+                        case 21:
+                            _context9.next = 27;
+                            break;
+
+                        case 23:
+                            _context9.prev = 23;
+                            _context9.t2 = _context9['catch'](9);
+                            _didIteratorError4 = true;
+                            _iteratorError4 = _context9.t2;
+
+                        case 27:
+                            _context9.prev = 27;
+                            _context9.prev = 28;
+
+                            if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                                _iterator4.return();
+                            }
+
+                        case 30:
+                            _context9.prev = 30;
+
+                            if (!_didIteratorError4) {
+                                _context9.next = 33;
+                                break;
+                            }
+
+                            throw _iteratorError4;
+
+                        case 33:
+                            return _context9.finish(30);
+
+                        case 34:
+                            return _context9.finish(27);
+
+                        case 35:
+                            return _context9.abrupt('return', dispatch({
+                                type: DOCUMENTS_MOVE_SUCCESS,
+                                ids: moved.map(function (f) {
+                                    return f._id;
+                                })
+                            }));
+
+                        case 38:
+                            _context9.prev = 38;
+                            _context9.t3 = _context9['catch'](2);
+                            return _context9.abrupt('return', dispatch({
+                                type: DOCUMENTS_MOVE_FAILURE,
+                                err: _context9.t3
+                            }));
+
+                        case 41:
+                        case 'end':
+                            return _context9.stop();
+                    }
+                }
+            }, _callee9, undefined, [[2, 38], [9, 23, 27, 35], [28,, 30, 34]]);
+        }));
+
+        return function (_x12) {
+            return _ref9.apply(this, arguments);
+        };
+    }();
 };
 
 /***/ }),
@@ -2726,7 +2989,7 @@ var loadData = exports.loadData = function loadData() {
 var createLoader = function createLoader(action, actionSuccess, actionFailure, doctype) {
     return function () {
         var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee5(dispatch, getState) {
-            var data;
+            var data, noTrashData;
             return regeneratorRuntime.wrap(function _callee5$(_context5) {
                 while (1) {
                     switch (_context5.prev = _context5.next) {
@@ -2740,29 +3003,32 @@ var createLoader = function createLoader(action, actionSuccess, actionFailure, d
 
                         case 4:
                             data = _context5.sent;
+                            noTrashData = data.filter(function (d) {
+                                return !d.trash;
+                            });
                             return _context5.abrupt('return', dispatch({
                                 type: actionSuccess,
-                                data: data.map(function (item) {
+                                data: noTrashData.map(function (item) {
                                     item.doctype = doctype;
                                     return item;
                                 }),
                                 doctype: doctype
                             }));
 
-                        case 8:
-                            _context5.prev = 8;
+                        case 9:
+                            _context5.prev = 9;
                             _context5.t0 = _context5['catch'](1);
                             return _context5.abrupt('return', dispatch({
                                 type: actionFailure,
                                 error: _context5.t0
                             }));
 
-                        case 11:
+                        case 12:
                         case 'end':
                             return _context5.stop();
                     }
                 }
-            }, _callee5, undefined, [[1, 8]]);
+            }, _callee5, undefined, [[1, 9]]);
         }));
 
         return function (_x10, _x11) {
@@ -3516,7 +3782,8 @@ var Contacts = function (_Component) {
 
         _this.state = {
             current: null,
-            modalOpen: false
+            modalOpen: false,
+            edition: false
         };
         return _this;
     }
@@ -3540,7 +3807,8 @@ var Contacts = function (_Component) {
         value: function add() {
             this.setState({
                 current: null,
-                modalOpen: true
+                modalOpen: true,
+                edition: true
             });
         }
     }, {
@@ -3681,7 +3949,7 @@ var Contacts = function (_Component) {
                 _react2.default.createElement(
                     _reactPortal2.default,
                     { isOpened: this.state.modalOpen, closeOnEsc: true, onClose: function onClose() {
-                            return _this2.setState({ modalOpen: false, current: null });
+                            return _this2.setState({ modalOpen: false, current: null, edition: false });
                         } },
                     _react2.default.createElement(
                         _Modal2.default,
@@ -3694,7 +3962,8 @@ var Contacts = function (_Component) {
                             },
                             onRemove: function onRemove() {
                                 return _this2.remove();
-                            } })
+                            },
+                            edit: this.state.edition })
                     )
                 )
             );
@@ -3705,6 +3974,120 @@ var Contacts = function (_Component) {
 }(_react.Component);
 
 exports.default = Contacts;
+
+/***/ }),
+
+/***/ "./src/components/elements/Data.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("./node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _buttons = __webpack_require__("./src/styles/buttons.scss");
+
+var _buttons2 = _interopRequireDefault(_buttons);
+
+var _Loader = __webpack_require__("./src/components/elements/Loader.jsx");
+
+var _Loader2 = _interopRequireDefault(_Loader);
+
+var _Page = __webpack_require__("./src/components/elements/Page.jsx");
+
+var _Page2 = _interopRequireDefault(_Page);
+
+var _dataFields = __webpack_require__("./src/scripts/dataFields.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Data = function (_Component) {
+    _inherits(Data, _Component);
+
+    function Data(props, context) {
+        _classCallCheck(this, Data);
+
+        var _this = _possibleConstructorReturn(this, (Data.__proto__ || Object.getPrototypeOf(Data)).call(this, props, context));
+
+        console.log('Data', props);
+        return _this;
+    }
+
+    _createClass(Data, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            this.infos = (0, _dataFields.getInfosFromSlug)(this.props.match.params.slug);
+            this.id = this.props.match.params.id;
+
+            this.props.onLoadData(this.infos.doctype, this.id);
+        }
+    }, {
+        key: 'download',
+        value: function download() {
+            console.log('Not implemented');
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var loading = !this.props.current;
+
+            var download = _react2.default.createElement(
+                'button',
+                { onClick: function onClick() {
+                        return _this2.download();
+                    }, className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable), title: 'T\xE9l\xE9charger' },
+                _react2.default.createElement('i', { className: 'ion-ios-cloud-download-outline' }),
+                _react2.default.createElement(
+                    'span',
+                    { className: _buttons2.default.text },
+                    'TELECHARGER'
+                )
+            );
+
+            var title = this.infos.name;
+            if (this.props.current && this.props.current.name) title += '/' + this.props.current.name;
+
+            return _react2.default.createElement(
+                _Page2.default,
+                { title: title, subtitle: '',
+                    actions: [download],
+                    onBackPress: function onBackPress() {
+                        return _this2.props.history.goBack();
+                    } },
+                _react2.default.createElement(_Loader2.default, { display: loading }),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    JSON.stringify(this.props.current, null, '    ')
+                )
+            );
+        }
+    }]);
+
+    return Data;
+}(_react.Component);
+
+exports.default = Data;
 
 /***/ }),
 
@@ -3959,8 +4342,10 @@ var DirectoryPicker = function (_React$Component) {
         }
     }, {
         key: 'createDirList',
-        value: function createDirList(list) {
+        value: function createDirList() {
             var _this3 = this;
+
+            var list = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 
             if (list.length === 0) return null;
             var ret = [];
@@ -4392,9 +4777,25 @@ var _Importer = __webpack_require__("./src/containers/Importer.js");
 
 var _Importer2 = _interopRequireDefault(_Importer);
 
+var _Mover = __webpack_require__("./src/containers/Mover.js");
+
+var _Mover2 = _interopRequireDefault(_Mover);
+
+var _RenameInput = __webpack_require__("./src/components/utils/RenameInput.jsx");
+
+var _RenameInput2 = _interopRequireDefault(_RenameInput);
+
 var _constants = __webpack_require__("./src/constants/index.js");
 
 var _dataFields = __webpack_require__("./src/scripts/dataFields.js");
+
+var _confirm = __webpack_require__("./src/scripts/confirm.js");
+
+var _confirm2 = _interopRequireDefault(_confirm);
+
+var _ConfirmModal = __webpack_require__("./src/components/modals/ConfirmModal.jsx");
+
+var _ConfirmModal2 = _interopRequireDefault(_ConfirmModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4403,6 +4804,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var modal = _react2.default.createElement(
+    _ConfirmModal2.default,
+    null,
+    _react2.default.createElement(
+        'p',
+        null,
+        'Voulez-vous supprimer ce(s) \xE9l\xE9ment(s) ?'
+    )
+);
 
 var Documents = exports.Documents = function (_Component) {
     _inherits(Documents, _Component);
@@ -4413,9 +4824,11 @@ var Documents = exports.Documents = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Documents.__proto__ || Object.getPrototypeOf(Documents)).call(this, props, context));
 
         _this.state = {
-            modalOpen: false,
+            importerOpen: false,
+            moveModalOpen: false,
             file: false,
-            doctype: false
+            doctype: false,
+            renaming: false
         };
         return _this;
     }
@@ -4432,6 +4845,7 @@ var Documents = exports.Documents = function (_Component) {
     }, {
         key: 'componentWillReceiveProps',
         value: function componentWillReceiveProps(newProps) {
+            console.log(newProps);
             var newPath = this.createRealPath(newProps);
 
             if (newProps.status === _constants.STATUS_ERROR) {
@@ -4455,13 +4869,13 @@ var Documents = exports.Documents = function (_Component) {
     }, {
         key: 'checkForData',
         value: function checkForData(newPath) {
-            var doctype = (0, _dataFields.getDoctypeFromPath)(newPath);
-            if (doctype) {
+            var info = (0, _dataFields.getInfosFromPath)(newPath);
+            if (info) {
                 if (!this.state.doctype) {
-                    this.state.doctype = doctype;
-                    this.props.onLoadData(doctype);
-                } else if (this.state.doctype !== doctype) {
-                    this.props.onLoadData(doctype);
+                    this.state.doctype = info.doctype;
+                    this.props.onLoadData(info.doctype);
+                } else if (this.state.doctype !== info.doctype) {
+                    this.props.onLoadData(info.doctype);
                 }
             } else {
                 this.state.doctype = false;
@@ -4471,7 +4885,51 @@ var Documents = exports.Documents = function (_Component) {
         key: 'openImporter',
         value: function openImporter() {
             this.props.onImporterClick(this.props.path);
-            this.setState({ modalOpen: true });
+            this.setState({ importerOpen: true });
+        }
+    }, {
+        key: 'openMover',
+        value: function openMover() {
+            this.props.onImporterClick(this.props.path);
+            this.setState({ moveModalOpen: true });
+        }
+    }, {
+        key: 'remove',
+        value: function remove() {
+            var _this2 = this;
+
+            if (this.props.selectedCount + this.props.selectedDataCount <= 0) return;
+
+            (0, _confirm2.default)(modal).then(function () {
+                if (_this2.props.selectedCount > 0) _this2.props.onRemove(_this2.props.files.filter(function (f) {
+                    return f.selected;
+                }));
+
+                if (_this2.props.selectedDataCount > 0) _this2.props.onRemoveData(_this2.state.doctype, _this2.props.data.filter(function (f) {
+                    return f.selected;
+                }));
+            }).catch(function (err) {});
+        }
+    }, {
+        key: 'move',
+        value: function move(path) {
+            if (this.props.folder.path === path) return;
+            this.props.onMoveFile(this.props.files.filter(function (f) {
+                return f.selected;
+            }), path);
+        }
+    }, {
+        key: 'download',
+        value: function download() {
+            this.props.onDownload(files.filter(function (f) {
+                return f.selected;
+            }));
+        }
+    }, {
+        key: 'rename',
+        value: function rename(name) {
+            this.props.onRename(this.state.renaming.id, name);
+            this.setState({ renaming: false });
         }
     }, {
         key: 'createBreadcrums',
@@ -4529,7 +4987,7 @@ var Documents = exports.Documents = function (_Component) {
     }, {
         key: 'renderDocuments',
         value: function renderDocuments() {
-            if (this.props.lastType !== _constants.TYPE_FOLDER && files.length > 0) return;
+            if (this.props.lastType !== _constants.TYPE_FOLDER && this.props.files.length > 0) return;
 
             var _props = this.props,
                 history = _props.history,
@@ -4576,12 +5034,15 @@ var Documents = exports.Documents = function (_Component) {
                 onSelectData = _props2.onSelectData;
 
 
+            var newPath = this.createRealPath(this.props);
+            var slug = (0, _dataFields.getInfosFromPath)(newPath).slug;
+
             return _react2.default.createElement(
                 _DataList2.default,
                 {
                     view: viewMode,
                     onClickItem: function onClickItem(item) {
-                        history.push('/data/' + item._id);
+                        history.push('/data/' + slug + '/' + item._id);
                     },
                     onSelectItem: function onSelectItem(item) {
                         return onSelectData(item);
@@ -4620,7 +5081,7 @@ var Documents = exports.Documents = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             var _props3 = this.props,
                 files = _props3.files,
@@ -4630,20 +5091,30 @@ var Documents = exports.Documents = function (_Component) {
                 selectedCount = _props3.selectedCount,
                 dataStatus = _props3.dataStatus,
                 dataCount = _props3.dataCount,
-                selectedDataCount = _props3.selectedDataCount;
+                selectedDataCount = _props3.selectedDataCount,
+                lastType = _props3.lastType;
 
 
             var loading = status === _constants.STATUS_LOAD || dataStatus === _constants.STATUS_LOAD;
 
             var empty = !loading && fileCount === 0 && this.state.doctype && dataCount === 0;
 
-            var title = this.createBreadcrums();
+            var title = null;
+            if (this.state.renaming) {
+                title = _react2.default.createElement(_RenameInput2.default, { name: this.state.renaming.name, onRename: function onRename(name) {
+                        return _this3.rename(name);
+                    }, onCancel: function onCancel() {
+                        return _this3.setState({ renaming: false });
+                    } });
+            } else {
+                title = this.createBreadcrums();
+            }
 
             //Create actions
             var importer = _react2.default.createElement(
                 'button',
                 { onClick: function onClick() {
-                        return _this2.openImporter();
+                        return _this3.openImporter();
                     }, className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.default), title: 'Importer' },
                 _react2.default.createElement('i', { className: 'ion-ios-cloud-upload-outline' }),
                 _react2.default.createElement(
@@ -4661,7 +5132,7 @@ var Documents = exports.Documents = function (_Component) {
                     _react2.default.createElement(
                         'li',
                         { onClick: function onClick() {
-                                _this2.props.onChangeViewMode();
+                                _this3.props.onChangeViewMode();
                             } },
                         this.props.viewMode === _constants.VIEW_LIST ? _react2.default.createElement(
                             'i',
@@ -4676,7 +5147,7 @@ var Documents = exports.Documents = function (_Component) {
                     _react2.default.createElement(
                         'li',
                         { onClick: function onClick() {
-                                _this2.props.onNewFolder();
+                                _this3.props.onNewFolder();
                             } },
                         _react2.default.createElement(
                             'i',
@@ -4687,34 +5158,12 @@ var Documents = exports.Documents = function (_Component) {
                     _react2.default.createElement(
                         'li',
                         { onClick: function onClick() {
-                                _this2.props.onDownloadAll(_this2.props.files.slice(0));
+                                _this3.props.onDownloadAll(_this3.props.files.slice(0));
                             } },
                         _react2.default.createElement(
                             'i',
                             { className: 'ion-ios-cloud-download-outline' },
                             'TOUT TELECHARGER'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        { onClick: function onClick() {
-                                //this.props.onRename()
-                            } },
-                        _react2.default.createElement(
-                            'i',
-                            { className: 'ion-ios-compose-outline' },
-                            'RENOMMER'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        { onClick: function onClick() {
-                                //this.props.onMove() 
-                            } },
-                        _react2.default.createElement(
-                            'i',
-                            { className: 'ion-ios-browsers-outline' },
-                            'DEPLACER'
                         )
                     )
                 )
@@ -4722,7 +5171,7 @@ var Documents = exports.Documents = function (_Component) {
             var filter = _react2.default.createElement(
                 'select',
                 { defaultValue: this.props.filter, onChange: function onChange(e) {
-                        return _this2.props.onChangeFilter(e.target.value);
+                        return _this3.props.onChangeFilter(e.target.value);
                     } },
                 _react2.default.createElement(
                     'option',
@@ -4742,9 +5191,7 @@ var Documents = exports.Documents = function (_Component) {
                 var remove = _react2.default.createElement(
                     'button',
                     { onClick: function onClick() {
-                            return _this2.props.onRemove(files.filter(function (f) {
-                                return f.selected;
-                            }));
+                            return _this3.remove();
                         }, className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.assertive), title: 'Supprimer' },
                     _react2.default.createElement('i', { className: 'ion-ios-trash-outline' }),
                     _react2.default.createElement(
@@ -4759,9 +5206,7 @@ var Documents = exports.Documents = function (_Component) {
                 var download = _react2.default.createElement(
                     'button',
                     { onClick: function onClick() {
-                            return _this2.props.onDownload(files.filter(function (f) {
-                                return f.selected;
-                            }));
+                            return _this3.download();
                         }, className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable), title: 'T\xE9l\xE9charger' },
                     _react2.default.createElement('i', { className: 'ion-ios-cloud-download-outline' }),
                     _react2.default.createElement(
@@ -4771,6 +5216,38 @@ var Documents = exports.Documents = function (_Component) {
                     )
                 );
                 actions.unshift(download);
+
+                var move = _react2.default.createElement(
+                    'button',
+                    { onClick: function onClick() {
+                            return _this3.openMover();
+                        }, className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable), title: 'D\xE9placer' },
+                    _react2.default.createElement('i', { className: 'ion-ios-browsers-outline' }),
+                    _react2.default.createElement(
+                        'span',
+                        { className: _buttons2.default.text },
+                        'DEPLACER'
+                    )
+                );
+                actions.unshift(move);
+
+                if (selectedCount === 1) {
+                    var rename = _react2.default.createElement(
+                        'button',
+                        { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable), onClick: function onClick() {
+                                return _this3.setState({ renaming: _this3.props.files.filter(function (f) {
+                                        return f.selected;
+                                    }).pop() });
+                            }, title: 'Renommer' },
+                        _react2.default.createElement('i', { className: 'ion-ios-compose-outline' }),
+                        _react2.default.createElement(
+                            'span',
+                            { className: _buttons2.default.text },
+                            'RENOMMER'
+                        )
+                    );
+                    actions.unshift(rename);
+                }
             }
 
             var count = fileCount;
@@ -4793,10 +5270,10 @@ var Documents = exports.Documents = function (_Component) {
 
             return _react2.default.createElement(
                 _Page2.default,
-                { title: title, subtitle: count !== null && status != _constants.STATUS_ERROR && count + " élément" + (count > 1 ? "s" : ""),
+                { title: title, subtitle: count !== null && status != _constants.STATUS_ERROR && lastType === _constants.TYPE_FOLDER && count + " élément" + (count > 1 ? "s" : ""),
                     actions: actions,
                     onBackPress: this.props.match.params.path && function () {
-                        return _this2.props.history.goBack();
+                        return _this3.props.history.goBack();
                     },
                     options: [filter] },
                 _react2.default.createElement(_Loader2.default, { display: loading }),
@@ -4807,13 +5284,26 @@ var Documents = exports.Documents = function (_Component) {
                 error,
                 _react2.default.createElement(
                     _reactPortal2.default,
-                    { closeOnEsc: true, isOpened: this.state.modalOpen, onClose: function onClose() {
-                            return _this2.setState({ modalOpen: false });
+                    { closeOnEsc: true, isOpened: this.state.importerOpen, onClose: function onClose() {
+                            return _this3.setState({ importerOpen: false });
                         } },
                     _react2.default.createElement(
                         _Modal2.default,
                         null,
                         _react2.default.createElement(_Importer2.default, null)
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactPortal2.default,
+                    { closeOnEsc: true, isOpened: this.state.moveModalOpen, onClose: function onClose() {
+                            return _this3.setState({ moveModalOpen: false });
+                        } },
+                    _react2.default.createElement(
+                        _Modal2.default,
+                        null,
+                        _react2.default.createElement(_Mover2.default, { onMove: function onMove(path) {
+                                return _this3.move(path);
+                            } })
                     )
                 )
             );
@@ -6973,18 +7463,6 @@ var Navigation = exports.Navigation = function Navigation(props) {
                         _react2.default.createElement('i', { className: 'ion-ios-trash-outline' }),
                         'Corbeille'
                     )
-                ),
-                _react2.default.createElement(
-                    'li',
-                    { className: _Navigation2.default.button },
-                    _react2.default.createElement(
-                        ActiveLink,
-                        { to: '/Documents/test', onClick: function onClick() {
-                                return console.log('Test');
-                            }, activeClassName: _Navigation2.default.active },
-                        _react2.default.createElement('i', { className: 'ion-ios-paper-outline' }),
-                        'Donn\xE9es'
-                    )
                 )
             )
         ),
@@ -7567,7 +8045,8 @@ var Recalls = function (_Component) {
         _this.state = {
             current: null,
             modalOpen: false,
-            defaultDate: null
+            defaultDate: null,
+            edition: false
         };
         return _this;
     }
@@ -7605,7 +8084,8 @@ var Recalls = function (_Component) {
             this.setState({
                 current: null,
                 modalOpen: true,
-                defaultDate: undefined
+                defaultDate: undefined,
+                edition: true
             });
         }
     }, {
@@ -7658,16 +8138,16 @@ var Recalls = function (_Component) {
                     _react2.default.createElement(
                         'p',
                         { className: 'agenda-title', onClick: function onClick() {
-                                return self.onItemPress(event.item);
+                                return _this2.setState({ modalOpen: true, current: event.item, defaultDate: undefined });
                             } },
                         event.title
                     ),
                     _react2.default.createElement(
                         'p',
                         { onClick: function onClick() {
-                                return self.onItemPress(event.item);
+                                return _this2.setState({ modalOpen: true, current: event.item, defaultDate: undefined });
                             } },
-                        event.item.deadline.format('DD/MM/YYYY')
+                        event.item.deadline
                     )
                 );
             };
@@ -7692,7 +8172,7 @@ var Recalls = function (_Component) {
                     components: { agenda: { event: EventAgenda } },
                     views: ['month', 'agenda'],
                     onSelectSlot: function onSelectSlot(e) {
-                        return _this2.setState({ modalOpen: true, current: null, defaultDate: e.end });
+                        return _this2.setState({ modalOpen: true, current: null, defaultDate: e.end, edition: true });
                     },
                     onSelectEvent: function onSelectEvent(e) {
                         return _this2.setState({ modalOpen: true, current: e.item, defaultDate: undefined });
@@ -7712,7 +8192,7 @@ var Recalls = function (_Component) {
                 _react2.default.createElement(
                     _reactPortal2.default,
                     { isOpened: this.state.modalOpen, closeOnEsc: true, onClose: function onClose() {
-                            return _this2.setState({ modalOpen: false, current: null, defaultDate: undefined });
+                            return _this2.setState({ modalOpen: false, current: null, defaultDate: undefined, edition: false });
                         } },
                     _react2.default.createElement(
                         _Modal4.default,
@@ -7726,7 +8206,8 @@ var Recalls = function (_Component) {
                             },
                             onRemove: function onRemove() {
                                 return _this2.remove();
-                            } })
+                            },
+                            edit: this.state.edition })
                     )
                 )
             );
@@ -8240,9 +8721,7 @@ var ContactModal = function (_Component) {
         }
     }, {
         key: 'componentWillReceiveProps',
-        value: function componentWillReceiveProps(newProps) {
-            console.log('CM props', newProps);
-        }
+        value: function componentWillReceiveProps(newProps) {}
     }, {
         key: 'save',
         value: function save(e) {
@@ -8855,10 +9334,12 @@ var ImporterModal = function (_Component) {
         value: function _import(e) {
             var _this2 = this;
 
-            cozy.client.files.statByPath(this.props.currentPath).then(function (stat) {
-                console.log('Parent', stat);
-                _this2.props.onImport(_this2.state.documents, stat._id);
-            });
+            if (this.state.documents.length > 0) {
+                cozy.client.files.statByPath(this.props.currentPath).then(function (stat) {
+                    console.log('Parent', stat);
+                    _this2.props.onImport(_this2.state.documents, stat._id);
+                });
+            }
             this.cancel(e);
         }
     }, {
@@ -9160,6 +9641,150 @@ var Modal = exports.Modal = function Modal(_ref) {
 };
 
 exports.default = Modal;
+
+/***/ }),
+
+/***/ "./src/components/modals/MoverModal.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _lodash = __webpack_require__("./node_modules/lodash/lodash.js");
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var _ImporterModal = __webpack_require__("./src/styles/ImporterModal.sass");
+
+var _ImporterModal2 = _interopRequireDefault(_ImporterModal);
+
+var _buttons = __webpack_require__("./src/styles/buttons.scss");
+
+var _buttons2 = _interopRequireDefault(_buttons);
+
+var _classnames = __webpack_require__("./node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _DirectoryPicker = __webpack_require__("./src/components/elements/DirectoryPicker.jsx");
+
+var _DirectoryPicker2 = _interopRequireDefault(_DirectoryPicker);
+
+var _constants = __webpack_require__("./src/constants/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MoverModal = function (_Component) {
+    _inherits(MoverModal, _Component);
+
+    function MoverModal(props, context) {
+        _classCallCheck(this, MoverModal);
+
+        return _possibleConstructorReturn(this, (MoverModal.__proto__ || Object.getPrototypeOf(MoverModal)).call(this, props, context));
+    }
+
+    _createClass(MoverModal, [{
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(props, context) {}
+    }, {
+        key: 'cancel',
+        value: function cancel(e) {
+            e.stopPropagation();
+            this.props.closePortal();
+        }
+    }, {
+        key: 'move',
+        value: function move(e) {
+            this.props.onMove(this.props.currentPath);
+
+            this.cancel(e);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            return _react2.default.createElement(
+                'div',
+                { onClick: function onClick(e) {
+                        return e.stopPropagation();
+                    }, className: _ImporterModal2.default.main },
+                _react2.default.createElement(
+                    'div',
+                    { className: _ImporterModal2.default.dir },
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ImporterModal2.default.header },
+                        _react2.default.createElement(
+                            'span',
+                            null,
+                            'CHOISIR UN EMPLACEMENT'
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable, _buttons2.default.clear), onClick: function onClick(e) {
+                                    return _this2.cancel(e);
+                                } },
+                            _react2.default.createElement('i', { className: 'ion-ios-close-empty' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ImporterModal2.default.content },
+                        _react2.default.createElement(_DirectoryPicker2.default, {
+                            dirs: this.props.documentsTree,
+                            root: _constants.ROOT_PATH,
+                            'default': this.props.currentPath,
+                            rootDirectoryName: _constants.ROOT_NAME,
+                            onPathChange: function onPathChange(path) {
+                                return _this2.props.onDirectoryChange(path);
+                            } })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: _ImporterModal2.default.footer },
+                        _react2.default.createElement(
+                            'button',
+                            { type: 'button', className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable), onClick: function onClick(e) {
+                                    return _this2.cancel(e);
+                                } },
+                            _react2.default.createElement('i', { className: 'ion-ios-arrow-left' }),
+                            'ANNULER'
+                        ),
+                        _react2.default.createElement(
+                            'button',
+                            { type: 'button', className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable), onClick: function onClick(e) {
+                                    return _this2.move(e);
+                                } },
+                            _react2.default.createElement('i', { className: 'ion-ios-cloud-upload-outline' }),
+                            'IMPORTER'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return MoverModal;
+}(_react.Component);
+
+exports.default = MoverModal;
 
 /***/ }),
 
@@ -9620,10 +10245,23 @@ var PDFViewer = function (_Component) {
                 _this.setState({ page: _this.state.page + 1 });
             }
         });
+        Object.defineProperty(_this, 'handleZoom', {
+            enumerable: true,
+            writable: true,
+            value: function value(e) {
+                e.preventDefault();
+
+                if (_this.state.zoom >= 2) _this.state.zoom = 0;
+
+                _this.setState({ zoom: _this.state.zoom + 0.5 });
+            }
+        });
         Object.defineProperty(_this, 'renderPagination', {
             enumerable: true,
             writable: true,
             value: function value(page, pages) {
+                var zoom = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
                 var previousButton = _react2.default.createElement(
                     'li',
                     { className: (0, _classnames2.default)("previous", { disabled: page === 1 }), onClick: _this.handlePrevious },
@@ -9646,6 +10284,20 @@ var PDFViewer = function (_Component) {
                     )
                 );
 
+                var zoomButton = void 0;
+                if (zoom) {
+                    zoomButton = _react2.default.createElement(
+                        'li',
+                        { className: (0, _classnames2.default)("zoom"), onClick: _this.handleZoom },
+                        _react2.default.createElement(
+                            'a',
+                            null,
+                            _react2.default.createElement('i', { className: 'fa fa-search' }),
+                            'Zoom'
+                        )
+                    );
+                }
+
                 return _react2.default.createElement(
                     'nav',
                     null,
@@ -9653,6 +10305,7 @@ var PDFViewer = function (_Component) {
                         'ul',
                         { className: 'pager' },
                         previousButton,
+                        zoom && zoomButton,
                         nextButton
                     )
                 );
@@ -9662,7 +10315,8 @@ var PDFViewer = function (_Component) {
 
         _this.state = {
             page: 0,
-            pages: 0
+            pages: 0,
+            zoom: 1
         };
         return _this;
     }
@@ -9672,7 +10326,7 @@ var PDFViewer = function (_Component) {
         value: function render() {
             var pagination = null;
             if (this.state.pages) {
-                pagination = this.renderPagination(this.state.page, this.state.pages);
+                pagination = this.renderPagination(this.state.page, this.state.pages, true);
             }
             return _react2.default.createElement(
                 'div',
@@ -9680,13 +10334,14 @@ var PDFViewer = function (_Component) {
                 pagination,
                 _react2.default.createElement(
                     'div',
-                    { style: { textAlign: 'center' } },
+                    { style: { textAlign: 'center', overflow: 'auto' } },
                     _react2.default.createElement(_reactPdfJs2.default, {
                         file: this.props.url,
                         onDocumentComplete: this.onDocumentComplete,
                         onPageComplete: this.onPageComplete,
                         page: this.state.page,
                         rotate: 0,
+                        scale: this.state.zoom,
                         loading: _react2.default.createElement(_Loader2.default, null) })
                 ),
                 pagination,
@@ -9703,6 +10358,128 @@ var PDFViewer = function (_Component) {
 }(_react.Component);
 
 exports.default = PDFViewer;
+
+/***/ }),
+
+/***/ "./src/components/utils/RenameInput.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("./node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _buttons = __webpack_require__("./src/styles/buttons.scss");
+
+var _buttons2 = _interopRequireDefault(_buttons);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RenameInput = function (_Component) {
+    _inherits(RenameInput, _Component);
+
+    function RenameInput(props, context) {
+        _classCallCheck(this, RenameInput);
+
+        var _this = _possibleConstructorReturn(this, (RenameInput.__proto__ || Object.getPrototypeOf(RenameInput)).call(this, props, context));
+
+        _this.closeIntent = null;
+        _this.name = _this.props.name;
+
+        _this.state = {
+            newName: _this.props.name
+        };
+        return _this;
+    }
+
+    _createClass(RenameInput, [{
+        key: 'cancelRename',
+        value: function cancelRename(name) {
+            var _this2 = this;
+
+            this.closeIntent = setTimeout(function () {
+                _this2.props.onCancel();
+            }, 100);
+        }
+    }, {
+        key: 'stopCancelRename',
+        value: function stopCancelRename() {
+            clearTimeout(this.closeIntent);
+        }
+    }, {
+        key: 'checkNewName',
+        value: function checkNewName(newName) {
+            if (!/[\/*\\'":|=,\[\]]/.test(newName)) {
+                this.setState({ newName: newName });
+            }
+        }
+    }, {
+        key: 'rename',
+        value: function rename() {
+            if (this.name === this.state.newName) return this.props.onCancel();
+
+            console.log("new name" + this.state.newName);
+            this.props.onRename(this.state.newName);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this3 = this;
+
+            return _react2.default.createElement(
+                'span',
+                { className: 'main' },
+                _react2.default.createElement('input', { autoFocus: true, type: 'text', value: this.state.newName,
+                    onChange: function onChange(e) {
+                        return _this3.checkNewName(e.target.value);
+                    },
+                    onKeyPress: function onKeyPress(e) {
+                        if (e.key === 'Enter') _this3.rename();
+                    },
+                    style: { 'width': 10 + this.state.newName.length * 13.1 + 'px' }
+                }),
+                _react2.default.createElement(
+                    'button',
+                    { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable), onFocus: function onFocus(e) {
+                            return _this3.stopCancelRename();
+                        }, onClick: function onClick() {
+                            return _this3.rename();
+                        } },
+                    _react2.default.createElement('i', { className: 'ion-ios-checkmark-empty' })
+                ),
+                _react2.default.createElement(
+                    'button',
+                    { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.assertive), onClick: function onClick(e) {
+                            return _this3.cancelRename();
+                        } },
+                    _react2.default.createElement('i', { className: 'ion-ios-close-empty' })
+                )
+            );
+        }
+    }]);
+
+    return RenameInput;
+}(_react.Component);
+
+exports.default = RenameInput;
 
 /***/ }),
 
@@ -10367,31 +11144,36 @@ var DATA_LIST = exports.DATA_LIST = [{
     singleName: 'Diagnostic',
     addButton: 'Ajouter un diagnostic',
     path: ROOT_PATH + '/Diagnostics',
-    doctype: DOCTYPE_DIAGNOSIS
+    doctype: DOCTYPE_DIAGNOSIS,
+    slug: 'diagnosis'
 }, {
     name: 'Données de propriété',
     singleName: 'Donnée de propriété',
     addButton: 'Ajouter une donnée de propriété',
     path: ROOT_PATH + '/Documents de propriété',
-    doctype: DOCTYPE_HOMEDATA
+    doctype: DOCTYPE_HOMEDATA,
+    slug: 'homedata'
 }, {
     name: 'Équipements',
     singleName: 'Équipement',
     addButton: 'Ajouter un équipement',
     path: ROOT_PATH + '/Équipements',
-    doctype: DOCTYPE_EQUIPMENTS
+    doctype: DOCTYPE_EQUIPMENTS,
+    slug: 'equipments'
 }, {
     name: 'Travaux',
     singleName: 'Travaux',
     addButton: 'Ajouter des travaux',
     path: ROOT_PATH + '/Travaux',
-    doctype: DOCTYPE_WORKS
+    doctype: DOCTYPE_WORKS,
+    slug: 'works'
 }, {
     name: 'Entretien',
     singleName: 'Entretien',
     addButton: 'Ajouter des entretiens',
     path: ROOT_PATH + '/Entretiens',
-    doctype: DOCTYPE_MAINTENANCES
+    doctype: DOCTYPE_MAINTENANCES,
+    slug: 'maintenances'
 }];
 
 var FOLDER_LIST = exports.FOLDER_LIST = [ROOT_PATH + '/Diagnostics', ROOT_PATH + '/Documents de propriété', ROOT_PATH + '/Équipements', ROOT_PATH + '/Travaux', ROOT_PATH + '/Entretiens', ROOT_PATH + '/Usages'];
@@ -10684,6 +11466,46 @@ exports.default = ConnectedContacts;
 
 /***/ }),
 
+/***/ "./src/containers/Data.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _reactRedux = __webpack_require__("./node_modules/react-redux/es/index.js");
+
+var _actions = __webpack_require__("./src/actions/index.js");
+
+var _Data = __webpack_require__("./src/components/elements/Data.jsx");
+
+var _Data2 = _interopRequireDefault(_Data);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        current: state.data.current
+    };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+    return {
+        onLoadData: function onLoadData(doctype, id) {
+            dispatch((0, _actions.dataLoad)(doctype, id));
+        }
+    };
+};
+
+var ConnectedData = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Data2.default);
+
+exports.default = ConnectedData;
+
+/***/ }),
+
 /***/ "./src/containers/Documents.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10702,31 +11524,11 @@ var _Documents = __webpack_require__("./src/components/elements/Documents.jsx");
 
 var _Documents2 = _interopRequireDefault(_Documents);
 
-var _confirm = __webpack_require__("./src/scripts/confirm.js");
-
-var _confirm2 = _interopRequireDefault(_confirm);
-
 var _constants = __webpack_require__("./src/constants/index.js");
-
-var _react = __webpack_require__("./node_modules/react/react.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _ConfirmModal = __webpack_require__("./src/components/modals/ConfirmModal.jsx");
-
-var _ConfirmModal2 = _interopRequireDefault(_ConfirmModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var modal = _react2.default.createElement(
-    _ConfirmModal2.default,
-    null,
-    _react2.default.createElement(
-        'p',
-        null,
-        'Voulez-vous supprimer ce(s) \xE9l\xE9ment(s) ?'
-    )
-);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var sortFiles = function sortFiles(files, filter, need) {
     if (!need) return files;
@@ -10767,7 +11569,9 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-    return {
+    var _ref;
+
+    return _ref = {
         onFileClick: function onFileClick(document) {
             dispatch((0, _actions.documentsClick)(document));
         },
@@ -10794,9 +11598,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
             dispatch((0, _actions.documentsDownload)(docs));
         },
         onRemove: function onRemove(docs) {
-            (0, _confirm2.default)(modal).then(function () {
-                return dispatch((0, _actions.documentsRemove)(docs));
-            }).catch(function (err) {});
+            dispatch((0, _actions.documentsRemove)(docs));
         },
         onDownloadAll: function onDownloadAll(docs) {
             dispatch((0, _actions.documentsDownload)(docs));
@@ -10815,8 +11617,15 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
         },
         onSelectData: function onSelectData(data) {
             dispatch((0, _actions.dataSelect)(data));
+        },
+        onRemoveData: function onRemoveData(doctype, data) {
+            dispatch((0, _actions.dataRemove)(doctype, data));
         }
-    };
+    }, _defineProperty(_ref, 'onRename', function onRename(id, name) {
+        dispatch((0, _actions.documentsRename)(id, name));
+    }), _defineProperty(_ref, 'onMoveFile', function onMoveFile(files, path) {
+        dispatch((0, _actions.documentsMove)(files, path));
+    }), _ref;
 };
 
 var ConnectedDocuments = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_Documents2.default);
@@ -10954,6 +11763,47 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 var ConnectedImporter = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_ImporterModal2.default);
 
 exports.default = ConnectedImporter;
+
+/***/ }),
+
+/***/ "./src/containers/Mover.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _reactRedux = __webpack_require__("./node_modules/react-redux/es/index.js");
+
+var _actions = __webpack_require__("./src/actions/index.js");
+
+var _MoverModal = __webpack_require__("./src/components/modals/MoverModal.jsx");
+
+var _MoverModal2 = _interopRequireDefault(_MoverModal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        currentPath: state.importer.currentPath,
+        documentsTree: state.importer.documentsTree
+    };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+    return {
+        onDirectoryChange: function onDirectoryChange(path) {
+            dispatch((0, _actions.importerDirectoryChange)(path));
+        }
+    };
+};
+
+var ConnectedMover = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_MoverModal2.default);
+
+exports.default = ConnectedMover;
 
 /***/ }),
 
@@ -11422,7 +12272,7 @@ exports.default = (0, _redux.combineReducers)({
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.selectedCount = exports.dataCount = exports.doctype = exports.data = undefined;
+exports.current = exports.selectedCount = exports.dataCount = exports.doctype = exports.data = undefined;
 
 var _redux = __webpack_require__("./node_modules/redux/es/index.js");
 
@@ -11443,7 +12293,7 @@ var data = exports.data = function data() {
             return [].concat(_toConsumableArray(state), [action.data]);
         case _actions.DATA_REMOVE_SUCCESS:
             return state.filter(function (f) {
-                return f._id === action.id;
+                return action.ids.indexOf(f._id) === -1;
             });
         case _actions.DATA_SAVE_SUCCESS:
             var withoutData = state.filter(function (f) {
@@ -11467,6 +12317,7 @@ var doctype = exports.doctype = function doctype() {
 
     switch (action.type) {
         case _actions.LOAD_DATA_SUCCESS:
+        case _actions.DATA_LOAD_SUCCESS:
             return action.doctype;
         default:
             return state;
@@ -11506,11 +12357,24 @@ var selectedCount = exports.selectedCount = function selectedCount() {
     }
 };
 
+var current = exports.current = function current() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    var action = arguments[1];
+
+    switch (action.type) {
+        case _actions.DATA_LOAD_SUCCESS:
+            return action.data;
+        default:
+            return state;
+    }
+};
+
 exports.default = (0, _redux.combineReducers)({
     selectedCount: selectedCount,
     data: data,
     doctype: doctype,
-    dataCount: dataCount
+    dataCount: dataCount,
+    current: current
 });
 
 /***/ }),
@@ -11582,6 +12446,7 @@ var fileCount = function fileCount() {
         case _actions.DOCUMENTS_NEW_FOLDER_SUCCESS:
             return state + 1;
         case _actions.DOCUMENTS_REMOVE_SUCCESS:
+        case _actions.DOCUMENTS_MOVE_SUCCESS:
             return state - action.ids.length;
         case _actions.DOCUMENTS_RESTORE_SUCCESS:
             return state + action.ids.length;
@@ -11599,6 +12464,8 @@ var selectedCount = function selectedCount() {
     switch (action.type) {
         case _actions.LOAD_DOCS_SUCCESS:
         case _actions.DOCUMENTS_REMOVE_SUCCESS:
+        case _actions.DOCUMENTS_RENAME_SUCCESS:
+        case _actions.DOCUMENTS_MOVE_SUCCESS:
             return 0;
         case _actions.DOCUMENTS_SELECT:
             if (action.document.selected) return state - 1;else return state + 1;
@@ -11622,6 +12489,7 @@ var files = function files() {
             return [action.folder].concat(_toConsumableArray(state));
 
         case _actions.DOCUMENTS_REMOVE_SUCCESS:
+        case _actions.DOCUMENTS_MOVE_SUCCESS:
             return state.filter(function (f) {
                 return action.ids.indexOf(f.id) === -1;
             });
@@ -11633,6 +12501,12 @@ var files = function files() {
             });
             return [].concat(_toConsumableArray(updated));
 
+        case _actions.DOCUMENTS_RENAME_SUCCESS:
+            var updatedName = state.map(function (f) {
+                if (f.id === action.file.id) f = action.file;
+                return f;
+            });
+            return [].concat(_toConsumableArray(updatedName));
         default:
             return state;
     }
@@ -11655,6 +12529,7 @@ var fetchStatus = function fetchStatus() {
         case _actions.LOAD_FILE_SUCCESS:
         case _actions.DOCUMENTS_REMOVE_SUCCESS:
         case _actions.IMPORTER_FILE_UPLOAD_SUCESS:
+        case _actions.DOCUMENTS_MOVE_SUCCESS:
         case _actions.DOCUMENTS_NEW_FOLDER_SUCCESS:
             return _constants.STATUS_DONE;
         case _actions.DOCUMENTS_REMOVE_FAILURE:
@@ -12501,7 +13376,7 @@ var formatText = function formatText(deadline, recallName) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.getDoctypeFromPath = exports.getMaintenanceFields = exports.getWorkFields = exports.getEquipmentFields = exports.getHomeFields = exports.getDiagnosisFields = exports.getContactFields = undefined;
+exports.getInfosFromDoctype = exports.getInfosFromSlug = exports.getInfosFromPath = exports.getFields = exports.getMaintenanceFields = exports.getWorkFields = exports.getEquipmentFields = exports.getHomeFields = exports.getDiagnosisFields = exports.getContactFields = undefined;
 
 var _contact = __webpack_require__("./src/constants/data/contact.json");
 
@@ -12555,7 +13430,22 @@ var getMaintenanceFields = exports.getMaintenanceFields = function getMaintenanc
     return _maintenance2.default;
 };
 
-var getDoctypeFromPath = exports.getDoctypeFromPath = function getDoctypeFromPath(path) {
+var getFields = exports.getFields = function getFields(doctype) {
+    switch (doctype) {
+        case _constants.DOCTYPE_DIAGNOSIS:
+            return _diagnosis2.default;
+        case _constants.DOCTYPE_EQUIPMENTS:
+            return _equipment2.default;
+        case _constants.DOCTYPE_HOMEDATA:
+            return _home2.default;
+        case _constants.DOCTYPE_MAINTENANCES:
+            return _maintenance2.default;
+        case _constants.DOCTYPE_WORKS:
+            return _work2.default;
+    }
+};
+
+var getInfosFromPath = exports.getInfosFromPath = function getInfosFromPath(path) {
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
     var _iteratorError = undefined;
@@ -12564,7 +13454,7 @@ var getDoctypeFromPath = exports.getDoctypeFromPath = function getDoctypeFromPat
         for (var _iterator = _constants.DATA_LIST[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
             var data = _step.value;
 
-            if (data.path === path) return data.doctype;
+            if (data.path === path) return data;
         }
     } catch (err) {
         _didIteratorError = true;
@@ -12577,6 +13467,60 @@ var getDoctypeFromPath = exports.getDoctypeFromPath = function getDoctypeFromPat
         } finally {
             if (_didIteratorError) {
                 throw _iteratorError;
+            }
+        }
+    }
+};
+
+var getInfosFromSlug = exports.getInfosFromSlug = function getInfosFromSlug(slug) {
+    var _iteratorNormalCompletion2 = true;
+    var _didIteratorError2 = false;
+    var _iteratorError2 = undefined;
+
+    try {
+        for (var _iterator2 = _constants.DATA_LIST[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+            var data = _step2.value;
+
+            if (data.slug === slug) return data;
+        }
+    } catch (err) {
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                _iterator2.return();
+            }
+        } finally {
+            if (_didIteratorError2) {
+                throw _iteratorError2;
+            }
+        }
+    }
+};
+
+var getInfosFromDoctype = exports.getInfosFromDoctype = function getInfosFromDoctype(doctype) {
+    var _iteratorNormalCompletion3 = true;
+    var _didIteratorError3 = false;
+    var _iteratorError3 = undefined;
+
+    try {
+        for (var _iterator3 = _constants.DATA_LIST[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+            var data = _step3.value;
+
+            if (data.doctype === doctype) return data;
+        }
+    } catch (err) {
+        _didIteratorError3 = true;
+        _iteratorError3 = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                _iterator3.return();
+            }
+        } finally {
+            if (_didIteratorError3) {
+                throw _iteratorError3;
             }
         }
     }
