@@ -296,7 +296,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Page-main__1pYo {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n\n.Page-flex__28Vg {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n\n.Page-header__1Ozy {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border-bottom: 1px solid #ddd;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 8px 10px 0 10px; }\n  @media (min-width: 770px) {\n    .Page-header__1Ozy {\n      padding-left: 32px;\n      padding-right: 32px; } }\n\n.Page-row1__1-uP {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 14px 0;\n  min-height: 42px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n\n.Page-row2__1F-3 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 12px 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-simpleList__2H07 {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.Page-actions__1j4n {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n  .Page-actions__1j4n li {\n    margin-left: 10px; }\n\n.Page-options__2YYs {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-headline__12ij {\n  margin: 0;\n  letter-spacing: 1px;\n  font-weight: 500;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-title__Mozt {\n  font-size: 20px;\n  height: 44px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  min-width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.Page-subtitle__10YU {\n  text-transform: uppercase;\n  font-size: 12px;\n  height: 1em; }\n\n.Page-content__p72D {\n  padding: 16px 10px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n  @media (min-width: 770px) {\n    .Page-content__p72D {\n      padding-left: 32px;\n      padding-right: 32px; } }\n\n.Page-back__3YoK {\n  color: #333;\n  padding: 6px 14px;\n  font-size: 22px;\n  margin-right: auto; }\n  .Page-back__3YoK i {\n    margin: 0 !important; }\n\n@media (min-width: 770px) {\n  .Page-title__Mozt {\n    -webkit-box-ordinal-group: 3;\n        -ms-flex-order: 2;\n            order: 2;\n    min-width: auto;\n    font-size: 24px;\n    height: auto; }\n  .Page-actions__1j4n {\n    -webkit-box-ordinal-group: 4;\n        -ms-flex-order: 3;\n            order: 3; }\n  .Page-back__3YoK {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1;\n    margin-right: 15px; } }\n", ""]);
+exports.push([module.i, ".Page-main__1pYo {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n\n.Page-flex__28Vg {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n\n.Page-header__1Ozy {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border-bottom: 1px solid #ddd;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 8px 10px 0 10px; }\n  @media (min-width: 770px) {\n    .Page-header__1Ozy {\n      padding-left: 32px;\n      padding-right: 32px; } }\n\n.Page-row1__1-uP {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 14px 0;\n  min-height: 42px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n\n.Page-row2__1F-3 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 12px 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-simpleList__2H07 {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.Page-actions__1j4n {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 4px; }\n  .Page-actions__1j4n li {\n    margin-left: 10px; }\n\n.Page-options__2YYs {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-headline__12ij {\n  margin: 0;\n  letter-spacing: 1px;\n  font-weight: 500;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-title__Mozt {\n  font-size: 20px;\n  height: 44px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.Page-subtitle__10YU {\n  text-transform: uppercase;\n  font-size: 12px;\n  height: 1em; }\n\n.Page-content__p72D {\n  padding: 16px 10px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n  @media (min-width: 770px) {\n    .Page-content__p72D {\n      padding-left: 32px;\n      padding-right: 32px; } }\n\n.Page-back__3YoK {\n  color: #333;\n  padding: 6px 14px;\n  font-size: 22px;\n  margin-right: 15px; }\n  .Page-back__3YoK i {\n    margin: 0 !important; }\n\n@media (min-width: 770px) {\n  .Page-title__Mozt {\n    -webkit-box-ordinal-group: 3;\n        -ms-flex-order: 2;\n            order: 2;\n    min-width: auto;\n    font-size: 24px;\n    height: auto; }\n  .Page-actions__1j4n {\n    -webkit-box-ordinal-group: 4;\n        -ms-flex-order: 3;\n            order: 3;\n    margin: 0; }\n  .Page-back__3YoK {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1; } }\n", ""]);
 
 // exports
 exports.locals = {
@@ -1345,7 +1345,7 @@ var documentsDownload = exports.documentsDownload = function documentsDownload(s
                         case 8:
                             fullpath = _context.sent;
 
-                            forceFileDownload(fullpath, 'homebook.zip');
+                            (0, _tools.forceFileDownload)(fullpath, 'homebook.zip');
                             return _context.abrupt('return', dispatch({
                                 type: DOCUMENTS_DOWNLOAD,
                                 selected: selected
@@ -1389,7 +1389,7 @@ var downloadFile = function downloadFile(file) {
                             filename = file.name;
 
 
-                            forceFileDownload(window.URL.createObjectURL(blob), filename);
+                            (0, _tools.forceFileDownload)(window.URL.createObjectURL(blob), filename);
                             return _context2.abrupt('return', dispatch({
                                 type: DOCUMENTS_DOWNLOAD,
                                 file: file
@@ -1407,16 +1407,6 @@ var downloadFile = function downloadFile(file) {
             return _ref2.apply(this, arguments);
         };
     }();
-};
-
-var forceFileDownload = function forceFileDownload(href, filename) {
-    var element = document.createElement('a');
-    element.setAttribute('href', href);
-    element.setAttribute('download', filename);
-    element.style.display = 'none';
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
 };
 
 var documentsNewFolder = exports.documentsNewFolder = function documentsNewFolder(name) {
@@ -5501,7 +5491,7 @@ var Footer = exports.Footer = function Footer(props) {
             'div',
             { className: _Footer2.default.content },
             'HOMEBOOK est un service propos\xE9 par edf - V',
-            '2.0.24'
+            '2.0.26'
         )
     );
 };
@@ -7934,6 +7924,11 @@ var Page = exports.Page = function Page(_ref) {
                     _react2.default.createElement('i', { className: 'ion-ios-arrow-thin-left' })
                 ),
                 _react2.default.createElement(
+                    'h1',
+                    { className: _Page2.default.title },
+                    title
+                ),
+                _react2.default.createElement(
                     'ul',
                     { className: _Page2.default.actions },
                     actions && actions.map(function (item, key) {
@@ -7943,11 +7938,6 @@ var Page = exports.Page = function Page(_ref) {
                             item
                         );
                     })
-                ),
-                _react2.default.createElement(
-                    'h1',
-                    { className: _Page2.default.title },
-                    title
                 )
             ),
             _react2.default.createElement(
@@ -8014,7 +8004,13 @@ var _Page = __webpack_require__("./src/components/elements/Page.jsx");
 
 var _Page2 = _interopRequireDefault(_Page);
 
+var _XMLDataFile = __webpack_require__("./src/scripts/XMLDataFile.js");
+
+var _XMLDataFile2 = _interopRequireDefault(_XMLDataFile);
+
 var _onboarding = __webpack_require__("./src/scripts/onboarding.js");
+
+var _tools = __webpack_require__("./src/tools/index.js");
 
 var _constants = __webpack_require__("./src/constants/index.js");
 
@@ -8073,9 +8069,11 @@ var Preferences = exports.Preferences = function Preferences(props) {
                 ),
                 _react2.default.createElement(
                     'button',
-                    { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.default) },
+                    { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.default), onClick: function onClick(e) {
+                            return exporterHomebook();
+                        } },
                     _react2.default.createElement('i', { className: 'ion-ios-upload-outline' }),
-                    ' IMPORTER HOMEBOOK'
+                    ' EXPORTER HOMEBOOK'
                 )
             )
         ),
@@ -8108,6 +8106,14 @@ var Preferences = exports.Preferences = function Preferences(props) {
     );
 };
 // import "./Preferences.scss"
+
+
+var exporterHomebook = function exporterHomebook() {
+    (0, _XMLDataFile2.default)().then(function (link) {
+        return (0, _tools.forceFileDownload)(link, 'homebook.zip');
+    });
+};
+
 exports.default = Preferences;
 
 /***/ }),
@@ -12315,7 +12321,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[role=application]');
     var data = root.dataset;
 
-    console.log('Current Version:', '2.0.24');
+    console.log('Current Version:', '2.0.26');
 
     window.cozy.client.init({
         cozyURL: '//' + data.cozyDomain,
@@ -13386,30 +13392,138 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 var exportData = exports.exportData = function () {
     var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
-        var xml, contacts, xmlContacts, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, contact, xmlContact, homedata, xmlHome;
-
+        var xml, xmlString, file, parent, old, xmlFile, link, reallink;
         return regeneratorRuntime.wrap(function _callee$(_context) {
             while (1) {
                 switch (_context.prev = _context.next) {
                     case 0:
+                        _context.next = 2;
+                        return createXML();
 
+                    case 2:
+                        xml = _context.sent;
+                        xmlString = xml.end({
+                            pretty: true,
+                            indent: '  ',
+                            newline: '\n',
+                            allowEmpty: true
+                        });
+
+                        // console.log('XML', xmlString)
+
+                        //Create blob object
+
+                        file = new Blob([xmlString], { type: "text/plain;charset=utf-8" });
+
+                        //upload into cozy at /tmp/homebook.xml
+
+                        parent = void 0;
+                        _context.prev = 6;
+                        _context.next = 9;
+                        return cozy.client.files.statByPath('/tmp');
+
+                    case 9:
+                        parent = _context.sent;
+                        _context.next = 17;
+                        break;
+
+                    case 12:
+                        _context.prev = 12;
+                        _context.t0 = _context['catch'](6);
+                        _context.next = 16;
+                        return cozy.client.files.createDirectory({
+                            name: "tmp",
+                            dirID: _constants.COZY_ROOT_ID
+                        });
+
+                    case 16:
+                        parent = _context.sent;
+
+                    case 17:
+                        if (!(parent === undefined)) {
+                            _context.next = 19;
+                            break;
+                        }
+
+                        throw Error("Export homebook fail: Can't access or create '/tmp' folder");
+
+                    case 19:
+                        _context.prev = 19;
+                        _context.next = 22;
+                        return cozy.client.files.statByPath('/tmp/homebook.xml');
+
+                    case 22:
+                        old = _context.sent;
+                        _context.next = 25;
+                        return cozy.client.files.trashById(old._id);
+
+                    case 25:
+                        _context.next = 29;
+                        break;
+
+                    case 27:
+                        _context.prev = 27;
+                        _context.t1 = _context['catch'](19);
+
+                    case 29:
+                        _context.next = 31;
+                        return cozy.client.files.create(file, {
+                            name: 'homebook.xml',
+                            dirID: parent._id
+                        });
+
+                    case 31:
+                        xmlFile = _context.sent;
+                        _context.next = 34;
+                        return cozy.client.files.getArchiveLinkByPaths(['/Homebook/', '/tmp/homebook.xml'], 'homebook');
+
+                    case 34:
+                        link = _context.sent;
+                        _context.next = 37;
+                        return cozy.client.fullpath(link);
+
+                    case 37:
+                        reallink = _context.sent;
+                        return _context.abrupt('return', reallink);
+
+                    case 39:
+                    case 'end':
+                        return _context.stop();
+                }
+            }
+        }, _callee, undefined, [[6, 12], [19, 27]]);
+    }));
+
+    return function exportData() {
+        return _ref.apply(this, arguments);
+    };
+}();
+
+var createXML = function () {
+    var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
+        var xml, contacts, xmlContacts, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, contact, xmlContact, homedataArray, homedata, xmlHome, equipments, xmlEquipments, _iteratorNormalCompletion2, _didIteratorError2, _iteratorError2, _iterator2, _step2, equipment, works, xmlWorks, _iteratorNormalCompletion3, _didIteratorError3, _iteratorError3, _iterator3, _step3, work, xmlWork, maintenances, xmlMaintenances, _iteratorNormalCompletion4, _didIteratorError4, _iteratorError4, _iterator4, _step4, maintenance, xmlMaintenance, diagnoses, xmlDiagnoses, _iteratorNormalCompletion5, _didIteratorError5, _iteratorError5, _iterator5, _step5, diagnosis, xmlDiagnosis;
+
+        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+            while (1) {
+                switch (_context2.prev = _context2.next) {
+                    case 0:
                         //Create xml document
                         xml = _xmlbuilder2.default.create('homebook').dec('1.0', 'UTF-8')
-                        // .dtd('', 'homebook.dtd')
+                        // .dtd('homebook.dtd')
                         .ins('xml-stylesheet', 'type="text/xsl" href="homebook.xsl"');
 
                         //Get Contacts
 
-                        _context.next = 3;
+                        _context2.next = 3;
                         return getDataElements(_constants.DOCTYPE_CONTACTS);
 
                     case 3:
-                        contacts = _context.sent;
+                        contacts = _context2.sent;
                         xmlContacts = xml.ele('contacts');
                         _iteratorNormalCompletion = true;
                         _didIteratorError = false;
                         _iteratorError = undefined;
-                        _context.prev = 8;
+                        _context2.prev = 8;
 
 
                         for (_iterator = contacts[Symbol.iterator](); !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
@@ -13421,78 +13535,410 @@ var exportData = exports.exportData = function () {
                         }
 
                         //Get Homedata
-                        _context.next = 16;
+                        _context2.next = 16;
                         break;
 
                     case 12:
-                        _context.prev = 12;
-                        _context.t0 = _context['catch'](8);
+                        _context2.prev = 12;
+                        _context2.t0 = _context2['catch'](8);
                         _didIteratorError = true;
-                        _iteratorError = _context.t0;
+                        _iteratorError = _context2.t0;
 
                     case 16:
-                        _context.prev = 16;
-                        _context.prev = 17;
+                        _context2.prev = 16;
+                        _context2.prev = 17;
 
                         if (!_iteratorNormalCompletion && _iterator.return) {
                             _iterator.return();
                         }
 
                     case 19:
-                        _context.prev = 19;
+                        _context2.prev = 19;
 
                         if (!_didIteratorError) {
-                            _context.next = 22;
+                            _context2.next = 22;
                             break;
                         }
 
                         throw _iteratorError;
 
                     case 22:
-                        return _context.finish(19);
+                        return _context2.finish(19);
 
                     case 23:
-                        return _context.finish(16);
+                        return _context2.finish(16);
 
                     case 24:
-                        _context.next = 26;
+                        _context2.next = 26;
                         return getDataElements(_constants.DOCTYPE_HOMEDATA);
 
                     case 26:
-                        homedata = _context.sent;
-                        xmlHome = xml.ele('homedata');
+                        homedataArray = _context2.sent;
+                        homedata = homedataArray[0];
 
 
-                        console.log('Homedata', homedata);
+                        if (homedata === undefined) {
+                            xml.ele('homedata');
+                        } else {
+                            xmlHome = createHomedata(homedata);
 
-                        console.log('XML', xml.end({
-                            pretty: true,
-                            indent: '  ',
-                            newline: '\n',
-                            allowEmpty: true
-                        }));
+                            xml.importDocument(xmlHome);
+                        }
 
-                    case 30:
+                        //Get equipments
+                        _context2.next = 31;
+                        return getDataElements(_constants.DOCTYPE_EQUIPMENTS);
+
+                    case 31:
+                        equipments = _context2.sent;
+                        xmlEquipments = xml.ele('equipments');
+                        _iteratorNormalCompletion2 = true;
+                        _didIteratorError2 = false;
+                        _iteratorError2 = undefined;
+                        _context2.prev = 36;
+
+
+                        for (_iterator2 = equipments[Symbol.iterator](); !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            equipment = _step2.value;
+                            xmlContact = createEquipment(equipment);
+
+
+                            xmlEquipments.importDocument(xmlContact);
+                        }
+
+                        //Get Works
+                        _context2.next = 44;
+                        break;
+
+                    case 40:
+                        _context2.prev = 40;
+                        _context2.t1 = _context2['catch'](36);
+                        _didIteratorError2 = true;
+                        _iteratorError2 = _context2.t1;
+
+                    case 44:
+                        _context2.prev = 44;
+                        _context2.prev = 45;
+
+                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                            _iterator2.return();
+                        }
+
+                    case 47:
+                        _context2.prev = 47;
+
+                        if (!_didIteratorError2) {
+                            _context2.next = 50;
+                            break;
+                        }
+
+                        throw _iteratorError2;
+
+                    case 50:
+                        return _context2.finish(47);
+
+                    case 51:
+                        return _context2.finish(44);
+
+                    case 52:
+                        _context2.next = 54;
+                        return getDataElements(_constants.DOCTYPE_WORKS);
+
+                    case 54:
+                        works = _context2.sent;
+                        xmlWorks = xml.ele('works');
+                        _iteratorNormalCompletion3 = true;
+                        _didIteratorError3 = false;
+                        _iteratorError3 = undefined;
+                        _context2.prev = 59;
+
+
+                        for (_iterator3 = works[Symbol.iterator](); !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                            work = _step3.value;
+                            xmlWork = createWork(work);
+
+
+                            xmlWorks.importDocument(xmlWork);
+                        }
+
+                        //Get Maintenances
+                        _context2.next = 67;
+                        break;
+
+                    case 63:
+                        _context2.prev = 63;
+                        _context2.t2 = _context2['catch'](59);
+                        _didIteratorError3 = true;
+                        _iteratorError3 = _context2.t2;
+
+                    case 67:
+                        _context2.prev = 67;
+                        _context2.prev = 68;
+
+                        if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                            _iterator3.return();
+                        }
+
+                    case 70:
+                        _context2.prev = 70;
+
+                        if (!_didIteratorError3) {
+                            _context2.next = 73;
+                            break;
+                        }
+
+                        throw _iteratorError3;
+
+                    case 73:
+                        return _context2.finish(70);
+
+                    case 74:
+                        return _context2.finish(67);
+
+                    case 75:
+                        _context2.next = 77;
+                        return getDataElements(_constants.DOCTYPE_MAINTENANCES);
+
+                    case 77:
+                        maintenances = _context2.sent;
+                        xmlMaintenances = xml.ele('maintenances');
+                        _iteratorNormalCompletion4 = true;
+                        _didIteratorError4 = false;
+                        _iteratorError4 = undefined;
+                        _context2.prev = 82;
+
+
+                        for (_iterator4 = maintenances[Symbol.iterator](); !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                            maintenance = _step4.value;
+                            xmlMaintenance = createMaintenance(maintenance);
+
+
+                            xmlMaintenances.importDocument(xmlMaintenance);
+                        }
+
+                        //Get Diagnoses
+                        _context2.next = 90;
+                        break;
+
+                    case 86:
+                        _context2.prev = 86;
+                        _context2.t3 = _context2['catch'](82);
+                        _didIteratorError4 = true;
+                        _iteratorError4 = _context2.t3;
+
+                    case 90:
+                        _context2.prev = 90;
+                        _context2.prev = 91;
+
+                        if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                            _iterator4.return();
+                        }
+
+                    case 93:
+                        _context2.prev = 93;
+
+                        if (!_didIteratorError4) {
+                            _context2.next = 96;
+                            break;
+                        }
+
+                        throw _iteratorError4;
+
+                    case 96:
+                        return _context2.finish(93);
+
+                    case 97:
+                        return _context2.finish(90);
+
+                    case 98:
+                        _context2.next = 100;
+                        return getDataElements(_constants.DOCTYPE_DIAGNOSIS);
+
+                    case 100:
+                        diagnoses = _context2.sent;
+                        xmlDiagnoses = xml.ele('diagnoses');
+                        _iteratorNormalCompletion5 = true;
+                        _didIteratorError5 = false;
+                        _iteratorError5 = undefined;
+                        _context2.prev = 105;
+
+
+                        for (_iterator5 = diagnoses[Symbol.iterator](); !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                            diagnosis = _step5.value;
+                            xmlDiagnosis = createDiagnosis(diagnosis);
+
+
+                            xmlDiagnoses.importDocument(xmlDiagnosis);
+                        }
+
+                        _context2.next = 113;
+                        break;
+
+                    case 109:
+                        _context2.prev = 109;
+                        _context2.t4 = _context2['catch'](105);
+                        _didIteratorError5 = true;
+                        _iteratorError5 = _context2.t4;
+
+                    case 113:
+                        _context2.prev = 113;
+                        _context2.prev = 114;
+
+                        if (!_iteratorNormalCompletion5 && _iterator5.return) {
+                            _iterator5.return();
+                        }
+
+                    case 116:
+                        _context2.prev = 116;
+
+                        if (!_didIteratorError5) {
+                            _context2.next = 119;
+                            break;
+                        }
+
+                        throw _iteratorError5;
+
+                    case 119:
+                        return _context2.finish(116);
+
+                    case 120:
+                        return _context2.finish(113);
+
+                    case 121:
+                        return _context2.abrupt('return', xml);
+
+                    case 122:
                     case 'end':
-                        return _context.stop();
+                        return _context2.stop();
                 }
             }
-        }, _callee, undefined, [[8, 12, 16, 24], [17,, 19, 23]]);
+        }, _callee2, undefined, [[8, 12, 16, 24], [17,, 19, 23], [36, 40, 44, 52], [45,, 47, 51], [59, 63, 67, 75], [68,, 70, 74], [82, 86, 90, 98], [91,, 93, 97], [105, 109, 113, 121], [114,, 116, 120]]);
     }));
 
-    return function exportData() {
-        return _ref.apply(this, arguments);
+    return function createXML() {
+        return _ref2.apply(this, arguments);
     };
 }();
 
+var create = function create(object) {
+    return _xmlbuilder2.default.create(object);
+};
+
+var createDiagnosis = function createDiagnosis(d) {
+    //filtering attributes
+    var element = {
+        diagnosis: {
+            type: d.type,
+            description: d.description,
+            date: d.date,
+            expirationDate: d.expirationDate,
+            DPEEnergyClass: d.DPEEnergyClass,
+            realEnergyConsommation: d.realEnergyConsommation,
+            carbonClass: d.carbonClass,
+            CO2emission: d.CO2emission,
+            cep: d.cep,
+            bbio: d.bbio,
+            tic: d.tic,
+            data: d.data,
+            equipmentData: d.equipmentData
+        }
+    };
+
+    return create(element);
+};
+
+var createMaintenance = function createMaintenance(d) {
+    //filtering attributes
+    var element = {
+        maintenance: {
+            name: d.name,
+            description: d.description,
+            contractId: d.contractId,
+            date: d.date,
+            deadline: d.deadline,
+            contract: d.conract
+        }
+    };
+
+    return create(element);
+};
+
+var createWorks = function createWorks(d) {
+    //filtering attributes
+    var element = {
+        work: {
+            description: d.description,
+            roomNames: {
+                roomName: d.roomNames
+            },
+            equipmentNames: {
+                equipmentName: d.equipmentNames
+            },
+            craftsman: d.craftsman,
+            cost: d.cost,
+            date: d.date,
+            contract: d.conract,
+            satisfaction: d.satisfaction,
+            status: d.status,
+            commentary: d.commentary
+        }
+    };
+
+    return create(element);
+};
+
+var createEquipment = function createEquipment(d) {
+    //filtering attributes
+    var element = {
+        equipment: {
+            type: d.type,
+            buyDate: d.buyDate,
+            model: d.model,
+            brand: d.brand,
+            installDate: d.installDate,
+            guaranteeEndDate: d.guaranteeEndDate,
+            lastMaintenanceDate: d.lastMaintenanceDate,
+            energyClass: d.energyClass
+        }
+    };
+
+    return create(element);
+};
+
+var createHomedata = function createHomedata(d) {
+    //filtering attributes
+    var element = {
+        homeData: {
+            type: d.type,
+            status: d.status,
+            constructionDate: d.constructionDate,
+            address: d.address,
+            email: d.email,
+            phone: d.telephones && d.telephones.map(function (p) {
+                return { '@type': p.type, '#text': p.phone };
+            }),
+            livingArea: d.livingArea,
+            roomsCount: d.roomsCount,
+            guarantees: {
+                guarantee: d.guarantees
+            },
+            rooms: {
+                room: d.rooms
+            }
+        }
+    };
+
+    return create(element);
+};
+
 var createContact = function createContact(d) {
-    //filtering atributes
-    var contact = {
+    //filtering attributes
+    var element = {
         contact: {
             lastname: d.lastName,
             firstname: d.firstName,
             address: d.address,
-            phone: d.telephones.map(function (p) {
+            phone: d.telephones && d.telephones.map(function (p) {
                 return { '@type': p.type, '#text': p.phone };
             }),
             email: d.email,
@@ -13501,25 +13947,22 @@ var createContact = function createContact(d) {
         }
     };
 
-    console.log('Contact object', contact);
-
-    var xml = _xmlbuilder2.default.create(contact);
-    return xml;
+    return create(element);
 };
 
 var getDataElements = function () {
-    var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(doctype) {
+    var _ref3 = _asyncToGenerator(regeneratorRuntime.mark(function _callee3(doctype) {
         var indexRef;
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+        return regeneratorRuntime.wrap(function _callee3$(_context3) {
             while (1) {
-                switch (_context2.prev = _context2.next) {
+                switch (_context3.prev = _context3.next) {
                     case 0:
-                        _context2.next = 2;
+                        _context3.next = 2;
                         return cozy.client.data.defineIndex(doctype, ['_id']);
 
                     case 2:
-                        indexRef = _context2.sent;
-                        _context2.next = 5;
+                        indexRef = _context3.sent;
+                        _context3.next = 5;
                         return cozy.client.data.query(indexRef, {
                             selector: {
                                 "_id": {
@@ -13529,18 +13972,18 @@ var getDataElements = function () {
                         });
 
                     case 5:
-                        return _context2.abrupt('return', _context2.sent);
+                        return _context3.abrupt('return', _context3.sent);
 
                     case 6:
                     case 'end':
-                        return _context2.stop();
+                        return _context3.stop();
                 }
             }
-        }, _callee2, undefined);
+        }, _callee3, undefined);
     }));
 
     return function getDataElements(_x) {
-        return _ref2.apply(this, arguments);
+        return _ref3.apply(this, arguments);
     };
 }();
 
@@ -15012,7 +15455,7 @@ if(false) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.createOptionsFromArray = exports.findParentPath = exports.createFakePath = exports.exctractReelPath = exports.promiseTimeout = exports.isDirectory = exports.extractFileAttributes = undefined;
+exports.forceFileDownload = exports.createOptionsFromArray = exports.findParentPath = exports.createFakePath = exports.exctractReelPath = exports.promiseTimeout = exports.isDirectory = exports.extractFileAttributes = undefined;
 
 var _constants = __webpack_require__("./src/constants/index.js");
 
@@ -15076,6 +15519,16 @@ var createOptionsFromArray = exports.createOptionsFromArray = function createOpt
             item
         );
     });
+};
+
+var forceFileDownload = exports.forceFileDownload = function forceFileDownload(href, filename) {
+    var element = document.createElement('a');
+    element.setAttribute('href', href);
+    element.setAttribute('download', filename);
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
 };
 
 /***/ }),
