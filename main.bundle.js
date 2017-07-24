@@ -5491,7 +5491,7 @@ var Footer = exports.Footer = function Footer(props) {
             'div',
             { className: _Footer2.default.content },
             'HOMEBOOK est un service propos\xE9 par edf - V',
-            '2.0.26'
+            '2.0.27'
         )
     );
 };
@@ -7686,7 +7686,7 @@ var CustomLink = exports.CustomLink = function CustomLink(props) {
     return _react2.default.createElement(
         'a',
         { className: active && activeClassName, onClick: function onClick(e) {
-                console.log('Click link', e);open(e);
+                return open(e);
             } },
         children
     );
@@ -12321,7 +12321,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[role=application]');
     var data = root.dataset;
 
-    console.log('Current Version:', '2.0.26');
+    console.log('Current Version:', '2.0.27');
 
     window.cozy.client.init({
         cozyURL: '//' + data.cozyDomain,
@@ -13915,7 +13915,7 @@ var createHomedata = function createHomedata(d) {
             address: d.address,
             email: d.email,
             phone: d.telephones && d.telephones.map(function (p) {
-                return { '@type': p.type, '#text': p.phone };
+                return { '@type': p.type || 'default', '#text': p.phone };
             }),
             livingArea: d.livingArea,
             roomsCount: d.roomsCount,
@@ -13939,7 +13939,7 @@ var createContact = function createContact(d) {
             firstname: d.firstName,
             address: d.address,
             phone: d.telephones && d.telephones.map(function (p) {
-                return { '@type': p.type, '#text': p.phone };
+                return { '@type': p.type || 'default', '#text': p.phone };
             }),
             email: d.email,
             company: d.company,
