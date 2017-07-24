@@ -5491,7 +5491,7 @@ var Footer = exports.Footer = function Footer(props) {
             'div',
             { className: _Footer2.default.content },
             'HOMEBOOK est un service propos\xE9 par edf - V',
-            '2.0.27'
+            '2.0.28'
         )
     );
 };
@@ -12321,7 +12321,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[role=application]');
     var data = root.dataset;
 
-    console.log('Current Version:', '2.0.27');
+    console.log('Current Version:', '2.0.28');
 
     window.cozy.client.init({
         cozyURL: '//' + data.cozyDomain,
@@ -13863,7 +13863,7 @@ var createMaintenance = function createMaintenance(d) {
     return create(element);
 };
 
-var createWorks = function createWorks(d) {
+var createWork = function createWork(d) {
     //filtering attributes
     var element = {
         work: {
