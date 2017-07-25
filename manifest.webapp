@@ -107,6 +107,10 @@
             "description": "App required metas access",
             "type": "com.homebook.meta"
         },
+        "news": {
+            "description": "App required access to news",
+            "type": "com.homebook.news"
+        },
         "mail": {
             "description": "Required to send a congratulations email to your friends",
             "type": "io.cozy.jobs",

@@ -419,7 +419,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".buttons-button__2Pc5 {\n  border: solid 1px #9b9b9b;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  letter-spacing: 1px;\n  color: #dddddd;\n  padding: 12px 15px;\n  font-weight: 300;\n  cursor: pointer; }\n  .buttons-button__2Pc5.buttons-positive__22b7 {\n    background-color: #c8c951;\n    color: #dddddd; }\n  .buttons-button__2Pc5.buttons-light__23Jm {\n    background-color: #FFF;\n    color: #444; }\n  .buttons-button__2Pc5.buttons-assertive__utAu {\n    background-color: #ff3f3a;\n    color: #FFF;\n    border: 1px solid #ff2621 !important; }\n    .buttons-button__2Pc5.buttons-assertive__utAu:hover {\n      background-color: #ff5854 !important; }\n  .buttons-button__2Pc5.buttons-stable__2sFm {\n    background-color: #f6f6f6;\n    color: #444; }\n  .buttons-button__2Pc5.buttons-default__fJ7W {\n    background-color: #485d76;\n    color: #dddddd;\n    border: 1px solid #485d76; }\n  .buttons-button__2Pc5.buttons-clear__2QcK {\n    background-color: transparent;\n    border: none; }\n  .buttons-button__2Pc5 > i:first-child {\n    margin-right: 8px;\n    vertical-align: middle;\n    font-size: 20px; }\n  .buttons-button__2Pc5.buttons-icon__1t6_ {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n    .buttons-button__2Pc5.buttons-icon__1t6_ i:first-child {\n      line-height: 0;\n      margin: 0;\n      padding: 0;\n      font-size: 25px;\n      height: 18px;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      overflow: visible; }\n  @media (min-width: 770px) and (max-width: 1155px) {\n    .buttons-button__2Pc5 .buttons-text__30hO {\n      display: none; }\n    .buttons-button__2Pc5 > i:first-child {\n      margin: 0; } }\n  @media (max-width: 513.33333px) {\n    .buttons-button__2Pc5 .buttons-text__30hO {\n      display: none; }\n    .buttons-button__2Pc5 > i:first-child {\n      margin: 0; } }\n", ""]);
+exports.push([module.i, ".buttons-button__2Pc5 {\n  border: solid 1px #9b9b9b;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  letter-spacing: 1px;\n  color: #dddddd;\n  padding: 12px 15px;\n  font-weight: 300;\n  cursor: pointer; }\n  .buttons-button__2Pc5:disabled {\n    cursor: not-allowed; }\n  .buttons-button__2Pc5.buttons-positive__22b7 {\n    background-color: #c8c951;\n    color: #dddddd; }\n  .buttons-button__2Pc5.buttons-light__23Jm {\n    background-color: #FFF;\n    color: #444; }\n  .buttons-button__2Pc5.buttons-assertive__utAu {\n    background-color: #ff3f3a;\n    color: #FFF;\n    border: 1px solid #ff2621 !important; }\n    .buttons-button__2Pc5.buttons-assertive__utAu:hover {\n      background-color: #ff5854 !important; }\n  .buttons-button__2Pc5.buttons-stable__2sFm {\n    background-color: #f6f6f6;\n    color: #444; }\n  .buttons-button__2Pc5.buttons-default__fJ7W {\n    background-color: #485d76;\n    color: #dddddd;\n    border: 1px solid #485d76; }\n  .buttons-button__2Pc5.buttons-clear__2QcK {\n    background-color: transparent;\n    border: none; }\n  .buttons-button__2Pc5 > i:first-child {\n    margin-right: 8px;\n    vertical-align: middle;\n    font-size: 20px; }\n  .buttons-button__2Pc5.buttons-icon__1t6_ {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n    .buttons-button__2Pc5.buttons-icon__1t6_ i:first-child {\n      line-height: 0;\n      margin: 0;\n      padding: 0;\n      font-size: 25px;\n      height: 18px;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      overflow: visible; }\n  @media (min-width: 770px) and (max-width: 1155px) {\n    .buttons-button__2Pc5 .buttons-text__30hO {\n      display: none; }\n    .buttons-button__2Pc5 > i:first-child {\n      margin: 0; } }\n  @media (max-width: 513.33333px) {\n    .buttons-button__2Pc5 .buttons-text__30hO {\n      display: none; }\n    .buttons-button__2Pc5 > i:first-child {\n      margin: 0; } }\n", ""]);
 
 // exports
 exports.locals = {
@@ -432,6 +432,23 @@ exports.locals = {
 	"clear": "buttons-clear__2QcK",
 	"icon": "buttons-icon__1t6_",
 	"text": "buttons-text__30hO"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]-[local]__[hash:base64:4]\"}!./node_modules/postcss-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/help.sass":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".help-tab__2aeP {\n  cursor: pointer; }\n  .help-tab__2aeP a:hover {\n    text-decoration: none; }\n", ""]);
+
+// exports
+exports.locals = {
+	"tab": "help-tab__2aeP"
 };
 
 /***/ }),
@@ -5933,7 +5950,7 @@ var Footer = exports.Footer = function Footer(props) {
             'div',
             { className: _Footer2.default.content },
             'HOMEBOOK est un service propos\xE9 par edf - V',
-            '2.0.39'
+            '2.0.41'
         )
     );
 };
@@ -6109,11 +6126,17 @@ var _Panel = __webpack_require__("./node_modules/react-bootstrap/lib/Panel.js");
 
 var _Panel2 = _interopRequireDefault(_Panel);
 
+var _help = __webpack_require__("./src/styles/help.sass");
+
+var _help2 = _interopRequireDefault(_help);
+
 var _Page = __webpack_require__("./src/components/elements/Page.jsx");
 
 var _Page2 = _interopRequireDefault(_Page);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // import { shouldEnableTracking, getTracker } from '../tracker'
 
@@ -6135,10 +6158,10 @@ var Help = exports.Help = function Help(props) {
         { title: 'Aide' },
         _react2.default.createElement(
             _Accordion2.default,
-            { defaultActiveKey: '2' },
+            null,
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'MES DOCUMENTS', eventKey: '2' },
+                _defineProperty({ header: 'MON LOGIS', eventKey: '2', className: _help2.default.tab }, 'className', _help2.default.tab),
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -6349,7 +6372,7 @@ var Help = exports.Help = function Help(props) {
                     { defaultActiveKey: '1' },
                     _react2.default.createElement(
                         _Panel2.default,
-                        { header: 'LOGEMENT', eventKey: '1' },
+                        _defineProperty({ header: 'LOGEMENT', eventKey: '1', className: _help2.default.tab }, 'className', _help2.default.tab),
                         _react2.default.createElement(
                             'table',
                             { className: 'table' },
@@ -6653,7 +6676,7 @@ var Help = exports.Help = function Help(props) {
                     ),
                     _react2.default.createElement(
                         _Panel2.default,
-                        { header: 'POUR LA VENTE OU LOCATION D\u2019UN LOGEMENT', eventKey: '2' },
+                        { header: 'POUR LA VENTE OU LOCATION D\u2019UN LOGEMENT', eventKey: '2', className: _help2.default.tab },
                         _react2.default.createElement(
                             'p',
                             null,
@@ -6894,7 +6917,7 @@ var Help = exports.Help = function Help(props) {
                     ),
                     _react2.default.createElement(
                         _Panel2.default,
-                        { header: 'IMPOTS ET TAXES', eventKey: '3' },
+                        { header: 'IMPOTS ET TAXES', eventKey: '3', className: _help2.default.tab },
                         _react2.default.createElement(
                             'table',
                             { className: 'table' },
@@ -6970,7 +6993,7 @@ var Help = exports.Help = function Help(props) {
                     ),
                     _react2.default.createElement(
                         _Panel2.default,
-                        { header: 'ASSURANCE', eventKey: '4' },
+                        { header: 'ASSURANCE', eventKey: '4', className: _help2.default.tab },
                         _react2.default.createElement(
                             'table',
                             { className: 'table' },
@@ -7088,7 +7111,7 @@ var Help = exports.Help = function Help(props) {
                     ),
                     _react2.default.createElement(
                         _Panel2.default,
-                        { header: 'BANQUE', eventKey: '5' },
+                        { header: 'BANQUE', eventKey: '5', className: _help2.default.tab },
                         _react2.default.createElement(
                             'table',
                             { className: 'table' },
@@ -7195,7 +7218,7 @@ var Help = exports.Help = function Help(props) {
                     ),
                     _react2.default.createElement(
                         _Panel2.default,
-                        { header: 'VEHICULE', eventKey: '6' },
+                        { header: 'VEHICULE', eventKey: '6', className: _help2.default.tab },
                         _react2.default.createElement(
                             'table',
                             { className: 'table' },
@@ -7370,7 +7393,7 @@ var Help = exports.Help = function Help(props) {
             ),
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'DONNEES', eventKey: '3' },
+                { header: 'DONNEES', eventKey: '3', className: _help2.default.tab },
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -7471,7 +7494,7 @@ var Help = exports.Help = function Help(props) {
             ),
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'RECHERCHE', eventKey: '4' },
+                { header: 'RECHERCHE', eventKey: '4', className: _help2.default.tab },
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -7494,7 +7517,7 @@ var Help = exports.Help = function Help(props) {
             ),
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'EQUIPEMENTS', eventKey: '5' },
+                { header: 'EQUIPEMENTS', eventKey: '5', className: _help2.default.tab },
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -7599,7 +7622,7 @@ var Help = exports.Help = function Help(props) {
             ),
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'APPLICATIONS', eventKey: '6' },
+                { header: 'APPLICATIONS', eventKey: '6', className: _help2.default.tab },
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -7699,7 +7722,7 @@ var Help = exports.Help = function Help(props) {
             ),
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'IDENTIFIANTS ET COMPTE UTILISATEUR', eventKey: '7' },
+                { header: 'IDENTIFIANTS ET COMPTE UTILISATEUR', eventKey: '7', className: _help2.default.tab },
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -7737,7 +7760,7 @@ var Help = exports.Help = function Help(props) {
             ),
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'RAPPELS', eventKey: '8' },
+                { header: 'RAPPELS', eventKey: '8', className: _help2.default.tab },
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -7789,7 +7812,7 @@ var Help = exports.Help = function Help(props) {
             ),
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'CONTACTS', eventKey: '9' },
+                { header: 'CONTACTS', eventKey: '9', className: _help2.default.tab },
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -7855,7 +7878,7 @@ var Help = exports.Help = function Help(props) {
             ),
             _react2.default.createElement(
                 _Panel2.default,
-                { header: 'PROBLEMES TECHNIQUES \u2013 BESOIN D\u2019AIDE', eventKey: '10' },
+                { header: 'PROBLEMES TECHNIQUES \u2013 BESOIN D\u2019AIDE', eventKey: '10', className: _help2.default.tab },
                 _react2.default.createElement(
                     'ul',
                     null,
@@ -7885,7 +7908,7 @@ var Help = exports.Help = function Help(props) {
         )
     );
 };
-// import './FAQ.scss'
+
 exports.default = Help;
 
 /***/ }),
@@ -8487,7 +8510,7 @@ var Preferences = exports.Preferences = function Preferences(props) {
                 ),
                 _react2.default.createElement(
                     'button',
-                    { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.default) },
+                    { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.default), disabled: true },
                     _react2.default.createElement('i', { className: 'ion-ios-upload-outline' }),
                     ' IMPORTER CNL'
                 )
@@ -12907,7 +12930,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[role=application]');
     var data = root.dataset;
 
-    console.log('Current Version:', '2.0.39');
+    console.log('Current Version:', '2.0.41');
 
     window.cozy.client.init({
         cozyURL: '//' + data.cozyDomain,
@@ -14068,40 +14091,52 @@ var exportData = exports.exportData = function () {
                         return cozy.client.files.trashById(old._id);
 
                     case 25:
-                        _context.next = 29;
-                        break;
+                        _context.next = 27;
+                        return cozy.client.files.destroyById(old._id);
 
                     case 27:
-                        _context.prev = 27;
-                        _context.t1 = _context['catch'](19);
+                        _context.next = 31;
+                        break;
 
                     case 29:
-                        _context.next = 31;
+                        _context.prev = 29;
+                        _context.t1 = _context['catch'](19);
+
+                    case 31:
+                        _context.next = 33;
                         return cozy.client.files.create(file, {
                             name: 'homebook.xml',
                             dirID: parent._id
                         });
 
-                    case 31:
+                    case 33:
                         xmlFile = _context.sent;
-                        _context.next = 34;
+                        _context.next = 36;
                         return cozy.client.files.getArchiveLinkByPaths(['/Homebook/', '/tmp/homebook.xml'], 'homebook');
 
-                    case 34:
+                    case 36:
                         link = _context.sent;
-                        _context.next = 37;
+                        _context.next = 39;
                         return cozy.client.fullpath(link);
 
-                    case 37:
+                    case 39:
                         reallink = _context.sent;
+                        _context.next = 42;
+                        return cozy.client.files.trashById(xmlFile._id);
+
+                    case 42:
+                        _context.next = 44;
+                        return cozy.client.files.destroyById(xmlFile._id);
+
+                    case 44:
                         return _context.abrupt('return', reallink);
 
-                    case 39:
+                    case 45:
                     case 'end':
                         return _context.stop();
                 }
             }
-        }, _callee, undefined, [[6, 12], [19, 27]]);
+        }, _callee, undefined, [[6, 12], [19, 29]]);
     }));
 
     return function exportData() {
@@ -16078,6 +16113,38 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./buttons.scss", function() {
 			var newContent = require("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./buttons.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/styles/help.sass":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]-[local]__[hash:base64:4]\"}!./node_modules/postcss-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/help.sass");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./help.sass", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./help.sass");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
