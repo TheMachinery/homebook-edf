@@ -614,6 +614,8 @@ var App = function App(props) {
     );
 };
 
+//import News from './containers/News'
+
 // import SearchBar from './components/SearchBar'
 
 // import createHistory from 'history/createBrowserHistory'
@@ -623,16 +625,11 @@ var WIP = function WIP(props) {
     console.log('WIP Props', props);
     return _react2.default.createElement(
         _Page2.default,
-        { title: props.location.pathname.substring(1).toUpperCase(), subtitle: '12 \xE9l\xE9ments',
-            actions: [_react2.default.createElement(
-                'button',
-                { className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable) },
-                'Bouton de test'
-            )] },
+        { title: props.location.pathname.substring(1).toUpperCase() },
         _react2.default.createElement(
             'h1',
             null,
-            'WORK IN PROGRESS'
+            'Page en construction'
         )
     );
 };
@@ -2731,7 +2728,7 @@ Object.keys(_gauge).forEach(function (key) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.loadTrash = exports.loadData = exports.loadContacts = exports.loadRecalls = exports.loadFolder = exports.LOAD_FILE_SUCCESS = exports.LOAD_TRASH_FAILURE = exports.LOAD_TRASH_SUCCESS = exports.LOAD_TRASH = exports.LOAD_DATA_FAILURE = exports.LOAD_DATA_SUCCESS = exports.LOAD_DATA = exports.LOAD_CONTACTS_FAILURE = exports.LOAD_CONTACTS_SUCCESS = exports.LOAD_CONTACTS = exports.LOAD_RECALLS_FAILURE = exports.LOAD_RECALLS_SUCCESS = exports.LOAD_RECALLS = exports.LOAD_DOCS_FAILURE = exports.LOAD_DOCS_SUCCESS = exports.LOAD_DOCS = undefined;
+exports.loadTrash = exports.loadData = exports.loadNews = exports.loadContacts = exports.loadRecalls = exports.loadFolder = exports.LOAD_NEWS_FAILURE = exports.LOAD_NEWS_SUCCESS = exports.LOAD_NEWS = exports.LOAD_FILE_SUCCESS = exports.LOAD_TRASH_FAILURE = exports.LOAD_TRASH_SUCCESS = exports.LOAD_TRASH = exports.LOAD_DATA_FAILURE = exports.LOAD_DATA_SUCCESS = exports.LOAD_DATA = exports.LOAD_CONTACTS_FAILURE = exports.LOAD_CONTACTS_SUCCESS = exports.LOAD_CONTACTS = exports.LOAD_RECALLS_FAILURE = exports.LOAD_RECALLS_SUCCESS = exports.LOAD_RECALLS = exports.LOAD_DOCS_FAILURE = exports.LOAD_DOCS_SUCCESS = exports.LOAD_DOCS = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -2769,6 +2766,9 @@ var LOAD_TRASH = exports.LOAD_TRASH = "LOAD_TRASH";
 var LOAD_TRASH_SUCCESS = exports.LOAD_TRASH_SUCCESS = "LOAD_TRASH_SUCCESS";
 var LOAD_TRASH_FAILURE = exports.LOAD_TRASH_FAILURE = "LOAD_TRASH_FAILURE";
 var LOAD_FILE_SUCCESS = exports.LOAD_FILE_SUCCESS = "LOAD_FILE_SUCCESS";
+var LOAD_NEWS = exports.LOAD_NEWS = "LOAD_NEWS";
+var LOAD_NEWS_SUCCESS = exports.LOAD_NEWS_SUCCESS = "LOAD_NEWS_SUCCESS";
+var LOAD_NEWS_FAILURE = exports.LOAD_NEWS_FAILURE = "LOAD_NEWS_FAILURE";
 
 var loadFolder = exports.loadFolder = function loadFolder() {
     var path = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _constants.ROOT_PATH;
@@ -3008,6 +3008,51 @@ var loadContacts = exports.loadContacts = function loadContacts() {
     }();
 };
 
+var loadNews = exports.loadNews = function loadNews() {
+    console.log('load news ..?');
+    return function () {
+        var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee5(dispatch, getState) {
+            var result;
+            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+                while (1) {
+                    switch (_context5.prev = _context5.next) {
+                        case 0:
+                            dispatch({
+                                type: LOAD_NEWS
+                            });
+                            _context5.prev = 1;
+                            _context5.next = 4;
+                            return getDataElements(_constants.DOCTYPE_NEWS);
+
+                        case 4:
+                            result = _context5.sent;
+                            return _context5.abrupt('return', dispatch({
+                                type: LOAD_NEWS_SUCCESS,
+                                news: result
+                            }));
+
+                        case 8:
+                            _context5.prev = 8;
+                            _context5.t0 = _context5['catch'](1);
+                            return _context5.abrupt('return', dispatch({
+                                type: LOAD_NEWS_FAILURE,
+                                error: _context5.t0
+                            }));
+
+                        case 11:
+                        case 'end':
+                            return _context5.stop();
+                    }
+                }
+            }, _callee5, undefined, [[1, 8]]);
+        }));
+
+        return function (_x9, _x10) {
+            return _ref5.apply(this, arguments);
+        };
+    }();
+};
+
 var loadData = exports.loadData = function loadData() {
     var doctype = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _constants.DOCTYPE_DATA;
 
@@ -3024,25 +3069,25 @@ var loadData = exports.loadData = function loadData() {
 
 var createLoader = function createLoader(action, actionSuccess, actionFailure, doctype) {
     return function () {
-        var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee5(dispatch, getState) {
+        var _ref6 = _asyncToGenerator(regeneratorRuntime.mark(function _callee6(dispatch, getState) {
             var data, noTrashData;
-            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+            return regeneratorRuntime.wrap(function _callee6$(_context6) {
                 while (1) {
-                    switch (_context5.prev = _context5.next) {
+                    switch (_context6.prev = _context6.next) {
                         case 0:
                             dispatch({
                                 type: action
                             });
-                            _context5.prev = 1;
-                            _context5.next = 4;
+                            _context6.prev = 1;
+                            _context6.next = 4;
                             return getDataElements(doctype);
 
                         case 4:
-                            data = _context5.sent;
+                            data = _context6.sent;
                             noTrashData = data.filter(function (d) {
                                 return !d.trash;
                             });
-                            return _context5.abrupt('return', dispatch({
+                            return _context6.abrupt('return', dispatch({
                                 type: actionSuccess,
                                 data: noTrashData.map(function (item) {
                                     item.doctype = doctype;
@@ -3052,23 +3097,23 @@ var createLoader = function createLoader(action, actionSuccess, actionFailure, d
                             }));
 
                         case 9:
-                            _context5.prev = 9;
-                            _context5.t0 = _context5['catch'](1);
-                            return _context5.abrupt('return', dispatch({
+                            _context6.prev = 9;
+                            _context6.t0 = _context6['catch'](1);
+                            return _context6.abrupt('return', dispatch({
                                 type: actionFailure,
-                                error: _context5.t0
+                                error: _context6.t0
                             }));
 
                         case 12:
                         case 'end':
-                            return _context5.stop();
+                            return _context6.stop();
                     }
                 }
-            }, _callee5, undefined, [[1, 9]]);
+            }, _callee6, undefined, [[1, 9]]);
         }));
 
-        return function (_x10, _x11) {
-            return _ref5.apply(this, arguments);
+        return function (_x12, _x13) {
+            return _ref6.apply(this, arguments);
         };
     }();
 };
@@ -3095,42 +3140,42 @@ var createLoader = function createLoader(action, actionSuccess, actionFailure, d
 
 var loadTrash = exports.loadTrash = function loadTrash() {
     return function () {
-        var _ref6 = _asyncToGenerator(regeneratorRuntime.mark(function _callee6(dispatch, getState) {
+        var _ref7 = _asyncToGenerator(regeneratorRuntime.mark(function _callee7(dispatch, getState) {
             var files, result, contacts, data, _loop, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, infos;
 
-            return regeneratorRuntime.wrap(function _callee6$(_context7) {
+            return regeneratorRuntime.wrap(function _callee7$(_context8) {
                 while (1) {
-                    switch (_context7.prev = _context7.next) {
+                    switch (_context8.prev = _context8.next) {
                         case 0:
                             dispatch({
                                 type: LOAD_TRASH
                             });
-                            _context7.prev = 1;
-                            _context7.next = 4;
+                            _context8.prev = 1;
+                            _context8.next = 4;
                             return cozy.client.files.listTrash();
 
                         case 4:
-                            files = _context7.sent;
-                            _context7.next = 7;
+                            files = _context8.sent;
+                            _context8.next = 7;
                             return getDataElements(_constants.DOCTYPE_CONTACTS);
 
                         case 7:
-                            result = _context7.sent;
+                            result = _context8.sent;
                             contacts = result.filter(function (c) {
                                 return c.trash;
                             });
                             data = [];
                             _loop = regeneratorRuntime.mark(function _loop(infos) {
                                 var result, newData;
-                                return regeneratorRuntime.wrap(function _loop$(_context6) {
+                                return regeneratorRuntime.wrap(function _loop$(_context7) {
                                     while (1) {
-                                        switch (_context6.prev = _context6.next) {
+                                        switch (_context7.prev = _context7.next) {
                                             case 0:
-                                                _context6.next = 2;
+                                                _context7.next = 2;
                                                 return getDataElements(infos.doctype);
 
                                             case 2:
-                                                result = _context6.sent;
+                                                result = _context7.sent;
                                                 newData = result.filter(function (c) {
                                                     return c.trash;
                                                 }).map(function (d) {
@@ -3141,7 +3186,7 @@ var loadTrash = exports.loadTrash = function loadTrash() {
 
                                             case 5:
                                             case 'end':
-                                                return _context6.stop();
+                                                return _context7.stop();
                                         }
                                     }
                                 }, _loop, undefined);
@@ -3149,59 +3194,59 @@ var loadTrash = exports.loadTrash = function loadTrash() {
                             _iteratorNormalCompletion = true;
                             _didIteratorError = false;
                             _iteratorError = undefined;
-                            _context7.prev = 14;
+                            _context8.prev = 14;
                             _iterator = _constants.DATA_LIST[Symbol.iterator]();
 
                         case 16:
                             if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
-                                _context7.next = 22;
+                                _context8.next = 22;
                                 break;
                             }
 
                             infos = _step.value;
-                            return _context7.delegateYield(_loop(infos), 't0', 19);
+                            return _context8.delegateYield(_loop(infos), 't0', 19);
 
                         case 19:
                             _iteratorNormalCompletion = true;
-                            _context7.next = 16;
+                            _context8.next = 16;
                             break;
 
                         case 22:
-                            _context7.next = 28;
+                            _context8.next = 28;
                             break;
 
                         case 24:
-                            _context7.prev = 24;
-                            _context7.t1 = _context7['catch'](14);
+                            _context8.prev = 24;
+                            _context8.t1 = _context8['catch'](14);
                             _didIteratorError = true;
-                            _iteratorError = _context7.t1;
+                            _iteratorError = _context8.t1;
 
                         case 28:
-                            _context7.prev = 28;
-                            _context7.prev = 29;
+                            _context8.prev = 28;
+                            _context8.prev = 29;
 
                             if (!_iteratorNormalCompletion && _iterator.return) {
                                 _iterator.return();
                             }
 
                         case 31:
-                            _context7.prev = 31;
+                            _context8.prev = 31;
 
                             if (!_didIteratorError) {
-                                _context7.next = 34;
+                                _context8.next = 34;
                                 break;
                             }
 
                             throw _iteratorError;
 
                         case 34:
-                            return _context7.finish(31);
+                            return _context8.finish(31);
 
                         case 35:
-                            return _context7.finish(28);
+                            return _context8.finish(28);
 
                         case 36:
-                            return _context7.abrupt('return', dispatch({
+                            return _context8.abrupt('return', dispatch({
                                 type: LOAD_TRASH_SUCCESS,
                                 files: files.map(function (c) {
                                     return (0, _tools.extractFileAttributes)(c);
@@ -3211,23 +3256,23 @@ var loadTrash = exports.loadTrash = function loadTrash() {
                             }));
 
                         case 39:
-                            _context7.prev = 39;
-                            _context7.t2 = _context7['catch'](1);
-                            return _context7.abrupt('return', dispatch({
+                            _context8.prev = 39;
+                            _context8.t2 = _context8['catch'](1);
+                            return _context8.abrupt('return', dispatch({
                                 type: LOAD_TRASH_FAILURE,
-                                error: _context7.t2
+                                error: _context8.t2
                             }));
 
                         case 42:
                         case 'end':
-                            return _context7.stop();
+                            return _context8.stop();
                     }
                 }
-            }, _callee6, undefined, [[1, 39], [14, 24, 28, 36], [29,, 31, 35]]);
+            }, _callee7, undefined, [[1, 39], [14, 24, 28, 36], [29,, 31, 35]]);
         }));
 
-        return function (_x12, _x13) {
-            return _ref6.apply(this, arguments);
+        return function (_x14, _x15) {
+            return _ref7.apply(this, arguments);
         };
     }();
 };
@@ -5349,8 +5394,11 @@ var DocumentView = function (_Component) {
         key: 'renderSimple',
         value: function renderSimple() {
             return _react2.default.createElement(
-                'p',
+                'div',
                 null,
+                'Impossible de lire ce type de fichier, veuillez le t\xE9l\xE9charger afin de le lire sur votre ordinateur',
+                _react2.default.createElement('br', null),
+                _react2.default.createElement('br', null),
                 'URL du fichier : ',
                 _react2.default.createElement(
                     'a',
@@ -6030,7 +6078,7 @@ var Footer = exports.Footer = function Footer(props) {
             'div',
             { className: _Footer2.default.content },
             'HOMEBOOK est un service propos\xE9 par edf - V',
-            '2.1.4'
+            '2.1.36'
         )
     );
 };
@@ -13319,7 +13367,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[role=application]');
     var data = root.dataset;
 
-    console.log('Current Version:', '2.1.4');
+    console.log('Current Version:', '2.1.36');
 
     window.cozy.client.init({
         cozyURL: '//' + data.cozyDomain,
@@ -14033,6 +14081,10 @@ var _trash = __webpack_require__("./src/reducers/trash.js");
 
 var _trash2 = _interopRequireDefault(_trash);
 
+var _news = __webpack_require__("./src/reducers/news.js");
+
+var _news2 = _interopRequireDefault(_news);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var reducers = exports.reducers = {
@@ -14043,11 +14095,91 @@ var reducers = exports.reducers = {
     trash: _trash2.default,
     data: _data2.default,
     recalls: _recalls2.default,
-    contacts: _contacts2.default
+    contacts: _contacts2.default,
+    news: _news2.default
 };
 
 var filesApp = (0, _redux.combineReducers)(reducers);
 exports.default = filesApp;
+
+/***/ }),
+
+/***/ "./src/reducers/news.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.selectedCount = exports.elements = undefined;
+
+var _redux = __webpack_require__("./node_modules/redux/es/index.js");
+
+var _actions = __webpack_require__("./src/actions/index.js");
+
+var _constants = __webpack_require__("./src/constants/index.js");
+
+var elements = exports.elements = function elements() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    var action = arguments[1];
+
+    switch (action.type) {
+        case _actions.LOAD_NEWS_SUCCESS:
+            return action.news;
+        default:
+            return state;
+    }
+};
+
+var selectedCount = exports.selectedCount = function selectedCount() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    var action = arguments[1];
+
+    switch (action.type) {
+        case _actions.LOAD_NEWS_SUCCESS:
+            return 0;
+        default:
+            return state;
+    }
+};
+
+var elementCount = function elementCount() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    var action = arguments[1];
+
+    switch (action.type) {
+        case _actions.LOAD_NEWS_SUCCESS:
+            console.log(action.news.length);
+            return action.news.length;
+        default:
+            return state;
+    }
+};
+
+var fetchStatus = function fetchStatus() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _constants.STATUS_LOAD;
+    var action = arguments[1];
+
+    switch (action.type) {
+        case _actions.LOAD_NEWS:
+            return _constants.STATUS_LOAD;
+        case _actions.LOAD_NEWS_SUCCESS:
+            return _constants.STATUS_DONE;
+        case _actions.LOAD_NEWS_FAILURE:
+            return _constants.STATUS_ERROR;
+        default:
+            return state;
+    }
+};
+
+exports.default = (0, _redux.combineReducers)({
+    selectedCount: selectedCount,
+    elements: elements,
+    elementCount: elementCount,
+    fetchStatus: fetchStatus
+});
 
 /***/ }),
 
