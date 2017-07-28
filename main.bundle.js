@@ -147,6 +147,25 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]-[local]__[hash:base64:4]\"}!./node_modules/postcss-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/DocumentViewModal.sass":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".DocumentViewModal-main__1m2z {\n  border: 1px solid #DDD;\n  overflow-y: auto;\n  max-height: 100vh;\n  max-width: 650px;\n  width: 100vw; }\n  .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao {\n    background-color: #F6F6F6;\n    height: 88px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    border-bottom: 1px solid #DDD;\n    padding: 10px 1px; }\n    @media (min-width: 770px) {\n      .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao {\n        padding: 16px; } }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao h1 {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      font-size: 24px;\n      color: #32363F;\n      letter-spacing: 1px;\n      line-height: 40px;\n      font-weight: 500; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao button {\n      margin-left: 5px;\n      height: 54px; }\n      @media (min-width: 770px) {\n        .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao button {\n          margin-left: 16px; } }\n      .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao button i {\n        line-height: 20px; }\n  .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ {\n    padding: 16px;\n    background-color: white; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ h3 {\n      font-size: 16px;\n      color: #95999D;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 10px;\n      font-weight: lighter; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ p {\n      font-size: 16px;\n      color: #4A4A4A;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 32px;\n      font-weight: lighter; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ p + p {\n      margin-top: -32px; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ a,\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ a:visited {\n      color: #4A4A4A; }\n", ""]);
+
+// exports
+exports.locals = {
+	"main": "DocumentViewModal-main__1m2z",
+	"header": "DocumentViewModal-header__1_ao",
+	"content": "DocumentViewModal-content__1qUQ"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]-[local]__[hash:base64:4]\"}!./node_modules/postcss-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/Documents.sass":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -449,6 +468,25 @@ exports.push([module.i, ".help-tab__uTbm {\n  cursor: pointer; }\n  .help-tab__u
 // exports
 exports.locals = {
 	"tab": "help-tab__uTbm"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]-[local]__[hash:base64:4]\"}!./node_modules/postcss-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/pdf.sass":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".pdf-previous__AEqg a {\n  float: none !important;\n  margin-right: 10px;\n  cursor: pointer; }\n\n.pdf-next__oHqv a {\n  float: none !important;\n  margin-left: 10px;\n  cursor: pointer; }\n\n.pdf-zoom__2nvC a {\n  cursor: pointer; }\n", ""]);
+
+// exports
+exports.locals = {
+	"previous": "pdf-previous__AEqg",
+	"next": "pdf-next__oHqv",
+	"zoom": "pdf-zoom__2nvC"
 };
 
 /***/ }),
@@ -5311,9 +5349,25 @@ var _TXTViewer = __webpack_require__("./src/components/utils/TXTViewer.jsx");
 
 var _TXTViewer2 = _interopRequireDefault(_TXTViewer);
 
+var _classnames = __webpack_require__("./node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 var _Loader = __webpack_require__("./src/components/elements/Loader.jsx");
 
 var _Loader2 = _interopRequireDefault(_Loader);
+
+var _reactPortal = __webpack_require__("./node_modules/react-portal/build/portal.js");
+
+var _reactPortal2 = _interopRequireDefault(_reactPortal);
+
+var _Modal = __webpack_require__("./src/components/modals/Modal.jsx");
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+var _FileTypeNotReadable = __webpack_require__("./src/components/modals/FileTypeNotReadable.jsx");
+
+var _FileTypeNotReadable2 = _interopRequireDefault(_FileTypeNotReadable);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5339,7 +5393,8 @@ var DocumentView = function (_Component) {
 
         _this.state = {
             url: '',
-            loading: true
+            loading: true,
+            modalOpen: false
         };
 
         _this.renderMethod = _this.renderSimple;
@@ -5389,21 +5444,38 @@ var DocumentView = function (_Component) {
                     }
                 }
             }
+
+            this.setState({ modalOpen: true });
         }
     }, {
         key: 'renderSimple',
         value: function renderSimple() {
+            var _this3 = this;
+
+            console.log(this.state.modalOpen);
             return _react2.default.createElement(
                 'div',
                 null,
-                'Impossible de lire ce type de fichier, veuillez le t\xE9l\xE9charger afin de le lire sur votre ordinateur',
-                _react2.default.createElement('br', null),
-                _react2.default.createElement('br', null),
-                'URL du fichier : ',
                 _react2.default.createElement(
-                    'a',
-                    { href: this.state.url },
-                    this.state.url
+                    _reactPortal2.default,
+                    { closeOnEsc: true, isOpened: this.state.modalOpen, onClose: function onClose() {
+                            return _this3.setState({ modalOpen: false });
+                        } },
+                    _react2.default.createElement(
+                        _Modal2.default,
+                        null,
+                        _react2.default.createElement(_FileTypeNotReadable2.default, null)
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    'URL du fichier : ',
+                    _react2.default.createElement(
+                        'a',
+                        { href: this.state.url },
+                        this.state.url
+                    )
                 )
             );
         }
@@ -6078,7 +6150,7 @@ var Footer = exports.Footer = function Footer(props) {
             'div',
             { className: _Footer2.default.content },
             'HOMEBOOK est un service propos\xE9 par edf - V',
-            '2.1.36'
+            '2.1.75'
         )
     );
 };
@@ -8704,7 +8776,7 @@ var Preferences = exports.Preferences = function Preferences(props) {
                             return resetOnboarding();
                         } },
                     _react2.default.createElement('i', { className: 'ion-ios-refresh-outline' }),
-                    ' RESET ONBOARDING'
+                    ' Revoir l\'Onboarding'
                 )
             )
         )
@@ -10019,6 +10091,120 @@ exports.default = ContactModal;
 
 /***/ }),
 
+/***/ "./src/components/modals/FileTypeNotReadable.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("./node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _tools = __webpack_require__("./src/tools/index.js");
+
+var _buttons = __webpack_require__("./src/styles/buttons.scss");
+
+var _buttons2 = _interopRequireDefault(_buttons);
+
+var _DocumentViewModal = __webpack_require__("./src/styles/DocumentViewModal.sass");
+
+var _DocumentViewModal2 = _interopRequireDefault(_DocumentViewModal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ContactModal = function (_Component) {
+    _inherits(ContactModal, _Component);
+
+    function ContactModal(props, context) {
+        _classCallCheck(this, ContactModal);
+
+        return _possibleConstructorReturn(this, (ContactModal.__proto__ || Object.getPrototypeOf(ContactModal)).call(this, props, context));
+    }
+
+    _createClass(ContactModal, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {}
+    }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(newProps) {}
+    }, {
+        key: 'close',
+        value: function close(e) {
+            e.stopPropagation();
+
+            //close the portal
+            this.props.closePortal();
+        }
+    }, {
+        key: 'renderView',
+        value: function renderView() {
+            var _this2 = this;
+
+            return _react2.default.createElement(
+                'div',
+                { className: _DocumentViewModal2.default.main, onClick: function onClick(e) {
+                        return e.stopPropagation();
+                    } },
+                _react2.default.createElement(
+                    'div',
+                    { className: _DocumentViewModal2.default.header },
+                    _react2.default.createElement(
+                        'h1',
+                        null,
+                        'Informations'
+                    ),
+                    _react2.default.createElement(
+                        'button',
+                        {
+                            onClick: function onClick(e) {
+                                return _this2.close(e);
+                            },
+                            className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable, _buttons2.default.clear) },
+                        _react2.default.createElement('i', { className: 'ion-ios-close-empty' })
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: _DocumentViewModal2.default.content },
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        'Impossible de lire ce type de fichier, veuillez le t\xE9l\xE9charger afin de le lire sur votre ordinateur'
+                    )
+                )
+            );
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return this.renderView();
+        }
+    }]);
+
+    return ContactModal;
+}(_react.Component);
+
+exports.default = ContactModal;
+
+/***/ }),
+
 /***/ "./src/components/modals/ImporterModal.jsx":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11293,6 +11479,10 @@ var _reactPdfJs = __webpack_require__("./node_modules/react-pdf-js/lib/index.js"
 
 var _reactPdfJs2 = _interopRequireDefault(_reactPdfJs);
 
+var _pdf = __webpack_require__("./src/styles/pdf.sass");
+
+var _pdf2 = _interopRequireDefault(_pdf);
+
 var _Loader = __webpack_require__("./src/components/elements/Loader.jsx");
 
 var _Loader2 = _interopRequireDefault(_Loader);
@@ -11347,15 +11537,26 @@ var PDFViewer = function (_Component) {
                 _this.setState({ page: _this.state.page + 1 });
             }
         });
-        Object.defineProperty(_this, 'handleZoom', {
+        Object.defineProperty(_this, 'handleZoomPlus', {
             enumerable: true,
             writable: true,
             value: function value(e) {
                 e.preventDefault();
 
-                if (_this.state.zoom >= 2) _this.state.zoom = 0;
+                if (_this.state.zoom < 2) {
+                    _this.setState({ zoom: _this.state.zoom + 0.5 });
+                }
+            }
+        });
+        Object.defineProperty(_this, 'handleZoomMinus', {
+            enumerable: true,
+            writable: true,
+            value: function value(e) {
+                e.preventDefault();
 
-                _this.setState({ zoom: _this.state.zoom + 0.5 });
+                if (_this.state.zoom > 0) {
+                    _this.setState({ zoom: _this.state.zoom - 0.5 });
+                }
             }
         });
         Object.defineProperty(_this, 'renderPagination', {
@@ -11366,36 +11567,39 @@ var PDFViewer = function (_Component) {
 
                 var previousButton = _react2.default.createElement(
                     'li',
-                    { className: (0, _classnames2.default)("previous", { disabled: page === 1 }), onClick: _this.handlePrevious },
+                    { className: (0, _classnames2.default)("previous", _pdf2.default.previous, { disabled: page === 1 }), onClick: _this.handlePrevious },
                     _react2.default.createElement(
                         'a',
                         null,
-                        _react2.default.createElement('i', { className: 'fa fa-arrow-left' }),
-                        'Previous'
+                        _react2.default.createElement('i', { className: 'fa fa-arrow-left' })
                     )
                 );
 
                 var nextButton = _react2.default.createElement(
                     'li',
-                    { className: (0, _classnames2.default)("next", { disabled: page === pages }), onClick: _this.handleNext },
+                    { className: (0, _classnames2.default)("next", _pdf2.default.next, { disabled: page === pages }), onClick: _this.handleNext },
                     _react2.default.createElement(
                         'a',
                         null,
-                        'Next',
                         _react2.default.createElement('i', { className: 'fa fa-arrow-right' })
                     )
                 );
 
-                var zoomButton = void 0;
+                var zoomButtons = void 0;
                 if (zoom) {
-                    zoomButton = _react2.default.createElement(
+                    zoomButtons = _react2.default.createElement(
                         'li',
-                        { className: (0, _classnames2.default)("zoom"), onClick: _this.handleZoom },
+                        { className: (0, _classnames2.default)("zoom", _pdf2.default.zoom) },
                         _react2.default.createElement(
                             'a',
-                            null,
-                            _react2.default.createElement('i', { className: 'fa fa-search' }),
-                            'Zoom'
+                            { onClick: _this.handleZoomMinus },
+                            _react2.default.createElement('i', { className: 'fa fa-search-minus' })
+                        ),
+                        ' ',
+                        _react2.default.createElement(
+                            'a',
+                            { onClick: _this.handleZoomPlus },
+                            _react2.default.createElement('i', { className: 'fa fa-search-plus' })
                         )
                     );
                 }
@@ -11407,7 +11611,7 @@ var PDFViewer = function (_Component) {
                         'ul',
                         { className: 'pager' },
                         previousButton,
-                        zoom && zoomButton,
+                        zoom && zoomButtons,
                         nextButton
                     )
                 );
@@ -11433,7 +11637,6 @@ var PDFViewer = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                pagination,
                 _react2.default.createElement(
                     'div',
                     { style: { textAlign: 'center', overflow: 'auto' } },
@@ -13367,7 +13570,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[role=application]');
     var data = root.dataset;
 
-    console.log('Current Version:', '2.1.36');
+    console.log('Current Version:', '2.1.75');
 
     window.cozy.client.init({
         cozyURL: '//' + data.cozyDomain,
@@ -16199,6 +16402,38 @@ if(false) {
 
 /***/ }),
 
+/***/ "./src/styles/DocumentViewModal.sass":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]-[local]__[hash:base64:4]\"}!./node_modules/postcss-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/DocumentViewModal.sass");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./DocumentViewModal.sass", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./DocumentViewModal.sass");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
 /***/ "./src/styles/Documents.sass":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16669,6 +16904,38 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./help.sass", function() {
 			var newContent = require("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./help.sass");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/styles/pdf.sass":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js?{\"modules\":true,\"localIdentName\":\"[name]-[local]__[hash:base64:4]\"}!./node_modules/postcss-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/pdf.sass");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./pdf.sass", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js??ref--3-2!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./pdf.sass");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
