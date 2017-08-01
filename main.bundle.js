@@ -8,13 +8,13 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: 'Roboto-Thin';\n  font-style: normal;\n  font-weight: 100;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Thin.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-ThinItalic';\n  font-style: italic;\n  font-weight: 100;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-ThinItalic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Light';\n  font-style: normal;\n  font-weight: 300;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Light.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-LightItalic';\n  font-style: italic;\n  font-weight: 300;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-LightItalic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Regular.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Italic';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Italic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Bold';\n  font-style: normal;\n  font-weight: 700;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Bold.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-BoldItalic';\n  font-style: italic;\n  font-weight: 700;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-BoldItalic.ttf") + ") format(\"truetype\"); }\n\nhtml {\n  font-size: 16px !important;\n  min-width: 320px; }\n\nhtml, body {\n  height: 100vh; }\n\nbody, [role='application'] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  min-height: 0; }\n\n[role='application'] {\n  height: 100%; }\n\nul {\n  list-style: none; }\n\n.App-app___05q {\n  font-family: \"Roboto\", sans-serif;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n  width: 100%;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  min-height: 0; }\n\n.App-container__1_Ih {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  min-height: 0; }\n\n.App-page__1jIx {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  overflow-y: auto; }\n  .App-page__1jIx::-webkit-scrollbar {\n    width: 5px; }\n  .App-page__1jIx::-webkit-scrollbar-thumb {\n    border-radius: 2px;\n    padding: 0 1px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n    background-color: rgba(0, 0, 0, 0.3); }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: 'Roboto-Thin';\n  font-style: normal;\n  font-weight: 100;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Thin.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-ThinItalic';\n  font-style: italic;\n  font-weight: 100;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-ThinItalic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Light';\n  font-style: normal;\n  font-weight: 300;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Light.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-LightItalic';\n  font-style: italic;\n  font-weight: 300;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-LightItalic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Regular.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Italic';\n  font-style: normal;\n  font-weight: 400;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Italic.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-Bold';\n  font-style: normal;\n  font-weight: 700;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-Bold.ttf") + ") format(\"truetype\"); }\n\n@font-face {\n  font-family: 'Roboto-BoldItalic';\n  font-style: italic;\n  font-weight: 700;\n  src: url(" + __webpack_require__("./src/fonts/Roboto-BoldItalic.ttf") + ") format(\"truetype\"); }\n\nhtml {\n  font-size: 16px !important;\n  min-width: 320px; }\n\nhtml, body {\n  height: 100vh; }\n\nbody, [role='application'] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  min-height: 0; }\n\n[role='application'] {\n  height: 100%; }\n\nul {\n  list-style: none; }\n\n.App-app__3svT {\n  font-family: \"Roboto\", sans-serif;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n  width: 100%;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  min-height: 0; }\n\n.App-container__2W5H {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  min-height: 0; }\n\n.App-page__MJPX {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  overflow-y: auto; }\n  .App-page__MJPX::-webkit-scrollbar {\n    width: 5px; }\n  .App-page__MJPX::-webkit-scrollbar-thumb {\n    border-radius: 2px;\n    padding: 0 1px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n    background-color: rgba(0, 0, 0, 0.3); }\n", ""]);
 
 // exports
 exports.locals = {
-	"app": "App-app___05q",
-	"container": "App-container__1_Ih",
-	"page": "App-page__1jIx"
+	"app": "App-app__3svT",
+	"container": "App-container__2W5H",
+	"page": "App-page__MJPX"
 };
 
 /***/ }),
@@ -27,13 +27,13 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".ConfirmModal-main__2Sjy {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border: 1px solid #333;\n  background-color: #f6f6f6;\n  border-radius: 5px; }\n\n.ConfirmModal-content__ZznC {\n  padding: 20px; }\n\n.ConfirmModal-actions__2Z3q {\n  padding: 20px;\n  padding-top: 0;\n  border-top: 1px solid #ddd;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n", ""]);
+exports.push([module.i, ".ConfirmModal-main__3pv0 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border: 1px solid #333;\n  background-color: #f6f6f6;\n  border-radius: 5px; }\n\n.ConfirmModal-content__oTcC {\n  padding: 20px; }\n\n.ConfirmModal-actions__3uVd {\n  padding: 20px;\n  padding-top: 0;\n  border-top: 1px solid #ddd;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "ConfirmModal-main__2Sjy",
-	"content": "ConfirmModal-content__ZznC",
-	"actions": "ConfirmModal-actions__2Z3q"
+	"main": "ConfirmModal-main__3pv0",
+	"content": "ConfirmModal-content__oTcC",
+	"actions": "ConfirmModal-actions__3uVd"
 };
 
 /***/ }),
@@ -46,17 +46,17 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".ContactRecallModal-main__YsHi {\n  border: 1px solid #DDD;\n  overflow-y: auto;\n  max-height: 100vh;\n  max-width: 650px;\n  width: 100vw; }\n  .ContactRecallModal-main__YsHi .ContactRecallModal-header__3U9v {\n    background-color: #F6F6F6;\n    height: 88px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    border-bottom: 1px solid #DDD;\n    padding: 10px 1px; }\n    @media (min-width: 770px) {\n      .ContactRecallModal-main__YsHi .ContactRecallModal-header__3U9v {\n        padding: 16px; } }\n    .ContactRecallModal-main__YsHi .ContactRecallModal-header__3U9v h1 {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      font-size: 24px;\n      color: #32363F;\n      letter-spacing: 1px;\n      line-height: 40px;\n      font-weight: 500; }\n    .ContactRecallModal-main__YsHi .ContactRecallModal-header__3U9v button {\n      margin-left: 5px;\n      height: 54px; }\n      @media (min-width: 770px) {\n        .ContactRecallModal-main__YsHi .ContactRecallModal-header__3U9v button {\n          margin-left: 16px; } }\n      .ContactRecallModal-main__YsHi .ContactRecallModal-header__3U9v button i {\n        line-height: 20px; }\n  .ContactRecallModal-main__YsHi .ContactRecallModal-content__1_yn {\n    padding: 16px;\n    background-color: white; }\n    .ContactRecallModal-main__YsHi .ContactRecallModal-content__1_yn h3 {\n      font-size: 16px;\n      color: #95999D;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 10px;\n      font-weight: lighter; }\n    .ContactRecallModal-main__YsHi .ContactRecallModal-content__1_yn p {\n      font-size: 16px;\n      color: #4A4A4A;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 32px;\n      font-weight: lighter; }\n    .ContactRecallModal-main__YsHi .ContactRecallModal-content__1_yn p + p {\n      margin-top: -32px; }\n    .ContactRecallModal-main__YsHi .ContactRecallModal-content__1_yn a,\n    .ContactRecallModal-main__YsHi .ContactRecallModal-content__1_yn a:visited {\n      color: #4A4A4A; }\n\n.ContactRecallModal-edition__3ng7 { }\n  .ContactRecallModal-edition__3ng7 .ContactRecallModal-group__2LwB {\n    margin-bottom: 15px; }\n    .ContactRecallModal-edition__3ng7 .ContactRecallModal-group__2LwB label {\n      font-size: 16px;\n      color: #95999D;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin-bottom: 16px;\n      display: block; }\n    .ContactRecallModal-edition__3ng7 .ContactRecallModal-group__2LwB input, .ContactRecallModal-edition__3ng7 .ContactRecallModal-group__2LwB select, .ContactRecallModal-edition__3ng7 .ContactRecallModal-group__2LwB textarea {\n      background: #FFFFFF;\n      font-size: 16px;\n      color: #4A4A4A;\n      letter-spacing: 1.14px;\n      border-radius: 2px;\n      display: block;\n      width: 100%;\n      height: 34px;\n      padding: 6px 12px;\n      border: 1px solid #ccc; }\n    .ContactRecallModal-edition__3ng7 .ContactRecallModal-group__2LwB textarea {\n      height: auto; }\n    .ContactRecallModal-edition__3ng7 .ContactRecallModal-group__2LwB .ContactRecallModal-inline__2Xv8 {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      margin-bottom: 10px; }\n  .ContactRecallModal-edition__3ng7 .ContactRecallModal-row__mysX {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: start;\n        -ms-flex-align: start;\n            align-items: flex-start; }\n    .ContactRecallModal-edition__3ng7 .ContactRecallModal-row__mysX .ContactRecallModal-group__2LwB {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1; }\n      .ContactRecallModal-edition__3ng7 .ContactRecallModal-row__mysX .ContactRecallModal-group__2LwB:first-child {\n        margin-right: 10px; }\n", ""]);
+exports.push([module.i, ".ContactRecallModal-main__-14f {\n  border: 1px solid #DDD;\n  overflow-y: auto;\n  max-height: 100vh;\n  max-width: 650px;\n  width: 100vw; }\n  .ContactRecallModal-main__-14f .ContactRecallModal-header__28k7 {\n    background-color: #F6F6F6;\n    height: 88px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    border-bottom: 1px solid #DDD;\n    padding: 10px 1px; }\n    @media (min-width: 770px) {\n      .ContactRecallModal-main__-14f .ContactRecallModal-header__28k7 {\n        padding: 16px; } }\n    .ContactRecallModal-main__-14f .ContactRecallModal-header__28k7 h1 {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      font-size: 24px;\n      color: #32363F;\n      letter-spacing: 1px;\n      line-height: 40px;\n      font-weight: 500; }\n    .ContactRecallModal-main__-14f .ContactRecallModal-header__28k7 button {\n      margin-left: 5px;\n      height: 54px; }\n      @media (min-width: 770px) {\n        .ContactRecallModal-main__-14f .ContactRecallModal-header__28k7 button {\n          margin-left: 16px; } }\n      .ContactRecallModal-main__-14f .ContactRecallModal-header__28k7 button i {\n        line-height: 20px; }\n  .ContactRecallModal-main__-14f .ContactRecallModal-content__cHEn {\n    padding: 16px;\n    background-color: white; }\n    .ContactRecallModal-main__-14f .ContactRecallModal-content__cHEn h3 {\n      font-size: 16px;\n      color: #95999D;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 10px;\n      font-weight: lighter; }\n    .ContactRecallModal-main__-14f .ContactRecallModal-content__cHEn p {\n      font-size: 16px;\n      color: #4A4A4A;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 32px;\n      font-weight: lighter; }\n    .ContactRecallModal-main__-14f .ContactRecallModal-content__cHEn p + p {\n      margin-top: -32px; }\n    .ContactRecallModal-main__-14f .ContactRecallModal-content__cHEn a,\n    .ContactRecallModal-main__-14f .ContactRecallModal-content__cHEn a:visited {\n      color: #4A4A4A; }\n\n.ContactRecallModal-edition__3Mim { }\n  .ContactRecallModal-edition__3Mim .ContactRecallModal-group__1BLx {\n    margin-bottom: 15px; }\n    .ContactRecallModal-edition__3Mim .ContactRecallModal-group__1BLx label {\n      font-size: 16px;\n      color: #95999D;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin-bottom: 16px;\n      display: block; }\n    .ContactRecallModal-edition__3Mim .ContactRecallModal-group__1BLx input, .ContactRecallModal-edition__3Mim .ContactRecallModal-group__1BLx select, .ContactRecallModal-edition__3Mim .ContactRecallModal-group__1BLx textarea {\n      background: #FFFFFF;\n      font-size: 16px;\n      color: #4A4A4A;\n      letter-spacing: 1.14px;\n      border-radius: 2px;\n      display: block;\n      width: 100%;\n      height: 34px;\n      padding: 6px 12px;\n      border: 1px solid #ccc; }\n    .ContactRecallModal-edition__3Mim .ContactRecallModal-group__1BLx textarea {\n      height: auto; }\n    .ContactRecallModal-edition__3Mim .ContactRecallModal-group__1BLx .ContactRecallModal-inline__1vqd {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      margin-bottom: 10px; }\n  .ContactRecallModal-edition__3Mim .ContactRecallModal-row__KMPW {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: start;\n        -ms-flex-align: start;\n            align-items: flex-start; }\n    .ContactRecallModal-edition__3Mim .ContactRecallModal-row__KMPW .ContactRecallModal-group__1BLx {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1; }\n      .ContactRecallModal-edition__3Mim .ContactRecallModal-row__KMPW .ContactRecallModal-group__1BLx:first-child {\n        margin-right: 10px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "ContactRecallModal-main__YsHi",
-	"header": "ContactRecallModal-header__3U9v",
-	"content": "ContactRecallModal-content__1_yn",
-	"edition": "ContactRecallModal-edition__3ng7 ContactRecallModal-main__YsHi",
-	"group": "ContactRecallModal-group__2LwB",
-	"inline": "ContactRecallModal-inline__2Xv8",
-	"row": "ContactRecallModal-row__mysX"
+	"main": "ContactRecallModal-main__-14f",
+	"header": "ContactRecallModal-header__28k7",
+	"content": "ContactRecallModal-content__cHEn",
+	"edition": "ContactRecallModal-edition__3Mim ContactRecallModal-main__-14f",
+	"group": "ContactRecallModal-group__1BLx",
+	"inline": "ContactRecallModal-inline__1vqd",
+	"row": "ContactRecallModal-row__KMPW"
 };
 
 /***/ }),
@@ -69,11 +69,11 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Contacts-letter__12d9 {\n  font-size: 26px;\n  margin-bottom: 0;\n  margin-left: 5px;\n  font-weight: 300; }\n", ""]);
+exports.push([module.i, ".Contacts-letter__3u2t {\n  font-size: 26px;\n  margin-bottom: 0;\n  margin-left: 5px;\n  font-weight: 300; }\n", ""]);
 
 // exports
 exports.locals = {
-	"letter": "Contacts-letter__12d9"
+	"letter": "Contacts-letter__3u2t"
 };
 
 /***/ }),
@@ -86,14 +86,14 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".DataTable-main__2qiu {\n  margin: 16px 0px;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  border: none;\n  padding: 0px; }\n  .DataTable-main__2qiu table {\n    border-spacing: 0;\n    border-collapse: collapse;\n    width: 100%;\n    padding: 0px;\n    border: none;\n    table-layout: fixed; }\n    .DataTable-main__2qiu table .DataTable-group__1oo6 {\n      display: table-row-group; }\n      .DataTable-main__2qiu table .DataTable-group__1oo6 .DataTable-title__1nu3 {\n        font-size: 30px;\n        color: #32363F;\n        letter-spacing: 1.25px;\n        line-height: 40px; }\n      .DataTable-main__2qiu table .DataTable-group__1oo6 td, .DataTable-main__2qiu table .DataTable-group__1oo6 th {\n        border: none;\n        padding: 16px;\n        text-align: left; }\n        .DataTable-main__2qiu table .DataTable-group__1oo6 td h2, .DataTable-main__2qiu table .DataTable-group__1oo6 th h2 {\n          margin: 0px;\n          padding: 0px;\n          font-size: 30px;\n          color: #32363F;\n          letter-spacing: 1.25px;\n          line-height: 40px; }\n    .DataTable-main__2qiu table .DataTable-item__cHXS td, .DataTable-main__2qiu table .DataTable-item__cHXS th {\n      border: 1px solid #AAA;\n      padding: 16px;\n      text-align: left; }\n    .DataTable-main__2qiu table .DataTable-item__cHXS th {\n      font-size: 14px;\n      color: #32363F;\n      letter-spacing: 1.17px;\n      background-color: #F6F6F6;\n      font-weight: lighter;\n      width: 320px; }\n    .DataTable-main__2qiu table .DataTable-item__cHXS td {\n      font-size: 14px;\n      color: #32363F;\n      letter-spacing: 1.17px;\n      font-weight: 300; }\n      .DataTable-main__2qiu table .DataTable-item__cHXS td input, .DataTable-main__2qiu table .DataTable-item__cHXS td select {\n        -webkit-appearance: none;\n           -moz-appearance: none;\n                appearance: none;\n        background: #FFFFFF;\n        border: 1px solid #9B9B9B;\n        border-radius: 2px;\n        padding: 10px 16px; }\n        .DataTable-main__2qiu table .DataTable-item__cHXS td input[type=\"text\"], .DataTable-main__2qiu table .DataTable-item__cHXS td input[type=\"number\"], .DataTable-main__2qiu table .DataTable-item__cHXS td select[type=\"text\"], .DataTable-main__2qiu table .DataTable-item__cHXS td select[type=\"number\"] {\n          display: block;\n          width: calc(100% - 32px); }\n", ""]);
+exports.push([module.i, ".DataTable-main__3O-K {\n  margin: 16px 0px;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  border: none;\n  padding: 0px; }\n  .DataTable-main__3O-K table {\n    border-spacing: 0;\n    border-collapse: collapse;\n    width: 100%;\n    padding: 0px;\n    border: none;\n    table-layout: fixed; }\n    .DataTable-main__3O-K table .DataTable-group__3mtm {\n      display: table-row-group; }\n      .DataTable-main__3O-K table .DataTable-group__3mtm .DataTable-title__3NWQ {\n        font-size: 30px;\n        color: #32363F;\n        letter-spacing: 1.25px;\n        line-height: 40px; }\n      .DataTable-main__3O-K table .DataTable-group__3mtm td, .DataTable-main__3O-K table .DataTable-group__3mtm th {\n        border: none;\n        padding: 16px;\n        text-align: left; }\n        .DataTable-main__3O-K table .DataTable-group__3mtm td h2, .DataTable-main__3O-K table .DataTable-group__3mtm th h2 {\n          margin: 0px;\n          padding: 0px;\n          font-size: 30px;\n          color: #32363F;\n          letter-spacing: 1.25px;\n          line-height: 40px; }\n    .DataTable-main__3O-K table .DataTable-item__2W28 td, .DataTable-main__3O-K table .DataTable-item__2W28 th {\n      border: 1px solid #AAA;\n      padding: 16px;\n      text-align: left; }\n    .DataTable-main__3O-K table .DataTable-item__2W28 th {\n      font-size: 14px;\n      color: #32363F;\n      letter-spacing: 1.17px;\n      background-color: #F6F6F6;\n      font-weight: lighter;\n      width: 320px; }\n    .DataTable-main__3O-K table .DataTable-item__2W28 td {\n      font-size: 14px;\n      color: #32363F;\n      letter-spacing: 1.17px;\n      font-weight: 300; }\n      .DataTable-main__3O-K table .DataTable-item__2W28 td input, .DataTable-main__3O-K table .DataTable-item__2W28 td select {\n        -webkit-appearance: none;\n           -moz-appearance: none;\n                appearance: none;\n        background: #FFFFFF;\n        border: 1px solid #9B9B9B;\n        border-radius: 2px;\n        padding: 10px 16px; }\n        .DataTable-main__3O-K table .DataTable-item__2W28 td input[type=\"text\"], .DataTable-main__3O-K table .DataTable-item__2W28 td input[type=\"number\"], .DataTable-main__3O-K table .DataTable-item__2W28 td select[type=\"text\"], .DataTable-main__3O-K table .DataTable-item__2W28 td select[type=\"number\"] {\n          display: block;\n          width: calc(100% - 32px); }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "DataTable-main__2qiu",
-	"group": "DataTable-group__1oo6",
-	"title": "DataTable-title__1nu3",
-	"item": "DataTable-item__cHXS"
+	"main": "DataTable-main__3O-K",
+	"group": "DataTable-group__3mtm",
+	"title": "DataTable-title__3NWQ",
+	"item": "DataTable-item__2W28"
 };
 
 /***/ }),
@@ -106,16 +106,16 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".DirectoryPicker-main__2v7E {\n  border: 1px solid #333;\n  overflow: auto;\n  border-radius: 5px; }\n\n.DirectoryPicker-container__1GK0 {\n  margin: 10px;\n  background-color: white;\n  height: 338px;\n  text-align: left;\n  position: relative; }\n\n.DirectoryPicker-name__2VWF {\n  cursor: pointer;\n  font-size: 14px;\n  color: #4A4A4A;\n  letter-spacing: 1px;\n  line-height: 2em;\n  display: block;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n  .DirectoryPicker-name__2VWF.DirectoryPicker-selected__2BGc, .DirectoryPicker-name__2VWF:hover {\n    background-color: #E7E7E7; }\n\n.DirectoryPicker-icon__1OZO {\n  padding-right: 5px;\n  width: 15px;\n  display: inline-block; }\n\n.DirectoryPicker-content__vu6M {\n  margin: 0;\n  list-style: none;\n  margin-left: 16px;\n  padding-left: 0px;\n  position: relative; }\n", ""]);
+exports.push([module.i, ".DirectoryPicker-main__2J43 {\n  border: 1px solid #333;\n  overflow: auto;\n  border-radius: 5px; }\n\n.DirectoryPicker-container__2ak5 {\n  margin: 10px;\n  background-color: white;\n  height: 338px;\n  text-align: left;\n  position: relative; }\n\n.DirectoryPicker-name__3bIR {\n  cursor: pointer;\n  font-size: 14px;\n  color: #4A4A4A;\n  letter-spacing: 1px;\n  line-height: 2em;\n  display: block;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n  .DirectoryPicker-name__3bIR.DirectoryPicker-selected__1EkE, .DirectoryPicker-name__3bIR:hover {\n    background-color: #E7E7E7; }\n\n.DirectoryPicker-icon__2wYn {\n  padding-right: 5px;\n  width: 15px;\n  display: inline-block; }\n\n.DirectoryPicker-content__2PNY {\n  margin: 0;\n  list-style: none;\n  margin-left: 16px;\n  padding-left: 0px;\n  position: relative; }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "DirectoryPicker-main__2v7E",
-	"container": "DirectoryPicker-container__1GK0",
-	"name": "DirectoryPicker-name__2VWF",
-	"selected": "DirectoryPicker-selected__2BGc",
-	"icon": "DirectoryPicker-icon__1OZO",
-	"content": "DirectoryPicker-content__vu6M"
+	"main": "DirectoryPicker-main__2J43",
+	"container": "DirectoryPicker-container__2ak5",
+	"name": "DirectoryPicker-name__3bIR",
+	"selected": "DirectoryPicker-selected__1EkE",
+	"icon": "DirectoryPicker-icon__2wYn",
+	"content": "DirectoryPicker-content__2PNY"
 };
 
 /***/ }),
@@ -128,21 +128,21 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".DocumentList-list__3e19 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.DocumentList-content__3hLO img {\n  height: 100%;\n  display: block; }\n\n.DocumentList-checkbox__WOPc {\n  font-size: 24px;\n  color: #32363F; }\n\n.DocumentList-viewList__37iL .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-content__3hLO, .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-content__3hLO {\n  background-color: #334254; }\n\n.DocumentList-viewList__37iL .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-name__CrES, .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-name__CrES {\n  background-color: #334254;\n  color: white; }\n\n.DocumentList-viewList__37iL .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-contact__2e-6, .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-contact__2e-6 {\n  color: white; }\n\n.DocumentList-viewList__37iL .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-date__3J8a, .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-date__3J8a {\n  color: white; }\n\n.DocumentList-viewList__37iL .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-checkbox__WOPc, .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh.DocumentList-selected__2nr1 .DocumentList-checkbox__WOPc {\n  display: block;\n  color: white; }\n\n.DocumentList-viewList__37iL {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .DocumentList-viewList__37iL .DocumentList-document__2aEh {\n    cursor: pointer;\n    margin: 16px 0 0;\n    padding: 16px;\n    background: #F6F6F6;\n    border: 1px solid #CCCCCC;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .DocumentList-viewList__37iL .DocumentList-document__2aEh.DocumentList-selected__2nr1 {\n      background-color: #334254; }\n    .DocumentList-viewList__37iL .DocumentList-document__2aEh .DocumentList-content__3hLO {\n      height: 51px;\n      margin: 0 16px; }\n    .DocumentList-viewList__37iL .DocumentList-document__2aEh .DocumentList-name__CrES {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1; }\n    .DocumentList-viewList__37iL .DocumentList-document__2aEh .DocumentList-contact__2e-6 {\n      display: none; }\n      @media (min-width: 770px) {\n        .DocumentList-viewList__37iL .DocumentList-document__2aEh .DocumentList-contact__2e-6 {\n          -webkit-box-flex: 1;\n              -ms-flex: 1;\n                  flex: 1;\n          display: -webkit-box;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: justify;\n              -ms-flex-pack: justify;\n                  justify-content: space-between; } }\n    .DocumentList-viewList__37iL .DocumentList-document__2aEh .DocumentList-date__3J8a {\n      font-size: 14px;\n      color: #32363F;\n      letter-spacing: 1.17px;\n      font-weight: 100; }\n\n.DocumentList-viewGrid__3z0S {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap; }\n  .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh {\n    max-width: 140px;\n    margin: 16px;\n    position: relative; }\n    .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh .DocumentList-checkbox__WOPc {\n      display: none;\n      position: absolute;\n      top: 2px;\n      left: 7px;\n      z-index: 10; }\n    .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh:hover .DocumentList-checkbox__WOPc {\n      display: block; }\n    .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh .DocumentList-content__3hLO {\n      width: 50vw;\n      height: 50vw;\n      max-width: 140px;\n      max-height: 140px;\n      background-color: #f6f6f6;\n      border: solid 1px #cccccc;\n      overflow: hidden;\n      cursor: pointer;\n      margin-bottom: 16px;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n      .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh .DocumentList-content__3hLO img {\n        width: 70%;\n        height: auto; }\n    .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh .DocumentList-name__CrES {\n      font-family: \"Roboto\", sans-serif;\n      font-size: 14px;\n      font-weight: 500;\n      letter-spacing: 1.2px;\n      text-align: center;\n      color: #32363f;\n      white-space: nowrap;\n      overflow: hidden;\n      -o-text-overflow: ellipsis;\n         text-overflow: ellipsis; }\n    .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh .DocumentList-contact__2e-6 {\n      display: none; }\n    .DocumentList-viewGrid__3z0S .DocumentList-document__2aEh .DocumentList-date__3J8a {\n      display: none; }\n\n.DocumentList-dateText__2t99 {\n  display: none; }\n  @media (min-width: 770px) {\n    .DocumentList-dateText__2t99 {\n      display: inline; } }\n", ""]);
+exports.push([module.i, ".DocumentList-list__V0eP {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.DocumentList-content__3ZaV img {\n  height: 100%;\n  display: block; }\n\n.DocumentList-checkbox__2fD2 {\n  font-size: 24px;\n  color: #32363F; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-content__3ZaV, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-content__3ZaV {\n  background-color: #334254; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-name__3WJV, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-name__3WJV {\n  background-color: #334254;\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-contact__3nhy, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-contact__3nhy {\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-date__YaSO, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-date__YaSO {\n  color: white; }\n\n.DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-checkbox__2fD2, .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd.DocumentList-selected__IHUB .DocumentList-checkbox__2fD2 {\n  display: block;\n  color: white; }\n\n.DocumentList-viewList__1XNq {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .DocumentList-viewList__1XNq .DocumentList-document__Ukdd {\n    cursor: pointer;\n    margin: 16px 0 0;\n    padding: 16px;\n    background: #F6F6F6;\n    border: 1px solid #CCCCCC;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd.DocumentList-selected__IHUB {\n      background-color: #334254; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-content__3ZaV {\n      height: 51px;\n      margin: 0 16px; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-name__3WJV {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1; }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-contact__3nhy {\n      display: none; }\n      @media (min-width: 770px) {\n        .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-contact__3nhy {\n          -webkit-box-flex: 1;\n              -ms-flex: 1;\n                  flex: 1;\n          display: -webkit-box;\n          display: -ms-flexbox;\n          display: flex;\n          -webkit-box-pack: justify;\n              -ms-flex-pack: justify;\n                  justify-content: space-between; } }\n    .DocumentList-viewList__1XNq .DocumentList-document__Ukdd .DocumentList-date__YaSO {\n      font-size: 14px;\n      color: #32363F;\n      letter-spacing: 1.17px;\n      font-weight: 100; }\n\n.DocumentList-viewGrid__3dY6 {\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap; }\n  .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd {\n    max-width: 140px;\n    margin: 16px;\n    position: relative; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-checkbox__2fD2 {\n      display: none;\n      position: absolute;\n      top: 2px;\n      left: 7px;\n      z-index: 10; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd:hover .DocumentList-checkbox__2fD2 {\n      display: block; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-content__3ZaV {\n      width: 50vw;\n      height: 50vw;\n      max-width: 140px;\n      max-height: 140px;\n      background-color: #f6f6f6;\n      border: solid 1px #cccccc;\n      overflow: hidden;\n      cursor: pointer;\n      margin-bottom: 16px;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n      .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-content__3ZaV img {\n        width: 70%;\n        height: auto; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-name__3WJV {\n      font-family: \"Roboto\", sans-serif;\n      font-size: 14px;\n      font-weight: 500;\n      letter-spacing: 1.2px;\n      text-align: center;\n      color: #32363f;\n      white-space: nowrap;\n      overflow: hidden;\n      -o-text-overflow: ellipsis;\n         text-overflow: ellipsis; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-contact__3nhy {\n      display: none; }\n    .DocumentList-viewGrid__3dY6 .DocumentList-document__Ukdd .DocumentList-date__YaSO {\n      display: none; }\n\n.DocumentList-dateText__S2kl {\n  display: none; }\n  @media (min-width: 770px) {\n    .DocumentList-dateText__S2kl {\n      display: inline; } }\n", ""]);
 
 // exports
 exports.locals = {
-	"list": "DocumentList-list__3e19",
-	"content": "DocumentList-content__3hLO",
-	"checkbox": "DocumentList-checkbox__WOPc",
-	"viewList": "DocumentList-viewList__37iL",
-	"document": "DocumentList-document__2aEh",
-	"selected": "DocumentList-selected__2nr1",
-	"viewGrid": "DocumentList-viewGrid__3z0S",
-	"name": "DocumentList-name__CrES",
-	"contact": "DocumentList-contact__2e-6",
-	"date": "DocumentList-date__3J8a",
-	"dateText": "DocumentList-dateText__2t99"
+	"list": "DocumentList-list__V0eP",
+	"content": "DocumentList-content__3ZaV",
+	"checkbox": "DocumentList-checkbox__2fD2",
+	"viewList": "DocumentList-viewList__1XNq",
+	"document": "DocumentList-document__Ukdd",
+	"selected": "DocumentList-selected__IHUB",
+	"viewGrid": "DocumentList-viewGrid__3dY6",
+	"name": "DocumentList-name__3WJV",
+	"contact": "DocumentList-contact__3nhy",
+	"date": "DocumentList-date__YaSO",
+	"dateText": "DocumentList-dateText__S2kl"
 };
 
 /***/ }),
@@ -155,13 +155,13 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".DocumentViewModal-main__1m2z {\n  border: 1px solid #DDD;\n  overflow-y: auto;\n  max-height: 100vh;\n  max-width: 650px;\n  width: 100vw; }\n  .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao {\n    background-color: #F6F6F6;\n    height: 88px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    border-bottom: 1px solid #DDD;\n    padding: 10px 1px; }\n    @media (min-width: 770px) {\n      .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao {\n        padding: 16px; } }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao h1 {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      font-size: 24px;\n      color: #32363F;\n      letter-spacing: 1px;\n      line-height: 40px;\n      font-weight: 500; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao button {\n      margin-left: 5px;\n      height: 54px; }\n      @media (min-width: 770px) {\n        .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao button {\n          margin-left: 16px; } }\n      .DocumentViewModal-main__1m2z .DocumentViewModal-header__1_ao button i {\n        line-height: 20px; }\n  .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ {\n    padding: 16px;\n    background-color: white; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ h3 {\n      font-size: 16px;\n      color: #95999D;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 10px;\n      font-weight: lighter; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ p {\n      font-size: 16px;\n      color: #4A4A4A;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 32px;\n      font-weight: lighter; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ p + p {\n      margin-top: -32px; }\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ a,\n    .DocumentViewModal-main__1m2z .DocumentViewModal-content__1qUQ a:visited {\n      color: #4A4A4A; }\n", ""]);
+exports.push([module.i, ".DocumentViewModal-main__DRLo {\n  border: 1px solid #DDD;\n  overflow-y: auto;\n  max-height: 100vh;\n  max-width: 650px;\n  width: 100vw; }\n  .DocumentViewModal-main__DRLo .DocumentViewModal-header__2ni7 {\n    background-color: #F6F6F6;\n    height: 88px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    border-bottom: 1px solid #DDD;\n    padding: 10px 1px; }\n    @media (min-width: 770px) {\n      .DocumentViewModal-main__DRLo .DocumentViewModal-header__2ni7 {\n        padding: 16px; } }\n    .DocumentViewModal-main__DRLo .DocumentViewModal-header__2ni7 h1 {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      font-size: 24px;\n      color: #32363F;\n      letter-spacing: 1px;\n      line-height: 40px;\n      font-weight: 500; }\n    .DocumentViewModal-main__DRLo .DocumentViewModal-header__2ni7 button {\n      margin-left: 5px;\n      height: 54px; }\n      @media (min-width: 770px) {\n        .DocumentViewModal-main__DRLo .DocumentViewModal-header__2ni7 button {\n          margin-left: 16px; } }\n      .DocumentViewModal-main__DRLo .DocumentViewModal-header__2ni7 button i {\n        line-height: 20px; }\n  .DocumentViewModal-main__DRLo .DocumentViewModal-content__dZDi {\n    padding: 16px;\n    background-color: white; }\n    .DocumentViewModal-main__DRLo .DocumentViewModal-content__dZDi h3 {\n      font-size: 16px;\n      color: #95999D;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 10px;\n      font-weight: lighter; }\n    .DocumentViewModal-main__DRLo .DocumentViewModal-content__dZDi p {\n      font-size: 16px;\n      color: #4A4A4A;\n      letter-spacing: 1.14px;\n      line-height: 24px;\n      margin: 0;\n      margin-bottom: 32px;\n      font-weight: lighter; }\n    .DocumentViewModal-main__DRLo .DocumentViewModal-content__dZDi p + p {\n      margin-top: -32px; }\n    .DocumentViewModal-main__DRLo .DocumentViewModal-content__dZDi a,\n    .DocumentViewModal-main__DRLo .DocumentViewModal-content__dZDi a:visited {\n      color: #4A4A4A; }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "DocumentViewModal-main__1m2z",
-	"header": "DocumentViewModal-header__1_ao",
-	"content": "DocumentViewModal-content__1qUQ"
+	"main": "DocumentViewModal-main__DRLo",
+	"header": "DocumentViewModal-header__2ni7",
+	"content": "DocumentViewModal-content__dZDi"
 };
 
 /***/ }),
@@ -174,11 +174,11 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Documents-breadcrums__1Wfv a {\n  text-decoration: none;\n  color: #333; }\n  .Documents-breadcrums__1Wfv a:hover {\n    color: #111;\n    text-decoration: none; }\n", ""]);
+exports.push([module.i, ".Documents-breadcrums__grwU a {\n  text-decoration: none;\n  color: #333; }\n  .Documents-breadcrums__grwU a:hover {\n    color: #111;\n    text-decoration: none; }\n", ""]);
 
 // exports
 exports.locals = {
-	"breadcrums": "Documents-breadcrums__1Wfv"
+	"breadcrums": "Documents-breadcrums__grwU"
 };
 
 /***/ }),
@@ -191,12 +191,12 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Footer-main__1DWl {\n  min-height: 56px;\n  line-height: 56px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end; }\n\n.Footer-content__1Uma {\n  font-family: 'Roboto-Light', sans-serif;\n  padding: 0px 16px;\n  font-size: 14px;\n  font-weight: 300;\n  letter-spacing: 0.9px;\n  color: #4a4a4a;\n  text-align: right; }\n", ""]);
+exports.push([module.i, ".Footer-main__3ovL {\n  min-height: 56px;\n  line-height: 56px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end; }\n\n.Footer-content__37qY {\n  font-family: 'Roboto-Light', sans-serif;\n  padding: 0px 16px;\n  font-size: 14px;\n  font-weight: 300;\n  letter-spacing: 0.9px;\n  color: #4a4a4a;\n  text-align: right; }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "Footer-main__1DWl",
-	"content": "Footer-content__1Uma"
+	"main": "Footer-main__3ovL",
+	"content": "Footer-content__37qY"
 };
 
 /***/ }),
@@ -209,16 +209,16 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Gauge-main__2lXI {\n  border: 1px solid #ddd;\n  padding: 14px;\n  margin: 16px 0;\n  color: #ddd;\n  line-height: 1.2em; }\n\n.Gauge-gauge__3i1w {\n  height: 20px;\n  margin-top: 10px;\n  height: 14px;\n  background-color: #334254;\n  -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n          box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n  border-radius: 4px; }\n\n.Gauge-title__3qLM {\n  position: relative; }\n\n.Gauge-loader__27lz {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 35px; }\n  .Gauge-loader__27lz img {\n    width: 100%; }\n\n.Gauge-bar__3dhN {\n  background-color: #c8c951;\n  height: 100%;\n  width: 0%;\n  border-radius: 4px;\n  -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n          box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5); }\n\n.Gauge-list__1eq- {\n  list-style: none;\n  padding: 0;\n  margin: 16px 0 0 0; }\n  .Gauge-list__1eq- li {\n    font-size: 14px;\n    cursor: pointer; }\n    .Gauge-list__1eq- li:hover {\n      text-decoration: underline; }\n  .Gauge-list__1eq- i {\n    padding-right: 10px; }\n", ""]);
+exports.push([module.i, ".Gauge-main__ofek {\n  border: 1px solid #ddd;\n  padding: 14px;\n  margin: 16px 0;\n  color: #ddd;\n  line-height: 1.2em; }\n\n.Gauge-gauge__yPb_ {\n  height: 20px;\n  margin-top: 10px;\n  height: 14px;\n  background-color: #334254;\n  -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n          box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n  border-radius: 4px; }\n\n.Gauge-title__vgdO {\n  position: relative; }\n\n.Gauge-loader__1ALf {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 35px; }\n  .Gauge-loader__1ALf img {\n    width: 100%; }\n\n.Gauge-bar__Z3Kc {\n  background-color: #c8c951;\n  height: 100%;\n  width: 0%;\n  border-radius: 4px;\n  -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n          box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5); }\n\n.Gauge-list__3Ed4 {\n  list-style: none;\n  padding: 0;\n  margin: 16px 0 0 0; }\n  .Gauge-list__3Ed4 li {\n    font-size: 14px;\n    cursor: pointer; }\n    .Gauge-list__3Ed4 li:hover {\n      text-decoration: underline; }\n  .Gauge-list__3Ed4 i {\n    padding-right: 10px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "Gauge-main__2lXI",
-	"gauge": "Gauge-gauge__3i1w",
-	"title": "Gauge-title__3qLM",
-	"loader": "Gauge-loader__27lz",
-	"bar": "Gauge-bar__3dhN",
-	"list": "Gauge-list__1eq-"
+	"main": "Gauge-main__ofek",
+	"gauge": "Gauge-gauge__yPb_",
+	"title": "Gauge-title__vgdO",
+	"loader": "Gauge-loader__1ALf",
+	"bar": "Gauge-bar__Z3Kc",
+	"list": "Gauge-list__3Ed4"
 };
 
 /***/ }),
@@ -231,21 +231,21 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".ImporterModal-main__21o4 {\n  width: 100vw;\n  max-width: 600px;\n  background: #FFF;\n  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);\n  padding: 16px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  margin-bottom: 40px; }\n\n.ImporterModal-header__ur7B {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.ImporterModal-content__2WHb {\n  padding: 25px 0; }\n\n.ImporterModal-footer__2LdW {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap; }\n\n.ImporterModal-dropzone__CIPM {\n  height: 355px;\n  width: 100%;\n  overflow: auto;\n  border-color: grey;\n  border-width: 2px;\n  border-style: dashed;\n  border-radius: 5px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 5px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin-top: 5px;\n  position: relative; }\n  .ImporterModal-dropzone__CIPM.ImporterModal-active__2oC- {\n    border-color: steelblue;\n    background-color: rgba(10, 158, 200, 0.1); }\n\n.ImporterModal-message__12YJ {\n  text-align: center;\n  text-transform: uppercase;\n  color: rgba(0, 0, 0, 0.3);\n  font-weight: bold;\n  font-size: 50px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  width: 100%;\n  max-width: 250px; }\n\n.ImporterModal-doc__2f03 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border: 1px solid grey;\n  border-radius: 10px;\n  height: 32vw;\n  width: 32vw;\n  max-width: 150px;\n  max-height: 190px;\n  margin: 10px;\n  padding: 5px 0; }\n\n.ImporterModal-image__4yiU {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%; }\n  .ImporterModal-image__4yiU img {\n    border-radius: 5px;\n    max-width: 85%;\n    max-height: 100%;\n    width: 100%; }\n\n.ImporterModal-docName__2zfD {\n  margin: 5px 0;\n  overflow: hidden;\n  max-width: 130px; }\n\n.ImporterModal-select__1eK0 {\n  width: 90%; }\n", ""]);
+exports.push([module.i, ".ImporterModal-main__Uczi {\n  width: 100vw;\n  max-width: 600px;\n  background: #FFF;\n  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);\n          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);\n  padding: 16px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  margin-bottom: 40px; }\n\n.ImporterModal-header__1pmB {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.ImporterModal-content__3bw_ {\n  padding: 25px 0; }\n\n.ImporterModal-footer__15IO {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap; }\n\n.ImporterModal-dropzone___4oV {\n  height: 355px;\n  width: 100%;\n  overflow: auto;\n  border-color: grey;\n  border-width: 2px;\n  border-style: dashed;\n  border-radius: 5px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 5px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  margin-top: 5px;\n  position: relative; }\n  .ImporterModal-dropzone___4oV.ImporterModal-active__1s_c {\n    border-color: steelblue;\n    background-color: rgba(10, 158, 200, 0.1); }\n\n.ImporterModal-message__2mUN {\n  text-align: center;\n  text-transform: uppercase;\n  color: rgba(0, 0, 0, 0.3);\n  font-weight: bold;\n  font-size: 50px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n      -ms-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  width: 100%;\n  max-width: 250px; }\n\n.ImporterModal-doc__2F9X {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border: 1px solid grey;\n  border-radius: 10px;\n  height: 32vw;\n  width: 32vw;\n  max-width: 150px;\n  max-height: 190px;\n  margin: 10px;\n  padding: 5px 0; }\n\n.ImporterModal-image__3Plu {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%; }\n  .ImporterModal-image__3Plu img {\n    border-radius: 5px;\n    max-width: 85%;\n    max-height: 100%;\n    width: 100%; }\n\n.ImporterModal-docName__VdOL {\n  margin: 5px 0;\n  overflow: hidden;\n  max-width: 130px; }\n\n.ImporterModal-select__2_KF {\n  width: 90%; }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "ImporterModal-main__21o4",
-	"header": "ImporterModal-header__ur7B",
-	"content": "ImporterModal-content__2WHb",
-	"footer": "ImporterModal-footer__2LdW",
-	"dropzone": "ImporterModal-dropzone__CIPM",
-	"active": "ImporterModal-active__2oC-",
-	"message": "ImporterModal-message__12YJ",
-	"doc": "ImporterModal-doc__2f03",
-	"image": "ImporterModal-image__4yiU",
-	"docName": "ImporterModal-docName__2zfD",
-	"select": "ImporterModal-select__1eK0"
+	"main": "ImporterModal-main__Uczi",
+	"header": "ImporterModal-header__1pmB",
+	"content": "ImporterModal-content__3bw_",
+	"footer": "ImporterModal-footer__15IO",
+	"dropzone": "ImporterModal-dropzone___4oV",
+	"active": "ImporterModal-active__1s_c",
+	"message": "ImporterModal-message__2mUN",
+	"doc": "ImporterModal-doc__2F9X",
+	"image": "ImporterModal-image__3Plu",
+	"docName": "ImporterModal-docName__VdOL",
+	"select": "ImporterModal-select__2_KF"
 };
 
 /***/ }),
@@ -258,11 +258,11 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Loader-loader__888n {\n  height: 200px;\n  max-height: 100vh;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n  .Loader-loader__888n img {\n    height: 80px; }\n", ""]);
+exports.push([module.i, ".Loader-loader__3oQ1 {\n  height: 200px;\n  max-height: 100vh;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n  .Loader-loader__3oQ1 img {\n    height: 80px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"loader": "Loader-loader__888n"
+	"loader": "Loader-loader__3oQ1"
 };
 
 /***/ }),
@@ -275,11 +275,11 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Main-main__2LQ0 {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n", ""]);
+exports.push([module.i, ".Main-main__2PFF {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "Main-main__2LQ0"
+	"main": "Main-main__2PFF"
 };
 
 /***/ }),
@@ -292,11 +292,11 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Modal-modal__2ucU {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  z-index: 30;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  font-family: \"Roboto\";\n  background-color: rgba(0, 0, 0, 0.4);\n  -webkit-transition: all 0.2s linear;\n  -o-transition: all 0.2s linear;\n  transition: all 0.2s linear; }\n", ""]);
+exports.push([module.i, ".Modal-modal__1nLq {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  z-index: 30;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  font-family: \"Roboto\";\n  background-color: rgba(0, 0, 0, 0.4);\n  -webkit-transition: all 0.2s linear;\n  -o-transition: all 0.2s linear;\n  transition: all 0.2s linear; }\n", ""]);
 
 // exports
 exports.locals = {
-	"modal": "Modal-modal__2ucU"
+	"modal": "Modal-modal__1nLq"
 };
 
 /***/ }),
@@ -309,15 +309,15 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Navigation-main__34A8 {\n  font-family: 'Roboto-Light';\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  /*display: flex*/\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  overflow: auto;\n  background-color: #485d76;\n  width: 0;\n  padding: 0; }\n\n.Navigation-nav__DFjy {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: #485d76;\n  overflow-x: auto; }\n\n.Navigation-list__mRgw {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n\n.Navigation-button__3C7- {\n  color: #dddddd; }\n  .Navigation-button__3C7- i {\n    margin-right: 0;\n    color: #e4e4e4; }\n  .Navigation-button__3C7- a {\n    text-decoration: none;\n    width: 100%;\n    height: 100%;\n    font-weight: 300;\n    letter-spacing: 1.5px;\n    color: inherit;\n    text-decoration: none;\n    display: block;\n    cursor: pointer;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    box-sizing: border-box;\n    font-size: 14px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding: 5px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n  .Navigation-button__3C7- .Navigation-active__61Nz, .Navigation-button__3C7- a:hover, .Navigation-button__3C7- .Navigation-button__3C7-:hover {\n    background-color: transparent;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n    color: #c8c951;\n    text-decoration: none; }\n    .Navigation-button__3C7- .Navigation-active__61Nz i, .Navigation-button__3C7- a:hover i, .Navigation-button__3C7- .Navigation-button__3C7-:hover i {\n      color: #c8c951; }\n\n@media (min-width: 770px) {\n  .Navigation-main__34A8 {\n    width: 220px;\n    padding: 19px 15px; }\n  .Navigation-nav__DFjy {\n    position: static;\n    background-color: transparent;\n    overflow: hidden; }\n  .Navigation-list__mRgw {\n    display: block; }\n  .Navigation-button__3C7- i {\n    margin-right: 14px; }\n  .Navigation-button__3C7- a {\n    font-size: 16px;\n    display: block;\n    padding: 15px 13px; }\n    .Navigation-button__3C7- a:hover {\n      background-color: #334254;\n      -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n              box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n      color: inherit; }\n  .Navigation-button__3C7- .Navigation-active__61Nz, .Navigation-button__3C7- a:hover, .Navigation-button__3C7- .Navigation-button__3C7-:hover {\n    background-color: #334254;\n    -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n            box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n    color: inherit; } }\n", ""]);
+exports.push([module.i, ".Navigation-main__18Qy {\n  font-family: 'Roboto-Light';\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  /*display: flex*/\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  overflow: auto;\n  background-color: #485d76;\n  width: 0;\n  padding: 0; }\n\n.Navigation-nav__3vIr {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: #485d76;\n  overflow-x: auto; }\n\n.Navigation-list__1s_f {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n\n.Navigation-button__3aQB {\n  color: #dddddd; }\n  .Navigation-button__3aQB i {\n    margin-right: 0;\n    color: #e4e4e4; }\n  .Navigation-button__3aQB a {\n    text-decoration: none;\n    width: 100%;\n    height: 100%;\n    font-weight: 300;\n    letter-spacing: 1.5px;\n    color: inherit;\n    text-decoration: none;\n    display: block;\n    cursor: pointer;\n    -webkit-box-sizing: border-box;\n            box-sizing: border-box;\n    box-sizing: border-box;\n    font-size: 14px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding: 5px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n  .Navigation-button__3aQB .Navigation-active__1sZC, .Navigation-button__3aQB a:hover, .Navigation-button__3aQB .Navigation-button__3aQB:hover {\n    background-color: transparent;\n    -webkit-box-shadow: none;\n            box-shadow: none;\n    color: #c8c951;\n    text-decoration: none; }\n    .Navigation-button__3aQB .Navigation-active__1sZC i, .Navigation-button__3aQB a:hover i, .Navigation-button__3aQB .Navigation-button__3aQB:hover i {\n      color: #c8c951; }\n\n@media (min-width: 770px) {\n  .Navigation-main__18Qy {\n    width: 220px;\n    padding: 19px 15px; }\n  .Navigation-nav__3vIr {\n    position: static;\n    background-color: transparent;\n    overflow: hidden; }\n  .Navigation-list__1s_f {\n    display: block; }\n  .Navigation-button__3aQB i {\n    margin-right: 14px; }\n  .Navigation-button__3aQB a {\n    font-size: 16px;\n    display: block;\n    padding: 15px 13px; }\n    .Navigation-button__3aQB a:hover {\n      background-color: #334254;\n      -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n              box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n      color: inherit; }\n  .Navigation-button__3aQB .Navigation-active__1sZC, .Navigation-button__3aQB a:hover, .Navigation-button__3aQB .Navigation-button__3aQB:hover {\n    background-color: #334254;\n    -webkit-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n            box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.5);\n    color: inherit; } }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "Navigation-main__34A8",
-	"nav": "Navigation-nav__DFjy",
-	"list": "Navigation-list__mRgw",
-	"button": "Navigation-button__3C7-",
-	"active": "Navigation-active__61Nz"
+	"main": "Navigation-main__18Qy",
+	"nav": "Navigation-nav__3vIr",
+	"list": "Navigation-list__1s_f",
+	"button": "Navigation-button__3aQB",
+	"active": "Navigation-active__1sZC"
 };
 
 /***/ }),
@@ -330,20 +330,20 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Onboarding-container__dpnD {\n  min-height: 100vh;\n  position: fixed;\n  top: 0;\n  width: 100%;\n  z-index: 1000;\n  left: 0;\n  background-color: #fff; }\n\n.Onboarding-background__2V0O {\n  padding-top: 0;\n  min-height: 100vh; }\n\n.Onboarding-panel__3LN9 {\n  width: 100%;\n  min-height: 100vh;\n  background-color: #334254;\n  -webkit-box-shadow: inset 0 -1px 0 0 #202a35;\n          box-shadow: inset 0 -1px 0 0 #202a35;\n  margin: 0 auto;\n  padding-top: 51px; }\n\n.Onboarding-logo__1xh8 {\n  margin: 0 auto;\n  display: block;\n  width: 123px;\n  height: 107px; }\n\n.Onboarding-sliderTitle__UQfg {\n  font-size: 45px;\n  font-weight: 100;\n  line-height: 0.71;\n  letter-spacing: 6.9px;\n  color: #dddddd;\n  text-align: center;\n  margin: 42px 0 26px; }\n\n.Onboarding-sliderText__3pHr {\n  width: 405px;\n  height: 81px;\n  font-size: 24px;\n  font-weight: 300;\n  letter-spacing: 0.8px;\n  text-align: center;\n  color: #ffffff;\n  margin: 0 auto; }\n\n.Onboarding-button__1iCz {\n  width: 150px;\n  height: 40px;\n  background-color: #c8c951;\n  border: solid 1px #4a4a4a;\n  margin: 16px auto;\n  display: block;\n  text-transform: uppercase;\n  cursor: pointer;\n  font-size: 14px;\n  letter-spacing: 1px;\n  color: #4a4a4a; }\n\nol {\n  padding: 0;\n  text-align: center; }\n\n.Onboarding-dot__shDy {\n  display: inline-block;\n  width: 6px;\n  height: 6px;\n  margin: 1px 0 1px 2px;\n  text-indent: -999px;\n  cursor: pointer;\n  background-color: #000\\9;\n  background-color: transparent;\n  border: 1px solid #fff;\n  border-radius: 10px; }\n\n.Onboarding-dot__shDy.Onboarding-active__2gjm {\n  width: 8px;\n  height: 8px;\n  margin: 0 0 0 2px;\n  background-color: #fff; }\n\n.Onboarding-close__3qCj {\n  color: #fff;\n  float: right;\n  font-size: 22px;\n  margin: -31px 22px;\n  cursor: pointer; }\n\n@media (min-width: 540px) {\n  .Onboarding-background__2V0O {\n    padding-top: 140px;\n    background-image: url(" + __webpack_require__("./public/images/background-onboarding.jpg") + ");\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .Onboarding-panel__3LN9 {\n    width: 540px; }\n  .Onboarding-panel__3LN9 {\n    min-height: 390px; } }\n", ""]);
+exports.push([module.i, ".Onboarding-container__1ajl {\n  min-height: 100vh;\n  position: fixed;\n  top: 0;\n  width: 100%;\n  z-index: 1000;\n  left: 0;\n  background-color: #fff; }\n\n.Onboarding-background__2v36 {\n  padding-top: 0;\n  min-height: 100vh; }\n\n.Onboarding-panel__2DJk {\n  width: 100%;\n  min-height: 100vh;\n  background-color: #334254;\n  -webkit-box-shadow: inset 0 -1px 0 0 #202a35;\n          box-shadow: inset 0 -1px 0 0 #202a35;\n  margin: 0 auto;\n  padding-top: 51px; }\n\n.Onboarding-logo__3Ebi {\n  margin: 0 auto;\n  display: block;\n  width: 123px;\n  height: 107px; }\n\n.Onboarding-sliderTitle__N6Vi {\n  font-size: 45px;\n  font-weight: 100;\n  line-height: 0.71;\n  letter-spacing: 6.9px;\n  color: #dddddd;\n  text-align: center;\n  margin: 42px 0 26px; }\n\n.Onboarding-sliderText__R684 {\n  width: 405px;\n  height: 81px;\n  font-size: 24px;\n  font-weight: 300;\n  letter-spacing: 0.8px;\n  text-align: center;\n  color: #ffffff;\n  margin: 0 auto; }\n\n.Onboarding-button__34a0 {\n  width: 150px;\n  height: 40px;\n  background-color: #c8c951;\n  border: solid 1px #4a4a4a;\n  margin: 16px auto;\n  display: block;\n  text-transform: uppercase;\n  cursor: pointer;\n  font-size: 14px;\n  letter-spacing: 1px;\n  color: #4a4a4a; }\n\nol {\n  padding: 0;\n  text-align: center; }\n\n.Onboarding-dot__2Fpa {\n  display: inline-block;\n  width: 6px;\n  height: 6px;\n  margin: 1px 0 1px 2px;\n  text-indent: -999px;\n  cursor: pointer;\n  background-color: #000\\9;\n  background-color: transparent;\n  border: 1px solid #fff;\n  border-radius: 10px; }\n\n.Onboarding-dot__2Fpa.Onboarding-active__3j2G {\n  width: 8px;\n  height: 8px;\n  margin: 0 0 0 2px;\n  background-color: #fff; }\n\n.Onboarding-close__oaSy {\n  color: #fff;\n  float: right;\n  font-size: 22px;\n  margin: -31px 22px;\n  cursor: pointer; }\n\n@media (min-width: 540px) {\n  .Onboarding-background__2v36 {\n    padding-top: 140px;\n    background-image: url(" + __webpack_require__("./public/images/background-onboarding.jpg") + ");\n    background-repeat: no-repeat;\n    background-size: cover; }\n  .Onboarding-panel__2DJk {\n    width: 540px; }\n  .Onboarding-panel__2DJk {\n    min-height: 390px; } }\n", ""]);
 
 // exports
 exports.locals = {
-	"container": "Onboarding-container__dpnD",
-	"background": "Onboarding-background__2V0O",
-	"panel": "Onboarding-panel__3LN9",
-	"logo": "Onboarding-logo__1xh8",
-	"sliderTitle": "Onboarding-sliderTitle__UQfg",
-	"sliderText": "Onboarding-sliderText__3pHr",
-	"button": "Onboarding-button__1iCz",
-	"dot": "Onboarding-dot__shDy",
-	"active": "Onboarding-active__2gjm",
-	"close": "Onboarding-close__3qCj"
+	"container": "Onboarding-container__1ajl",
+	"background": "Onboarding-background__2v36",
+	"panel": "Onboarding-panel__2DJk",
+	"logo": "Onboarding-logo__3Ebi",
+	"sliderTitle": "Onboarding-sliderTitle__N6Vi",
+	"sliderText": "Onboarding-sliderText__R684",
+	"button": "Onboarding-button__34a0",
+	"dot": "Onboarding-dot__2Fpa",
+	"active": "Onboarding-active__3j2G",
+	"close": "Onboarding-close__oaSy"
 };
 
 /***/ }),
@@ -356,23 +356,23 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Page-main__1sML {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n\n.Page-flex__FIVV {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n\n.Page-header__HOSv {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border-bottom: 1px solid #ddd;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 8px 10px 0 10px; }\n  @media (min-width: 770px) {\n    .Page-header__HOSv {\n      padding-left: 32px;\n      padding-right: 32px; } }\n\n.Page-row1__9jal {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 14px 0;\n  min-height: 42px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n\n.Page-row2__1_3T {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 12px 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-simpleList__1vLk {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.Page-actions__3mFu {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 4px; }\n  .Page-actions__3mFu li {\n    margin-left: 10px; }\n\n.Page-options__3Q6G {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-headline__2aEw {\n  margin: 0;\n  letter-spacing: 1px;\n  font-weight: 500;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-title__1Aao {\n  font-size: 20px;\n  height: 44px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.Page-subtitle__3Ira {\n  text-transform: uppercase;\n  font-size: 12px;\n  height: 1em; }\n\n.Page-content__IA51 {\n  padding: 16px 10px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n  @media (min-width: 770px) {\n    .Page-content__IA51 {\n      padding-left: 32px;\n      padding-right: 32px; } }\n\n.Page-back__1_2T {\n  color: #333;\n  padding: 6px 14px;\n  font-size: 22px;\n  margin-right: 15px; }\n  .Page-back__1_2T i {\n    margin: 0 !important; }\n\n@media (min-width: 770px) {\n  .Page-title__1Aao {\n    -webkit-box-ordinal-group: 3;\n        -ms-flex-order: 2;\n            order: 2;\n    min-width: auto;\n    font-size: 24px;\n    height: auto; }\n  .Page-actions__3mFu {\n    -webkit-box-ordinal-group: 4;\n        -ms-flex-order: 3;\n            order: 3;\n    margin: 0; }\n  .Page-back__1_2T {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1; } }\n", ""]);
+exports.push([module.i, ".Page-main__1pYo {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n\n.Page-flex__28Vg {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n\n.Page-header__1Ozy {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border-bottom: 1px solid #ddd;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  padding: 8px 10px 0 10px; }\n  @media (min-width: 770px) {\n    .Page-header__1Ozy {\n      padding-left: 32px;\n      padding-right: 32px; } }\n\n.Page-row1__1-uP {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 14px 0;\n  min-height: 42px;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end; }\n\n.Page-row2__1F-3 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 12px 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-simpleList__2H07 {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.Page-actions__1j4n {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 4px; }\n  .Page-actions__1j4n li {\n    margin-left: 10px; }\n\n.Page-options__2YYs {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-headline__12ij {\n  margin: 0;\n  letter-spacing: 1px;\n  font-weight: 500;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n\n.Page-title__Mozt {\n  font-size: 20px;\n  height: 44px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.Page-subtitle__10YU {\n  text-transform: uppercase;\n  font-size: 12px;\n  height: 1em; }\n\n.Page-content__p72D {\n  padding: 16px 10px;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n  @media (min-width: 770px) {\n    .Page-content__p72D {\n      padding-left: 32px;\n      padding-right: 32px; } }\n\n.Page-back__3YoK {\n  color: #333;\n  padding: 6px 14px;\n  font-size: 22px;\n  margin-right: 15px; }\n  .Page-back__3YoK i {\n    margin: 0 !important; }\n\n@media (min-width: 770px) {\n  .Page-title__Mozt {\n    -webkit-box-ordinal-group: 3;\n        -ms-flex-order: 2;\n            order: 2;\n    min-width: auto;\n    font-size: 24px;\n    height: auto; }\n  .Page-actions__1j4n {\n    -webkit-box-ordinal-group: 4;\n        -ms-flex-order: 3;\n            order: 3;\n    margin: 0; }\n  .Page-back__3YoK {\n    -webkit-box-ordinal-group: 2;\n        -ms-flex-order: 1;\n            order: 1; } }\n", ""]);
 
 // exports
 exports.locals = {
-	"main": "Page-main__1sML",
-	"flex": "Page-flex__FIVV",
-	"header": "Page-header__HOSv",
-	"row1": "Page-row1__9jal",
-	"row2": "Page-row2__1_3T",
-	"simpleList": "Page-simpleList__1vLk",
-	"actions": "Page-actions__3mFu Page-simpleList__1vLk",
-	"options": "Page-options__3Q6G Page-simpleList__1vLk",
-	"headline": "Page-headline__2aEw",
-	"title": "Page-title__1Aao Page-headline__2aEw",
-	"subtitle": "Page-subtitle__3Ira Page-headline__2aEw",
-	"content": "Page-content__IA51",
-	"back": "Page-back__1_2T"
+	"main": "Page-main__1pYo",
+	"flex": "Page-flex__28Vg",
+	"header": "Page-header__1Ozy",
+	"row1": "Page-row1__1-uP",
+	"row2": "Page-row2__1F-3",
+	"simpleList": "Page-simpleList__2H07",
+	"actions": "Page-actions__1j4n Page-simpleList__2H07",
+	"options": "Page-options__2YYs Page-simpleList__2H07",
+	"headline": "Page-headline__12ij",
+	"title": "Page-title__Mozt Page-headline__12ij",
+	"subtitle": "Page-subtitle__10YU Page-headline__12ij",
+	"content": "Page-content__p72D",
+	"back": "Page-back__3YoK"
 };
 
 /***/ }),
@@ -385,12 +385,12 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".Preferences-title__2T5g {\n  font-weight: 500; }\n\n.Preferences-article__2CcQ {\n  background-color: #f6f6f6;\n  border: solid 1px #cccccc;\n  padding: 16px; }\n  .Preferences-article__2CcQ p {\n    margin-top: 0px; }\n", ""]);
+exports.push([module.i, ".Preferences-title__Vq_c {\n  font-weight: 500; }\n\n.Preferences-article__qHLu {\n  background-color: #f6f6f6;\n  border: solid 1px #cccccc;\n  padding: 16px; }\n  .Preferences-article__qHLu p {\n    margin-top: 0px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"title": "Preferences-title__2T5g",
-	"article": "Preferences-article__2CcQ"
+	"title": "Preferences-title__Vq_c",
+	"article": "Preferences-article__qHLu"
 };
 
 /***/ }),
@@ -418,14 +418,14 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".ToolBoxOptions-toolBox__2OlV {\n  position: relative; }\n  .ToolBoxOptions-toolBox__2OlV button i {\n    margin: 0 !important; }\n\n.ToolBoxOptions-triangle__2IT- {\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border: 1px solid #9B9B9B;\n  border-left: none;\n  border-bottom: none;\n  background-color: #F6F6F6;\n  -webkit-transform: rotate(-45deg);\n      -ms-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n  top: -6px;\n  right: 20px; }\n\n.ToolBoxOptions-content__2HOj {\n  position: absolute;\n  min-width: 250px;\n  border: 1px solid #9B9B9B;\n  background: #F6F6F6;\n  z-index: 999;\n  right: 0px;\n  padding: 6px 0px;\n  margin-top: 10px; }\n  .ToolBoxOptions-content__2HOj ul {\n    list-style: none;\n    padding: 0px;\n    margin: 0px; }\n    .ToolBoxOptions-content__2HOj ul li {\n      padding: 16px;\n      margin: 0;\n      cursor: pointer;\n      font-size: 14px;\n      color: #4A4A4A;\n      letter-spacing: 1px; }\n      .ToolBoxOptions-content__2HOj ul li:hover, .ToolBoxOptions-content__2HOj ul li.ToolBoxOptions-active__VcUr {\n        background-color: #E7E7E7; }\n", ""]);
+exports.push([module.i, ".ToolBoxOptions-toolBox__3mXe {\n  position: relative; }\n  .ToolBoxOptions-toolBox__3mXe button i {\n    margin: 0 !important; }\n\n.ToolBoxOptions-triangle__1UEA {\n  position: absolute;\n  width: 10px;\n  height: 10px;\n  border: 1px solid #9B9B9B;\n  border-left: none;\n  border-bottom: none;\n  background-color: #F6F6F6;\n  -webkit-transform: rotate(-45deg);\n      -ms-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n  top: -6px;\n  right: 20px; }\n\n.ToolBoxOptions-content__1GBz {\n  position: absolute;\n  min-width: 250px;\n  border: 1px solid #9B9B9B;\n  background: #F6F6F6;\n  z-index: 999;\n  right: 0px;\n  padding: 6px 0px;\n  margin-top: 10px; }\n  .ToolBoxOptions-content__1GBz ul {\n    list-style: none;\n    padding: 0px;\n    margin: 0px; }\n    .ToolBoxOptions-content__1GBz ul li {\n      padding: 16px;\n      margin: 0;\n      cursor: pointer;\n      font-size: 14px;\n      color: #4A4A4A;\n      letter-spacing: 1px; }\n      .ToolBoxOptions-content__1GBz ul li:hover, .ToolBoxOptions-content__1GBz ul li.ToolBoxOptions-active__202A {\n        background-color: #E7E7E7; }\n", ""]);
 
 // exports
 exports.locals = {
-	"toolBox": "ToolBoxOptions-toolBox__2OlV",
-	"triangle": "ToolBoxOptions-triangle__2IT-",
-	"content": "ToolBoxOptions-content__2HOj",
-	"active": "ToolBoxOptions-active__VcUr"
+	"toolBox": "ToolBoxOptions-toolBox__3mXe",
+	"triangle": "ToolBoxOptions-triangle__1UEA",
+	"content": "ToolBoxOptions-content__1GBz",
+	"active": "ToolBoxOptions-active__202A"
 };
 
 /***/ }),
@@ -438,19 +438,19 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".buttons-button__268y {\n  border: solid 1px #9b9b9b;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  letter-spacing: 1px;\n  color: #dddddd;\n  padding: 12px 15px;\n  font-weight: 300;\n  cursor: pointer; }\n  .buttons-button__268y:disabled {\n    cursor: not-allowed; }\n  .buttons-button__268y.buttons-positive__1PKZ {\n    background-color: #c8c951;\n    color: #dddddd; }\n  .buttons-button__268y.buttons-light__1ewi {\n    background-color: #FFF;\n    color: #444; }\n  .buttons-button__268y.buttons-assertive__3RMP {\n    background-color: #ff3f3a;\n    color: #FFF;\n    border: 1px solid #ff2621 !important; }\n    .buttons-button__268y.buttons-assertive__3RMP:hover {\n      background-color: #ff5854 !important; }\n  .buttons-button__268y.buttons-stable__LUaZ {\n    background-color: #f6f6f6;\n    color: #444; }\n  .buttons-button__268y.buttons-default__2cKA {\n    background-color: #485d76;\n    color: #dddddd;\n    border: 1px solid #485d76; }\n  .buttons-button__268y.buttons-clear__brEC {\n    background-color: transparent;\n    border: none; }\n  .buttons-button__268y > i:first-child {\n    margin-right: 8px;\n    vertical-align: middle;\n    font-size: 20px; }\n  .buttons-button__268y.buttons-icon__1uqq {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n    .buttons-button__268y.buttons-icon__1uqq i:first-child {\n      line-height: 0;\n      margin: 0;\n      padding: 0;\n      font-size: 25px;\n      height: 18px;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      overflow: visible; }\n  @media (min-width: 770px) and (max-width: 1155px) {\n    .buttons-button__268y .buttons-text__2dE5 {\n      display: none; }\n    .buttons-button__268y > i:first-child {\n      margin: 0; } }\n  @media (max-width: 513.33333px) {\n    .buttons-button__268y .buttons-text__2dE5 {\n      display: none; }\n    .buttons-button__268y > i:first-child {\n      margin: 0; } }\n", ""]);
+exports.push([module.i, ".buttons-button__2Pc5 {\n  border: solid 1px #9b9b9b;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  letter-spacing: 1px;\n  color: #dddddd;\n  padding: 12px 15px;\n  font-weight: 300;\n  cursor: pointer; }\n  .buttons-button__2Pc5:disabled {\n    cursor: not-allowed; }\n  .buttons-button__2Pc5.buttons-positive__22b7 {\n    background-color: #c8c951;\n    color: #dddddd; }\n  .buttons-button__2Pc5.buttons-light__23Jm {\n    background-color: #FFF;\n    color: #444; }\n  .buttons-button__2Pc5.buttons-assertive__utAu {\n    background-color: #ff3f3a;\n    color: #FFF;\n    border: 1px solid #ff2621 !important; }\n    .buttons-button__2Pc5.buttons-assertive__utAu:hover {\n      background-color: #ff5854 !important; }\n  .buttons-button__2Pc5.buttons-stable__2sFm {\n    background-color: #f6f6f6;\n    color: #444; }\n  .buttons-button__2Pc5.buttons-default__fJ7W {\n    background-color: #485d76;\n    color: #dddddd;\n    border: 1px solid #485d76; }\n  .buttons-button__2Pc5.buttons-clear__2QcK {\n    background-color: transparent;\n    border: none; }\n  .buttons-button__2Pc5 > i:first-child {\n    margin-right: 8px;\n    vertical-align: middle;\n    font-size: 20px; }\n  .buttons-button__2Pc5.buttons-icon__1t6_ {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n    .buttons-button__2Pc5.buttons-icon__1t6_ i:first-child {\n      line-height: 0;\n      margin: 0;\n      padding: 0;\n      font-size: 25px;\n      height: 18px;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-box-pack: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      overflow: visible; }\n  @media (min-width: 770px) and (max-width: 1155px) {\n    .buttons-button__2Pc5 .buttons-text__30hO {\n      display: none; }\n    .buttons-button__2Pc5 > i:first-child {\n      margin: 0; } }\n  @media (max-width: 513.33333px) {\n    .buttons-button__2Pc5 .buttons-text__30hO {\n      display: none; }\n    .buttons-button__2Pc5 > i:first-child {\n      margin: 0; } }\n", ""]);
 
 // exports
 exports.locals = {
-	"button": "buttons-button__268y",
-	"positive": "buttons-positive__1PKZ",
-	"light": "buttons-light__1ewi",
-	"assertive": "buttons-assertive__3RMP",
-	"stable": "buttons-stable__LUaZ",
-	"default": "buttons-default__2cKA",
-	"clear": "buttons-clear__brEC",
-	"icon": "buttons-icon__1uqq",
-	"text": "buttons-text__2dE5"
+	"button": "buttons-button__2Pc5",
+	"positive": "buttons-positive__22b7",
+	"light": "buttons-light__23Jm",
+	"assertive": "buttons-assertive__utAu",
+	"stable": "buttons-stable__2sFm",
+	"default": "buttons-default__fJ7W",
+	"clear": "buttons-clear__2QcK",
+	"icon": "buttons-icon__1t6_",
+	"text": "buttons-text__30hO"
 };
 
 /***/ }),
@@ -463,11 +463,13 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".help-tab__uTbm {\n  cursor: pointer; }\n  .help-tab__uTbm a:hover {\n    text-decoration: none; }\n", ""]);
+exports.push([module.i, ".help-tab__2aeP {\n  cursor: pointer; }\n  .help-tab__2aeP a:hover {\n    text-decoration: none; }\n\n.help-header__1MkE a {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: end;\n      -ms-flex-align: end;\n          align-items: flex-end; }\n\n.help-title__1Yq_ {\n  margin: 0.5em 0;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1; }\n", ""]);
 
 // exports
 exports.locals = {
-	"tab": "help-tab__uTbm"
+	"tab": "help-tab__2aeP",
+	"header": "help-header__1MkE",
+	"title": "help-title__1Yq_"
 };
 
 /***/ }),
@@ -480,13 +482,13 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".pdf-previous__AEqg a {\n  float: none !important;\n  margin-right: 10px;\n  cursor: pointer; }\n\n.pdf-next__oHqv a {\n  float: none !important;\n  margin-left: 10px;\n  cursor: pointer; }\n\n.pdf-zoom__2nvC a {\n  cursor: pointer; }\n", ""]);
+exports.push([module.i, ".pdf-previous__31hI a {\n  float: none !important;\n  margin-right: 10px;\n  cursor: pointer; }\n\n.pdf-next__JDpf a {\n  float: none !important;\n  margin-left: 10px;\n  cursor: pointer; }\n\n.pdf-zoom__26q9 a {\n  cursor: pointer; }\n", ""]);
 
 // exports
 exports.locals = {
-	"previous": "pdf-previous__AEqg",
-	"next": "pdf-next__oHqv",
-	"zoom": "pdf-zoom__2nvC"
+	"previous": "pdf-previous__31hI",
+	"next": "pdf-next__JDpf",
+	"zoom": "pdf-zoom__26q9"
 };
 
 /***/ }),
@@ -584,6 +586,10 @@ var _DataForm = __webpack_require__("./src/containers/DataForm.js");
 
 var _DataForm2 = _interopRequireDefault(_DataForm);
 
+var _News = __webpack_require__("./src/containers/News.js");
+
+var _News2 = _interopRequireDefault(_News);
+
 var _Preferences = __webpack_require__("./src/components/elements/Preferences.jsx");
 
 var _Preferences2 = _interopRequireDefault(_Preferences);
@@ -598,7 +604,9 @@ var _About2 = _interopRequireDefault(_About);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//Piwik tracker
+// import SearchBar from './components/SearchBar'
+
+// import createHistory from 'history/createBrowserHistory'
 var App = function App(props) {
 
     var history = (0, _createHashHistory2.default)();
@@ -640,7 +648,7 @@ var App = function App(props) {
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/corbeille', component: _Trash2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/assistant', component: _Assistant2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/assistant/:slug', component: _DataForm2.default }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/actualites', component: WIP }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/actualites/:path*', component: _News2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/preferences', component: _Preferences2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/aide', component: _Help2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/a-propos', component: _About2.default }),
@@ -652,11 +660,7 @@ var App = function App(props) {
     );
 };
 
-//import News from './containers/News'
-
-// import SearchBar from './components/SearchBar'
-
-// import createHistory from 'history/createBrowserHistory'
+//Piwik tracker
 
 
 var WIP = function WIP(props) {
@@ -3047,7 +3051,6 @@ var loadContacts = exports.loadContacts = function loadContacts() {
 };
 
 var loadNews = exports.loadNews = function loadNews() {
-    console.log('load news ..?');
     return function () {
         var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee5(dispatch, getState) {
             var result;
@@ -3092,17 +3095,9 @@ var loadNews = exports.loadNews = function loadNews() {
 };
 
 var loadData = exports.loadData = function loadData() {
-    var doctype = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _constants.DOCTYPE_DATA;
+    var doctype = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _constants.DOCTYPE_DIAGNOSIS;
 
-    if (doctype === _constants.DOCTYPE_DATA) {
-        return {
-            type: LOAD_DATA_SUCCESS,
-            data: _constants.DATA_LIST,
-            doctype: _constants.DOCTYPE_DATA
-        };
-    } else {
-        return createLoader(LOAD_DATA, LOAD_DATA_SUCCESS, LOAD_DATA_FAILURE, doctype);
-    }
+    return createLoader(LOAD_DATA, LOAD_DATA_SUCCESS, LOAD_DATA_FAILURE, doctype);
 };
 
 var createLoader = function createLoader(action, actionSuccess, actionFailure, doctype) {
@@ -4081,8 +4076,6 @@ var _reactPortal = __webpack_require__("./node_modules/react-portal/build/portal
 
 var _reactPortal2 = _interopRequireDefault(_reactPortal);
 
-var _constants = __webpack_require__("./src/constants/index.js");
-
 var _buttons = __webpack_require__("./src/styles/buttons.scss");
 
 var _buttons2 = _interopRequireDefault(_buttons);
@@ -4118,6 +4111,8 @@ var _Modal2 = _interopRequireDefault(_Modal);
 var _ContactsModal = __webpack_require__("./src/components/modals/ContactsModal.jsx");
 
 var _ContactsModal2 = _interopRequireDefault(_ContactsModal);
+
+var _constants = __webpack_require__("./src/constants/index.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -6150,7 +6145,7 @@ var Footer = exports.Footer = function Footer(props) {
             'div',
             { className: _Footer2.default.content },
             'HOMEBOOK est un service propos\xE9 par edf - V',
-            '2.1.75'
+            '2.1.99'
         )
     );
 };
@@ -8375,6 +8370,184 @@ exports.default = Navigation;
 
 /***/ }),
 
+/***/ "./src/components/elements/News.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__("./node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _moment = __webpack_require__("./node_modules/moment/moment.js");
+
+var _moment2 = _interopRequireDefault(_moment);
+
+var _Accordion = __webpack_require__("./node_modules/react-bootstrap/lib/Accordion.js");
+
+var _Accordion2 = _interopRequireDefault(_Accordion);
+
+var _Panel = __webpack_require__("./node_modules/react-bootstrap/lib/Panel.js");
+
+var _Panel2 = _interopRequireDefault(_Panel);
+
+var _buttons = __webpack_require__("./src/styles/buttons.scss");
+
+var _buttons2 = _interopRequireDefault(_buttons);
+
+var _help = __webpack_require__("./src/styles/help.sass");
+
+var _help2 = _interopRequireDefault(_help);
+
+var _lodash = __webpack_require__("./node_modules/lodash/lodash.js");
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var _Page = __webpack_require__("./src/components/elements/Page.jsx");
+
+var _Page2 = _interopRequireDefault(_Page);
+
+var _Loader = __webpack_require__("./src/components/elements/Loader.jsx");
+
+var _Loader2 = _interopRequireDefault(_Loader);
+
+var _constants = __webpack_require__("./src/constants/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contacts = function (_Component) {
+    _inherits(Contacts, _Component);
+
+    function Contacts(props, context) {
+        _classCallCheck(this, Contacts);
+
+        return _possibleConstructorReturn(this, (Contacts.__proto__ || Object.getPrototypeOf(Contacts)).call(this, props, context));
+    }
+
+    _createClass(Contacts, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            this.reload();
+        }
+    }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(newProps) {
+            // newProps.onLoadNews()
+        }
+    }, {
+        key: 'reload',
+        value: function reload() {
+            this.props.onLoadNews();
+        }
+    }, {
+        key: 'createHeader',
+        value: function createHeader(item) {
+            return _react2.default.createElement(
+                'span',
+                { className: _help2.default.header },
+                _react2.default.createElement(
+                    'h3',
+                    { className: _help2.default.title },
+                    item.title || "Notification"
+                ),
+                _react2.default.createElement(
+                    'span',
+                    null,
+                    _react2.default.createElement(
+                        'span',
+                        null,
+                        item.category && item.category.name
+                    ),
+                    _react2.default.createElement(
+                        'span',
+                        null,
+                        ' \u2022 '
+                    ),
+                    _react2.default.createElement(
+                        'span',
+                        null,
+                        (0, _moment2.default)(item.createdAt).format('LL')
+                    )
+                )
+            );
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _props = this.props,
+                news = _props.news,
+                count = _props.count,
+                status = _props.status;
+
+
+            var loading = status === _constants.STATUS_LOAD;
+
+            var reload = _react2.default.createElement(
+                'button',
+                { onClick: function onClick() {
+                        return _this2.reload();
+                    }, className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.default) },
+                _react2.default.createElement('i', { className: 'ion-ios-refresh-outline' }),
+                'ACTUALISER'
+            );
+            var actions = [reload];
+
+            return _react2.default.createElement(
+                _Page2.default,
+                { title: 'Actualit\xE9s', subtitle: count !== null && (count > 0 ? count > 1 ? count + ' actualit\xE9s' : '1 actualit\xE9' : 'Aucune actualité'),
+                    actions: actions },
+                _react2.default.createElement(_Loader2.default, { display: loading }),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    !loading && news.length > 0 && news.map(function (item, key) {
+                        var _React$createElement;
+
+                        return _react2.default.createElement(
+                            _Panel2.default,
+                            (_React$createElement = { header: _this2.createHeader(item), defaultExpanded: true, collapsible: true, eventKey: key, className: _help2.default.tab }, _defineProperty(_React$createElement, 'className', _help2.default.tab), _defineProperty(_React$createElement, 'key', key), _React$createElement),
+                            _react2.default.createElement('p', { dangerouslySetInnerHTML: html(item.content) })
+                        );
+                    })
+                ),
+                !loading && news.length === 0 && "Aucune actualité"
+            );
+        }
+    }]);
+
+    return Contacts;
+}(_react.Component);
+
+exports.default = Contacts;
+
+
+var html = function html(text) {
+    return { __html: text };
+};
+
+/***/ }),
+
 /***/ "./src/components/elements/Onboarding.jsx":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10100,8 +10273,7 @@ exports.default = ContactModal;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.FileTypeNotReadable = undefined;
 
 var _react = __webpack_require__("./node_modules/react/react.js");
 
@@ -10123,85 +10295,50 @@ var _DocumentViewModal2 = _interopRequireDefault(_DocumentViewModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var FileTypeNotReadable = exports.FileTypeNotReadable = function FileTypeNotReadable(props) {
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+    var close = function close(e) {
+        e.stopPropagation();
+        //close the portal
+        props.closePortal();
+    };
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ContactModal = function (_Component) {
-    _inherits(ContactModal, _Component);
-
-    function ContactModal(props, context) {
-        _classCallCheck(this, ContactModal);
-
-        return _possibleConstructorReturn(this, (ContactModal.__proto__ || Object.getPrototypeOf(ContactModal)).call(this, props, context));
-    }
-
-    _createClass(ContactModal, [{
-        key: 'componentWillMount',
-        value: function componentWillMount() {}
-    }, {
-        key: 'componentWillReceiveProps',
-        value: function componentWillReceiveProps(newProps) {}
-    }, {
-        key: 'close',
-        value: function close(e) {
-            e.stopPropagation();
-
-            //close the portal
-            this.props.closePortal();
-        }
-    }, {
-        key: 'renderView',
-        value: function renderView() {
-            var _this2 = this;
-
-            return _react2.default.createElement(
+    return _react2.default.createElement(
+        'div',
+        { className: _DocumentViewModal2.default.main, onClick: function onClick(e) {
+                return e.stopPropagation();
+            } },
+        _react2.default.createElement(
+            'div',
+            { className: _DocumentViewModal2.default.header },
+            _react2.default.createElement(
+                'h1',
+                null,
+                'Informations'
+            ),
+            _react2.default.createElement(
+                'button',
+                {
+                    onClick: function onClick(e) {
+                        return close(e);
+                    },
+                    className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable, _buttons2.default.clear) },
+                _react2.default.createElement('i', { className: 'ion-ios-close-empty' })
+            )
+        ),
+        _react2.default.createElement(
+            'div',
+            { className: _DocumentViewModal2.default.content },
+            _react2.default.createElement(
                 'div',
-                { className: _DocumentViewModal2.default.main, onClick: function onClick(e) {
-                        return e.stopPropagation();
-                    } },
-                _react2.default.createElement(
-                    'div',
-                    { className: _DocumentViewModal2.default.header },
-                    _react2.default.createElement(
-                        'h1',
-                        null,
-                        'Informations'
-                    ),
-                    _react2.default.createElement(
-                        'button',
-                        {
-                            onClick: function onClick(e) {
-                                return _this2.close(e);
-                            },
-                            className: (0, _classnames2.default)(_buttons2.default.button, _buttons2.default.stable, _buttons2.default.clear) },
-                        _react2.default.createElement('i', { className: 'ion-ios-close-empty' })
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: _DocumentViewModal2.default.content },
-                    _react2.default.createElement(
-                        'div',
-                        null,
-                        'Impossible de lire ce type de fichier, veuillez le t\xE9l\xE9charger afin de le lire sur votre ordinateur'
-                    )
-                )
-            );
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            return this.renderView();
-        }
-    }]);
+                null,
+                'Impossible de lire ce type de fichier, veuillez le t\xE9l\xE9charger afin de le lire sur votre ordinateur'
+            )
+        )
+    );
+};
 
-    return ContactModal;
-}(_react.Component);
-
-exports.default = ContactModal;
+exports.default = FileTypeNotReadable;
 
 /***/ }),
 
@@ -11888,625 +12025,49 @@ exports.default = TXTViewer;
 /***/ "./src/constants/contactTypes.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	"Rénovation générale",
-	"Plomberie",
-	"Electricité",
-	"Couverture",
-	"Chauffage/Ventilation/Climatisation",
-	"Peinture",
-	"Autre"
-];
+module.exports = ["Rénovation générale","Plomberie","Electricité","Couverture","Chauffage/Ventilation/Climatisation","Peinture","Autre"]
 
 /***/ }),
 
 /***/ "./src/constants/data/contact.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	{
-		"name": "Principales",
-		"group": [
-			{
-				"name": "firstname",
-				"display": "Prénom"
-			},
-			{
-				"name": "lastname",
-				"display": "Nom"
-			},
-			{
-				"name": "telephone",
-				"display": "Téléphone",
-				"type": "telephone"
-			},
-			{
-				"name": "email",
-				"display": "Email",
-				"type": "email"
-			},
-			{
-				"name": "address",
-				"display": "Adresse",
-				"type": "address"
-			},
-			{
-				"name": "speciality",
-				"display": "Spécialité",
-				"type": "list",
-				"value": [
-					"A definir"
-				]
-			},
-			{
-				"name": "satisfaction",
-				"display": "Satisfaction",
-				"type": "rate"
-			},
-			{
-				"name": "nbRealisedProjects",
-				"display": "Nombre de projets réalisés",
-				"type": "number"
-			}
-		]
-	}
-];
+module.exports = [{"name":"Principales","group":[{"name":"firstname","display":"Prénom"},{"name":"lastname","display":"Nom"},{"name":"telephone","display":"Téléphone","type":"telephone"},{"name":"email","display":"Email","type":"email"},{"name":"address","display":"Adresse","type":"address"},{"name":"speciality","display":"Spécialité","type":"list","value":["A definir"]},{"name":"satisfaction","display":"Satisfaction","type":"rate"},{"name":"nbRealisedProjects","display":"Nombre de projets réalisés","type":"number"}]}]
 
 /***/ }),
 
 /***/ "./src/constants/data/diagnosis.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	{
-		"name": "Principales",
-		"group": [
-			{
-				"name": "name",
-				"display": "Nom",
-				"question": "Quel est l'intitulé du diagnostic ?"
-			},
-			{
-				"name": "type",
-				"display": "Type",
-				"type": "list",
-				"values": [
-					"DPE",
-					"ERNMT",
-					"Plomb (CREP)",
-					"Amiante (DAPP)",
-					"Installation intérieur élétricité",
-					"Installation intérieur de gaz",
-					"autre"
-				],
-				"required": true,
-				"question": "Quel est le type de diagnostic effectié ?"
-			},
-			{
-				"name": "date",
-				"display": "Date de réalisation",
-				"type": "date",
-				"required": true,
-				"question": "A quelle date ?"
-			},
-			{
-				"name": "expirationDate",
-				"display": "Date d'expiration",
-				"type": "date",
-				"question": "Quand expire t-il ?"
-			},
-			{
-				"name": "DPEEnergyClass",
-				"display": "Étiquette énergétique DPE",
-				"depend": {
-					"key": "type",
-					"value": "DPE"
-				},
-				"question": "Quelle est l'étiquette énergétique calculée durant le diagnostic ?"
-			},
-			{
-				"name": "realEnergyConsommation",
-				"display": "Consommation conventionnelle",
-				"depend": {
-					"key": "type",
-					"value": "DPE"
-				},
-				"question": "Quelle est la consommation conventionnelle calculée durant le diagnostic ?"
-			},
-			{
-				"name": "carbonClass",
-				"display": "Étiquette carbon",
-				"depend": {
-					"key": "type",
-					"value": "DPE"
-				},
-				"question": "Quelle est l'étiquette carbon calculée durant le diagnostic ?"
-			},
-			{
-				"name": "CO2emission",
-				"display": "Estimation émission",
-				"depend": {
-					"key": "type",
-					"value": "DPE"
-				},
-				"question": "Quelle est l'estimation d'émission calculée durant le diagnostic ?"
-			},
-			{
-				"name": "cep",
-				"display": "Coefficient Cep",
-				"type": "number",
-				"depend": {
-					"key": "type",
-					"value": "DPE"
-				},
-				"question": "Quelle est le coefficient CEP calculé durant le diagnostic ?"
-			},
-			{
-				"name": "bbio",
-				"display": "Coefficient Bbio",
-				"type": "number",
-				"depend": {
-					"key": "type",
-					"value": "DPE"
-				},
-				"question": "Quelle est le coefficient BBio calculé durant le diagnostic ?"
-			},
-			{
-				"name": "tic",
-				"display": "Valeur TIC",
-				"type": "number",
-				"depend": {
-					"key": "type",
-					"value": "DPE"
-				},
-				"question": "Quelle est la valeur TIC calculée durant le diagnostic ?"
-			}
-		]
-	},
-	{
-		"name": "Donnée",
-		"group": [
-			{
-				"name": "thermalBridge",
-				"display": "Pont thermal"
-			},
-			{
-				"name": "ventilation",
-				"display": "Ventilation"
-			},
-			{
-				"name": "lighting",
-				"display": "Lumière"
-			}
-		]
-	},
-	{
-		"name": "Données d'équipements",
-		"group": [
-			{
-				"name": "heat",
-				"display": "Chaleur"
-			},
-			{
-				"name": "cold",
-				"display": "Froid"
-			},
-			{
-				"name": "sanitary",
-				"display": "Sanitaire"
-			}
-		]
-	}
-];
+module.exports = [{"name":"Principales","group":[{"name":"name","display":"Nom","question":"Quel est l'intitulé du diagnostic ?"},{"name":"type","display":"Type","type":"list","values":["DPE","ERNMT","Plomb (CREP)","Amiante (DAPP)","Installation intérieur élétricité","Installation intérieur de gaz","autre"],"required":true,"question":"Quel est le type de diagnostic effectié ?"},{"name":"date","display":"Date de réalisation","type":"date","required":true,"question":"A quelle date ?"},{"name":"expirationDate","display":"Date d'expiration","type":"date","question":"Quand expire t-il ?"},{"name":"DPEEnergyClass","display":"Étiquette énergétique DPE","depend":{"key":"type","value":"DPE"},"question":"Quelle est l'étiquette énergétique calculée durant le diagnostic ?"},{"name":"realEnergyConsommation","display":"Consommation conventionnelle","depend":{"key":"type","value":"DPE"},"question":"Quelle est la consommation conventionnelle calculée durant le diagnostic ?"},{"name":"carbonClass","display":"Étiquette carbon","depend":{"key":"type","value":"DPE"},"question":"Quelle est l'étiquette carbon calculée durant le diagnostic ?"},{"name":"CO2emission","display":"Estimation émission","depend":{"key":"type","value":"DPE"},"question":"Quelle est l'estimation d'émission calculée durant le diagnostic ?"},{"name":"cep","display":"Coefficient Cep","type":"number","depend":{"key":"type","value":"DPE"},"question":"Quelle est le coefficient CEP calculé durant le diagnostic ?"},{"name":"bbio","display":"Coefficient Bbio","type":"number","depend":{"key":"type","value":"DPE"},"question":"Quelle est le coefficient BBio calculé durant le diagnostic ?"},{"name":"tic","display":"Valeur TIC","type":"number","depend":{"key":"type","value":"DPE"},"question":"Quelle est la valeur TIC calculée durant le diagnostic ?"}]},{"name":"Donnée","group":[{"name":"thermalBridge","display":"Pont thermal"},{"name":"ventilation","display":"Ventilation"},{"name":"lighting","display":"Lumière"}]},{"name":"Données d'équipements","group":[{"name":"heat","display":"Chaleur"},{"name":"cold","display":"Froid"},{"name":"sanitary","display":"Sanitaire"}]}]
 
 /***/ }),
 
 /***/ "./src/constants/data/equipment.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	{
-		"name": "Principales",
-		"group": [
-			{
-				"name": "name",
-				"display": "Name",
-				"question": "Quelle est le nom de votre équipement ?"
-			},
-			{
-				"name": "type",
-				"display": "Type",
-				"type": "list",
-				"values": [
-					"Ventilation naturelle",
-					"VMC",
-					"VMC Gaz",
-					"Autre système de ventilation",
-					"Eau chaude sanitaire électrique",
-					"Eau chaude sanitaire thermodynamique",
-					"Eau chaude solaire",
-					"Chaudière à gaz",
-					"Chaudière fuel",
-					"Poêle à bois",
-					"Cheminée, foyer, insert",
-					"Radiateurs électriques",
-					"Chauffage solaire",
-					"Pompe à chaleur",
-					"Climatiseur",
-					"Installation photovoltaïques",
-					"Réfrigérateur",
-					"Lave-linge",
-					"Cuisinière",
-					"Table de cuisson",
-					"Four",
-					"Lave-vaisselle",
-					"Cave à vin",
-					"Sèche-linge",
-					"Box de pilotage maison",
-					"Autre"
-				],
-				"required": true,
-				"question": "De quelle type est votre équipement ?"
-			},
-			{
-				"name": "brand",
-				"display": "Marque",
-				"question": "Quelle est la marque de votre équipement ?"
-			},
-			{
-				"name": "model",
-				"display": "Model",
-				"depend": "brand",
-				"question": "Quelle est le modèle de votre équipement ?"
-			},
-			{
-				"name": "buyDate",
-				"display": "Date d'achat",
-				"type": "date",
-				"question": "Quand avez-vous acheté cet équipement ?"
-			},
-			{
-				"name": "installDate",
-				"display": "Date d'installation",
-				"type": "date",
-				"question": "Quand avez-vous installé cet équipement ?"
-			},
-			{
-				"name": "guaranteeEndDate",
-				"display": "Date de fin de garantie",
-				"type": "date",
-				"question": "Quelle est la date de fin de garantie ?"
-			},
-			{
-				"name": "lastMaintenanceDate",
-				"display": "Date de la dernière maintenance",
-				"type": "date",
-				"question": "Quelle est la date du dernier entretien ?"
-			},
-			{
-				"name": "energyClass",
-				"display": "Classe énergetique",
-				"question": "Quelle est la classe énergétique de cet équipement ?"
-			}
-		]
-	}
-];
+module.exports = [{"name":"Principales","group":[{"name":"name","display":"Name","question":"Quelle est le nom de votre équipement ?"},{"name":"type","display":"Type","type":"list","values":["Ventilation naturelle","VMC","VMC Gaz","Autre système de ventilation","Eau chaude sanitaire électrique","Eau chaude sanitaire thermodynamique","Eau chaude solaire","Chaudière à gaz","Chaudière fuel","Poêle à bois","Cheminée, foyer, insert","Radiateurs électriques","Chauffage solaire","Pompe à chaleur","Climatiseur","Installation photovoltaïques","Réfrigérateur","Lave-linge","Cuisinière","Table de cuisson","Four","Lave-vaisselle","Cave à vin","Sèche-linge","Box de pilotage maison","Autre"],"required":true,"question":"De quelle type est votre équipement ?"},{"name":"brand","display":"Marque","question":"Quelle est la marque de votre équipement ?"},{"name":"model","display":"Model","depend":"brand","question":"Quelle est le modèle de votre équipement ?"},{"name":"buyDate","display":"Date d'achat","type":"date","question":"Quand avez-vous acheté cet équipement ?"},{"name":"installDate","display":"Date d'installation","type":"date","question":"Quand avez-vous installé cet équipement ?"},{"name":"guaranteeEndDate","display":"Date de fin de garantie","type":"date","question":"Quelle est la date de fin de garantie ?"},{"name":"lastMaintenanceDate","display":"Date de la dernière maintenance","type":"date","question":"Quelle est la date du dernier entretien ?"},{"name":"energyClass","display":"Classe énergetique","question":"Quelle est la classe énergétique de cet équipement ?"}]}]
 
 /***/ }),
 
 /***/ "./src/constants/data/home.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	{
-		"name": "Principales",
-		"group": [
-			{
-				"name": "status",
-				"display": "Statut résident",
-				"type": "list",
-				"values": [
-					"Propriétaire",
-					"Locataire"
-				],
-				"question": "Quelle est votre status de résident ?"
-			},
-			{
-				"name": "type",
-				"display": "Type de logement",
-				"type": "list",
-				"values": [
-					"Individuel",
-					"Collectif"
-				],
-				"question": "Dans quelle type de logement vivez vous ?"
-			},
-			{
-				"name": "constructionDate",
-				"display": "Date de construction",
-				"type": "date",
-				"question": "Quelle est la date de construction de votre logement ?"
-			},
-			{
-				"name": "address",
-				"display": "Adresse",
-				"type": "address",
-				"required": true,
-				"question": "Quelle est l'adresse de votre logement ?"
-			},
-			{
-				"name": "telephone",
-				"display": "Téléphone",
-				"type": "telephone",
-				"question": "Quelle est votre numéro de téléphone ?"
-			},
-			{
-				"name": "email",
-				"display": "Email",
-				"type": "email",
-				"question": "Quelle est votre e-mail ?"
-			},
-			{
-				"name": "livingArea",
-				"display": "Surface habitable",
-				"type": "number",
-				"question": "De quelle taille est la surface habitable de votre logement ?"
-			},
-			{
-				"name": "roomsCount",
-				"display": "Nombre de pièces",
-				"type": "number",
-				"question": "Combient de pièces comporte votre logement ?"
-			}
-		]
-	},
-	{
-		"name": "Pièces",
-		"group": [
-			{
-				"name": "type",
-				"display": "Type de pièce",
-				"type": "list",
-				"values": [
-					"Logement entier",
-					"Cuisine",
-					"Salle de bain",
-					"Salon",
-					"Salle à manger",
-					"Wc",
-					"Parties communes",
-					"Toit",
-					"Cave",
-					"Combles",
-					"Chambre",
-					"Jardin",
-					"Façade extérieure",
-					"Balcon"
-				]
-			},
-			{
-				"name": "size",
-				"display": "Surface",
-				"type": "area"
-			},
-			{
-				"name": "level",
-				"display": "Niveau",
-				"type": "number"
-			}
-		]
-	}
-];
+module.exports = [{"name":"Principales","group":[{"name":"status","display":"Statut résident","type":"list","values":["Propriétaire","Locataire"],"question":"Quelle est votre status de résident ?"},{"name":"type","display":"Type de logement","type":"list","values":["Individuel","Collectif"],"question":"Dans quelle type de logement vivez vous ?"},{"name":"constructionDate","display":"Date de construction","type":"date","question":"Quelle est la date de construction de votre logement ?"},{"name":"address","display":"Adresse","type":"address","required":true,"question":"Quelle est l'adresse de votre logement ?"},{"name":"telephone","display":"Téléphone","type":"telephone","question":"Quelle est votre numéro de téléphone ?"},{"name":"email","display":"Email","type":"email","question":"Quelle est votre e-mail ?"},{"name":"livingArea","display":"Surface habitable","type":"number","question":"De quelle taille est la surface habitable de votre logement ?"},{"name":"roomsCount","display":"Nombre de pièces","type":"number","question":"Combient de pièces comporte votre logement ?"}]},{"name":"Pièces","group":[{"name":"type","display":"Type de pièce","type":"list","values":["Logement entier","Cuisine","Salle de bain","Salon","Salle à manger","Wc","Parties communes","Toit","Cave","Combles","Chambre","Jardin","Façade extérieure","Balcon"]},{"name":"size","display":"Surface","type":"area"},{"name":"level","display":"Niveau","type":"number"}]}]
 
 /***/ }),
 
 /***/ "./src/constants/data/maintenance.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	{
-		"name": "Principales",
-		"group": [
-			{
-				"name": "name",
-				"display": "Nom du contrat",
-				"required": true,
-				"question": "Quelle est l'intitulé de cet entretien ?"
-			},
-			{
-				"name": "date",
-				"display": "Date de réalisation",
-				"type": "date",
-				"required": true,
-				"question": "Quand à t'il était réalisé ?"
-			},
-			{
-				"name": "deadline",
-				"display": "Date d'échéance",
-				"type": "list",
-				"values": [
-					"6 mois",
-					"1 ans",
-					"2 ans",
-					"3 ans",
-					"4 ans",
-					"5 ans"
-				],
-				"question": "Quelle est la date d'échéance de cet entretien ?"
-			},
-			{
-				"name": "contractId",
-				"display": "Numéro de contrat",
-				"question": "Quelle est le numéro de contrat ?"
-			},
-			{
-				"name": "contract",
-				"display": "Contrat",
-				"type": "contract",
-				"question": "Quelles sont les informations du contrat ?"
-			}
-		]
-	}
-];
+module.exports = [{"name":"Principales","group":[{"name":"name","display":"Nom du contrat","required":true,"question":"Quelle est l'intitulé de cet entretien ?"},{"name":"date","display":"Date de réalisation","type":"date","required":true,"question":"Quand à t'il était réalisé ?"},{"name":"deadline","display":"Date d'échéance","type":"list","values":["6 mois","1 ans","2 ans","3 ans","4 ans","5 ans"],"question":"Quelle est la date d'échéance de cet entretien ?"},{"name":"contractId","display":"Numéro de contrat","question":"Quelle est le numéro de contrat ?"},{"name":"contract","display":"Contrat","type":"contract","question":"Quelles sont les informations du contrat ?"}]}]
 
 /***/ }),
 
 /***/ "./src/constants/data/work.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	{
-		"name": "Principales",
-		"group": [
-			{
-				"name": "name",
-				"display": "Name",
-				"required": true,
-				"question": "Quelle est l'intitulé de ces travaux ?"
-			},
-			{
-				"name": "type",
-				"display": "Type",
-				"type": "list",
-				"values": [
-					"Fenêtres (PVC, bois, alu)",
-					"Construction - Extension",
-					"Rénovation intérieure",
-					"Chauffage - Chaudière",
-					"Menuiseries (alu, bois, pvc)",
-					"Toiture - Charpente -",
-					"Couverture",
-					"Climatisation - Ventilation",
-					"Electricité - Courant faible",
-					"Architecture - Expertise",
-					"Salle de bains - WC - SPA",
-					"Alarme - Sécurité - Incendie",
-					"Peinture - Tapisserie",
-					"Isolation thermique et ",
-					"Plomberie",
-					"Façade (ravalement, enduit,...)",
-					"Sols intérieurs",
-					"Piscine - Abri piscine",
-					"Aménagement intérieur",
-					"Assainissement - Terrassement",
-					"Sols extérieurs",
-					"Véranda - Pergola - Verrière",
-					"Diagnostics - Traitements",
-					"Plafond - Cloison - Plâtre",
-					"Jardin - Clôture - Portail",
-					"Maçonnerie - Démolition",
-					"Ascenseur - Monte-charges",
-					"Escalier - Garde corps",
-					"Cheminée et accessoires",
-					"Divers"
-				],
-				"required": true,
-				"question": "Quelle type de travaux avez-vouz réalisé ?"
-			},
-			{
-				"name": "craftsman",
-				"display": "Artisant",
-				"question": "Avec quel artisant ?"
-			},
-			{
-				"name": "cost",
-				"display": "Coût",
-				"type": "list",
-				"values": [
-					"< 500 €",
-					"500 – 1000 €",
-					"1000 – 2000 €",
-					"2000 – 5000 €",
-					"> 5000€"
-				],
-				"question": "Quelle a été votre budget ?"
-			},
-			{
-				"name": "dateStart",
-				"display": "Date de début",
-				"type": "date",
-				"question": "Quand ces travaux ont-ils commencé ?"
-			},
-			{
-				"name": "dateEnd",
-				"display": "Date de fin",
-				"type": "date",
-				"depend": "dateStart",
-				"question": "Quand se sont-ils terminé ou vont-ils se terminer ?"
-			},
-			{
-				"name": "contract",
-				"display": "Contrat",
-				"type": "contract",
-				"question": "Quelles sont les informations du contrat ?"
-			}
-		]
-	},
-	{
-		"name": "Pièces",
-		"group": [
-			{
-				"name": "roomName",
-				"display": "Type de la pièce",
-				"type": "list",
-				"values": [
-					"Logement entier",
-					"Cuisine",
-					"Salle de bain",
-					"Salon",
-					"Salle à manger",
-					"Wc",
-					"Parties communes",
-					"Toit",
-					"Cave",
-					"Combles",
-					"Chambre",
-					"Jardin",
-					"Façade extérieure",
-					"Balcon"
-				]
-			}
-		]
-	},
-	{
-		"name": "Équipements",
-		"group": [
-			{
-				"name": "equipmentName",
-				"display": "Type d'équipements",
-				"type": "list",
-				"values": [
-					"Ventilation naturelle",
-					"VMC",
-					"VMC Gaz",
-					"Autre système de ventilation",
-					"Eau chaude sanitaire électrique",
-					"Eau chaude sanitaire thermodynamique",
-					"Eau chaude solaire",
-					"Chaudière à gaz",
-					"Chaudière fuel",
-					"Poêle à bois",
-					"Cheminée, foyer, insert",
-					"Radiateurs électriques",
-					"Chauffage solaire",
-					"Pompe à chaleur",
-					"Climatiseur",
-					"Installation photovoltaïques",
-					"Réfrigérateur",
-					"Lave-linge",
-					"Cuisinière",
-					"Table de cuisson",
-					"Four",
-					"Lave-vaisselle",
-					"Cave à vin",
-					"Sèche-linge",
-					"Box de pilotage maison",
-					"Autre"
-				]
-			}
-		]
-	}
-];
+module.exports = [{"name":"Principales","group":[{"name":"name","display":"Name","required":true,"question":"Quelle est l'intitulé de ces travaux ?"},{"name":"type","display":"Type","type":"list","values":["Fenêtres (PVC, bois, alu)","Construction - Extension","Rénovation intérieure","Chauffage - Chaudière","Menuiseries (alu, bois, pvc)","Toiture - Charpente -","Couverture","Climatisation - Ventilation","Electricité - Courant faible","Architecture - Expertise","Salle de bains - WC - SPA","Alarme - Sécurité - Incendie","Peinture - Tapisserie","Isolation thermique et ","Plomberie","Façade (ravalement, enduit,...)","Sols intérieurs","Piscine - Abri piscine","Aménagement intérieur","Assainissement - Terrassement","Sols extérieurs","Véranda - Pergola - Verrière","Diagnostics - Traitements","Plafond - Cloison - Plâtre","Jardin - Clôture - Portail","Maçonnerie - Démolition","Ascenseur - Monte-charges","Escalier - Garde corps","Cheminée et accessoires","Divers"],"required":true,"question":"Quelle type de travaux avez-vouz réalisé ?"},{"name":"craftsman","display":"Artisant","question":"Avec quel artisant ?"},{"name":"cost","display":"Coût","type":"list","values":["< 500 €","500 – 1000 €","1000 – 2000 €","2000 – 5000 €","> 5000€"],"question":"Quelle a été votre budget ?"},{"name":"dateStart","display":"Date de début","type":"date","question":"Quand ces travaux ont-ils commencé ?"},{"name":"dateEnd","display":"Date de fin","type":"date","depend":"dateStart","question":"Quand se sont-ils terminé ou vont-ils se terminer ?"},{"name":"contract","display":"Contrat","type":"contract","question":"Quelles sont les informations du contrat ?"}]},{"name":"Pièces","group":[{"name":"roomName","display":"Type de la pièce","type":"list","values":["Logement entier","Cuisine","Salle de bain","Salon","Salle à manger","Wc","Parties communes","Toit","Cave","Combles","Chambre","Jardin","Façade extérieure","Balcon"]}]},{"name":"Équipements","group":[{"name":"equipmentName","display":"Type d'équipements","type":"list","values":["Ventilation naturelle","VMC","VMC Gaz","Autre système de ventilation","Eau chaude sanitaire électrique","Eau chaude sanitaire thermodynamique","Eau chaude solaire","Chaudière à gaz","Chaudière fuel","Poêle à bois","Cheminée, foyer, insert","Radiateurs électriques","Chauffage solaire","Pompe à chaleur","Climatiseur","Installation photovoltaïques","Réfrigérateur","Lave-linge","Cuisinière","Table de cuisson","Four","Lave-vaisselle","Cave à vin","Sèche-linge","Box de pilotage maison","Autre"]}]}]
 
 /***/ }),
 
@@ -12524,7 +12085,6 @@ var DOCTYPE_WORKS = exports.DOCTYPE_WORKS = 'com.homebook.work';
 var DOCTYPE_MAINTENANCES = exports.DOCTYPE_MAINTENANCES = 'com.homebook.maintenance';
 var DOCTYPE_DIAGNOSIS = exports.DOCTYPE_DIAGNOSIS = 'com.homebook.diagnosis';
 var DOCTYPE_HOMEDATA = exports.DOCTYPE_HOMEDATA = 'com.homebook.homeData';
-var DOCTYPE_DATA = exports.DOCTYPE_DATA = 'com.homebook.data';
 
 var DOCTYPE_CONTACTS = exports.DOCTYPE_CONTACTS = 'com.homebook.contacts';
 var DOCTYPE_RECALLS = exports.DOCTYPE_RECALLS = 'com.homebook.recalls';
@@ -12595,154 +12155,14 @@ var TYPE_FILE = exports.TYPE_FILE = "TYPE_FILE";
 /***/ "./src/constants/recallsFrequencies.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	"Une fois",
-	"Tous les ans",
-	"Tous les mois",
-	"Tous les jours"
-];
+module.exports = ["Une fois","Tous les ans","Tous les mois","Tous les jours"]
 
 /***/ }),
 
 /***/ "./src/constants/types.json":
 /***/ (function(module, exports) {
 
-module.exports = [
-	{
-		"name": "Données contractuelles de propriétés",
-		"location": "/Documents de propriété",
-		"types": [
-			{
-				"key": "Deed of superficies",
-				"name": "Acte de propriété"
-			},
-			{
-				"key": "plans",
-				"name": "Plans"
-			}
-		]
-	},
-	{
-		"name": "Equipements",
-		"location": "/Équipements",
-		"types": [
-			{
-				"key": "equipments_notice",
-				"name": "Notice d’utilisation des équipements"
-			},
-			{
-				"key": "equipments_info",
-				"name": "Fiche équipement"
-			}
-		]
-	},
-	{
-		"name": "Travaux",
-		"location": "/Travaux et entretien",
-		"types": [
-			{
-				"key": "works_invoice",
-				"name": "Devis, facture, éléments d’une opération de travaux"
-			}
-		]
-	},
-	{
-		"name": "Entretien",
-		"location": "/Travaux et entretien",
-		"types": [
-			{
-				"key": "maintenance_contract",
-				"name": "Contrat d'entretien"
-			}
-		]
-	},
-	{
-		"name": "Données logements privées",
-		"location": "/Usages",
-		"types": [
-			{
-				"key": "local_taxes",
-				"name": "Impôts locaux (TH, TF)"
-			},
-			{
-				"key": "supplies_contract",
-				"name": "Contrat de fourniture"
-			},
-			{
-				"key": "water_contract",
-				"name": "Contrat d'eau"
-			},
-			{
-				"key": "electricity_contract",
-				"name": "Contrat d'électricité"
-			},
-			{
-				"key": "telecom_contract",
-				"name": "Contrat télécom"
-			},
-			{
-				"key": "house insurance",
-				"name": "Assurance habitation"
-			}
-		]
-	},
-	{
-		"name": "Diagnostics",
-		"location": "/Diagnostics",
-		"types": [
-			{
-				"key": "energetics_diagnosis",
-				"name": "Diagnostic de Performance Energétique"
-			},
-			{
-				"key": "ernmt_diagnosis",
-				"name": "État des Risques Naturels, Miniers et Technologiques (ERNMT)"
-			},
-			{
-				"key": "lead_diagnosis",
-				"name": "Plomb (CREP)"
-			},
-			{
-				"key": "asbestos_diagnosis",
-				"name": "Amiante (DAPP)"
-			},
-			{
-				"key": "electricity_diagnosis",
-				"name": "Diagnostic Electricité"
-			},
-			{
-				"key": "gas_diagnosis",
-				"name": "Diagnostic Gaz"
-			}
-		]
-	},
-	{
-		"name": "Copropriété",
-		"location": "/Documents de propriété",
-		"types": [
-			{
-				"key": "condominium_regulation",
-				"name": "Règlement de copropriété"
-			},
-			{
-				"key": "1",
-				"name": "Procès-verbaux des 3 dernières AG"
-			},
-			{
-				"key": "2",
-				"name": "Fiche synthétique de copropriété"
-			},
-			{
-				"key": "3",
-				"name": "Carnet d’entretien de la copropriété"
-			},
-			{
-				"key": "4",
-				"name": "Impayés de charges au sein du syndicat et dettes"
-			}
-		]
-	}
-];
+module.exports = [{"name":"Données contractuelles de propriétés","location":"/Documents de propriété","types":[{"key":"Deed of superficies","name":"Acte de propriété"},{"key":"plans","name":"Plans"}]},{"name":"Equipements","location":"/Équipements","types":[{"key":"equipments_notice","name":"Notice d’utilisation des équipements"},{"key":"equipments_info","name":"Fiche équipement"}]},{"name":"Travaux","location":"/Travaux et entretien","types":[{"key":"works_invoice","name":"Devis, facture, éléments d’une opération de travaux"}]},{"name":"Entretien","location":"/Travaux et entretien","types":[{"key":"maintenance_contract","name":"Contrat d'entretien"}]},{"name":"Données logements privées","location":"/Usages","types":[{"key":"local_taxes","name":"Impôts locaux (TH, TF)"},{"key":"supplies_contract","name":"Contrat de fourniture"},{"key":"water_contract","name":"Contrat d'eau"},{"key":"electricity_contract","name":"Contrat d'électricité"},{"key":"telecom_contract","name":"Contrat télécom"},{"key":"house insurance","name":"Assurance habitation"}]},{"name":"Diagnostics","location":"/Diagnostics","types":[{"key":"energetics_diagnosis","name":"Diagnostic de Performance Energétique"},{"key":"ernmt_diagnosis","name":"État des Risques Naturels, Miniers et Technologiques (ERNMT)"},{"key":"lead_diagnosis","name":"Plomb (CREP)"},{"key":"asbestos_diagnosis","name":"Amiante (DAPP)"},{"key":"electricity_diagnosis","name":"Diagnostic Electricité"},{"key":"gas_diagnosis","name":"Diagnostic Gaz"}]},{"name":"Copropriété","location":"/Documents de propriété","types":[{"key":"condominium_regulation","name":"Règlement de copropriété"},{"key":"1","name":"Procès-verbaux des 3 dernières AG"},{"key":"2","name":"Fiche synthétique de copropriété"},{"key":"3","name":"Carnet d’entretien de la copropriété"},{"key":"4","name":"Impayés de charges au sein du syndicat et dettes"}]}]
 
 /***/ }),
 
@@ -13291,6 +12711,48 @@ exports.default = (0, _reactRouterDom.withRouter)(ConnectedNavigation);
 
 /***/ }),
 
+/***/ "./src/containers/News.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _reactRedux = __webpack_require__("./node_modules/react-redux/es/index.js");
+
+var _actions = __webpack_require__("./src/actions/index.js");
+
+var _News = __webpack_require__("./src/components/elements/News.jsx");
+
+var _News2 = _interopRequireDefault(_News);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        news: state.news.elements,
+        status: state.news.fetchStatus,
+        count: state.news.elementCount
+    };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+    return {
+        onLoadNews: function onLoadNews() {
+            dispatch((0, _actions.loadNews)());
+        }
+    };
+};
+
+var ConnectedNews = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_News2.default);
+
+exports.default = ConnectedNews;
+
+/***/ }),
+
 /***/ "./src/containers/Recalls.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13570,7 +13032,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var root = document.querySelector('[role=application]');
     var data = root.dataset;
 
-    console.log('Current Version:', '2.1.75');
+    console.log('Current Version:', '2.1.99');
 
     window.cozy.client.init({
         cozyURL: '//' + data.cozyDomain,
@@ -14316,7 +13778,7 @@ exports.default = filesApp;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.selectedCount = exports.elements = undefined;
+exports.fetchStatus = exports.elementCount = exports.elements = undefined;
 
 var _redux = __webpack_require__("./node_modules/redux/es/index.js");
 
@@ -14336,32 +13798,19 @@ var elements = exports.elements = function elements() {
     }
 };
 
-var selectedCount = exports.selectedCount = function selectedCount() {
-    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-    var action = arguments[1];
-
-    switch (action.type) {
-        case _actions.LOAD_NEWS_SUCCESS:
-            return 0;
-        default:
-            return state;
-    }
-};
-
-var elementCount = function elementCount() {
+var elementCount = exports.elementCount = function elementCount() {
     var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     var action = arguments[1];
 
     switch (action.type) {
         case _actions.LOAD_NEWS_SUCCESS:
-            console.log(action.news.length);
             return action.news.length;
         default:
             return state;
     }
 };
 
-var fetchStatus = function fetchStatus() {
+var fetchStatus = exports.fetchStatus = function fetchStatus() {
     var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _constants.STATUS_LOAD;
     var action = arguments[1];
 
@@ -14378,7 +13827,6 @@ var fetchStatus = function fetchStatus() {
 };
 
 exports.default = (0, _redux.combineReducers)({
-    selectedCount: selectedCount,
     elements: elements,
     elementCount: elementCount,
     fetchStatus: fetchStatus
@@ -14729,6 +14177,211 @@ exports.default = viewMode;
 
 /***/ }),
 
+/***/ "./src/scripts/TempFile.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.getTemp = exports.create = exports.deleteIfExist = exports.deleteById = exports.exist = undefined;
+
+var _constants = __webpack_require__("./src/constants/index.js");
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+var TEMPFILE_PATH = '/tmp';
+
+var exist = exports.exist = function () {
+    var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(name) {
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+            while (1) {
+                switch (_context.prev = _context.next) {
+                    case 0:
+                        _context.prev = 0;
+                        _context.next = 3;
+                        return cozy.client.files.stateByPath(TEMPFILE_PATH + '/' + name);
+
+                    case 3:
+                        return _context.abrupt('return', _context.sent);
+
+                    case 6:
+                        _context.prev = 6;
+                        _context.t0 = _context['catch'](0);
+                        return _context.abrupt('return', false);
+
+                    case 9:
+                    case 'end':
+                        return _context.stop();
+                }
+            }
+        }, _callee, undefined, [[0, 6]]);
+    }));
+
+    return function exist(_x) {
+        return _ref.apply(this, arguments);
+    };
+}();
+
+var deleteById = exports.deleteById = function () {
+    var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(id) {
+        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+            while (1) {
+                switch (_context2.prev = _context2.next) {
+                    case 0:
+                        _context2.prev = 0;
+                        _context2.next = 3;
+                        return cozy.client.files.trashById(id);
+
+                    case 3:
+                        _context2.next = 5;
+                        return cozy.client.files.destroyById(id);
+
+                    case 5:
+                        return _context2.abrupt('return', true);
+
+                    case 8:
+                        _context2.prev = 8;
+                        _context2.t0 = _context2['catch'](0);
+                        return _context2.abrupt('return', false);
+
+                    case 11:
+                    case 'end':
+                        return _context2.stop();
+                }
+            }
+        }, _callee2, undefined, [[0, 8]]);
+    }));
+
+    return function deleteById(_x2) {
+        return _ref2.apply(this, arguments);
+    };
+}();
+
+var deleteIfExist = exports.deleteIfExist = function () {
+    var _ref3 = _asyncToGenerator(regeneratorRuntime.mark(function _callee3(name) {
+        var file;
+        return regeneratorRuntime.wrap(function _callee3$(_context3) {
+            while (1) {
+                switch (_context3.prev = _context3.next) {
+                    case 0:
+                        _context3.prev = 0;
+                        _context3.next = 3;
+                        return cozy.client.files.stateByPath(TEMPFILE_PATH + '/' + name);
+
+                    case 3:
+                        file = _context3.sent;
+                        _context3.next = 6;
+                        return cozy.client.files.trashById(file._id);
+
+                    case 6:
+                        _context3.next = 8;
+                        return cozy.client.files.destroyById(file._id);
+
+                    case 8:
+                        return _context3.abrupt('return', true);
+
+                    case 11:
+                        _context3.prev = 11;
+                        _context3.t0 = _context3['catch'](0);
+                        return _context3.abrupt('return', false);
+
+                    case 14:
+                    case 'end':
+                        return _context3.stop();
+                }
+            }
+        }, _callee3, undefined, [[0, 11]]);
+    }));
+
+    return function deleteIfExist(_x3) {
+        return _ref3.apply(this, arguments);
+    };
+}();
+
+var create = exports.create = function () {
+    var _ref4 = _asyncToGenerator(regeneratorRuntime.mark(function _callee4(data, name) {
+        var dir;
+        return regeneratorRuntime.wrap(function _callee4$(_context4) {
+            while (1) {
+                switch (_context4.prev = _context4.next) {
+                    case 0:
+                        _context4.next = 2;
+                        return getTemp();
+
+                    case 2:
+                        dir = _context4.sent;
+                        _context4.next = 5;
+                        return cozy.client.files.create(data, {
+                            name: name,
+                            dirID: dir._id
+                        });
+
+                    case 5:
+                        return _context4.abrupt('return', _context4.sent);
+
+                    case 6:
+                    case 'end':
+                        return _context4.stop();
+                }
+            }
+        }, _callee4, undefined);
+    }));
+
+    return function create(_x4, _x5) {
+        return _ref4.apply(this, arguments);
+    };
+}();
+
+var getTemp = exports.getTemp = function () {
+    var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee5() {
+        var temp;
+        return regeneratorRuntime.wrap(function _callee5$(_context5) {
+            while (1) {
+                switch (_context5.prev = _context5.next) {
+                    case 0:
+                        temp = void 0;
+                        _context5.prev = 1;
+                        _context5.next = 4;
+                        return cozy.client.files.statByPath(TEMPFILE_PATH);
+
+                    case 4:
+                        temp = _context5.sent;
+                        _context5.next = 12;
+                        break;
+
+                    case 7:
+                        _context5.prev = 7;
+                        _context5.t0 = _context5['catch'](1);
+                        _context5.next = 11;
+                        return cozy.client.files.createDirectory({
+                            name: "tmp",
+                            dirID: _constants.COZY_ROOT_ID
+                        });
+
+                    case 11:
+                        temp = _context5.sent;
+
+                    case 12:
+                        return _context5.abrupt('return', temp);
+
+                    case 13:
+                    case 'end':
+                        return _context5.stop();
+                }
+            }
+        }, _callee5, undefined, [[1, 7]]);
+    }));
+
+    return function getTemp() {
+        return _ref5.apply(this, arguments);
+    };
+}();
+
+/***/ }),
+
 /***/ "./src/scripts/XMLDataFile.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14744,7 +14397,13 @@ var _xmlbuilder = __webpack_require__("./node_modules/xmlbuilder/lib/index.js");
 
 var _xmlbuilder2 = _interopRequireDefault(_xmlbuilder);
 
+var _TempFile = __webpack_require__("./src/scripts/TempFile.js");
+
+var TempFile = _interopRequireWildcard(_TempFile);
+
 var _constants = __webpack_require__("./src/constants/index.js");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14752,7 +14411,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 var exportData = exports.exportData = function () {
     var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
-        var xml, xmlString, file, parent, old, xmlFile, link, reallink;
+        var xml, xmlString, file, xmlFile, link, reallink;
         return regeneratorRuntime.wrap(function _callee$(_context) {
             while (1) {
                 switch (_context.prev = _context.next) {
@@ -14777,93 +14436,37 @@ var exportData = exports.exportData = function () {
 
                         //upload into cozy at /tmp/homebook.xml
 
-                        parent = void 0;
-                        _context.prev = 6;
+                        _context.next = 7;
+                        return TempFile.deleteIfExist('homebook.xml');
+
+                    case 7:
                         _context.next = 9;
-                        return cozy.client.files.statByPath('/tmp');
+                        return TempFile.create(file, 'homebook.xml');
 
                     case 9:
-                        parent = _context.sent;
-                        _context.next = 17;
-                        break;
-
-                    case 12:
-                        _context.prev = 12;
-                        _context.t0 = _context['catch'](6);
-                        _context.next = 16;
-                        return cozy.client.files.createDirectory({
-                            name: "tmp",
-                            dirID: _constants.COZY_ROOT_ID
-                        });
-
-                    case 16:
-                        parent = _context.sent;
-
-                    case 17:
-                        if (!(parent === undefined)) {
-                            _context.next = 19;
-                            break;
-                        }
-
-                        throw Error("Export homebook fail: Can't access or create '/tmp' folder");
-
-                    case 19:
-                        _context.prev = 19;
-                        _context.next = 22;
-                        return cozy.client.files.statByPath('/tmp/homebook.xml');
-
-                    case 22:
-                        old = _context.sent;
-                        _context.next = 25;
-                        return cozy.client.files.trashById(old._id);
-
-                    case 25:
-                        _context.next = 27;
-                        return cozy.client.files.destroyById(old._id);
-
-                    case 27:
-                        _context.next = 31;
-                        break;
-
-                    case 29:
-                        _context.prev = 29;
-                        _context.t1 = _context['catch'](19);
-
-                    case 31:
-                        _context.next = 33;
-                        return cozy.client.files.create(file, {
-                            name: 'homebook.xml',
-                            dirID: parent._id
-                        });
-
-                    case 33:
                         xmlFile = _context.sent;
-                        _context.next = 36;
+                        _context.next = 12;
                         return cozy.client.files.getArchiveLinkByPaths(['/Homebook/', '/tmp/homebook.xml'], 'homebook');
 
-                    case 36:
+                    case 12:
                         link = _context.sent;
-                        _context.next = 39;
+                        _context.next = 15;
                         return cozy.client.fullpath(link);
 
-                    case 39:
+                    case 15:
                         reallink = _context.sent;
-                        _context.next = 42;
-                        return cozy.client.files.trashById(xmlFile._id);
+                        _context.next = 18;
+                        return TempFile.deleteById(xmlFile._id);
 
-                    case 42:
-                        _context.next = 44;
-                        return cozy.client.files.destroyById(xmlFile._id);
-
-                    case 44:
+                    case 18:
                         return _context.abrupt('return', reallink);
 
-                    case 45:
+                    case 19:
                     case 'end':
                         return _context.stop();
                 }
             }
-        }, _callee, undefined, [[6, 12], [19, 29]]);
+        }, _callee, undefined);
     }));
 
     return function exportData() {
