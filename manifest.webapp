@@ -115,22 +115,19 @@
             "description": "Required to send a congratulations email to your friends",
             "type": "io.cozy.jobs",
             "selector": "worker",
-            "values": ["sendmail"],
             "verbs": ["GET", "POST", "DELETE"]
         },
         "mail-enqueue": {
             "description": "Required to know the number of jobs in the sendmail queues",
             "type": "io.cozy.queues",
             "verbs": ["GET"],
-            "selector": "worker",
-            "values": ["sendmail"]
+            "selector": "worker"
         },
         "mail-trigger": {
             "description": "Required to send regularly mails from the user to his/her friends",
             "type": "io.cozy.triggers",
             "verbs": ["POST", "GET", "DELETE"],
-            "selector": "worker",
-            "values": ["sendmail"]
+            "selector": "worker"
         },
         "unzip-to-a-directory": {
             "description": "Required to unzip a file inside the cozy",
