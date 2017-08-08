@@ -16029,19 +16029,20 @@ var autoImport = exports.autoImport = function () {
                         return _context.abrupt('return', console.log("No zip to import", _context.t0));
 
                     case 13:
-                        console.log('Zip file', exist);
-
-                        //2. Create the temporary folder
-                        _context.next = 16;
+                        _context.next = 15;
                         return TempFile.getTemp();
 
-                    case 16:
+                    case 15:
                         tempDir = _context.sent;
-                        _context.next = 19;
+                        _context.next = 18;
                         return TempFile.createFolder("unzip");
 
-                    case 19:
+                    case 18:
                         dir = _context.sent;
+
+
+                        console.log('Zip file, temp dir', exist, dir);
+                        //4. Create the jobs to unzip the file in the temp folder
                         _context.next = 22;
                         return cozy.client.jobs.create('unzip', {
                             "zip": exist._id,
