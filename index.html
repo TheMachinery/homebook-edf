@@ -1,32 +1,31 @@
 <!doctype html>
 <html lang="{{.Locale}}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <base href="/">
 
     <link rel="shortcut icon" href="images/logo.svg">
-    <link rel="stylesheet" type="text/css" href="main.styles.css"/>
-    <link rel="stylesheet" type="text/css" href="vendor.styles.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/cozy-bar.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/cozy-bar.min.css" />
 
     <!-- {{.CozyClientJS}} -->
     <!-- {{.CozyBar}} -->
 
     <title>Homebook</title>
-</head>
+<link href="/vendor.styles.70c2b1.css" rel="stylesheet"><link href="/main.styles.5c3bb8.css" rel="stylesheet"></head>
+
 <body>
 
-    <div id="root" role="application" data-token="{{.Token}}" data-cozy-stack="{{.Domain}}" data-cozy-token="{{.Token}}"
-        data-cozy-domain="{{.Domain}}" data-cozy-locale="{{.Locale}}" data-cozy-app-name="{{.AppName}}" data-cozy-app-editor="{{.AppEditor}}"
-        data-cozy-icon-path="{{.IconPath}}" data-cozy-tracking="true"></div>
-        
+    <div id="root" role="application" data-token="{{.Token}}" data-cozy-stack="{{.Domain}}" data-cozy-token="{{.Token}}" data-cozy-domain="{{.Domain}}"
+        data-cozy-locale="{{.Locale}}" data-cozy-app-name="{{.AppName}}" data-cozy-app-editor="{{.AppEditor}}" data-cozy-icon-path="{{.IconPath}}"
+        data-cozy-tracking="true"></div>
+
     <script src="//{{.Domain}}/assets/js/piwik.js" defer></script>
     <script src="lib/cozy-client.min.js"></script>
 
     <script src="lib/cozy-bar.min.js"></script>
-    <script src="vendor.bundle.js"></script>
-    <script src="main.bundle.js"></script>
 
-</body>
+<script type="text/javascript" src="/vendor.bundle.70c2b1.js"></script><script type="text/javascript" src="/main.bundle.5c3bb8.js"></script></body>
+
 </html>
