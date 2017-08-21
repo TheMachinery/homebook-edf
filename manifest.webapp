@@ -26,11 +26,6 @@
             "index": "index.html",
             "public": false
         },
-        "/file": {
-            "folder": "/",
-            "index": "index.html",
-            "public": false
-        },
         "/rappels": {
             "folder": "/",
             "index": "index.html",
@@ -110,6 +105,10 @@
         "news": {
             "description": "App required access to news",
             "type": "com.homebook.news"
+        },
+        "tasks": {
+            "description": "App required access to tasks list (moment de vie)",
+            "type": "com.homebook.tasks"
         },
         "mail": {
             "description": "Required to send a congratulations email to your friends",
